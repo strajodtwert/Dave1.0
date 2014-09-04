@@ -57,7 +57,7 @@ return chat;
 };
 var loadChat = function(cb){
 if(!cb) cb = function(){};
-$.get("https://rawgit.com/Yemasthui/basicBot/master/lang/langIndex.json", function(json){
+$.get("https://rawgit.com/MrAjdin/BalkanBot/master/langIndex.json", function(json){
 var link = bBot.chatLink;
 if(json !== null && typeof json !== "undefined"){
 langIndex = json;
@@ -148,14 +148,14 @@ name: "BalkanBot",
 loggedInID: null,
 scriptLink: "http://www.balkan-party.tk/files/theme/balkanBOTv2.js",
 cmdLink: "http://www.balkan-party.tk/bbot.html",
-chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+chatLink: "https://rawgit.com/MrAjdin/BalkanBot/master/en.json",
 chat: null,
 loadChat: loadChat,
 retrieveSettings: retrieveSettings,
 settings: {
 botName: "BalkanBot",
 language: "english",
-chatLink: "https://rawgit.com/Yemasthui/basicBot/master/lang/en.json",
+chatLink: "https://rawgit.com/MrAjdin/BalkanBot/master/en.json",
 maximumAfk: 90,
 afkRemoval: false,
 maximumDc: 20,
@@ -1550,7 +1550,20 @@ if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0)
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
 var link = "http://www.balkan-party.tk/tutorijali.html";
-API.sendChat("/me This will help you a little:, {link: link} ");
+API.sendChat(subChat(bBot.chat.starterhelp, {link: link}));
+}
+}
+},
+helpCommand: {
+command: 'help',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+var link = "http://www.balkan-party.tk/tutorijali.html";
+API.sendChat(subChat(bBot.chat.starterhelp, {link: link}));
 }
 }
 },
