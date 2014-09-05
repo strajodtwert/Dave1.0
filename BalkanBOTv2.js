@@ -2611,7 +2611,7 @@ return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBo
 }
 else {
 bBot.settings.welcome = !bBot.settings.welcome;
-return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.welcomemsg}));
+return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.welcomemsg}));
 }
 }
 }
