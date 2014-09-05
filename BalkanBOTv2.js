@@ -183,7 +183,7 @@ lockskipReasons: [
 afkpositionCheck: 15,
 afkRankCheck: "ambassador",
 motdEnabled: false,
-motdInterval: 5,
+motdInterval: 60,
 motd: "Temporary Message of the Day",
 filterChat: true,
 etaRestriction: false,
