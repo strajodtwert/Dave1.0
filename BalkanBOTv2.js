@@ -801,6 +801,11 @@ if (msg === 'skip') {
 API.sendChat(subChat(bBot.chat.askskip, {name: chat.un}));
 return true;
 }
+msg = msg.toLowerCase();
+if (msg === 'rank') {
+API.sendChat(subChat(bBot.chat.askrank, {name: chat.un}));
+return true;
+}
 for (var j = 0; j < bBot.chatUtilities.spam.length; j++) {
 if (msg === bBot.chatUtilities.spam[j]) {
 API.sendChat(subChat(bBot.chat.spam, {name: chat.un}));
