@@ -16,7 +16,7 @@
 
 
     "isopen": "/me :white_check_mark: The roulette is now open! Type !join to participate!",
-    "winnerpicked": "/me A winner has been picked! @%%NAME%% to position %%POSITION%%.",
+    "winnerpicked": "/me :white_check_mark: A winner has been picked! @%%NAME%% to position %%POSITION%%.",
 
 
     "alreadyadding": "/me User is already being added! Changed the desired position to %%POSITION%%.",
@@ -100,7 +100,7 @@
     "motdintervalset": "/me MotD interval set to %%INTERVAL%%.",
     "addbotwaitlist": "/me @%%NAME%%, don't try to add me to the waitlist, please.",
     "move": "/me :white_check_mark: [%%NAME%% used move.]",
-    "mutednotime": "/me [@%%NAME%%] Muted @%%USERNAME%%.",
+    "mutednotime": "/me :white_check_mark: [@%%NAME%%] Muted @%%USERNAME%%.",
     "mutedmaxtime": "/me [@%%NAME%%] You can only mute for maximum %%TIME%% minutes.",
     "mutedtime": "/me :white_check_mark:  [@%%NAME%%] Muted @%%USERNAME%% for %%TIME%% minutes.",
     "unmuted": "/me :white_check_mark: [@%%NAME%%] Unmuted @%%USERNAME%%.",
