@@ -15,7 +15,7 @@
     "permissionownsong": "/me :up: @%%NAME%% has permission to play their own production!",
 
 
-    "isopen": "/me The roulette is now open! Type !join to participate!",
+    "isopen": "/me :white_check_mark: The roulette is now open! Type !join to participate!",
     "winnerpicked": "/me A winner has been picked! @%%NAME%% to position %%POSITION%%.",
 
 
