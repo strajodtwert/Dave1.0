@@ -111,7 +111,7 @@
     "removenotinwl": "/me [@%%NAME%%] Specified user @%%USERNAME%% is not in the waitlist.",
     "roomrules": "/me Please find the room rules here: %%LINK%%",
     "sessionstats": "/me [@%%NAME%%] Total woots: %%WOOTS%%, total mehs: %%MEHS%%, total grabs: %%GRABS%%.",
-    "skip": "/me [%%NAME%% used skip.]",
+    "skip": "/me :white_check_mark: [%%NAME%% used skip.]",
     "madeby": "/me This bot was made by %%NAME%%.",
     "activefor": "I have been active for %%TIME%%.",
     "swapinvalid": "/me [@%%NAME%%] Invalid user specified. (No names with spaces!)",
