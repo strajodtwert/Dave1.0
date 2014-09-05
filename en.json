@@ -20,14 +20,14 @@
 
 
     "alreadyadding": "/me User is already being added! Changed the desired position to %%POSITION%%.",
-    "adding": "/me Added @%%NAME%% to the queue. Current queue: %%POSITION%%.",
+    "adding": "/me :white_check_mark: Added @%%NAME%% to the queue. Current queue: %%POSITION%%.",
 
 
     "usernotfound": "/me User not found.",
     "notdisconnected": "/me @%%NAME%% did not disconnect during my time here.",
     "noposition": "/me No last position known. The waitlist needs to update at least once to register a user's last position.",
     "toolongago": "/me @%%NAME%%'s last disconnect (DC or leave) was too long ago: %%TIME%%.",
-    "valid": "/me @%%NAME%% disconnected %%TIME%% ago and should be at position %%POSITION%%.",
+    "valid": "/me :white_check_mark: @%%NAME%% disconnected %%TIME%% ago and should be at position %%POSITION%%.",
 
 
     "warning1": "/me @%%NAME%%, you have been afk for %%TIME%%, please respond within 2 minutes or you will be removed.",
