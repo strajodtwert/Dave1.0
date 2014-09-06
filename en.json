@@ -39,7 +39,7 @@
     "askskip": "/me :warning: @%%NAME%%, don't ask for skips.",
     "askrank": "/me :warning: @%%NAME%%, don't ask for rank.",
     "spam": "/me :warning: @%%NAME%%, please don't spam.",
-    "roomadvertising": "/me @%%NAME%%, don't post links to other rooms please.",
+    "roomadvertising": "/me :warning: @%%NAME%%, don't post links to other rooms please.",
     "adfly": "/me @%%NAME%%, please change your autowoot program: http://www.balkan-party.tk/autowoot.html",
 
 
@@ -108,7 +108,7 @@
     "muterank": "/me [@%%NAME%%] You can't mute persons with an equal or higher rank than you.",
     "oplist": "/me Overplayed/Banned list: %%LINK%%",
     "pong": "/me Pong!",
-    "reload": "/me Give me couple seconds...",
+    "reload": "/me :clock11: Give me couple seconds...",
     "removenotinwl": "/me [@%%NAME%%] Specified user @%%USERNAME%% is not in the waitlist.",
     "roomrules": "/me Please find the room rules here: %%LINK%%",
     "sessionstats": "/me [@%%NAME%%] Total woots: %%WOOTS%%, total mehs: %%MEHS%%, total grabs: %%GRABS%%.",
@@ -117,7 +117,7 @@
     "activefor": "I have been active for %%TIME%%.",
     "swapinvalid": "/me [@%%NAME%%] Invalid user specified. (No names with spaces!)",
     "swapwlonly": "/me [@%%NAME%%] Please only swap users that are in the waitlist!",
-    "swapping": "/me Swapping %%NAME1%% with %%NAME2%%.",
+    "swapping": "/me :white_check_mark: Swapping %%NAME1%% with %%NAME2%%.",
     "genres": "/me Please find the permissible room genres here: %%LINK%%",
     "notbanned": "/me [@%%NAME%%] The user was not banned.",
     "unmutedeveryone": "/me :white_check_mark: [@%%NAME%%] Unmuted everyone.",
