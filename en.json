@@ -128,6 +128,7 @@
     "voteratio": "/me [@%%NAME%%] @%%USERNAME%% ~ woots: ' + %%WOOT%% + ', mehs: %%MEHS%%, ratio (w/m): %%RATIO%%.",
     "website": "/me Please visit our website: %%LINK%%",
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
-    "stwitter": "/me [%%NAME%%] Selma twitter: %%LINK%%."
+    "stwitter": "/me [%%NAME%%] Selma twitter: %%LINK%%.",
+    "ask": "/me [%%NAME%%] Feel free to ask us here: %%LINK%%."
 
 }
