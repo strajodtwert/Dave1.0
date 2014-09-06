@@ -802,7 +802,7 @@ API.sendChat(subChat(bBot.chat.askskip, {name: chat.un}));
 return true;
 }
 msg = msg.toLowerCase();
-if (msg === 'rank') {
+if (msg === 'mogu rank') {
 API.sendChat(subChat(bBot.chat.askrank, {name: chat.un}));
 return true;
 }
