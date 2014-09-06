@@ -1555,7 +1555,7 @@ if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0)
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
 var link = "http://www.balkan-party.tk/tutorijali.html";
-API.sendChat(subChat(bBot.chat.starterhelp, {link: link}));
+API.sendChat(subChat(bBot.chat.starterhelp, {name: chat.un, link: link}));
 }
 }
 },
