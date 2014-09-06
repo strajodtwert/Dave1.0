@@ -142,7 +142,7 @@ bBot.settings[prop] = json_sett[prop];
 var botCreator = "Balkan Party";
 var botCreatorIDs = [];
 var bBot = {
-version: "2.1.0",
+version: "2.2.0",
 status: false,
 name: "BalkanBot",
 loggedInID: null,
@@ -2034,7 +2034,8 @@ functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-API.sendChat("/me If you have any questions ask us here: http://ask.fm/BalkanParty12")
+var link = "http://ask.fm/BalkanParty12";
+API.sendChat(subChat(bBot.chat.ask, {link: link, name: chat.un}));
 }
 }
 },
