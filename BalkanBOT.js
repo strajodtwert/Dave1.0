@@ -30,7 +30,7 @@
 
 // Copyright (c) 2014 <www.balkan-party.tk>
 
-API.chatLog("[ BalkanBOT ] LAST UPDATED: 05.09.2014", true);
+API.chatLog("[ BalkanBOT ] LAST UPDATED: 06.09.2014", true);
 
 (function () {
 var kill = function () {
