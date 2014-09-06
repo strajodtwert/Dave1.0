@@ -1559,6 +1559,19 @@ API.sendChat(subChat(bBot.chat.starterhelp, {link: link}));
 }
 }
 },
+stwitterCommand: {
+command: 'stwitter',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+var link = "https://twitter.com/Selmaa000";
+API.sendChat(subChat(bBot.chat.stwitter, {name: chat.un, link: link}));
+}
+}
+},
 joinCommand: {
 command: 'join',
 rank: 'user',
