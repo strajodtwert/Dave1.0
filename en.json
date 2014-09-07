@@ -59,7 +59,7 @@
     "cycleguard": "cycleguard",
     "timeguard": "timeguard",
     "chatfilter": "chatfilter",
-    "lockdown": "lockdown",
+    "lockdown": ":white_check_mark: lockdown",
     "lockguard": "lockguard",
     "usercommands": "usercommands",
     "motd": "MotD",
