@@ -1036,7 +1036,7 @@ bBot.loggedInID = API.getUser().id;
 bBot.status = true;
 API.sendChat('/cap 40');
 API.setVolume(10);
-var emojibutton = $(".icon-emoji-on");
+var emojibutton = $(".icon-emoji-off");
 if(emojibutton.length > 0){
 emojibutton[0].click();
 }
