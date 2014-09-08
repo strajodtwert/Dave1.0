@@ -995,8 +995,8 @@ API.off(API.HISTORY_UPDATE, this.proxy.eventHistoryupdate);
 },
 startup: function () {
 var u = API.getUser();
-if (bBot.userUtilities.getPermission(u) < 2) return API.sendChat(bBot.chat.greyuser);
-if (bBot.userUtilities.getPermission(u) === 2) API.sendChat(bBot.chat.bouncer);
+if (bBot.userUtilities.getPermission(u) < 2) return API.chatLog(bBot.chat.greyuser);
+if (bBot.userUtilities.getPermission(u) === 2) API.chatLog(bBot.chat.bouncer);
 bBot.connectAPI();
 retrieveSettings();
 retrieveFromStorage();
