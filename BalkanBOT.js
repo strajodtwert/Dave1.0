@@ -139,12 +139,12 @@ bBot.settings[prop] = json_sett[prop];
 });
 }
 };
-var botCreator = "Balkan Party";
+var botCreator = "BalkanPa rty";
 var botCreatorIDs = [];
 var bBot = {
 version: "2.2.0",
 status: false,
-name: "BalkanBot",
+name: "BalkanBOT",
 loggedInID: null,
 scriptLink: "https://rawgit.com/MrAjdin/BalkanBot/master/BalkanBOT.js",
 cmdLink: "http://www.balkan-party.tk/bbot.html",
@@ -153,7 +153,7 @@ chat: null,
 loadChat: loadChat,
 retrieveSettings: retrieveSettings,
 settings: {
-botName: "BalkanBot",
+botName: "BalkanBOT",
 language: "english",
 chatLink: "https://rawgit.com/MrAjdin/BalkanBot/master/en.json",
 maximumAfk: 90,
