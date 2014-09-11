@@ -129,6 +129,7 @@
     "website": "/me Please visit our website: %%LINK%%",
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
     "stwitter": "/me [%%NAME%%] Selma twitter: %%LINK%%.",
-    "ask": "/me [%%NAME%%] Feel free to ask us here: %%LINK%%."
+    "ask": "/me [%%NAME%%] Feel free to ask us here: %%LINK%%.",
+    "eldox": "/me [%%NAME%%] (EldoX) Lep,voli da pomaže. Nekad prevše smara. Ali uglavnom je Fin. :D"
 
 }
