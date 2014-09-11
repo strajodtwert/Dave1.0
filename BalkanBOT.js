@@ -30,7 +30,7 @@
 
 // Copyright (c) 2014 <www.balkan-party.tk>
 
-API.chatLog("[ BalkanBOT ] LAST UPDATED: 06.09.2014", true);
+API.chatLog("[ BalkanBOT ] LAST UPDATED: 11.09.2014", true);
 
 (function () {
 var kill = function () {
@@ -2068,7 +2068,7 @@ functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-API.sendChat("/me (Selma) Najljepsa djevojka, veoma je pametna i voli da se sali. :sparkling_heart:")
+API.sendChat(subChat(bBot.chat.selma, {name: chat.un}));
 }
 }
 },
@@ -2080,7 +2080,7 @@ functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-API.sendChat("/me (-roxor-) Najveci ljubavnik, zabavan momak, uvijek tu ako nesto zatreba. I voli da daje kolace  :yum:")
+API.sendChat(subChat(bBot.chat.roxor, {name: chat.un}));
 }
 }
 },
@@ -2092,7 +2092,7 @@ functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-API.sendChat("/me (๖Mr.Mujo) Mujo ko mujo, iskren, uvijek tu ako zatreba, emotivan ali inace je dobar :gift_heart:")
+API.sendChat(subChat(bBot.chat.mujo, {name: chat.un}));
 }
 }
 },
@@ -2104,7 +2104,7 @@ functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-API.sendChat("/me (Kima) Voli da afk-a, nekad zna da bude dosadan, udje malo se prodere na nas admine, takodje voli da bana ljude, ali dobar je, :cop:")
+API.sendChat(subChat(bBot.chat.kima, {name: chat.un}));
 }
 }
 },
@@ -2116,7 +2116,7 @@ functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-API.sendChat("/me (Mamuza) Voli se zezati, tražiti banove, voli da ždere ko konj :chocolate_bar: i najbolji je u lol-u")
+API.sendChat(subChat(bBot.chat.mamuza, {name: chat.un}));
 }
 }
 },
@@ -2128,7 +2128,7 @@ functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-API.sendChat("/me (CoBra_snake-King) Dobar drug,voli zezanciju,voli se zezati na svoj i tudji racun,brzo se iznervira,ali zato voli zeleno :eyes:")
+API.sendChat(subChat(bBot.chat.cobra, {name: chat.un}));
 }
 }
 },
@@ -2140,7 +2140,7 @@ functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-API.sendChat("/me (Anja-Ozbiljno-Neozbiljna ) Uvijek ozbiljna, voli da se zabavlja na svoj nacin, veoma je lijepa i pametna, pravi je andjeo :angel:")
+API.sendChat(subChat(bBot.chat.anja, {name: chat.un}));
 }
 }
 },
@@ -2152,7 +2152,7 @@ functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-API.sendChat("/me (Smrtnik) Lud, nekad zna da bude malo nenormlan, ali jos uvijek radi na tome hehe, i veoma je zaljubljen u anju (Pravi Golupcici) <3")
+API.sendChat(subChat(bBot.chat.smrtnik, {name: chat.un}));
 }
 }
 },
@@ -2164,7 +2164,7 @@ functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-API.sendChat("/me (Pl4yHaRDAhmed) Zajeban momak,voli se zezat,mlad,lijep,simpatican,i previse romantican,nekad zna da bude iznerviran, al vas sve voli najvise  <3")
+API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
 }
 }
 },
