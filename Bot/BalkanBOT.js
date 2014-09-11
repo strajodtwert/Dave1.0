@@ -139,7 +139,7 @@ bBot.settings[prop] = json_sett[prop];
 });
 }
 };
-var botCreator = "BalkanPa rty";
+var botCreator = "Balkan Party";
 var botCreatorIDs = [];
 var bBot = {
 version: "2.2.0",
