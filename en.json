@@ -130,6 +130,15 @@
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
     "stwitter": "/me [%%NAME%%] Selma twitter: %%LINK%%.",
     "ask": "/me [%%NAME%%] Feel free to ask us here: %%LINK%%.",
-    "eldox": "/me [%%NAME%%] (EldoX) Lep,voli da pomaže. Nekad prevše smara. Ali uglavnom je Fin. :D"
+    "eldox": "/me [%%NAME%%] (EldoX) Lep,voli da pomaže. Nekad prevše smara. Ali uglavnom je Fin. :D",
+    "selma": "/me [%%NAME%%] (Selma) Najljepsa djevojka, veoma je pametna i voli da se sali. :sparkling_heart:",
+    "roxor": "/me [%%NAME%%] (roxor) Najveci ljubavnik, zabavan momak, uvijek tu ako nesto zatreba. I voli da daje kolace.",
+    "mujo": "/me [%%NAME%%] (Mr.Mujo) ujo ko mujo, iskren, uvijek tu ako zatreba, emotivan ali inace je dobar. :gift_heart:",
+    "kima": "/me [%%NAME%%] (Kima) Voli da afk-a, nekad zna da bude dosadan, udje malo se prodere na nas admine, takodje voli da bana ljude, ali dobar je. :cop:",
+    "mamuza": "/me [%%NAME%%] (Mamuza) Voli se zezati, tražiti banove, voli da ždere ko konj :chocolate_bar: i najbolji je u lol-u.",
+    "cobra": "/me [%%NAME%%] (CoBra_snake-King) Dobar drug,voli zezanciju,voli se zezati na svoj i tudji racun,brzo se iznervira,ali zato voli zeleno. :eyes:",
+    "anja": "/me [%%NAME%%] (Anja-Ozbiljno-Neozbiljna ) Uvijek ozbiljna, voli da se zabavlja na svoj nacin, veoma je lijepa i pametna, pravi je andjeo. :angel:",
+    "smrtnik": "/me [%%NAME%%] (Smrtnik) Lud, nekad zna da bude malo nenormlan, ali jos uvijek radi na tome hehe, i veoma je zaljubljen u anju (Pravi Golupcici) <3",
+    "ahmed": "/me [%%NAME%%] (Pl4yHaRDAhmed) Zajeban momak,voli se zezat,mlad,lijep,simpatican,i previse romantican,nekad zna da bude iznerviran, al vas sve voli najvise  <3"
 
 }
