@@ -1555,6 +1555,18 @@ API.sendChat(subChat(bBot.chat.starterhelp, {name: chat.un, link: link}));
 }
 }
 },
+eldoxCommand: {
+command: 'eldox',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.eldox, {name: chat.un}));
+}
+}
+},
 stwitterCommand: {
 command: 'stwitter',
 rank: 'user',
