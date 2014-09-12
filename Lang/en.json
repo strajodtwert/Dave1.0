@@ -40,7 +40,8 @@
     "askrank": "/me :warning: @%%NAME%%, don't ask for rank.",
     "spam": "/me :warning: @%%NAME%%, please don't spam.",
     "roomadvertising": "/me :warning: @%%NAME%%, don't post links to other rooms please.",
-    "adfly": "/me @%%NAME%%, please change your autowoot program: http://www.balkan-party.tk/autowoot.html",
+    "adfly": "/me @%%NAME%%, Please change your autowoot program: http://www.balkan-party.tk/autowoot.html",
+    "links": "/me @%%NAME%%, Please do not post links without permission.",
 
 
     "invalidtime": "/me [@%%NAME%%] Invalid time specified.",
