@@ -27,7 +27,7 @@
     "notdisconnected": "/me @%%NAME%% nije diskonektovan tokom mog boravka ovdje.",
     "noposition": "/me Zadnja pozicija nepoznata. Lista čekanja treba se ažurirati barem jednom da registrujete zadnji položaj korisnika.",
     "toolongago": "/me @%%NAME%%'s zadnje diskonektovanje (DC or leave) je bilo davno: %%TIME%%.",
-    "valid": "/me :white_check_mark: @%%NAME%% diskonektovan %%TIME%% prije i treba  biti na poziciji %%POSITION%%.",
+    "valid": "/me :white_check_mark: @%%NAME%% diskonektovan prije %%TIME%% i treba  biti na poziciji %%POSITION%%.",
 
 
     "warning1": "/me :warning: @%%NAME%%, bili ste AFk %%TIME%%, molim vas odgovorite u roku od 2 min ili ce te biti uklonjeni.",
