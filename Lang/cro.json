@@ -41,7 +41,7 @@
     "spam": "/me :warning: @%%NAME%%, Ne spamujte.",
     "roomadvertising": "/me :warning: @%%NAME%%, Ne postavljate linkove od drugih soba, molim vas.",
     "adfly": "/me @%%NAME%%, Molim vas promijenite vas autowoot program: http://www.balkan-party.tk/autowoot.html",
-    "links": "/me @%%NAME%%, Molim vas ne postavljajte link bez dozvole.",
+    "links": "/me :warning: @%%NAME%%, Molim vas ne postavljajte link bez dozvole.",
 
 
     "invalidtime": "/me [@%%NAME%%] Navedeno pogresno vrijeme.",
