@@ -28,7 +28,7 @@
 
   */
 
-// Copyright (c) 2014 <www.balkan-party.tk>
+// THIS IS EDITED VERSION OF BOT
 
 API.chatLog("[ BalkanBOT ] LAST UPDATED: 12.09.2014", true);
 
