@@ -41,7 +41,6 @@
     "spam": "/me :warning: @%%NAME%%, please don't spam.",
     "roomadvertising": "/me :warning: @%%NAME%%, don't post links to other rooms please.",
     "adfly": "/me @%%NAME%%, Please change your autowoot program: http://www.balkan-party.tk/autowoot.html",
-    "links": "/me :warning: @%%NAME%%, Please do not post links without permission.",
 
 
     "invalidtime": "/me [@%%NAME%%] Invalid time specified.",
