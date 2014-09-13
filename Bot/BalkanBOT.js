@@ -1314,24 +1314,24 @@ else return API.sendChat(subChat(bBot.chat.bouncerplusrank, {name: chat.un}));
 }
 },
 clearchatCommand: {
-command: 'clearchat',
-rank: 'manager',
-type: 'exact',
-functionality: function (chat, cmd) {
-if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-if (!bBot.commands.executable(this.rank, chat)) return void (0);
-else {
-var currentchat = $('#chat-messages').children();
-for (var i = 0; i < currentchat.length; i++) {
-for (var j = 0; j < currentchat[i].classList.length; j++) {
-if (currentchat[i].classList[j].indexOf('cid-') == 0)
-API.moderateDeleteChat(currentchat[i].classList[j].substr(4));
-}
-}
-return API.sendChat(subChat(bBot.chat.chatcleared,{name: chat.un}));
-}
-}
-},
+                command: 'clearchat',
+                rank: 'manager',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var currentchat = $('#chat-messages').children();
+                        for (var i = 0; i < currentchat.length; i++) {
+                            for (var j = 0; j < currentchat[i].classList.length; j++) {
+                                if (currentchat[i].classList[j].indexOf('cid-') == 0)
+                                    API.moderateDeleteChat(currentchat[i].classList[j].substr(4));
+                            }
+                        }
+                        return API.sendChat(subChat(bBot.chat.chatcleared,{name: chat.un}));
+                    }
+                }
+            },
 commandsCommand: {
 command: 'commands',
 rank: 'user',
