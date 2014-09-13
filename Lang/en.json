@@ -91,7 +91,7 @@
     "jointime": "/me [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
     "kickrank": "/me [@%%NAME%%] you can't kick users with an equal or higher rank than you!",
     "kick": "/me :white_check_mark: [@%%NAME%%], @%%USERNAME%% you are being kicked from the community for %%TIME%% minutes.",
-    "kill": "/me See ya soon i am going off.",
+    "kill": "/me BOT Offline.",
     "rouletteleave": "/me @%%NAME%% left the roulette!",
     "songlink": "/me :link: [@%%NAME%%] Link to current song: %%LINK%%",
     "usedlockskip": "/me :white_check_mark: [%%NAME%% used lockskip.]",
