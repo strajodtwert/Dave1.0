@@ -203,7 +203,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 14.09.2014", true);
             maximumAfk: 90,
             afkRemoval: false,
             maximumDc: 20,
-            bouncerPlus: true,
+            bouncerPlus: false,
             lockdownEnabled: false,
             lockGuard: false,
             maximumLocktime: 10,
