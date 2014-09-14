@@ -2892,4 +2892,5 @@ ratio.toFixed(2)}));
         }
     };
 
-    loadCh
+   loadChat(bBot.startup);
+    }).call(this);
