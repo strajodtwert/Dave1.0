@@ -32,7 +32,6 @@
 
 API.chatLog("[ BalkanBOT ] LAST UPDATED: 14.09.2014", true);
 
-
 (function () {
 
     var kill = function () {
