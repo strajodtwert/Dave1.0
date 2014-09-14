@@ -28,9 +28,10 @@
 
   */
 
-// THIS IS EDITED VERSION OF BasicBOT
+// THIS IS EDITED VERSION OF BOT
 
 API.chatLog("[ BalkanBOT ] LAST UPDATED: 14.09.2014", true);
+
 
 (function () {
 
@@ -210,8 +211,8 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 14.09.2014", true);
             maximumCycletime: 10,
             timeGuard: true,
             maximumSongLength: 7,
-            autodisable: false,
-            commandCooldown: 5,
+            autodisable: true,
+            commandCooldown: 30,
             usercommandsEnabled: true,
             lockskipPosition: 3,
             lockskipReasons: [
@@ -615,9 +616,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 14.09.2014", true);
                                                 songCount: 0
                                             };
                                             API.moderateRemoveDJ(id);
-                                            API.sendChat(subChat(bBot.chat.afkremove, {name: name, time: time, position: pos, maximumafk: 
-
-bBot.settings.maximumAfk}));
+                                            API.sendChat(subChat(bBot.chat.afkremove, {name: name, time: time, position: pos, maximumafk: bBot.settings.maximumAfk}));
                                         }
                                         user.afkWarningCount = 0;
                                     }
@@ -748,14 +747,10 @@ bBot.settings.maximumAfk}));
             if (typeof lastplay === 'undefined') return void (0);
             if (bBot.settings.songstats){
                 if(typeof bBot.chat.songstatistics === "undefined"){
-                    API.sendChat("/me " + lastplay.media.author + " - " + lastplay.media.title + ": " + lastplay.score.positive + "W/" + 
-
-lastplay.score.grabs + "G/" + lastplay.score.negative + "M.")
+                    API.sendChat("/me " + lastplay.media.author + " - " + lastplay.media.title + ": " + lastplay.score.positive + "W/" + lastplay.score.grabs + "G/" + lastplay.score.negative + "M.")
                 }
                 else{
-                    API.sendChat(subChat(bBot.chat.songstatistics, {artist: lastplay.media.author, title: lastplay.media.title, woots: 
-
-lastplay.score.positive, grabs: lastplay.score.grabs, mehs: lastplay.score.negative}))
+                    API.sendChat(subChat(bBot.chat.songstatistics, {artist: lastplay.media.author, title: lastplay.media.title, woots: lastplay.score.positive, grabs: lastplay.score.grabs, mehs: lastplay.score.negative}))
                 }
             }
             bBot.room.roomstats.totalWoots += lastplay.score.positive;
@@ -770,9 +765,7 @@ lastplay.score.positive, grabs: lastplay.score.grabs, mehs: lastplay.score.negat
                     var firstPlayed = bBot.room.historyList[i][1];
                     var plays = bBot.room.historyList[i].length - 1;
                     var lastPlayed = bBot.room.historyList[i][plays];
-                    API.sendChat(subChat(bBot.chat.songknown, {plays: plays, timetotal: bBot.roomUtilities.msToStr(Date.now() - firstPlayed), 
-
-lasttime: bBot.roomUtilities.msToStr(Date.now() - lastPlayed)}));
+                    API.sendChat(subChat(bBot.chat.songknown, {plays: plays, timetotal: bBot.roomUtilities.msToStr(Date.now() - firstPlayed), lasttime: bBot.roomUtilities.msToStr(Date.now() - lastPlayed)}));
                     bBot.room.historyList[i].push(+new Date());
                     alreadyPlayed = true;
                 }
@@ -843,9 +836,7 @@ lasttime: bBot.roomUtilities.msToStr(Date.now() - lastPlayed)}));
             var containsLetters = false;
             for (var i = 0; i < msg.length; i++) {
                 ch = msg.charAt(i);
-                if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || (ch >= '0' && ch <= '9') || ch === ':' || ch === '^') 
-
-containsLetters = true;
+                if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || (ch >= '0' && ch <= '9') || ch === ':' || ch === '^') containsLetters = true;
             }
             if (msg === '') {
                 return true;
@@ -913,9 +904,7 @@ containsLetters = true;
                     API.sendChat(subChat(bBot.chat.adfly, {name: chat.un}));
                     return true;
                 }
-                if (msg.indexOf('autojoin was not enabled') > 0 || msg.indexOf('AFK message was not enabled') > 0 || msg.indexOf('!
-
-afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin disabled') > 0 || msg.indexOf('AFK message disabled') > 0) {
+                if (msg.indexOf('autojoin was not enabled') > 0 || msg.indexOf('AFK message was not enabled') > 0 || msg.indexOf('!afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin disabled') > 0 || msg.indexOf('AFK message disabled') > 0) {
                     API.moderateDeleteChat(chat.cid);
                     return true;
                 }
@@ -1009,9 +998,7 @@ afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin dis
             spam: [
                 'hueh', 'hu3', 'brbr', 'heu', 'brbr', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
                 'zueria', 'aehoo', 'aheu', 'alguem', 'algum', 'brazil', 'zoeira', 'fuckadmins', 'affff', 'vaisefoder', 'huenaarea',
-                'hitler', 'ashua', 'ahsu', 'ashau', 'lulz', 'huehue', 'hue', 'huehuehue', 'merda', 'pqp', 'puta', 'mulher', 'pula', 
-
-'retarda', 'caralho', 'filha', 'ppk',
+                'hitler', 'ashua', 'ahsu', 'ashau', 'lulz', 'huehue', 'hue', 'huehuehue', 'merda', 'pqp', 'puta', 'mulher', 'pula', 'retarda', 'caralho', 'filha', 'ppk',
                 'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
             ],
             curses: [
@@ -1489,9 +1476,7 @@ afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin dis
                                 return API.sendChat(subChat(bBot.chat.selfcookie, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(bBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: 
-
-this.getCookie()}));
+                                return API.sendChat(subChat(bBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
                             }
                         }
                     }
@@ -2594,12 +2579,8 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                         var name2 = msg.substring(lastSpace + 2);
                         var user1 = bBot.userUtilities.lookupUserName(name1);
                         var user2 = bBot.userUtilities.lookupUserName(name2);
-                        if (typeof user1 === 'boolean' || typeof user2 === 'boolean') return API.sendChat(subChat(bBot.chat.swapinvalid, 
-
-{name: chat.un}));
-                        if (user1.id === bBot.loggedInID || user2.id === bBot.loggedInID) return API.sendChat(subChat
-
-(bBot.chat.addbottowaitlist, {name: chat.un}));
+                        if (typeof user1 === 'boolean' || typeof user2 === 'boolean') return API.sendChat(subChat(bBot.chat.swapinvalid, {name: chat.un}));
+                        if (user1.id === bBot.loggedInID || user2.id === bBot.loggedInID) return API.sendChat(subChat(bBot.chat.addbottowaitlist, {name: chat.un}));
                         var p1 = API.getWaitListPosition(user1.id) +1;
                         var p2 = API.getWaitListPosition(user2.id) +1;
                         if (p1 < 0 || p2 < 0) return API.sendChat(subChat(bBot.chat.swapwlonly, {name: chat.un}));
@@ -2835,9 +2816,7 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                         if (user === false) return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
                         var vratio = user.votes;
                         var ratio = vratio.woot / vratio.meh;
-                        API.sendChat(subChat(bBot.chat.voteratio, {name: chat.un, username: name, woot: vratio.woot, mehs: vratio.meh, ratio: 
-
-ratio.toFixed(2)}));
+                        API.sendChat(subChat(bBot.chat.voteratio, {name: chat.un, username: name, woot: vratio.woot, mehs: vratio.meh, ratio: ratio.toFixed(2)}));
                     }
                 }
             },
@@ -2892,5 +2871,5 @@ ratio.toFixed(2)}));
         }
     };
 
-   loadChat(bBot.startup);
-    }).call(this);
+    loadChat(bBot.startup);
+}).call(this);
