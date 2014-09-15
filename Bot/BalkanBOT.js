@@ -1487,7 +1487,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 14.09.2014", true);
                 command: 'gift',
                 rank: 'user',
                 type: 'startsWith',
-                cookies: ['has given you a red rose, who knows maybe he likes you <3',
+                cookies: ['has given you a red rose, who knows maybe he/she likes you <3',
                           'think you are awesome person, give him a kiss.'
                 ],
                 getCookie: function () {
