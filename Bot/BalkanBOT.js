@@ -1490,7 +1490,8 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                 cookies: ['has given you a red rose, who knows maybe he/she likes you <3',
                           'think you are awesome person, give him a kiss.',
                           'wants to marry you, please say yes.',
-                          'is in love with you, what about you?'
+                          'is in love with you, what about you?',
+                          'think you are a beautiful person, what you think about him/her?'
                 ],
                 getCookie: function () {
                     var c = Math.floor(Math.random() * this.cookies.length);
