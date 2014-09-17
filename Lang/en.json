@@ -90,7 +90,7 @@
     "jointime": "/me [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
     "kickrank": "/me [@%%NAME%%] you can't kick users with an equal or higher rank than you!",
     "kick": "/me :white_check_mark: [@%%NAME%%], @%%USERNAME%% you are being kicked from the community for %%TIME%% minutes.",
-    "kill": "/me BOT Offline.",
+    "kill": "/me See ya Mode: Offline",
     "rouletteleave": "/me @%%NAME%% left the roulette!",
     "songlink": "/me :link: [@%%NAME%%] Link to current song: %%LINK%%",
     "usedlockskip": "/me :white_check_mark: [%%NAME%% used lockskip.]",
@@ -148,6 +148,7 @@
     "selfgift": "/me @%%NAME%%, blah, dont do that its not nice.",
     "gift": "/me @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%",
     "vlajko": "/me [%%NAME%%] (ⓋŁ₳ƴᶄǾ🎧) Fina osoba, lijep, pametan ali steta sto ima veliku glavu :D",
-    "huliganka": "/me [%%NAME%%] (Huliganka) Dusa od covijeka, nekad puno zajebaje ali ne smeta to nama ipak je ona huligan, (takodje pervezna i malo retardirana <3)"
+    "huliganka": "/me [%%NAME%%] (Huliganka) Dusa od covijeka, nekad puno zajebaje ali ne smeta to nama ipak je ona huligan, (takodje pervezna i malo retardirana <3)",
+    "taca": "/me [%%NAME%%] (Tacaaa_voli_sebe) Voli da se svadja, ne odustaje tako lahko, jedna od njenih jacih strana, mozemo reci da je carica :trollface:"
 
 }
