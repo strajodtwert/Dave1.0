@@ -1730,6 +1730,18 @@ API.sendChat(subChat(bBot.chat.ask, {name: chat.un, link: link}));
 }
 }
 },
+vlajkoCommand: {
+command: 'vlajko',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.vlajko, {name: chat.un}));
+}
+}
+},
 masickaCommand: {
 command: 'masicka',
 rank: 'user',
