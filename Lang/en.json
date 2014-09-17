@@ -146,6 +146,7 @@
     "bgift": "/me I am awesome i know  :D",
     "nouser": "/em doesn't see %%NAME%% in room and he takes the gift for himself",
     "selfgift": "/me @%%NAME%%, blah, dont do that its not nice.",
-    "gift": "/me @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%"
+    "gift": "/me @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%",
+    "vlajko": "/me [%%NAME%%] (ⓋŁ₳ƴᶄǾ🎧) Fina osoba, lijep, pametan ali steta sto ima veliku glavu :D"
 
 }
