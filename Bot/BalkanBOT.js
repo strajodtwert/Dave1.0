@@ -2616,11 +2616,6 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                         else msg += 'OFF';
                         msg += '. ';
 
-                        msg += bBot.chat.cycleguard + ': ';
-                        if (bBot.settings.cycleGuard) msg += 'ON';
-                        else msg += 'OFF';
-                        msg += '. ';
-
                         msg += bBot.chat.timeguard + ': ';
                         if (bBot.settings.timeGuard) msg += 'ON';
                         else msg += 'OFF';
