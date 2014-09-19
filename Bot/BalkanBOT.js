@@ -1398,7 +1398,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
 
             clearchatCommand: {
                 command: 'clearchat',
-                rank: 'manager',
+                rank: 'mod',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
