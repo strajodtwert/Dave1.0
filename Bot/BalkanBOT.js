@@ -30,7 +30,7 @@
 
 // THIS IS EDITED VERSION OF BOT
 
-API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
+API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
 
 
 (function () {
@@ -247,7 +247,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
             website: "http://www.balkan-party.tk",
             intervalMessages: [],
             messageInterval: 5,
-            songstats: true,
+            songstats: false,
             commandLiteral: "!",
             blacklists: {
                 NSFW: "https://rawgit.com/Yemasthui/bBot-customization/master/blacklists/ExampleNSFWlist.json",
