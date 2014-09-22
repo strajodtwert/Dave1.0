@@ -73,7 +73,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
             var link = bBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
-                link = langIndex[.settings.language.toLowerCase()];
+                link = langIndex[bBot.settings.language.toLowerCase()];
                 if (bBot.settings.chatLink !== bBot.chatLink) {
                     link = bBot.settings.chatLink;
                 }
