@@ -46,6 +46,7 @@
 
     "invalidtime": "/me [@%%NAME%%] Invalid time specified.",
     "nouserspecified": "/me [@%%NAME%%] No user specified.",
+    "nolistspecified": "/me [@%%NAME%%] No list specified.",
     "invaliduserspecified": "/me [@%%NAME%%] Invalid user specified.",
     "novaliduserspecified": "/me [@%%NAME%%] No valid user specified.",
     "nolimitspecified": "/me [@%%NAME%%] No limit specified.",
