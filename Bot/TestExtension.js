@@ -30,7 +30,7 @@
 
 // THIS IS EDITED VERSION OF BOT
 
-API.chatLog("[ BalkanBOT ] LAST UPDATED: 14.09.2014", true);
+API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
 
 
 (function () {
@@ -189,7 +189,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 14.09.2014", true);
         version: "2.2.1",
         status: false,
         name: "bBot",
-        loggedInID: null,
+        loggedInID: "3625731",
         scriptLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Bot/BalkanBOT.js",
         cmdLink: "http://www.balkan-party.tk/bbot.html",
         chatLink: "https://github.com/MrAjdin/BalkanBot/blob/master/Lang/en.json",
@@ -1398,7 +1398,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 14.09.2014", true);
 
             clearchatCommand: {
                 command: 'clearchat',
-                rank: 'manager',
+                rank: 'mod',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1482,13 +1482,16 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 14.09.2014", true);
                     }
                 }
             },
-            
+
             giftCommand: {
-                command: 'gif',
+                command: 'gift',
                 rank: 'user',
                 type: 'startsWith',
-                cookies: ['has given you a red rose, who knows maybe he likes you <3',
-                          'think you are awesome person, give him a kiss.'
+                cookies: ['has given you a red rose, who knows maybe he/she likes you <3',
+                          'think you are awesome person, give him a kiss.',
+                          'wants to marry you, please say yes.',
+                          'is in love with you, what about you?',
+                          'think you are a beautiful person, what you think about him/her?'
                 ],
                 getCookie: function () {
                     var c = Math.floor(Math.random() * this.cookies.length);
@@ -1521,7 +1524,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 14.09.2014", true);
                     }
                 }
             },
-
+            
             cycleCommand: {
                 command: 'cycle',
                 rank: 'manager',
@@ -1724,6 +1727,42 @@ if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
 var link = "http://ask.fm/BalkanParty12";
 API.sendChat(subChat(bBot.chat.ask, {name: chat.un, link: link}));
+}
+}
+},
+tacaCommand: {
+command: 'taca',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.taca, {name: chat.un}));
+}
+}
+},
+huligankaCommand: {
+command: 'huliganka',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.huliganka, {name: chat.un}));
+}
+}
+},
+vlajkoCommand: {
+command: 'vlajko',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.vlajko, {name: chat.un}));
 }
 }
 },
@@ -2574,11 +2613,6 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
 
                         msg += bBot.chat.lockguard + ': ';
                         if (bBot.settings.lockGuard) msg += 'ON';
-                        else msg += 'OFF';
-                        msg += '. ';
-
-                        msg += bBot.chat.cycleguard + ': ';
-                        if (bBot.settings.cycleGuard) msg += 'ON';
                         else msg += 'OFF';
                         msg += '. ';
 
