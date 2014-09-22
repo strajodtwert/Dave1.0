@@ -3018,7 +3018,7 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                         }
                         else {
                             bBot.settings.welcome = !bBot.settings.welcome;
-                            return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.welcomemsg}));
+                            return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.welcomemsg}));
                         }
                     }
                 }
