@@ -1682,7 +1682,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
             },
 
             deletechatCommand: {
-                command: 'deletechat',
+                command: 'delchat',
                 rank: 'mod',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
