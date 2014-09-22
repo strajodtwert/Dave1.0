@@ -1,13 +1,24 @@
 {
     "1":{
+        "title": "Wiggle",
+        "author": "Jason Derulo feat. Snoop Dogg",
         "mid": "1:OPsongID1"
     },
     "2":{
-        "title": "This is a OP song",
-        "author": "The OP band",
+        "title": "Kazu",
+        "author": "Dubioza Kolektiv ",
         "mid": "1:OPsongID2"
     },
     "3":{
+        "title": "Ne Koci",
+        "author": "Elitni Odredi",
         "mid": "1:OPsongID3"
     }
-}
+},
+     "3":{
+        "title": "Ne Koci",
+        "author": "Elitni Odredi",
+        "mid": "1:OPsongID3"
+    }
+},
+
