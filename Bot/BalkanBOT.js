@@ -250,8 +250,8 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
             songstats: false,
             commandLiteral: "!",
             blacklists: {
-                NSFW: "https://rawgit.com/Yemasthui/bBot-customization/master/blacklists/ExampleNSFWlist.json",
-                OP: "https://rawgit.com/Yemasthui/bBot-customization/master/blacklists/ExampleOPlist.json"
+                NSFW: "https://rawgit.com/MrAjdin/BalkanBot/master/blackList/NSFW.json",
+                OP: "https://rawgit.com/MrAjdin/BalkanBot/master/blackList/OP.json"
             }
         },
         room: {
