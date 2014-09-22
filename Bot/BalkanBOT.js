@@ -1194,10 +1194,6 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
             bBot.status = true;
             API.sendChat('/cap 1');
             API.setVolume(0);
-            var emojibutton = $(".icon-emoji-on");
-            if (emojibutton.length > 0) {
-                emojibutton[0].click();
-            }
             loadChat(API.sendChat(subChat(bBot.chat.online, {botname: bBot.settings.botName, version: bBot.version})));
         },
         commands: {
