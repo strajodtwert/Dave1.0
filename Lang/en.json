@@ -16,7 +16,7 @@
     "isblacklisted": "/me This track is on the %%BLACKLIST%% blacklist!",
 
 
-    "isopen": "/me :white_check_mark: The roulette is now open! Type !join to participate!",
+    "isopen": "/me :white_check_mark: The roulette is now open! Typestwitt !join to participate!",
     "winnerpicked": "/me :white_check_mark: A winner has been picked! @%%NAME%% to position %%POSITION%%.",
 
 
@@ -132,7 +132,7 @@
     "voteratio": "/me [@%%NAME%%] @%%USERNAME%% ~ woots: ' + %%WOOT%% + ', mehs: %%MEHS%%, ratio (w/m): %%RATIO%%.",
     "website": "/me Please visit our website: %%LINK%%",
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
-    "stwitter": "/me [%%NAME%%] Selma twitter: %%LINK%%.",
+    "stumblr": "/me [%%NAME%%] Selma tumblr: %%LINK%%.",
     "ask": "/me [%%NAME%%] Feel free to ask us here: %%LINK%%.",
     "eldox": "/me [%%NAME%%] (EldoX) Lep,voli da pomaže. Nekad prevše smara. Ali uglavnom je Fin. :D",
     "selma": "/me [%%NAME%%] (Selma) Najljepsa djevojka, veoma je pametna i voli da se sali. :sparkling_heart:",
