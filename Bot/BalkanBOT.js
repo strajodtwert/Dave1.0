@@ -1808,16 +1808,16 @@ API.sendChat(subChat(bBot.chat.eldox, {name: chat.un}));
 }
 }
 },
-stwitterCommand: {
-command: 'stwitter',
+stumblrCommand: {
+command: 'stumblr',
 rank: 'user',
 type: 'exact',
 functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-var link = "https://twitter.com/Selmaa000";
-API.sendChat(subChat(bBot.chat.stwitter, {name: chat.un, link: link}));
+var link = "http://name-is-already-taken.tumblr.com/";
+API.sendChat(subChat(bBot.chat.stumblr, {name: chat.un, link: link}));
 }
 }
 },
