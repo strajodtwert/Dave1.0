@@ -198,7 +198,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
         name: "BalkanBOT",
         loggedInID: null,
         scriptLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Bot/BalkanBOT.js",
-        cmdLink: "http://www.balkan-party.tk/bbot.html",
+        cmdLink: "http://www.balkan-party.cf/bbot.html",
         chatLink: "https://github.com/MrAjdin/BalkanBot/blob/master/Lang/en.json",
         chat: null,
         loadChat: loadChat,
@@ -239,12 +239,12 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
             filterChat: true,
             etaRestriction: false,
             welcome: true,
-            opLink: "http://www.balkan-party.tk/blacklist.html",
-            rulesLink: "http://www.balkan-party.tk/rules.html",
+            opLink: "http://www.balkan-party.cf/blacklist.html",
+            rulesLink: "http://www.balkan-party.cf/blacklist.html",
             themeLink: null,
             fbLink: "http://goo.gl/jrv1Js",
             youtubeLink: null,
-            website: "http://www.balkan-party.tk",
+            website: "http://www.balkan-party.cf/",
             intervalMessages: [],
             messageInterval: 5,
             songstats: false,
@@ -1790,7 +1790,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        var link = "http://www.balkan-party.tk/tutorijali.html";
+                        var link = "http://www.balkan-party.cf/tutorijali.html";
                         API.sendChat(subChat(bBot.chat.starterhelp, {name: chat.un, link: link}));
                     }
                 }
