@@ -2140,7 +2140,7 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
             },
 
             killCommand: {
-                command: 'kill',
+                command: 'stop',
                 rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
