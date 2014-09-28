@@ -1799,7 +1799,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         if (typeof bBot.settings.fbLink === "string")
-                            API.sendChat(subChat(bBot.chat.facebook, {link: bBot.settings.fbLink}));
+                            API.sendChat(subChat(bBot.chat.facebook, {name: chat.un, link: bBot.settings.fbLink}));
                     }
                 }
             },
