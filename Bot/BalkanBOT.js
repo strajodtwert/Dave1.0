@@ -240,7 +240,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
             etaRestriction: false,
             welcome: true,
             opLink: "http://www.balkan-party.cf/blacklist.html",
-            rulesLink: "http://www.balkan-party.cf/blacklist.html",
+            rulesLink: "http://www.balkan-party.cf/rules.html",
             themeLink: null,
             fbLink: "http://goo.gl/jrv1Js",
             youtubeLink: null,
@@ -834,7 +834,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
             var mid = obj.media.format + ':' + obj.media.cid;
             for (var bl in bBot.room.blacklists) {
                 if (bBot.room.blacklists[bl].indexOf(mid) > -1) {
-                    API.sendChat(subChat(bBot.chat.isblacklisted, {blacklist: bl}));
+                    API.sendChat(subChat(bBot.chat.isblacklisted, {blacklist: bl, author: media.author, title: media.titl}));
                     return API.moderateForceSkip();
                 }
             }
