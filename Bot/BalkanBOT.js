@@ -834,7 +834,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
             var mid = obj.media.format + ':' + obj.media.cid;
             for (var bl in bBot.room.blacklists) {
                 if (bBot.room.blacklists[bl].indexOf(mid) > -1) {
-                    API.sendChat(subChat(bBot.chat.isblacklisted, {blacklist: bl, author: media.author, title: media.titl}));
+                    API.sendChat(subChat(bBot.chat.isblacklisted, {blacklist: bl, author: media.author, title: media.title}));
                     return API.moderateForceSkip();
                 }
             }
