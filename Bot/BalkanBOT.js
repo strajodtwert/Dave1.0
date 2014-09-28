@@ -939,6 +939,10 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
                 API.sendChat(subChat(bBot.chat.askskip, {name: chat.un}));
                 return true;
             }
+            if (msg === 'http://prntscr.com/4ofugq') {
+                API.sendChat(subChat(bBot.chat.image, {name: chat.un}));
+                return true;
+            }
             for (var j = 0; j < bBot.chatUtilities.spam.length; j++) {
                 if (msg === bBot.chatUtilities.spam[j]) {
                     API.sendChat(subChat(bBot.chat.spam, {name: chat.un}));
