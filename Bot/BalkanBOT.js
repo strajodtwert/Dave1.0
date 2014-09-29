@@ -30,7 +30,7 @@
 
 // THIS IS EDITED VERSION OF BOT
 
-API.chatLog("[ BalkanBOT ] LAST UPDATED: 22.09.2014", true);
+API.chatLog("[ BalkanBOT ] LAST UPDATED: 29.09.2014", true);
 
 
 (function () {
