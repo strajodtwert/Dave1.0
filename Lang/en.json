@@ -43,6 +43,7 @@
     "adfly": "/me @%%NAME%%, Please change your autowoot program: http://www.balkan-party.tk/autowoot.html",
 
 
+    "songunban": "/me [@%%NAME%%] Fill this form and we will try: http://www.balkan-party.cf/unban.html",
     "invalidtime": "/me [@%%NAME%%] Invalid time specified.",
     "nouserspecified": "/me [@%%NAME%%] No user specified.",
     "nolistspecified": "/me [@%%NAME%%] No list specified.",
