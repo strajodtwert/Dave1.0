@@ -30,7 +30,7 @@
 
 // THIS IS EDITED VERSION OF BOT
 
-API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
+API.chatLog("[ BalkanBOT ] LAST UPDATED: 29.09.2014", true);
 
 
 (function () {
@@ -53,41 +53,47 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
 
     };
 
-    var subChat = function(chat, obj){
+    var subChat = function (chat, obj) {
+        if (typeof chat === "undefined") {
+            API.chatLog("There is a chat text missing.");
+            console.log("There is a chat text missing.");
+            return "[Error] No text message found.";
+        }
         var lit = '%%';
-        for(var prop in obj){
+        for (var prop in obj) {
             chat = chat.replace(lit + prop.toUpperCase() + lit, obj[prop]);
         }
         return chat;
     };
 
-    var loadChat = function(cb){
-        if(!cb) cb = function(){};
-        $.get("https://rawgit.com/MrAjdin/BalkanBot/master/Lang/langIndex.json", function(json){
+    var loadChat = function (cb) {
+        if (!cb) cb = function () {
+        };
+        $.get("https://rawgit.com/MrAjdin/BalkanBot/master/Lang/langIndex.json", function (json) {
             var link = bBot.chatLink;
-            if(json !== null && typeof json !== "undefined"){
+            if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
                 link = langIndex[bBot.settings.language.toLowerCase()];
-                if(bBot.settings.chatLink !== bBot.chatLink){
+                if (bBot.settings.chatLink !== bBot.chatLink) {
                     link = bBot.settings.chatLink;
                 }
-                else{
-                    if(typeof link === "undefined"){
+                else {
+                    if (typeof link === "undefined") {
                         link = bBot.chatLink;
                     }
                 }
                 $.get(link, function (json) {
                     if (json !== null && typeof json !== "undefined") {
-                        if(typeof json === "string") json = JSON.parse(json);
+                        if (typeof json === "string") json = JSON.parse(json);
                         bBot.chat = json;
                         cb();
                     }
                 });
             }
-            else{
+            else {
                 $.get(bBot.chatLink, function (json) {
                     if (json !== null && typeof json !== "undefined") {
-                        if(typeof json === "string") json = JSON.parse(json);
+                        if (typeof json === "string") json = JSON.parse(json);
                         bBot.chat = json;
                         cb();
                     }
@@ -96,9 +102,9 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
         });
     };
 
-    var retrieveSettings = function(){
+    var retrieveSettings = function () {
         var settings = JSON.parse(localStorage.getItem("bBotsettings"));
-        if(settings !== null){
+        if (settings !== null) {
             for (var prop in settings) {
                 bBot.settings[prop] = settings[prop];
             }
@@ -125,6 +131,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                 bBot.room.roomstats = room.roomstats;
                 bBot.room.messages = room.messages;
                 bBot.room.queue = room.queue;
+                bBot.room.newBlacklisted = room.newBlacklisted;
                 API.chatLog(bBot.chat.datarestored);
             }
         }
@@ -151,16 +158,16 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
 
     };
 
-    String.prototype.splitBetween = function(a, b){
+    String.prototype.splitBetween = function (a, b) {
         var self = this;
         self = this.split(a);
-        for(var i = 0; i < self.length; i++){
+        for (var i = 0; i < self.length; i++) {
             self[i] = self[i].split(b);
         }
         var arr = [];
-        for(var i = 0; i < self.length; i++){
-            if(Array.isArray(self[i])){
-                for(var j = 0; j < self[i].length; j++){
+        for (var i = 0; i < self.length; i++) {
+            if (Array.isArray(self[i])) {
+                for (var j = 0; j < self[i].length; j++) {
                     arr.push(self[i][j]);
                 }
             }
@@ -169,14 +176,14 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
         return arr;
     };
 
-    var linkFixer = function(msg){
+    var linkFixer = function (msg) {
         var parts = msg.splitBetween('<a href="', '<\/a>');
-        for(var i = 1; i < parts.length; i = i+2){
+        for (var i = 1; i < parts.length; i = i + 2) {
             var link = parts[i].split('"')[0];
             parts[i] = link;
         }
         var m = '';
-        for(var i = 0; i < parts.length; i++){
+        for (var i = 0; i < parts.length; i++) {
             m += parts[i];
         }
         return m;
@@ -188,10 +195,10 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
     var bBot = {
         version: "2.2.1",
         status: false,
-        name: "bBot",
+        name: "BalkanBOT",
         loggedInID: "3625731",
         scriptLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Bot/BalkanBOT.js",
-        cmdLink: "http://www.balkan-party.tk/bbot.html",
+        cmdLink: "http://www.balkan-party.cf/bbot.html",
         chatLink: "https://github.com/MrAjdin/BalkanBot/blob/master/Lang/en.json",
         chat: null,
         loadChat: loadChat,
@@ -205,7 +212,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
             maximumDc: 20,
             bouncerPlus: false,
             lockdownEnabled: false,
-            lockGuard: false,
+            lockGuard: true,
             maximumLocktime: 10,
             cycleGuard: true,
             maximumCycletime: 10,
@@ -232,16 +239,20 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
             filterChat: true,
             etaRestriction: false,
             welcome: true,
-            opLink: "http://www.balkan-party.tk/blacklist.html",
-            rulesLink: "http://www.balkan-party.tk/rules.html",
+            opLink: "http://www.balkan-party.cf/blacklist.html",
+            rulesLink: "http://www.balkan-party.cf/rules.html",
             themeLink: null,
             fbLink: "http://goo.gl/jrv1Js",
             youtubeLink: null,
-            website: "http://www.balkan-party.tk",
+            website: "http://www.balkan-party.cf/",
             intervalMessages: [],
             messageInterval: 5,
             songstats: false,
-            commandLiteral: "!"
+            commandLiteral: "!",
+            blacklists: {
+                NSFW: "https://rawgit.com/MrAjdin/BalkanBot/master/blackList/NSFW.json",
+                OP: "https://rawgit.com/MrAjdin/BalkanBot/master/blackList/OP.json"
+            }
         },
         room: {
             users: [],
@@ -285,6 +296,11 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                 id: [],
                 position: []
             },
+            blacklists: {
+
+            },
+            newBlacklisted: [],
+            newBlacklistedSongFunction: null,
             roulette: {
                 rouletteStatus: false,
                 participants: [],
@@ -391,7 +407,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                 var u;
                 if (typeof obj === "object") u = obj;
                 else u = API.getUser(obj);
-                if(botCreatorIDs.indexOf(u.id) > -1) return 10;
+                if (botCreatorIDs.indexOf(u.id) > -1) return 10;
                 if (u.gRole < 2) return u.role;
                 else {
                     switch (u.gRole) {
@@ -657,6 +673,61 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                     }
                     API.sendChat('/me ' + msg);
                 }
+            },
+            updateBlacklists: function () {
+                for (var bl in bBot.settings.blacklists) {
+                    bBot.room.blacklists[bl] = [];
+                    if (typeof bBot.settings.blacklists[bl] === 'function') {
+                        bBot.room.blacklists[bl] = bBot.settings.blacklists();
+                    }
+                    else if (typeof bBot.settings.blacklists[bl] === 'string') {
+                        if (bBot.settings.blacklists[bl] === '') {
+                            continue;
+                        }
+                        try {
+                            (function(l){
+                                $.get(bBot.settings.blacklists[l], function (data) {
+                                    if (typeof data === 'string') {
+                                        data = JSON.parse(data);
+                                    }
+                                    var list = [];
+                                    for (var prop in data) {
+                                        if(typeof data[prop].mid !== 'undefined'){
+                                            list.push(data[prop].mid);
+                                        }
+                                    }
+                                    bBot.room.blacklists[l] = list;
+                                })
+                            })(bl);
+                        }
+                        catch (e) {
+                            API.chatLog('Error setting' + bl + 'blacklist.');
+                            console.log('Error setting' + bl + 'blacklist.');
+                            console.log(e);
+                        }
+                    }
+                }
+            },
+            logNewBlacklistedSongs: function () {
+                if (typeof console.table !== 'undefined') {
+                    console.table(bBot.room.newBlacklisted);
+                }
+                else {
+                    console.log(bBot.room.newBlacklisted);
+                }
+            },
+            exportNewBlacklistedSongs: function () {
+                var list = {};
+                for (var i = 0; i < bBot.room.newBlacklisted.length; i++) {
+                    var track = bBot.room.newBlacklisted[i];
+                    list[track.list] = [];
+                    list[track.list].push({
+                        title: track.title,
+                        author: track.author,
+                        mid: track.mid
+                    });
+                }
+                return list;
             }
         },
         eventChat: function (chat) {
@@ -709,7 +780,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                     setTimeout(function (user) {
                         API.sendChat(subChat(bBot.chat.welcomeback, {name: user.username}));
                     }, 1 * 1000, user)
-                :
+                    :
                     setTimeout(function (user) {
                         API.sendChat(subChat(bBot.chat.welcome, {name: user.username}));
                     }, 1 * 1000, user);
@@ -745,11 +816,11 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
         eventDjadvance: function (obj) {
             var lastplay = obj.lastPlay;
             if (typeof lastplay === 'undefined') return void (0);
-            if (bBot.settings.songstats){
-                if(typeof bBot.chat.songstatistics === "undefined"){
+            if (bBot.settings.songstats) {
+                if (typeof bBot.chat.songstatistics === "undefined") {
                     API.sendChat("/me " + lastplay.media.author + " - " + lastplay.media.title + ": " + lastplay.score.positive + "W/" + lastplay.score.grabs + "G/" + lastplay.score.negative + "M.")
                 }
-                else{
+                else {
                     API.sendChat(subChat(bBot.chat.songstatistics, {artist: lastplay.media.author, title: lastplay.media.title, woots: lastplay.score.positive, grabs: lastplay.score.grabs, mehs: lastplay.score.negative}))
                 }
             }
@@ -759,6 +830,15 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
             bBot.room.roomstats.songCount++;
             bBot.roomUtilities.intervalMessage();
             bBot.room.currentDJID = obj.dj.id;
+
+            var mid = obj.media.format + ':' + obj.media.cid;
+            for (var bl in bBot.room.blacklists) {
+                if (bBot.room.blacklists[bl].indexOf(mid) > -1) {
+                    API.sendChat(subChat(bBot.chat.isblacklisted, {blacklist: bl}));
+                    return API.moderateForceSkip();
+                }
+            }
+
             var alreadyPlayed = false;
             for (var i = 0; i < bBot.room.historyList.length; i++) {
                 if (bBot.room.historyList[i][0] === obj.media.cid) {
@@ -776,7 +856,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
             var newMedia = obj.media;
             if (bBot.settings.timeGuard && newMedia.duration > bBot.settings.maximumSongLength * 60 && !bBot.room.roomevent) {
                 var name = obj.dj.username;
-                API.sendChat(subChat(chat.timelimit, {name: name, maxlength: bBot.settings.maximumSongLength}));
+                API.sendChat(subChat(bBot.chat.timelimit, {name: name, maxlength: bBot.settings.maximumSongLength}));
                 API.moderateForceSkip();
             }
             var user = bBot.userUtilities.lookupUser(obj.dj.id);
@@ -791,10 +871,11 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
             };
             clearTimeout(bBot.room.autoskipTimer);
             if (bBot.room.autoskip) {
-                var remaining = media.duration * 1000;
+                var remaining = obj.media.duration * 1000;
                 bBot.room.autoskipTimer = setTimeout(function () {
+                    console.log("Skipping track.");
                     API.moderateForceSkip();
-                }, remaining - 500);
+                }, remaining + 1000);
             }
             storeToStorage();
 
@@ -890,8 +971,8 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                     return true;
                 }
                 /**
-                var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-                if (plugRoomLinkPatt.exec(msg)) {
+                 var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                 if (plugRoomLinkPatt.exec(msg)) {
                     if (perm === 0) {
                         API.sendChat(subChat(bBot.chat.roomadvertising, {name: chat.un}));
                         API.moderateDeleteChat(chat.cid);
@@ -913,11 +994,11 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                 var rlLeaveChat = bBot.chat.rouletteleave;
 
                 var joinedroulette = rlJoinChat.split('%%NAME%%');
-                if(joinedroulette[1].length > joinedroulette[0].length) joinedroulette = joinedroulette[1];
+                if (joinedroulette[1].length > joinedroulette[0].length) joinedroulette = joinedroulette[1];
                 else joinedroulette = joinedroulette[0];
 
                 var leftroulette = rlLeaveChat.split('%%NAME%%');
-                if(leftroulette[1].length > leftroulette[0].length) leftroulette = leftroulette[1];
+                if (leftroulette[1].length > leftroulette[0].length) leftroulette = leftroulette[1];
                 else leftroulette = leftroulette[0];
 
                 if ((msg.indexOf(joinedroulette) > -1 || msg.indexOf(leftroulette) > -1) && chat.uid === bBot.loggedInID) {
@@ -958,8 +1039,10 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
 
                 for (var comm in bBot.commands) {
                     var cmdCall = bBot.commands[comm].command;
-                    if(!Array.isArray(cmdCall)){cmdCall = [cmdCall]}
-                    for(var i = 0; i < cmdCall.length; i++){
+                    if (!Array.isArray(cmdCall)) {
+                        cmdCall = [cmdCall]
+                    }
+                    for (var i = 0; i < cmdCall.length; i++) {
                         if (bBot.settings.commandLiteral + cmdCall[i] === cmd) {
                             bBot.commands[comm].functionality(chat, bBot.settings.commandLiteral + cmdCall[i]);
                             executed = true;
@@ -1056,18 +1139,24 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
             API.off(API.HISTORY_UPDATE, this.proxy.eventHistoryupdate);
         },
         startup: function () {
+            Function.prototype.toString = function(){return 'Function.'};
             var u = API.getUser();
             if (bBot.userUtilities.getPermission(u) < 2) return API.chatLog(bBot.chat.greyuser);
             if (bBot.userUtilities.getPermission(u) === 2) API.chatLog(bBot.chat.bouncer);
             bBot.connectAPI();
-            API.moderateDeleteChat = function(cid){
+            API.moderateDeleteChat = function (cid) {
                 $.ajax({
-                    url: "https://plug.dj/_/chat/"+cid,
+                    url: "https://plug.dj/_/chat/" + cid,
                     type: "DELETE"
                 })
             };
             retrieveSettings();
             retrieveFromStorage();
+            window.bot = bBot;
+            bBot.roomUtilities.updateBlacklists();
+            setInterval(bBot.roomUtilities.updateBlacklists, 60*60*1000);
+            bBot.getNewBlacklistedSongs = bBot.roomUtilities.exportNewBlacklistedSongs;
+            bBot.logNewBlacklistedSongs = bBot.roomUtilities.logNewBlacklistedSongs;
             if (bBot.room.roomstats.launchTime === null) {
                 bBot.room.roomstats.launchTime = Date.now();
             }
@@ -1106,7 +1195,6 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
             API.sendChat('/cap 1');
             API.setVolume(0);
             loadChat(API.sendChat(subChat(bBot.chat.online, {botname: bBot.settings.botName, version: bBot.version})));
-            window.bot = bBot;
         },
         commands: {
             executable: function (minRank, chat) {
@@ -1311,13 +1399,13 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        if (bBot.settings.autoskip) {
-                            bBot.settings.autoskip = !bBot.settings.autoskip;
+                        if (bBot.room.autoskip) {
+                            bBot.room.autoskip = !bBot.room.autoskip;
                             clearTimeout(bBot.room.autoskipTimer);
                             return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.autoskip}));
                         }
                         else {
-                            bBot.settings.autoskip = !bBot.settings.autoskip;
+                            bBot.room.autoskip = !bBot.room.autoskip;
                             return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.autoskip}));
                         }
                     }
@@ -1368,6 +1456,38 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                 }
             },
 
+            blacklistCommand: {
+                command: ['blacklist', 'bl'],
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nolistspecified, {name: chat.un}));
+                        var list = msg.substr(cmd.length + 1);
+                        if (typeof bBot.room.blacklists[list] === 'undefined') return API.sendChat(subChat(bBot.chat.invalidlistspecified, {name: chat.un}));
+                        else {
+                            var media = API.getMedia();
+                            var track = {
+                                list: list,
+                                author: media.author,
+                                title: media.title,
+                                mid: media.format + ':' + media.cid
+                            };
+                            bBot.room.newBlacklisted.push(track);
+                            bBot.room.blacklists[list].push(media.format + ':' + media.cid);
+                            API.sendChat(subChat(bBot.chat.newblacklisted, {name: chat.un, blacklist: list, author: media.author,title: media.title, mid: media.format + ':' + media.cid}));
+                            API.moderateForceSkip();
+                            if(typeof bBot.room.newBlacklistedSongFunction === 'function'){
+                                bBot.room.newBlacklistedSongFunction(track);
+                            }
+                        }
+                    }
+                }
+            },
+
             bouncerPlusCommand: {
                 command: 'bouncer+',
                 rank: 'mod',
@@ -1398,7 +1518,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
 
             clearchatCommand: {
                 command: 'clearchat',
-                rank: 'mod',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1408,7 +1528,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                         for (var i = 0; i < currentchat.length; i++) {
                             API.moderateDeleteChat(currentchat[i].getAttribute("data-cid"));
                         }
-                        return API.sendChat(subChat(bBot.chat.chatcleared,{name: chat.un}));
+                        return API.sendChat(subChat(bBot.chat.chatcleared, {name: chat.un}));
                     }
                 }
             },
@@ -1481,8 +1601,8 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                         }
                     }
                 }
-            },
-
+            }, 
+            
             giftCommand: {
                 command: 'gift',
                 rank: 'user',
@@ -1524,7 +1644,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                     }
                 }
             },
-            
+
             cycleCommand: {
                 command: 'cycle',
                 rank: 'manager',
@@ -1580,7 +1700,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
             },
 
             dclookupCommand: {
-                command: ['dclookup','dc'],
+                command: ['dclookup', 'dc'],
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
@@ -1599,6 +1719,32 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                         if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
                         var toChat = bBot.userUtilities.dclookup(user.id);
                         API.sendChat(toChat);
+                    }
+                }
+            },
+
+            deletechatCommand: {
+                command: 'delchat',
+                rank: 'mod',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+                        var name = msg.substring(cmd.length + 2);
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+                        var chats = $('.from');
+                        for (var i = 0; i < chats.length; i++) {
+                            var n = chats[i].textContent;
+                            if (name.trim() === n.trim()) {
+                                var cid = $(chats[i]).parent()[0].getAttribute('data-cid');
+                                API.moderateDeleteChat(cid);
+                            }
+                        }
+                        API.sendChat(subChat(bBot.chat.deletechat, {name: chat.un, username: name}));
                     }
                 }
             },
@@ -1653,7 +1799,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         if (typeof bBot.settings.fbLink === "string")
-                            API.sendChat(subChat(bBot.chat.facebook, {link: bBot.settings.fbLink}));
+                            API.sendChat(subChat(bBot.chat.facebook, {name: chat.un, link: bBot.settings.fbLink}));
                     }
                 }
             },
@@ -1686,7 +1832,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 15.09.2014", true);
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        var link = "http://www.balkan-party.tk/tutorijali.html";
+                        var link = "http://www.balkan-party.cf/tutorijali.html";
                         API.sendChat(subChat(bBot.chat.starterhelp, {name: chat.un, link: link}));
                     }
                 }
@@ -1704,16 +1850,16 @@ API.sendChat(subChat(bBot.chat.eldox, {name: chat.un}));
 }
 }
 },
-stwitterCommand: {
-command: 'stwitter',
+stumblrCommand: {
+command: 'stumblr',
 rank: 'user',
 type: 'exact',
 functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-var link = "https://twitter.com/Selmaa000";
-API.sendChat(subChat(bBot.chat.stwitter, {name: chat.un, link: link}));
+var link = "http://name-is-already-taken.tumblr.com/";
+API.sendChat(subChat(bBot.chat.stumblr, {name: chat.un, link: link}));
 }
 }
 },
@@ -1910,6 +2056,32 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
 }
 }
 },
+songunbanCommand: {
+command: 'songunban',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.songunban, {name: chat.un}));
+}
+}
+},
+botwootCommand: {
+command: 'dance',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+$("#woot").click();
+API.on(API.ADVANCE, autowoot);
+function autowoot(){ $("#woot").click(); }
+}
+}
+},
 
             joinCommand: {
                 command: 'join',
@@ -1985,7 +2157,7 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                             else API.moderateBanUser(user.id, 1, API.BAN.DAY);
                             setTimeout(function (id, name) {
                                 API.moderateUnbanUser(id);
-                                console.log('Unbanned @' + name + '.');
+                                console.log('Unbanned @' + name + '. (' + id + ')');
                             }, time * 60 * 1000, user.id, name);
                         }
                         else API.sendChat(subChat(bBot.chat.invalidtime, {name: chat.un}));
@@ -1994,7 +2166,7 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
             },
 
             killCommand: {
-                command: 'kill',
+                command: 'stop',
                 rank: 'bouncer',
                 type: 'exact',
                 functionality: function (chat, cmd) {
@@ -2323,49 +2495,49 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                         var permUser = bBot.userUtilities.getPermission(user.id);
                         if (permFrom > permUser) {
                             /*
-                            bBot.room.mutedUsers.push(user.id);
-                            if (time === null) API.sendChat(subChat(bBot.chat.mutednotime, {name: chat.un, username: name}));
-                            else {
-                                API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
-                                setTimeout(function (id) {
-                                    var muted = bBot.room.mutedUsers;
-                                    var wasMuted = false;
-                                    var indexMuted = -1;
-                                    for (var i = 0; i < muted.length; i++) {
-                                        if (muted[i] === id) {
-                                            indexMuted = i;
-                                            wasMuted = true;
-                                        }
-                                    }
-                                    if (indexMuted > -1) {
-                                        bBot.room.mutedUsers.splice(indexMuted);
-                                        var u = bBot.userUtilities.lookupUser(id);
-                                        var name = u.username;
-                                        API.sendChat(subChat(bBot.chat.unmuted, {name: chat.un, username: name}));
-                                    }
-                                }, time * 60 * 1000, user.id);
-                            }
-                            */
-                            if(time > 45){
+                             bBot.room.mutedUsers.push(user.id);
+                             if (time === null) API.sendChat(subChat(bBot.chat.mutednotime, {name: chat.un, username: name}));
+                             else {
+                             API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
+                             setTimeout(function (id) {
+                             var muted = bBot.room.mutedUsers;
+                             var wasMuted = false;
+                             var indexMuted = -1;
+                             for (var i = 0; i < muted.length; i++) {
+                             if (muted[i] === id) {
+                             indexMuted = i;
+                             wasMuted = true;
+                             }
+                             }
+                             if (indexMuted > -1) {
+                             bBot.room.mutedUsers.splice(indexMuted);
+                             var u = bBot.userUtilities.lookupUser(id);
+                             var name = u.username;
+                             API.sendChat(subChat(bBot.chat.unmuted, {name: chat.un, username: name}));
+                             }
+                             }, time * 60 * 1000, user.id);
+                             }
+                             */
+                            if (time > 45) {
                                 API.sendChat(subChat(bBot.chat.mutedmaxtime, {name: chat.un, time: "45"}));
                                 API.moderateMuteUser(user.id, 1, API.MUTE.LONG);
                             }
-                            else if(time === 45){
+                            else if (time === 45) {
                                 API.moderateMuteUser(user.id, 1, API.MUTE.LONG);
                                 API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
 
                             }
-                            else if(time > 30){
+                            else if (time > 30) {
                                 API.moderateMuteUser(user.id, 1, API.MUTE.MEDIUM);
                                 API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
-                                setTimeout(function(id){
+                                setTimeout(function (id) {
                                     API.moderateUnmuteUser(id);
                                 }, time * 60 * 1000, user.id);
                             }
                             else {
                                 API.moderateMuteUser(user.id, 1, API.MUTE.SHORT);
                                 API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
-                                setTimeout(function(id){
+                                setTimeout(function (id) {
                                     API.moderateUnmuteUser(id);
                                 }, time * 60 * 1000, user.id);
                             }
@@ -2457,11 +2629,11 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                                     position: null,
                                     songCount: 0
                                 };
-                                if(API.getDJ().id === user.id){
+                                if (API.getDJ().id === user.id) {
                                     API.moderateForceSkip();
-                                    setTimeout(function(){
+                                    setTimeout(function () {
                                         API.moderateRemoveDJ(user.id);
-                                    }, 1*1000, user);
+                                    }, 1 * 1000, user);
                                 }
                                 else API.moderateRemoveDJ(user.id);
                             } else API.sendChat(subChat(bBot.chat.removenotinwl, {name: chat.un, username: name}));
@@ -2616,6 +2788,11 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                         else msg += 'OFF';
                         msg += '. ';
 
+                        msg += bBot.chat.cycleguard + ': ';
+                        if (bBot.settings.cycleGuard) msg += 'ON';
+                        else msg += 'OFF';
+                        msg += '. ';
+
                         msg += bBot.chat.timeguard + ': ';
                         if (bBot.settings.timeGuard) msg += 'ON';
                         else msg += 'OFF';
@@ -2654,8 +2831,8 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                         var user2 = bBot.userUtilities.lookupUserName(name2);
                         if (typeof user1 === 'boolean' || typeof user2 === 'boolean') return API.sendChat(subChat(bBot.chat.swapinvalid, {name: chat.un}));
                         if (user1.id === bBot.loggedInID || user2.id === bBot.loggedInID) return API.sendChat(subChat(bBot.chat.addbottowaitlist, {name: chat.un}));
-                        var p1 = API.getWaitListPosition(user1.id) +1;
-                        var p2 = API.getWaitListPosition(user2.id) +1;
+                        var p1 = API.getWaitListPosition(user1.id) + 1;
+                        var p2 = API.getWaitListPosition(user2.id) + 1;
                         if (p1 < 0 || p2 < 0) return API.sendChat(subChat(bBot.chat.swapwlonly, {name: chat.un}));
                         API.sendChat(subChat(bBot.chat.swapping, {'name1': name1, 'name2': name2}));
                         if (p1 < p2) {
@@ -2741,14 +2918,15 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                         $(".icon-ban").click();
                         setTimeout(function (chat) {
                             var msg = chat.message;
-                            if (msg.length === cmd.length) return API.sendChat()
+                            if (msg.length === cmd.length) return API.sendChat();
                             var name = msg.substring(cmd.length + 2);
                             var bannedUsers = API.getBannedUsers();
                             var found = false;
+                            var bannedUser = null;
                             for (var i = 0; i < bannedUsers.length; i++) {
                                 var user = bannedUsers[i];
                                 if (user.username === name) {
-                                    id = user.id;
+                                    bannedUser = user;
                                     found = true;
                                 }
                             }
@@ -2756,7 +2934,7 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                                 $(".icon-chat").click();
                                 return API.sendChat(subChat(bBot.chat.notbanned, {name: chat.un}));
                             }
-                            API.moderateUnbanUser(user.id);
+                            API.moderateUnbanUser(bannedUser.id);
                             console.log("Unbanned " + name);
                             setTimeout(function () {
                                 $(".icon-chat").click();
@@ -2790,14 +2968,14 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                         var msg = chat.message;
                         var permFrom = bBot.userUtilities.getPermission(chat.uid);
                         /**
-                        if (msg.indexOf('@') === -1 && msg.indexOf('all') !== -1) {
+                         if (msg.indexOf('@') === -1 && msg.indexOf('all') !== -1) {
                             if (permFrom > 2) {
                                 bBot.room.mutedUsers = [];
                                 return API.sendChat(subChat(bBot.chat.unmutedeveryone, {name: chat.un}));
                             }
                             else return API.sendChat(subChat(bBot.chat.unmuteeveryonerank, {name: chat.un}));
                         }
-                        **/
+                         **/
                         var from = chat.un;
                         var name = msg.substr(cmd.length + 2);
 
@@ -2808,25 +2986,25 @@ API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
                         var permUser = bBot.userUtilities.getPermission(user.id);
                         if (permFrom > permUser) {
                             /*
-                            var muted = bBot.room.mutedUsers;
-                            var wasMuted = false;
-                            var indexMuted = -1;
-                            for (var i = 0; i < muted.length; i++) {
-                                if (muted[i] === user.id) {
-                                    indexMuted = i;
-                                    wasMuted = true;
-                                }
+                             var muted = bBot.room.mutedUsers;
+                             var wasMuted = false;
+                             var indexMuted = -1;
+                             for (var i = 0; i < muted.length; i++) {
+                             if (muted[i] === user.id) {
+                             indexMuted = i;
+                             wasMuted = true;
+                             }
 
-                            }
-                            if (!wasMuted) return API.sendChat(subChat(bBot.chat.notmuted, {name: chat.un}));
-                            bBot.room.mutedUsers.splice(indexMuted);
-                            API.sendChat(subChat(bBot.chat.unmuted, {name: chat.un, username: name}));
-                            */
-                            try{
+                             }
+                             if (!wasMuted) return API.sendChat(subChat(bBot.chat.notmuted, {name: chat.un}));
+                             bBot.room.mutedUsers.splice(indexMuted);
+                             API.sendChat(subChat(bBot.chat.unmuted, {name: chat.un, username: name}));
+                             */
+                            try {
                                 API.moderateUnmuteUser(user.id);
                                 API.sendChat(subChat(bBot.chat.unmuted, {name: chat.un, username: name}));
                             }
-                            catch(e){
+                            catch (e) {
                                 API.sendChat(subChat(bBot.chat.notmuted, {name: chat.un}));
                             }
                         }
