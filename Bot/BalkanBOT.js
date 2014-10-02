@@ -234,7 +234,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 29.09.2014", true);
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
             motdEnabled: false,
-            motdInterval: 7,
+            motdInterval: "7",
             motd: "Add message my typing !motd Yout Text",
             filterChat: true,
             etaRestriction: false,
