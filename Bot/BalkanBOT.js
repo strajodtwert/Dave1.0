@@ -1608,10 +1608,13 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 29.09.2014", true);
                 rank: 'user',
                 type: 'startsWith',
                 cookies: ['has given you a red rose, who knows maybe he/she likes you <3',
-                          'think you are awesome person, give him a kiss.',
+                          'thinks you are awesome person, give him a kiss.',
                           'wants to marry you, please say yes.',
                           'is in love with you, what about you?',
-                          'think you are a beautiful person, what you think about him/her?'
+                          'thinks you are a beautiful person, what you think about him/her?',
+                          'would do anything for you, would you do the same?',
+                          'thinks you are an angel',
+                          'wants to kill you..... lol dont worry i am kidding she/he thinks you are cute'
                 ],
                 getCookie: function () {
                     var c = Math.floor(Math.random() * this.cookies.length);
