@@ -40,7 +40,7 @@
     "askskip": "/me :warning: @%%NAME%%, don't ask for skips.",
     "spam": "/me :warning: @%%NAME%%, please don't spam.",
     "roomadvertising": "/me :warning: @%%NAME%%, don't post links to other rooms please.",
-    "adfly": "/me @%%NAME%%, Please change your autowoot program: http://www.balkan-party.tk/autowoot.html",
+    "adfly": "/me @%%NAME%%, Please change your autowoot program: http://www.balkan-party.cf/autowoot.html",
 
     "botwoot": "/me @%%NAME%% I'am gonna start wooting now.",
     "songunban": "/me [@%%NAME%%] If you want to unban a song, fill this form: http://www.balkan-party.cf/unban.html",
@@ -73,7 +73,7 @@
     "maximumafktimeset": "/me :white_check_mark: [@%%NAME%%] Maximum afk duration set to %%TIME%% minutes.",
     "afkstatusreset": "/me [@%%NAME%%] Reset the afk status of @%%USERNAME%%.",
     "inactivefor": "/me [@%%NAME%%] @%%USERNAME%% has been inactive for %%TIME%%.",
-    "autowoot": "/me :link: We recommend PlugCubed: http://www.balkan-party.tk/autowoot.html",
+    "autowoot": "/me :link: We recommend PlugCubed: %%LINK%%",
     "brandambassador": "/me A Brand Ambassador is the voice of the plug.dj users. They promote events, engage the community and share the plug.dj message around the world. For more info: http://blog.plug.dj/brand-ambassadors/",
     "bouncerplusrank": "/me [@%%NAME%%] You have to be manager or up to enable Bouncer+.",
     "chatcleared": "/me :white_check_mark: [@%%NAME%%] Cleared the chat.",
