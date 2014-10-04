@@ -42,7 +42,7 @@
     "roomadvertising": "/me :warning: @%%NAME%%, don't post links to other rooms please.",
     "adfly": "/me @%%NAME%%, Please change your autowoot program: http://www.balkan-party.cf/autowoot.html",
 
-    "botwoot": "/me @%%NAME%% Autowoot Active",
+    "botwoot": "/me @%%NAME%% :white_check_mark: Autowoot Active",
     "songunban": "/me [@%%NAME%%] If you want to unban a song, fill this form: http://www.balkan-party.cf/unban.html",
     "invalidtime": "/me [@%%NAME%%] Invalid time specified.",
     "nouserspecified": "/me [@%%NAME%%] No user specified.",
