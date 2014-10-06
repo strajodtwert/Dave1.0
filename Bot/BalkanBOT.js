@@ -30,7 +30,7 @@
 
 // THIS IS EDITED VERSION OF BOT
 
-API.chatLog("Bot je iskljucen zbog djeljenja linkova drugim clanovima, za ostalo pitajte admine BP ", true);
+API.chatLog("[ BalkanBOT ] LAST UPDATED: 29.09.2014", true);
 
 
 (function () {
@@ -69,7 +69,7 @@ API.chatLog("Bot je iskljucen zbog djeljenja linkova drugim clanovima, za ostalo
     var loadChat = function (cb) {
         if (!cb) cb = function () {
         };
-        $.get("Link Goes Here", function (json) {
+        $.get("https://rawgit.com/MrAjdin/BalkanBot/master/Lang/langIndex.json", function (json) {
             var link = bBot.chatLink;
             if (json !== null && typeof json !== "undefined") {
                 langIndex = json;
@@ -199,14 +199,14 @@ API.chatLog("Bot je iskljucen zbog djeljenja linkova drugim clanovima, za ostalo
         loggedInID: "3625731",
         scriptLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Bot/BalkanBOT.js",
         cmdLink: "http://www.balkan-party.cf/bbot.html",
-        chatLink: "¨!link goes here",
+        chatLink: "https://github.com/MrAjdin/BalkanBot/blob/master/Lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
         settings: {
             botName: "BalkanBOT",
             language: "english",
-            chatLink: "Link goes here!",
+            chatLink: "https://github.com/MrAjdin/BalkanBot/blob/master/Lang/en.json",
             maximumAfk: 90,
             afkRemoval: false,
             maximumDc: 20,
