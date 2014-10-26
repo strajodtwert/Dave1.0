@@ -234,8 +234,8 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 29.09.2014", true);
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
             motdEnabled: false,
-            motdInterval: 8,
-            motd: "Add message by typing !motd (Your Message)",
+            motdInterval: 5,
+            motd: "Temporary Message of the Day",
             filterChat: true,
             etaRestriction: false,
             welcome: false,
@@ -311,6 +311,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 29.09.2014", true);
                     }, 60 * 1000);
                     API.sendChat(bBot.chat.isopen);
                 },
+                endRoulette: function () {
                     bBot.room.roulette.rouletteStatus = false;
                     var ind = Math.floor(Math.random() * bBot.room.roulette.participants.length);
                     var winner = bBot.room.roulette.participants[ind];
@@ -1606,13 +1607,10 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 29.09.2014", true);
                 rank: 'user',
                 type: 'startsWith',
                 cookies: ['has given you a red rose, who knows maybe he/she likes you <3',
-                          'thinks you are awesome person, give him a kiss.',
+                          'think you are awesome person, give him a kiss.',
                           'wants to marry you, please say yes.',
                           'is in love with you, what about you?',
-                          'thinks you are a beautiful person, what you think about him/her?',
-                          'would do anything for you, would you do the same?',
-                          'thinks you are an angel',
-                          'wants to kill you..... lol dont worry i am kidding she/he thinks you are cute'
+                          'think you are a beautiful person, what you think about him/her?'
                 ],
                 getCookie: function () {
                     var c = Math.floor(Math.random() * this.cookies.length);
@@ -2066,21 +2064,6 @@ if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0)
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
 API.sendChat(subChat(bBot.chat.songunban, {name: chat.un}));
-}
-}
-},
-botwootCommand: {
-command: 'dance',
-rank: 'mod',
-type: 'exact',
-functionality: function (chat, cmd) {
-if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-if (!bBot.commands.executable(this.rank, chat)) return void (0);
-else {
-API.sendChat(subChat(bBot.chat.botwoot, {name: chat.un}));
-$("#woot").click();
-API.on(API.ADVANCE, autowoot);
-function autowoot(){ $("#woot").click(); }
 }
 }
 },
