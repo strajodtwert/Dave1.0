@@ -238,7 +238,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 29.09.2014", true);
             motd: "Add message by typing !motd (Your Message)",
             filterChat: true,
             etaRestriction: false,
-            welcome: true,
+            welcome: false,
             opLink: "http://www.balkan-party.cf/blacklist.html",
             rulesLink: "http://www.balkan-party.cf/rules.html",
             themeLink: null,
@@ -311,7 +311,6 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 29.09.2014", true);
                     }, 60 * 1000);
                     API.sendChat(bBot.chat.isopen);
                 },
-                endRoulette: function () {
                     bBot.room.roulette.rouletteStatus = false;
                     var ind = Math.floor(Math.random() * bBot.room.roulette.participants.length);
                     var winner = bBot.room.roulette.participants[ind];
