@@ -873,8 +873,9 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 29.09.2014", true);
                 var remaining = obj.media.duration * 1000;
                 bBot.room.autoskipTimer = setTimeout(function () {
                     console.log("Skipping track.");
+                    //API.sendChat('Song stuck, skipping...');
                     API.moderateForceSkip();
-                }, remaining + 1000);
+                }, remaining + 3000);
             }
             storeToStorage();
 
@@ -2537,7 +2538,7 @@ function autowoot(){ $("#woot").click(); }
                                     API.moderateUnmuteUser(id);
                                 }, time * 60 * 1000, user.id);
                             }
-                            else {
+                            else if (time > 15) {
                                 API.moderateMuteUser(user.id, 1, API.MUTE.SHORT);
                                 API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
                                 setTimeout(function (id) {
