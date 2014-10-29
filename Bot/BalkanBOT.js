@@ -2086,6 +2086,36 @@ function autowoot(){ $("#woot").click(); }
 }
 }
 },
+danceCommand: {
+command: 'dance',
+rank: 'mod',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.botwoot, {name: chat.un}));
+$("#woot").click();
+API.on(API.ADVANCE, autowoot);
+function autowoot(){ $("#woot").click(); }
+}
+}
+},
+roulettetimer: {
+command: 'roulettetimer',
+rank: 'bouncer',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.roulettetimer, {name: chat.un}));
+setInterval(function(){
+API.sendChat("!roulette");
+}, 120000);
+}
+}
+},
 
             joinCommand: {
                 command: 'join',
