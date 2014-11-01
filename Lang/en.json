@@ -107,7 +107,7 @@
     "move": "/me :white_check_mark: [%%NAME%% used move.]",
     "mutednotime": "/me :white_check_mark: [@%%NAME%%] Muted @%%USERNAME%%.",
     "mutedmaxtime": "/me [@%%NAME%%] You can only mute for maximum %%TIME%% minutes.",
-    "mutedtime": "/me :white_check_mark:  [@%%NAME%%] Muted @%%USERNAME%% for %%TIME%% minutes.",
+    "mutedtime": "/me [@%%NAME%%] @%%USERNAME%% What did you say?, repeat, oh wait you can't you're muted",
     "unmuted": "/me :white_check_mark: [@%%NAME%%] Unmuted @%%USERNAME%%.",
     "muterank": "/me [@%%NAME%%] You can't mute persons with an equal or higher rank than you.",
     "oplist": "/me Overplayed/Banned list: %%LINK%%",
