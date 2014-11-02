@@ -25,7 +25,7 @@
 
 
     "usernotfound": "/me User not found.",
-    "notdisconnected": "/me @%%NAME%% You did not disconnect during my time here.",
+    "notdisconnected": "/me @%%NAME%% Pff, i am sorry but you didnt disconnect, jk haha move on baby.",
     "noposition": "/me No last position known. The waitlist needs to update at least once to register a user's last position.",
     "toolongago": "/me @%%NAME%%'s last disconnect (DC or leave) was too long ago: %%TIME%%.",
     "valid": "/me :white_check_mark: @%%NAME%% disconnected %%TIME%% ago and should be at position %%POSITION%%.",
@@ -93,8 +93,8 @@
     "roulettejoin": "/me @%%NAME%% joined the roulette! (!leave if you regret it.)",
     "jointime": "/me [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
     "kickrank": "/me [@%%NAME%%] Hallo smart guy, you can't do that!",
-    "kick": "/me :white_check_mark: [@%%NAME%%], @%%USERNAME%% you are being kicked from the community for %%TIME%% minutes.",
-    "kill": "/me See ya Mode: Offline",
+    "kick": "/me [@%%NAME%%], @%%USERNAME%% You're going down baby, %%TIME%% minutes.",
+    "kill": "/me I am going off you guys are so boring.",
     "rouletteleave": "/me @%%NAME%% left the roulette!",
     "songlink": "/me :link: [@%%NAME%%] Link to current song: %%LINK%%",
     "usedlockskip": "/me :white_check_mark: [%%NAME%% used lockskip.]",
@@ -108,7 +108,7 @@
     "mutednotime": "/me :white_check_mark: [@%%NAME%%] Muted @%%USERNAME%%.",
     "mutedmaxtime": "/me [@%%NAME%%] You can only mute for maximum %%TIME%% minutes.",
     "mutedtime": "/me :white_check_mark:  [@%%NAME%%] Muted @%%USERNAME%% for %%TIME%% minutes, yes you going down baby.",
-    "unmuted": "/me :white_check_mark: [@%%NAME%%] Unmuted @%%USERNAME%%.",
+    "unmuted": "/me Lucky, [@%%NAME%%] unmuted you @%%USERNAME%%.",
     "muterank": "/me [@%%NAME%%] Wow smart guy, you can't do that. ",
     "oplist": "/me Overplayed/Banned list: %%LINK%%",
     "pong": "/me Pong!",
