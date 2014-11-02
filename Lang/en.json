@@ -28,7 +28,7 @@
     "notdisconnected": "/me @%%NAME%% Pff, i am sorry but you didnt disconnected, jk haha move on baby.",
     "noposition": "/me No last position known. The waitlist needs to update at least once to register a user's last position.",
     "toolongago": "/me @%%NAME%%'s Too long ago sorry: %%TIME%% Jk be patient next time, wow these humans.",
-    "valid": "/me :white_check_mark: @%%NAME%% disconnected %%TIME%% ago and should be at position %%POSITION%%.",
+    "valid": "/me Wow @%%NAME%%, what did you do for %%TIME%% but dont worry you can go to %%POSITION%%, and dont answer i dont want to know.",
 
 
     "warning1": "/me :warning: @%%NAME%%, you have been afk for %%TIME%%, please respond within 2 minutes or you will be removed.",
