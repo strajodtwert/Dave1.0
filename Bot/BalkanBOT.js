@@ -234,7 +234,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 27.10.2014", true);
             afkpositionCheck: 15,
             afkRankCheck: "ambassador",
             motdEnabled: false,
-            motdInterval: 15,
+            motdInterval: 5,
             motd: "Temporary Message of the Day",
             filterChat: true,
             etaRestriction: false,
@@ -2079,7 +2079,7 @@ functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-API.sendChat(subChat(bBot.chat.botwoot));
+API.sendChat(subChat(bBot.chat.botwoot, {name: chat.un}));
 $("#woot").click();
 API.on(API.ADVANCE, autowoot);
 function autowoot(){ $("#woot").click(); }
