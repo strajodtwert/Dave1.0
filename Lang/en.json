@@ -11,9 +11,9 @@
     "welcome": "/me Welcome %%NAME%%",
     "welcomeback": "/me Welcome back, %%NAME%%",
     "songknown": "/me :repeat: This song has been played %%PLAYS%% time(s) in the last %%TIMETOTAL%%, last play was %%LASTTIME%% ago.",
-    "timelimit": "/me @%%NAME%%, your song is longer than %%MAXLENGTH%% minutes, you need permission to play longer songs.",
+    "timelimit": "/me @%%NAME%%, your song is longer than %%MAXLENGTH%% minutes, suck it.",
     "permissionownsong": "/me :up: @%%NAME%% has permission to play their own production!",
-    "isblacklisted": "/me This song is on the %%BLACKLIST%% blacklist, and its banned, for more information type !op",
+    "isblacklisted": "/me You can't play this, its on the %%BLACKLIST%% blacklist, read more man, bye bye.",
 
 
     "isopen": "/me :white_check_mark: The roulette is now open! Type !join to participate!",
@@ -25,9 +25,9 @@
 
 
     "usernotfound": "/me User not found.",
-    "notdisconnected": "/me @%%NAME%% You did not disconnect during my time here.",
+    "notdisconnected": "/me @%%NAME%% Pff, i am sorry but you didnt disconnected, jk haha move on baby.",
     "noposition": "/me No last position known. The waitlist needs to update at least once to register a user's last position.",
-    "toolongago": "/me @%%NAME%%'s last disconnect (DC or leave) was too long ago: %%TIME%%.",
+    "toolongago": "/me @%%NAME%%'s Too long ago sorry: %%TIME%% Jk be patient next time, wow these humans.",
     "valid": "/me :white_check_mark: @%%NAME%% disconnected %%TIME%% ago and should be at position %%POSITION%%.",
 
 
