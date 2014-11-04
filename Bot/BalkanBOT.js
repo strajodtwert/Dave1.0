@@ -196,7 +196,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
         version: "2.2.3",
         status: false,
         name: "BalkanBOT",
-        loggedInID: "3625731",
+        loggedInID: 3625731,
         scriptLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Bot/BalkanBOT.js",
         cmdLink: "http://www.balkan-party.cf/bbot.html",
         chatLink: "https://github.com/MrAjdin/BalkanBot/blob/master/Lang/en.json",
