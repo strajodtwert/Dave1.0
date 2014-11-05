@@ -1614,7 +1614,12 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
                           'thinks you are a beautiful person, what you think about him/her?',
                           'wants to kill you ........... lol i am just kidding, she/he thinks you are cute.',
                           'wants to kiss you.',
-                          'thinks you are a beautiful person, give him/her a hug <3'
+                          'thinks you are a beautiful person, give him/her a hug <3',
+                          'Do you love me because I am beautiful or am I beautiful because you love me?',
+                          'The moment he/she saw you he/she fell in love with U',
+                          'cant live without U',
+                          'wanna spend the rest of his life with U',
+                          'said. Falling in love with you is the second best thing in the world, Coz finding you was the first.'
                 ],
                 getCookie: function () {
                     var c = Math.floor(Math.random() * this.cookies.length);
