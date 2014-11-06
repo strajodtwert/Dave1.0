@@ -813,8 +813,18 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
             }
         },
         eventDjadvance: function (obj) {
+          var user = basicBot.userUtilities.lookupUser(obj.dj.id)
++            for(var i = 0; i < bBot.room.users.length; i++){
++                if(basicBot.room.users[i].id === user.id){
++                    bBot.room.users[i].lastDC = {
++                        time: null,
++                        position: null,
++                        songCount: 0
++                    };
++                }
++            }
             var lastplay = obj.lastPlay;
-            if (typeof lastplay === 'undefined') return void (0);
+            if (typeof lastplay === 'undefined') return;
             if (bBot.settings.songstats) {
                 if (typeof bBot.chat.songstatistics === "undefined") {
                     API.sendChat("/me " + lastplay.media.author + " - " + lastplay.media.title + ": " + lastplay.score.positive + "W/" + lastplay.score.grabs + "G/" + lastplay.score.negative + "M.")
@@ -1154,7 +1164,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
             retrieveFromStorage();
             window.bot = bBot;
             bBot.roomUtilities.updateBlacklists();
-            setInterval(bBot.roomUtilities.updateBlacklists, 60*60*1000);
+            setInterval(bBot.roomUtilities.updateBlacklists, 60 * 60 * 1000);
             bBot.getNewBlacklistedSongs = bBot.roomUtilities.exportNewBlacklistedSongs;
             bBot.logNewBlacklistedSongs = bBot.roomUtilities.logNewBlacklistedSongs;
             if (bBot.room.roomstats.launchTime === null) {
@@ -1478,9 +1488,9 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
                             };
                             bBot.room.newBlacklisted.push(track);
                             bBot.room.blacklists[list].push(media.format + ':' + media.cid);
-                            API.sendChat(subChat(bBot.chat.newblacklisted, {name: chat.un, blacklist: list, author: media.author,title: media.title, mid: media.format + ':' + media.cid}));
+                            API.sendChat(subChat(bBot.chat.newblacklisted, {name: chat.un, blacklist: list, author: media.author, title: media.title, mid: media.format + ':' + media.cid}));
                             API.moderateForceSkip();
-                            if(typeof bBot.room.newBlacklistedSongFunction === 'function'){
+                            if (typeof bBot.room.newBlacklistedSongFunction === 'function') {
                                 bBot.room.newBlacklistedSongFunction(track);
                             }
                         }
