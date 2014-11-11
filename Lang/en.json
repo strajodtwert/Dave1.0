@@ -93,7 +93,7 @@
     "roulettejoin": "/me @%%NAME%% joined the roulette! (!leave if you regret it.)",
     "jointime": "/me [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
     "kickrank": "/me [@%%NAME%%] Hallo smart guy, you can't do that!",
-    "kick": "/me [@%%NAME%%], @%%USERNAME%% You're going down baby, %%TIME%% minutes.",
+    "kick": "/me :white_check_mark: [@%%NAME%%], @%%USERNAME%% you are being kicked from the community for %%TIME%% minutes.",
     "kill": "/me BalkanBOT is Offline!",
     "rouletteleave": "/me @%%NAME%% left the roulette!",
     "songlink": "/me :link: [@%%NAME%%] Link to current song: %%LINK%%",
