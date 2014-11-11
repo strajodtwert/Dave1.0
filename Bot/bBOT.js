@@ -1690,13 +1690,10 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
                             var name = msg.substring(space + 2);
                             var user = bBot.userUtilities.lookupUserName(name);
                             if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(bBot.chat.nouser, {name: name, cookie: this.getCookie()}));
-                            }
-                            else if (user.username === chat.un) {
-                                return API.sendChat(subChat(bBot.chat.selfprc, {name: name}));
+                                return API.sendChat(subChat(bBot.chat.nouserprc, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(bBot.chat.gift, {name: name}));
+                                return API.sendChat(subChat(bBot.chat.prc, {namefrom: chat.un, cookie: this.getCookie()}));
                             }
                         }
                     }
