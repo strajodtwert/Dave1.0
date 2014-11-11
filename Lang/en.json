@@ -25,7 +25,7 @@
 
 
     "usernotfound": "/me User not found.",
-    "notdisconnected": "/me @%%NAME%% Pff, i am sorry but you didnt disconnected, jk haha move on baby.",
+    "notdisconnected": "/me @%%NAME%% You did not disconnect during my time here.",
     "noposition": "/me No last position known. The waitlist needs to update at least once to register a user's last position.",
     "toolongago": "/me @%%NAME%%'s Too long ago sorry: %%TIME%% Jk be patient next time, wow these humans.",
     "valid": "/me :white_check_mark: @%%NAME%% disconnected %%TIME%% ago and should be at position %%POSITION%%.",
