@@ -1730,6 +1730,19 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
                     }
                 }
             },
+// HiddenComand For someone special...
+adnaCommand: {
+command: 'adna',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat("Teško je voljeti nekoga, a ne biti s njim. Pričati da je kraj i živjeti s tim. Teško ga je voljeti, a nikom ne reći, skrivati svoju bol, a pričati o sreći!");
+}
+}
+},
 
             deletechatCommand: {
                 command: 'delchat',
