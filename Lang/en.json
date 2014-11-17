@@ -87,6 +87,7 @@
     "selfadna": "/me @%%NAME%%, You can't do that.",
     "cookie": "/me @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%",
     "prc": "/me @%%NAMETO%%, %%COOKIE%%",
+    "adna": "/me %%ADNA%%",
     "cycleguardtime": "/me :white_check_mark: [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "/me [@%%NAME%%] Only bouncers and above can do a lookup for others.",
     "emojilist": "/me :link: Check this link: %%LINK%%",
