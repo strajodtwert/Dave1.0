@@ -84,6 +84,7 @@
     "nouserprc": "/em doesn't see %%NAME%% in room and eats a cookie himself, haha yea.",
     "selfcookie": "/me @%%NAME%%, you're a bit greedy, aren't you? Giving cookies to yourself, bah. Share some with other people!",
     "selfprc": "/me @%%NAME%%, You need to tag someone.",
+    "selfadna": "/me @%%NAME%%, You can't do that.",
     "cookie": "/me @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%",
     "prc": "/me @%%NAMETO%%, %%COOKIE%%",
     "cycleguardtime": "/me :white_check_mark: [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
