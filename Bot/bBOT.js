@@ -1782,17 +1782,46 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
             },
             // HiddenComand For someone special...
              adnaCommand: {
-             command: 'adna',
-             rank: 'user',
-             type: 'exact',
-             functionality: function (chat, cmd) {
-                 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                 if (!bBot.commands.executable(this.rank, chat)) return void (0);
-                 else {
-             API.sendChat("Teško je voljeti nekoga, a ne biti s njim. Pričati da je kraj i živjeti s tim. Teško ju je voljeti, a nikom ne reći, skrivati svoju bol, a pričati o sreći!");
-          }
-     }
-},
+                command: 'adna',
+                rank: 'user',
+                type: 'startsWith',
+                cookies: ['Kad nas tisuce kilometara razdvoje i kad najmanje mislis na mene, moje oci gledaju u daljinu i traze samo tebe.',
+                'Tek kad andeli postanu zli, kad svi oceani presuse tad ce srce prestati gorjeti i ja su tebe prestati voljeti.',
+                'Kad ti najteze bude ili kad osjetis da te nesto boli, sjeti se da postoji bice koje te vjecno i duboko... VOLI!.',
+                'Reci mi da me ne trebas i otici cu. Reci da ti nije stalo i nestat cu. Reci da ti ne znacim nista, preboljet cu. Reci da me ne volis i umrijet cu..'
+		
+                ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(subChat(bBot.chat.selfadna, {name: name}));
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = bBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(bBot.chat.selfadna, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(bBot.chat.selfadna, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(bBot.chat.adna, {adna: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            }, 
 
             deletechatCommand: {
                 command: 'delchat',
