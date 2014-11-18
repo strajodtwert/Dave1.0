@@ -94,7 +94,7 @@
     "notinwaitlist": "/me @%%NAME%%, you are not on the waitlist.",
     "eta": "/me @%%NAME%% you will reach the booth in approximately %%TIME%%.",
     "facebook": "/me @%%NAME%% Check us on facebook: %%LINK%%",
-    "starterhelp": "/me @%%NAME%% Check this link nerd:: %%LINK%%",
+    "starterhelp": "/me @%%NAME%% For a start read this: %%LINK%%",
     "roulettejoin": "/me @%%NAME%% joined the roulette! (!leave if you regret it.)",
     "jointime": "/me [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
     "kickrank": "/me [@%%NAME%%] Hallo smart guy, you can't do that!",
