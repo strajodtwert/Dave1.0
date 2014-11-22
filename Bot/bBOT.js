@@ -1605,7 +1605,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
             
             prcCommand: {
                 command: 'prc',
-                rank: 'user',
+                rank: 'bouncer',
                 type: 'startsWith',
                 cookies: ['Keva ti se kupa gola',
 		'Nema ti danas kurca',
