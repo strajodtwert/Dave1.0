@@ -1194,7 +1194,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
             bBot.status = true;
             API.sendChat('/cap 1');
             API.setVolume(0);
-            API.setStatus(Working)
+            API.setStatus(Working);
             loadChat(API.sendChat(subChat(bBot.chat.online, {botname: bBot.settings.botName, version: bBot.version})));
         },
         commands: {
