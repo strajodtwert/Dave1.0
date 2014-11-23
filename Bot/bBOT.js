@@ -1803,7 +1803,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
 
                         var space = msg.indexOf(' ');
                         if (space === -1) {
-                            API.sendChat(subChat(bBot.chat.selfadna, {name: name}));
+                            API.sendChat(subChat(bBot.chat.adna, {adna: this.getCookie()}));
                             return false;
                         }
                         else {
@@ -1816,7 +1816,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
                                 return API.sendChat(subChat(bBot.chat.selfadna, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(bBot.chat.adna, {adna: this.getCookie()}));
+                                return API.sendChat(subChat(bBot.chat.selfadna, {adna: this.getCookie()}));
                             }
                         }
                     }
