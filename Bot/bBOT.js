@@ -2546,7 +2546,7 @@ function autowoot(){ $("#woot").click(); }
 
             moveCommand: {
                 command: 'move',
-                rank: 'mod',
+                rank: 'bouncer',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2890,11 +2890,6 @@ function autowoot(){ $("#woot").click(); }
                         msg += '. ';
                         msg += bBot.chat.afksremoved + ": " + bBot.room.afkList.length + '. ';
                         msg += bBot.chat.afklimit + ': ' + bBot.settings.maximumAfk + '. ';
-
-                        msg += 'Bouncer+: ';
-                        if (bBot.settings.bouncerPlus) msg += 'ON';
-                        else msg += 'OFF';
-                        msg += '. ';
 
                         msg += bBot.chat.lockguard + ': ';
                         if (bBot.settings.lockGuard) msg += 'ON';
