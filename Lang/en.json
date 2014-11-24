@@ -93,7 +93,7 @@
     "emojilist": "/me [!emoji] :link: Check this link: %%LINK%%",
     "notinwaitlist": "/me @%%NAME%%, you are not on the waitlist.",
     "eta": "/me [!eta] @%%NAME%% you will reach the booth in approximately %%TIME%%.",
-    "facebook": "/me [!fb] @%%NAME%% Check us on facebook: %%LINK%%",
+    "facebook": "/me [!fb] @%%NAME%% Join us on Fb: %%LINK%%",
     "starterhelp": "/me [!help] @%%NAME%% For a start read this: %%LINK%%",
     "roulettejoin": "/me [!join] @%%NAME%% joined the roulette! (!leave if you regret it.)",
     "jointime": "/me [!jointime] [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
