@@ -99,7 +99,7 @@
     "jointime": "/me [!jointime] [@%%NAMEFROM%%] @%%USERNAME%% has been in the room for %%TIME%%.",
     "kickrank": "/me [@%%NAME%%] Hallo smart guy, you can't do that!",
     "kick": "/me [!kick] :white_check_mark: [@%%NAME%%], @%%USERNAME%% you are being kicked from the community for %%TIME%% minutes.",
-    "kill": "/me BalkanBOT is Offline!",
+    "kill": "/me [!kill] BalkanBOT is Offline!",
     "rouletteleave": "/me @%%NAME%% left the roulette!",
     "songlink": "/me [!link] :link: [@%%NAME%%] Link to current song: %%LINK%%",
     "usedlockskip": "/me :white_check_mark: [%%NAME%% used lockskip.]",
