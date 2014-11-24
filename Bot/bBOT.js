@@ -15,7 +15,7 @@
    from a version used in the original software
  
  
- TERMS OF REPRODUCTION USE
+ TERMS OF REPRODUCTION USEhttps://www.facebook.com/groups/balkanparty19/
  
  Failure to follow these terms will result in me getting very angry at you
  and having your software tweaked or removed if possible. Either way, you're
@@ -242,7 +242,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
             opLink: "http://www.balkan-party.cf/blacklist.html",
             rulesLink: "http://www.balkan-party.cf/rules.html",
             themeLink: null,
-            fbLink: "http://goo.gl/jrv1Js",
+            fbLink: "https://www.facebook.com/groups/balkanparty19/",
             youtubeLink: null,
             website: "http://www.balkan-party.cf/",
             intervalMessages: [],
