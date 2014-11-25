@@ -68,7 +68,7 @@
     "motd": "MotD",
     "welcomemsg": ":white_check_mark: welcome message",
     "songstats": "song statistics",
-    "etarestriction": ":white_check_mark: eta restriction",
+    "etarestriction": ":white_check_mark: Eta restriction",
     "activeusersintime": "/me [!active] :white_check_mark: [@%%NAME%% There have been %%AMOUNT%% users chatting in the past %%TIME%% minutes.",
     "maximumafktimeset": "/me [!afklimit] :white_check_mark: @%%NAME%% Maximum afk duration set to %%TIME%% minutes.",
     "afkstatusreset": "/me [!afkreset] [@%%NAME%%] Reset the afk status of @%%USERNAME%%.",
