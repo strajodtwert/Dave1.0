@@ -43,7 +43,7 @@
     "adfly": "/me @%%NAME%%, Please change your autowoot program: http://www.balkan-party.cf/autowoot.html",
 
     "botwoot": "/me [!dance] :white_check_mark: @%%NAME%%, Autowoot Active!",
-    "songunban": "/me [@%%NAME%%] If you want to unban a song, fill this form: http://www.balkan-party.cf/unban.html",
+    "songunban": "/me [!songunban] [@%%NAME%%] If you want to unban a song, fill this form: http://www.balkan-party.cf/unban.html",
     "invalidtime": "/me [@%%NAME%%] Invalid time specified.",
     "nouserspecified": "/me [@%%NAME%%] No user specified.",
     "nolistspecified": "/me [@%%NAME%%] No list specified.",
