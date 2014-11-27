@@ -15,7 +15,7 @@
    from a version used in the original software
  
  
- TERMS OF REPRODUCTION USEhttps://www.facebook.com/groups/balkanparty19/
+ TERMS OF REPRODUCTION USE
  
  Failure to follow these terms will result in me getting very angry at you
  and having your software tweaked or removed if possible. Either way, you're
