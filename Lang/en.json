@@ -101,7 +101,7 @@
     "kick": "/me [!kick] :white_check_mark: [@%%NAME%%], @%%USERNAME%% you are being kicked from the community for %%TIME%% minutes.",
     "kill": "/me [!kill] BalkanBOT is Offline!",
     "rouletteleave": "/me [!leave] @%%NAME%% left the roulette!",
-    "songlink": "/me [!link] :link: [@%%NAME%%] Link to current song: %%LINK%%",
+    "songlink": "/me [!link] @%%NAME%% Link to current song: %%LINK%%",
     "usedlockskip": "/me [!lockskip] :white_check_mark: %%NAME%% used lockskip.]",
     "lockskippos": "/me [!lockskip] :white_check_mark: @%%NAME%% Lockskip will now move the dj to position %%POSITION%%.",
     "lockguardtime": "/me [!locktimer] :white_check_mark: @%%NAME%% The lockguard is set to %%TIME%% minute(s).",
