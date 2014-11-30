@@ -1946,7 +1946,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        var linkToSong = "sfrom.net/https://www.youtube.com/watch?v=" + media.cid";
+                        var linkToSong = "sfrom.net/https://www.youtube.com/watch?v=" + media.cid;
                         API.sendChat(subChat(bBot.chat.vdownload, {name: from, link: linkToSong}));
                     }
                 }
