@@ -1946,8 +1946,24 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        var linkToSong = "sfrom.net/https://www.youtube.com/watch?v=" + media.cid;
-                        API.sendChat(subChat(bBot.chat.vdownload, {name: from, link: linkToSong}));
+                    	var media = API.getMedia();
+                        var linkToSong = "http://www.sfrom.net/https://www.youtube.com/watch?v=" + media.cid;
+                        API.sendChat(subChat(bBot.chat.vdownload, {name: chat.un, link: linkToSong}));
+                    }
+                }
+            },
+            
+            downloadCommand: {
+                command: 'download',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                    	var media = API.getMedia();
+                        var linkToSong = "http://youtubeinmp3.com/download/?video=https://www.youtube.com/watch?v=" + media.cid;
+                        API.sendChat(subChat(bBot.chat.download, {name: chat.un, link: linkToSong}));
                     }
                 }
             },
