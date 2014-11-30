@@ -102,6 +102,7 @@
     "kill": "/me [!kill] BalkanBOT is Offline!",
     "rouletteleave": "/me [!leave] @%%NAME%% left the roulette!",
     "songlink": "/me [!link] @%%NAME%% Link to current song: %%LINK%%",
+    "vdownload": "/me [!vdownload] @%%NAME%% Download this video here:: %%LINK%%",
     "usedlockskip": "/me [!lockskip] :white_check_mark: %%NAME%% used lockskip.]",
     "lockskippos": "/me [!lockskip] :white_check_mark: @%%NAME%% Lockskip will now move the dj to position %%POSITION%%.",
     "lockguardtime": "/me [!locktimer] :white_check_mark: @%%NAME%% The lockguard is set to %%TIME%% minute(s).",
