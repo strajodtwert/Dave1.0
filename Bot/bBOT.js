@@ -980,6 +980,11 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                     }
                 }
                  **/
+                 if (msg.indexOf("i love you bot") > -1 || msg.indexOf("love you bot") > -1 || msg.indexOf("love yo bot") > -1 || msg.indexOf("bot i love you") > -1 || msg.indexOf("bot love you") > -1 || msg.indexOf("bot love yo") > -1 || msg.indexOf("bot my love") > -1 || msg.indexOf("bot i fell in love with you") > -1 || msg.indexOf("bot my dear") > -1){
+                    var loveMsg = ["I love you","Awww i love you to","My Only one :kissing_heart:","I love you to :heart:"];
+                    API.sendChat("@" + chat.un + " " + loveMsg[Math.floor(Math.random() * loveMsg.length)]);
+                    return true;
+                }
                  if (msg.indexOf("i got to go") > -1 || msg.indexOf("igtg") > -1 || msg.indexOf("gtg") > -1 || msg.indexOf("be back") > -1 || msg.indexOf("going off") > -1 || msg.indexOf("off to") > -1 || msg.indexOf("have to go") > -1 || msg.indexOf("bye bot") > -1 || msg.indexOf("bot bye") > -1){
                     var AfkMsg = ["See ya man!","Awww, See ya babe.","Glad you came by thanks! :kissing_heart:","Thanks for coming. Hope to see you soon! :blue_heart:"];
                     API.sendChat("@" + chat.un + " " + AfkMsg[Math.floor(Math.random() * AfkMsg.length)]);
