@@ -980,6 +980,26 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                     }
                 }
                  **/
+                 if (msg.indexOf("i got to go") > -1 || msg.indexOf("igtg") > -1 || msg.indexOf("gtg") > -1 || msg.indexOf("be back") > -1 || msg.indexOf("going off") > -1 || msg.indexOf("off to") > -1 || msg.indexOf("have to go") > -1 || msg.indexOf("bye bot") > -1 || msg.indexOf("bot bye") > -1){
+                    var AfkMsg = ["See ya man!","Awww, See ya babe.","Glad you came by thanks! :kissing_heart:","Thanks for coming. Hope to see you soon! :blue_heart:"];
+                    API.sendChat("@" + chat.un + " " + AfkMsg[Math.floor(Math.random() * AfkMsg.length)]);
+                    return true;
+                }
+                 if (msg.indexOf("bot shut up") > -1 || msg.indexOf("shut up bot") > -1 || msg.indexOf("stfu bot") > -1 || msg.indexOf("bot stfu") > -1 || msg.indexOf("hush bot") > -1 || msg.indexOf("bot hush") > -1 || msg.indexOf("hush it bot") > -1 || msg.indexOf("bot hush it") > -1 || msg.indexOf("be quiet bot") > -1 || msg.indexOf("bot be quiet") > -1 || msg.indexOf("shut the hell up bot") > -1 || msg.indexOf("bot shut the hell up") > -1){
+                    var stfuMsg = ["<Test/ShutUp ... Nope","Eat this http://i.imgur.com/CSq5xkH.gif","No you shut up!","But i was made to talk.. :(","Just because i am a bot doesn't mean you have to tell me to shut up. Why don't you shut up!","Hey idiot! Ever heard of pressing the \"Ignore button\"?"];
+                    API.sendChat("@" + chat.un + " " + stfuMsg[Math.floor(Math.random() * stfuMsg.length)]);
+                    return true;
+                }
+                 if (msg.indexOf("ty bot") > -1 || msg.indexOf("bot ty") > -1 || msg.indexOf("thank you bot") > -1 || msg.indexOf("bot thank you") > -1 || msg.indexOf("thanks bot") > -1 || msg.indexOf("bot thanks") > -1 || msg.indexOf("thx bot") > -1 || msg.indexOf("bot thx") > -1 || msg.indexOf("thanks") > -1 || msg.indexOf("bot thanks for asking") > -1 || msg.indexOf("thx for asking bot") > -1 || msg.indexOf("bot thx for asking") > -1){
+                    var TYMsg = ["You're welcome! :D","Your always welcome bro!","No prob man.."];
+                    API.sendChat("@" + chat.un + " " + TYMsg[Math.floor(Math.random() * TYMsg.length)]);
+                    return true;
+                }
+                 if (msg.indexOf("how are you bot") > -1 || msg.indexOf("bot how are you") > -1 || msg.indexOf("hru bot") > -1 || msg.indexOf("bot hru") > -1 || msg.indexOf("doing good bot?") > -1 || msg.indexOf("bot doing good?") > -1 || msg.indexOf("hows it going bot") > -1 || msg.indexOf("bot how is it going") > -1 || msg.indexOf("how you doing bot") > -1 || msg.indexOf("bot how you doing") > -1){
+                    var HRUMsg = ["I'm good thanks for asking :)","Doing great yo and yourself?","All Good Mate!","I'm good thanks for asking!","Yeee i'm cool and youself yo?"];
+                    API.sendChat("@"+ chat.un +" " + HRUMsg[Math.floor(Math.random() * HRUMsg.length)]);
+                    return true;
+                }
                  if (msg.indexOf('hello bot') > -1 || msg.indexOf('hi') > -1 || msg.indexOf('hi bot') > -1 || msg.indexOf('bot hi') > -1 || msg.indexOf('sup bot') > -1 || msg.indexOf('helllo') > -1 || msg.indexOf('hey bot') > -1 || msg.indexOf('bot hey') > -1 || msg.indexOf('howdy bot') > -1 || msg.indexOf('bot howdy') > -1 || msg.indexOf('aye bot') > -1 || msg.indexOf('yo bot') > -1 || msg.indexOf('waddup bot') > -1 || msg.indexOf('bot waddup') > -1){
                     var HelloMsg = ["Hey!","Oh hey there!","Good day sir!","Hi","Howdy!","Waddup!"];
                     API.sendChat("@" + chat.un + " " + HelloMsg[Math.floor(Math.random() * HelloMsg.length)]);
