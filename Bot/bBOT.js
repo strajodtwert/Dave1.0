@@ -1243,7 +1243,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
             /**
              command: {
                         command: 'cmd',
-                        rank: 'user/bouncer/mod/manager',
+                        rank: 'user/residentdj/bouncer/mod/manager',
                         type: 'startsWith/exact',
                         functionality: function(chat, cmd){
                                 if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1940,7 +1940,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
             
             vdownloadCommand: {
                 command: 'vdownload',
-                rank: 'user',
+                rank: 'residentdj',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1954,7 +1954,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 02.11.2014", true);
             },
             
             downloadCommand: {
-                command: 'download',
+                command: 'residentdj',
                 rank: 'user',
                 type: 'exact',
                 functionality: function (chat, cmd) {
