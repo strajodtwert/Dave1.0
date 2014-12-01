@@ -193,7 +193,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
     var botCreatorIDs = [];
 
     var bBot = {
-        version: "2.2.3",
+        version: "2.2.4",
         status: false,
         name: "BalkanBOT",
         loggedInID: 3625731,
