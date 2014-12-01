@@ -980,6 +980,11 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                     }
                 }
                  **/
+                 if (msg.indexOf('hello bot') > -1 || msg.indexOf('hi') > -1 || msg.indexOf('hi bot') > -1 || msg.indexOf('bot hi') > -1 || msg.indexOf('sup bot') > -1 || msg.indexOf('helllo') > -1 || msg.indexOf('hey bot') > -1 || msg.indexOf('bot hey') > -1 || msg.indexOf('howdy bot') > -1 || msg.indexOf('bot howdy') > -1 || msg.indexOf('aye bot') > -1 || msg.indexOf('yo bot') > -1 || msg.indexOf('waddup bot') > -1 || msg.indexOf('bot waddup') > -1){
+                    var HelloMsg = ["Hey!","Oh hey there!","Good day sir!","Hi","Howdy!","Waddup!"];
+                    API.sendChat("@" + chat.un + " " + HelloMsg[Math.floor(Math.random() * HelloMsg.length)]);
+                    return true;
+                }
                 if (msg.indexOf('http://adf.ly/') > -1) {
                     API.moderateDeleteChat(chat.cid);
                     API.sendChat(subChat(bBot.chat.adfly, {name: chat.un}));
