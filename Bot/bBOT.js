@@ -980,6 +980,11 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                     }
                 }
                  **/
+                 if(msg.indexOf("fuck you bot") > -1 || msg.indexOf("bot fuck you") > -1 || msg.indexOf("f u bot") > -1 || msg.indexOf("bot f u") > -1 || msg.indexOf("fuhk yuh bot") > -1 || msg.indexOf("bot fuhk you") > -1){
+                    var FuckMsg = ["Nah.. I don't need another fuck after giving your mom one last night.","</input fuck> Jk... Fuck you too","< Test fuck >.. Sorry 0% fucks were given by me."];
+                    API.sendChat("@" + chat.un + " " + FuckMsg[Math.floor(Math.random() * FuckMsg.length)]);
+                    return true;
+                }
                  if (msg.indexOf("i love you bot") > -1 || msg.indexOf("love you bot") > -1 || msg.indexOf("love yo bot") > -1 || msg.indexOf("bot i love you") > -1 || msg.indexOf("bot love you") > -1 || msg.indexOf("bot love yo") > -1 || msg.indexOf("bot my love") > -1 || msg.indexOf("bot i fell in love with you") > -1 || msg.indexOf("bot my dear") > -1){
                     var loveMsg = ["I love you","Awww i love you to","My Only one :kissing_heart:","I love you to :heart:"];
                     API.sendChat("@" + chat.un + " " + loveMsg[Math.floor(Math.random() * loveMsg.length)]);
