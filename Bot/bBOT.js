@@ -980,9 +980,14 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                     }
                 }
                  **/
+                 if (msg.indexOf("be nice bot") > -1 || msg.indexOf("calm down bot")  > -1 || msg.indexOf("hmm bot")  > -1 || msg.indexOf("bot be nice")  > -1 || msg.indexOf("calm down bot")  > -1 || msg.indexOf("say sorry bot")  > -1){
+                    var NiceMsg = ["Oh sorry","Sry Wont happen again","I am sorry ok man"];
+                    API.sendChat("@" + chat.un + " " + NiceMsg[Math.floor(Math.random() * NiceMsg.length)]);
+                    return true;
+                }
                  if (msg.indexOf("fuck you bot") > -1 || msg.indexOf("bot fuck you")  > -1 || msg.indexOf("f u bot")  > -1 || msg.indexOf("bot f u")  > -1 || msg.indexOf("fuhk yuh bot")  > -1 || msg.indexOf("bot fuhk you")  > -1){
                     var FuckMsg = ["Nah.. I don't need another fuck after giving your mom one last night.","</input fuck> Jk... Fuck you too","< Test fuck >.. Sorry 0% fucks were given by me."];
-                    API.sendChat("@" + cjat.un + " " + FuckMsg[Math.floor(Math.random() * FuckMsg.length)]);
+                    API.sendChat("@" + chat.un + " " + FuckMsg[Math.floor(Math.random() * FuckMsg.length)]);
                     return true;
                 }
                  if (msg.indexOf("i got to go") > -1 || msg.indexOf("igtg") > -1 || msg.indexOf("gtg") > -1 || msg.indexOf("be back") > -1 || msg.indexOf("going off") > -1 || msg.indexOf("off to") > -1 || msg.indexOf("have to go") > -1 || msg.indexOf("bye bot") > -1 || msg.indexOf("bot bye") > -1){
