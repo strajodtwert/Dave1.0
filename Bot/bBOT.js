@@ -1005,7 +1005,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                     API.sendChat("@" + chat.un + " " + stfuMsg[Math.floor(Math.random() * stfuMsg.length)]);
                     return true;
                 }
-                 if (msg.indexOf("ty bot") > -1 || msg.indexOf("bot ty") > -1 || msg.indexOf("thank you bot") > -1 || msg.indexOf("bot thank you") > -1 || msg.indexOf("thanks bot") > -1 || msg.indexOf("bot thanks") > -1 || msg.indexOf("thx bot") > -1 || msg.indexOf("bot thx") > -1 || msg.indexOf("thanks") > -1 || msg.indexOf("bot thanks for asking") > -1 || msg.indexOf("thx for asking bot") > -1 || msg.indexOf("bot thx for asking") > -1){
+                 if (msg.indexOf("ty bot") > -1 || msg.indexOf("bot ty") > -1 || msg.indexOf("thank you bot") > -1 || msg.indexOf("bot thank you") > -1 || msg.indexOf("thanks bot") > -1 || msg.indexOf("bot thanks") > -1 || msg.indexOf("tnx bot") > -1 || msg.indexOf("bot thx") > -1 || msg.indexOf("thanks") > -1 || msg.indexOf("bot thanks for asking") > -1 || msg.indexOf("thx for asking bot") > -1 || msg.indexOf("bot thx for asking") > -1){
                     var TYMsg = ["You're welcome! :D","Your always welcome bro!","No prob man.."];
                     API.sendChat("@" + chat.un + " " + TYMsg[Math.floor(Math.random() * TYMsg.length)]);
                     return true;
