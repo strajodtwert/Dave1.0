@@ -1986,8 +1986,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                    	var link = API.getMedia().format+":"+API.getMedia().cid, true);
-                        API.sendChat(subChat(bBot.chat.mediaid, {name: chat.un, link: link}));
+                    	API.sendChat(API.getMedia().format+":"+API.getMedia().cid, true);
                     }
                 }
             },
