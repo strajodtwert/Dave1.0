@@ -104,7 +104,7 @@
     "songlink": "/me [!link] @%%NAME%% Link to current song: %%LINK%%",
     "vdownload": "/me [!vdownload] @%%NAME%% Download this video here:: %%LINK%%",
     "download": "/me [!download] @%%NAME%% Download this song here here:: %%LINK%%",
-    "download": "/me [!mediaid] @%%NAME%% Now playing MediaID: %%LINK%%",
+    "mediaid": "/me [!mediaid] @%%NAME%% Now playing MediaID: %%LINK%%",
     "usedlockskip": "/me [!lockskip] :white_check_mark: %%NAME%% used lockskip.]",
     "lockskippos": "/me [!lockskip] :white_check_mark: @%%NAME%% Lockskip will now move the dj to position %%POSITION%%.",
     "lockguardtime": "/me [!locktimer] :white_check_mark: @%%NAME%% The lockguard is set to %%TIME%% minute(s).",
