@@ -36,7 +36,7 @@
     "afkremove": "/me @%%NAME%%, you have been removed for being afk for %%TIME%%. You were at position %%POSITION%%. Chat at least once every %%MAXIMUMAFK%% minutes if you want to play a song.",
 
 
-    "caps": "/me @%%NAME%%, Turn off capslock.",
+    "caps": "/me @%%NAME%%, Caps is not allowed here!",
     "askskip": "/me @%%NAME%%, Dont ask for skip.",
     "spam": "/me :warning: @%%NAME%%, please don't spam.",
     "roomadvertising": "/me :warning: @%%NAME%%, don't post links to other rooms please.",
