@@ -932,6 +932,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
             }
             if (capitals >= 40) {
                 API.sendChat(subChat(bBot.chat.caps, {name: chat.un}));
+                API.moderateBanUser(user.id, 1, API.BAN.DAY);
                 return true;
             }
             msg = msg.toLowerCase();
