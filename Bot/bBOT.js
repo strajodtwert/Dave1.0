@@ -34,6 +34,19 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
 
 
 (function () {
+	
+	API.getWaitListPosition = function(id){
+        if(typeof id === 'undefined' || id === null){
+            id = API.getUser().id;
+        }
+        var wl = API.getWaitList();
+        for(var i = 0; i < wl.length; i++){
+            if(wl[i].id === id){
+                return i;
+            }
+        }
+        return -1;
+    };
 
     var kill = function () {
         clearInterval(bBot.room.autodisableInterval);
