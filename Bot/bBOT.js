@@ -216,6 +216,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
+        retrieveFromStorage: retrieveFromStorage,
         settings: {
             botName: "BalkanBOT",
             language: "english",
