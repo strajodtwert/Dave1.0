@@ -1257,7 +1257,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
             /**
              command: {
                         command: 'cmd',
-                        rank: 'user/residentdj/bouncer/mod/manager',
+                        rank: 'user/residentdj/bouncer/mod/manager/cohost',
                         type: 'startsWith/exact',
                         functionality: function(chat, cmd){
                                 if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2759,7 +2759,7 @@ function autowoot(){ $("#woot").click(); }
 
             refreshCommand: {
                 command: 'refresh',
-                rank: 'manager',
+                rank: 'cohost',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
