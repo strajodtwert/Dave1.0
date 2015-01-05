@@ -117,7 +117,7 @@
     "mutedtime": "/me :white_check_mark:  [@%%NAME%%] Muted @%%USERNAME%% for %%TIME%% minutes.",
     "unmuted": "/me [!unmute] :white_check_mark: @%%NAME%% Unmuted @%%USERNAME%%.",
     "muterank": "/me [!mute] @%%NAME%% Wow smart guy, you can't do that.",
-    "oplist": "/me [!op] Overplayed/Banned list: %%LINK%%",
+    "oplist": "/me [!op] @%%NAME%% Overplayed/Banned list: %%LINK%%",
     "pong": "/me Pong!",
     "reload": "/me Reloading...",
     "removenotinwl": "/me [!remove] @%%NAME%% Specified user @%%USERNAME%% is not in the waitlist.",
