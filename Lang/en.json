@@ -141,6 +141,7 @@
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
     "stumblr": "/me [!stumblr] %%NAME%% Selma tumblr: %%LINK%%.",
     "ask": "/me [!ask] [%%NAME%%] Feel free to ask us here: %%LINK%%.",
+    "test": "/me [!test] %%NAME%% I am online, No errors detected.",
     "roomhelp": "/me [!roomhelp] %%NAME%% Stay active while waiting to play your song or I'll remove you. To prevent lag type /cap 50.",
     "eldox": "/me [%%NAME%%] (EldoX) Lep,voli da pomaže. Nekad prevše smara. Ali uglavnom je Fin. :D",
     "selma": "/me [%%NAME%%] (Selma) Najljepsa djevojka, veoma je pametna i voli da se sali. :sparkling_heart:",
