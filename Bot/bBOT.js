@@ -2743,6 +2743,19 @@ function autowoot(){ $("#woot").click(); }
                     }
                 }
             },
+            
+            testCommand: {
+                command: 'test',
+                rank: 'cohost',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(subChat(bBot.chat.test, {name: chat.un}));
+                    }
+                }
+            },
 
             pingCommand: {
                 command: 'ping',
