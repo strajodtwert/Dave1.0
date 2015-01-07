@@ -30,12 +30,12 @@
 
 // THIS IS EDITED VERSION OF BASIC BOT
 
-API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
+API.chatLog("[ BalkanBOT ] LAST UPDATED: 07.01.2014", true);
 
 
 (function () {
-	
-	API.getWaitListPosition = function(id){
+
+    API.getWaitListPosition = function(id){
         if(typeof id === 'undefined' || id === null){
             id = API.getUser().id;
         }
@@ -202,14 +202,14 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
         return m;
     };
 
-    var botCreator = "Balkan Party";
+    var botCreator = "BalkanParty";
     var botCreatorIDs = [];
 
     var bBot = {
-        version: "2.2.4",
+        version: "2.2.5",
         status: false,
         name: "BalkanBOT",
-        loggedInID: 3625731,
+        loggedInID: "23625731",
         scriptLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Bot/bBOT.js",
         cmdLink: "http://www.balkan-party.cf/bbot.html",
         chatLink: "https://github.com/MrAjdin/BalkanBot/blob/master/Lang/en.json",
@@ -230,6 +230,8 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
             maximumLocktime: 10,
             cycleGuard: true,
             maximumCycletime: 10,
+            voteSkip: true,
+            voteSkipLimit: 10,
             timeGuard: true,
             maximumSongLength: 7,
             autodisable: false,
@@ -698,14 +700,14 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                             continue;
                         }
                         try {
-                            (function(l){
+                            (function (l) {
                                 $.get(bBot.settings.blacklists[l], function (data) {
                                     if (typeof data === 'string') {
                                         data = JSON.parse(data);
                                     }
                                     var list = [];
                                     for (var prop in data) {
-                                        if(typeof data[prop].mid !== 'undefined'){
+                                        if (typeof data[prop].mid !== 'undefined') {
                                             list.push(data[prop].mid);
                                         }
                                     }
@@ -818,6 +820,18 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                     }
                 }
             }
+
+            var mehs = API.getScore().negative;
+            var woots = API.getScore().positive;
+            var dj = API.getDJ();
+
+            if (bBot.settings.voteSkip) {
+                if ((mehs - woots) >= (bBot.settings.voteSkipLimit)) {
+                    API.sendChat(subChat(bBot.chat.voteskipexceededlimit, {name: dj.username, limit: bBot.settings.voteSkipLimit}));
+                    API.moderateForceSkip();
+                }
+            }
+
         },
         eventCurateupdate: function (obj) {
             for (var i = 0; i < bBot.room.users.length; i++) {
@@ -827,8 +841,19 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
             }
         },
         eventDjadvance: function (obj) {
+            var user = bBot.userUtilities.lookupUser(obj.dj.id)
+            for(var i = 0; i < bBot.room.users.length; i++){
+                if(bBot.room.users[i].id === user.id){
+                    bBot.room.users[i].lastDC = {
+                        time: null,
+                        position: null,
+                        songCount: 0
+                    };
+                }
+            }
+
             var lastplay = obj.lastPlay;
-            if (typeof lastplay === 'undefined') return void (0);
+            if (typeof lastplay === 'undefined') return;
             if (bBot.settings.songstats) {
                 if (typeof bBot.chat.songstatistics === "undefined") {
                     API.sendChat("/me " + lastplay.media.author + " - " + lastplay.media.title + ": " + lastplay.score.positive + "W/" + lastplay.score.grabs + "G/" + lastplay.score.negative + "M.")
@@ -859,6 +884,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                     var plays = bBot.room.historyList[i].length - 1;
                     var lastPlayed = bBot.room.historyList[i][plays];
                     API.sendChat(subChat(bBot.chat.songknown, {plays: plays, timetotal: bBot.roomUtilities.msToStr(Date.now() - firstPlayed), lasttime: bBot.roomUtilities.msToStr(Date.now() - lastPlayed)}));
+                    API.moderateForceSkip();
                     bBot.room.historyList[i].push(+new Date());
                     alreadyPlayed = true;
                 }
@@ -872,16 +898,10 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                 API.sendChat(subChat(bBot.chat.timelimit, {name: name, maxlength: bBot.settings.maximumSongLength}));
                 API.moderateForceSkip();
             }
-            var user = bBot.userUtilities.lookupUser(obj.dj.id);
             if (user.ownSong) {
                 API.sendChat(subChat(bBot.chat.permissionownsong, {name: user.username}));
                 user.ownSong = false;
             }
-            user.lastDC = {
-                time: null,
-                position: null,
-                songCount: 0
-            };
             clearTimeout(bBot.room.autoskipTimer);
             if (bBot.room.autoskip) {
                 var remaining = obj.media.duration * 1000;
@@ -1153,7 +1173,9 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
             API.off(API.HISTORY_UPDATE, this.proxy.eventHistoryupdate);
         },
         startup: function () {
-            Function.prototype.toString = function(){return 'Function.'};
+            Function.prototype.toString = function () {
+                return 'Function.'
+            };
             var u = API.getUser();
             if (bBot.userUtilities.getPermission(u) < 2) return API.chatLog(bBot.chat.greyuser);
             if (bBot.userUtilities.getPermission(u) === 2) API.chatLog(bBot.chat.bouncer);
@@ -1168,7 +1190,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
             retrieveFromStorage();
             window.bot = bBot;
             bBot.roomUtilities.updateBlacklists();
-            setInterval(bBot.roomUtilities.updateBlacklists, 60*60*1000);
+            setInterval(bBot.roomUtilities.updateBlacklists, 60 * 60 * 1000);
             bBot.getNewBlacklistedSongs = bBot.roomUtilities.exportNewBlacklistedSongs;
             bBot.logNewBlacklistedSongs = bBot.roomUtilities.logNewBlacklistedSongs;
             if (bBot.room.roomstats.launchTime === null) {
@@ -1257,7 +1279,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
             /**
              command: {
                         command: 'cmd',
-                        rank: 'user/residentdj/bouncer/mod/manager/cohost',
+                        rank: 'user/bouncer/mod/manager',
                         type: 'startsWith/exact',
                         functionality: function(chat, cmd){
                                 if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1492,9 +1514,9 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                             };
                             bBot.room.newBlacklisted.push(track);
                             bBot.room.blacklists[list].push(media.format + ':' + media.cid);
-                            API.sendChat(subChat(bBot.chat.newblacklisted, {name: chat.un, blacklist: list, author: media.author,title: media.title, mid: media.format + ':' + media.cid}));
+                            API.sendChat(subChat(bBot.chat.newblacklisted, {name: chat.un, blacklist: list, author: media.author, title: media.title, mid: media.format + ':' + media.cid}));
                             API.moderateForceSkip();
-                            if(typeof bBot.room.newBlacklistedSongFunction === 'function'){
+                            if (typeof bBot.room.newBlacklistedSongFunction === 'function') {
                                 bBot.room.newBlacklistedSongFunction(track);
                             }
                         }
@@ -1615,108 +1637,8 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                         }
                     }
                 }
-            }, 
-            
-            prcCommand: {
-                command: 'prc',
-                rank: 'bouncer',
-                type: 'startsWith',
-                cookies: ['Keva ti se kupa gola',
-		'Nema ti danas kurca',
-		'Vire ti stidne dlake',
-		'Mamuza te kara',
-		'Makse seljanko',
-		'Nema ispale bez tebe',
-		'Nes jebat',
-		'Zanimljivo, skoro pa interesanto...',
-		'Tvoja mama je tolko debela, da kad prolazi ispred TV-a prodje 4 epizode Srecnih ljudi',
-		'Samo tetki da odnesem lek',
-		'I tata bi sine',
-		'Ti abanzujes!!!',
-		'Sta se kacis na moju ogradu u tom pederskom odelu?'
-                ],
-                getCookie: function () {
-                    var c = Math.floor(Math.random() * this.cookies.length);
-                    return this.cookies[c];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-
-                        var space = msg.indexOf(' ');
-                        if (space === -1) {
-                            API.sendChat(subChat(bBot.chat.selfprc, {name: name}));
-                            return false;
-                        }
-                        else {
-                            var name = msg.substring(space + 2);
-                            var user = bBot.userUtilities.lookupUserName(name);
-                            if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(bBot.chat.nouserprc, {name: name}));
-                            }
-                            else if (user.username === chat.un) {
-                                return API.sendChat(subChat(bBot.chat.selfprc, {name: name}));
-                            }
-                            else {
-                                return API.sendChat(subChat(bBot.chat.prc, {nameto: user.username, cookie: this.getCookie()}));
-                            }
-                        }
-                    }
-                }
-            }, 
-            
-            giftCommand: {
-                command: 'gift',
-                rank: 'user',
-                type: 'startsWith',
-                cookies: ['has given you a red rose, who knows maybe he/she likes you <3',
-                          'thinks you are awesome person, give him a kiss.',
-                          'wants to marry you, please say yes.',
-                          'is in love with you, what about you?',
-                          'thinks you are a beautiful person, what you think about him/her?',
-                          'wants to kill you ........... lol i am just kidding, she/he thinks you are cute.',
-                          'wants to kiss you.',
-                          'thinks you are a beautiful person, give him/her a hug <3',
-                          'Do you love me because I am beautiful or am I beautiful because you love me?',
-                          'The moment he/she saw you he/she fell in love with U',
-                          'cant live without U',
-                          'wanna spend the rest of his life with U',
-                          'said. Falling in love with you is the second best thing in the world, Coz finding you was the first.'
-                ],
-                getCookie: function () {
-                    var c = Math.floor(Math.random() * this.cookies.length);
-                    return this.cookies[c];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-
-                        var space = msg.indexOf(' ');
-                        if (space === -1) {
-                            API.sendChat(bBot.chat.bgift);
-                            return false;
-                        }
-                        else {
-                            var name = msg.substring(space + 2);
-                            var user = bBot.userUtilities.lookupUserName(name);
-                            if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(bBot.chat.nouser, {name: name}));
-                            }
-                            else if (user.username === chat.un) {
-                                return API.sendChat(subChat(bBot.chat.selfgift, {name: name}));
-                            }
-                            else {
-                                return API.sendChat(subChat(bBot.chat.gift, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
-                            }
-                        }
-                    }
-                }
             },
-            
+
             cycleCommand: {
                 command: 'cycle',
                 rank: 'manager',
@@ -1771,6 +1693,49 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                 }
             },
 
+            voteskipCommand: {
+                command: 'voteskip',
+                rank: 'manager',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length <= cmd.length + 1) return API.sendChat(subChat(bBot.chat.voteskiplimit, {name: chat.un, limit: bBot.settings.voteSkipLimit}));
+                        var argument = msg.substring(cmd.length + 1);
+                        if (!bBot.settings.voteSkip) bBot.settings.voteSkip = !bBot.settings.voteSkip;
+                        if (isNaN(argument)) {
+                            API.sendChat(subChat(bBot.chat.voteskipinvalidlimit, {name: chat.un}));
+                        }
+                        else {
+                            bBot.settings.voteSkipLimit = argument;
+                            API.sendChat(subChat(bBot.chat.voteskipsetlimit, {name: chat.un, limit: bBot.settings.voteSkipLimit}));
+                        }
+                    }
+                }
+            },
+
+            togglevoteskipCommand: {
+                command: 'togglevoteskip',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.voteSkip) {
+                            bBot.settings.voteSkip = !bBot.settings.voteSkip;
+                            API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.voteskip}));
+                        }
+                        else {
+                            bBot.settings.motdEnabled = !bBot.settings.motdEnabled;
+                            API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.voteskip}));
+                        }
+                    }
+                }
+            },
+
             dclookupCommand: {
                 command: ['dclookup', 'dc'],
                 rank: 'user',
@@ -1794,51 +1759,9 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                     }
                 }
             },
-            // HiddenComand For someone special...
-             adnaCommand: {
-                command: 'adna',
-                rank: 'user',
-                type: 'startsWith',
-                cookies: ['Kad nas tisuce kilometara razdvoje i kad najmanje mislis na mene, moje oci gledaju u daljinu i traze samo tebe.',
-                'Tek kad andeli postanu zli, kad svi oceani presuse tad ce srce prestati gorjeti i ja su tebe prestati voljeti.',
-                'Kad ti najteze bude ili kad osjetis da te nesto boli, sjeti se da postoji bice koje te vjecno i duboko... VOLI!.',
-                'Reci mi da me ne trebas i otici cu. Reci da ti nije stalo i nestat cu. Reci da ti ne znacim nista, preboljet cu. Reci da me ne volis i umrijet cu..'
-		
-                ],
-                getCookie: function () {
-                    var c = Math.floor(Math.random() * this.cookies.length);
-                    return this.cookies[c];
-                },
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var msg = chat.message;
-
-                        var space = msg.indexOf(' ');
-                        if (space === -1) {
-                            API.sendChat(subChat(bBot.chat.adna, {adna: this.getCookie()}));
-                            return false;
-                        }
-                        else {
-                            var name = msg.substring(space + 2);
-                            var user = bBot.userUtilities.lookupUserName(name);
-                            if (user === false || !user.inRoom) {
-                                return API.sendChat(subChat(bBot.chat.selfadna, {name: name}));
-                            }
-                            else if (user.username === chat.un) {
-                                return API.sendChat(subChat(bBot.chat.selfadna, {name: name}));
-                            }
-                            else {
-                                return API.sendChat(subChat(bBot.chat.selfadna, {adna: this.getCookie()}));
-                            }
-                        }
-                    }
-                }
-            }, 
 
             deletechatCommand: {
-                command: 'delchat',
+                command: 'deletechat',
                 rank: 'mod',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
@@ -1903,7 +1826,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                     }
                 }
             },
-          
+
             fbCommand: {
                 command: 'fb',
                 rank: 'user',
@@ -1913,7 +1836,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 01.12.2014", true);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         if (typeof bBot.settings.fbLink === "string")
-                            API.sendChat(subChat(bBot.chat.facebook, {name: chat.un, link: bBot.settings.fbLink}));
+                            API.sendChat(subChat(bBot.chat.facebook, {link: bBot.settings.fbLink}));
                     }
                 }
             },
@@ -2348,7 +2271,7 @@ function autowoot(){ $("#woot").click(); }
                 }
             },
 
-            killCommand: {
+            stopCommand: {
                 command: 'stop',
                 rank: 'bouncer',
                 type: 'exact',
@@ -2551,7 +2474,50 @@ function autowoot(){ $("#woot").click(); }
                     }
                 }
             },
+            
+            // HiddenComand For someone special...
+             adnaCommand: {
+                command: 'adna',
+                rank: 'user',
+                type: 'startsWith',
+                cookies: ['Kad nas tisuce kilometara razdvoje i kad najmanje mislis na mene, moje oci gledaju u daljinu i traze samo tebe.',
+                'Tek kad andeli postanu zli, kad svi oceani presuse tad ce srce prestati gorjeti i ja su tebe prestati voljeti.',
+                'Kad ti najteze bude ili kad osjetis da te nesto boli, sjeti se da postoji bice koje te vjecno i duboko... VOLI!.',
+                'Reci mi da me ne trebas i otici cu. Reci da ti nije stalo i nestat cu. Reci da ti ne znacim nista, preboljet cu. Reci da me ne volis i umrijet cu..'
+		
+                ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
 
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(subChat(bBot.chat.adna, {adna: this.getCookie()}));
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = bBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(bBot.chat.selfadna, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(bBot.chat.selfadna, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(bBot.chat.selfadna, {adna: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            }, 
+            
             locktimerCommand: {
                 command: 'locktimer',
                 rank: 'manager',
@@ -2616,7 +2582,7 @@ function autowoot(){ $("#woot").click(); }
 
             moveCommand: {
                 command: 'move',
-                rank: 'bouncer',
+                rank: 'mod',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2711,13 +2677,20 @@ function autowoot(){ $("#woot").click(); }
 
                             }
                             else if (time > 30) {
-                                API.moderateMuteUser(user.id, 1, API.MUTE.MEDIUM);
+                                API.moderateMuteUser(user.id, 1, API.MUTE.LONG);
                                 API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
                                 setTimeout(function (id) {
                                     API.moderateUnmuteUser(id);
                                 }, time * 60 * 1000, user.id);
                             }
                             else if (time > 15) {
+                                API.moderateMuteUser(user.id, 1, API.MUTE.MEDIUM);
+                                API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
+                                setTimeout(function (id) {
+                                    API.moderateUnmuteUser(id);
+                                }, time * 60 * 1000, user.id);
+                            }
+                            else {
                                 API.moderateMuteUser(user.id, 1, API.MUTE.SHORT);
                                 API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
                                 setTimeout(function (id) {
@@ -2739,20 +2712,7 @@ function autowoot(){ $("#woot").click(); }
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         if (typeof bBot.settings.opLink === "string")
-                            return API.sendChat(subChat(bBot.chat.oplist, {name: chat.un, link: bBot.settings.opLink}));
-                    }
-                }
-            },
-            
-            testCommand: {
-                command: 'test',
-                rank: 'cohost',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        API.sendChat(subChat(bBot.chat.test, {name: chat.un}));
+                            return API.sendChat(subChat(bBot.chat.oplist, {link: bBot.settings.opLink}));
                     }
                 }
             },
@@ -2772,7 +2732,7 @@ function autowoot(){ $("#woot").click(); }
 
             refreshCommand: {
                 command: 'refresh',
-                rank: 'cohost',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2974,6 +2934,11 @@ function autowoot(){ $("#woot").click(); }
                         msg += bBot.chat.afksremoved + ": " + bBot.room.afkList.length + '. ';
                         msg += bBot.chat.afklimit + ': ' + bBot.settings.maximumAfk + '. ';
 
+                        msg += 'Bouncer+: ';
+                        if (bBot.settings.bouncerPlus) msg += 'ON';
+                        else msg += 'OFF';
+                        msg += '. ';
+
                         msg += bBot.chat.lockguard + ': ';
                         if (bBot.settings.lockGuard) msg += 'ON';
                         else msg += 'OFF';
@@ -2991,6 +2956,11 @@ function autowoot(){ $("#woot").click(); }
 
                         msg += bBot.chat.chatfilter + ': ';
                         if (bBot.settings.filterChat) msg += 'ON';
+                        else msg += 'OFF';
+                        msg += '. ';
+
+                        msg += bBot.chat.voteskip + ': ';
+                        if (Qbot.settings.voteskip) msg += 'ON';
                         else msg += 'OFF';
                         msg += '. ';
 
