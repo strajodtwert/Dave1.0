@@ -141,7 +141,7 @@
     "notmuted": "/me [@%%NAME%%] that user wasn't muted.",
     "unmuterank": "/me [!unmute] @%%NAME%% You can't unmute persons with an equal or higher rank than you.",
     "commandscd": "/me [!usercmdcd] :white_check_mark: [@%%NAME%%] The cooldown for commands by users is now set to %%TIME%% seconds.",
-    "voteratio": "/me [!voteratio] @%%NAME%% @%%USERNAME%% ~ woots: ' + %%WOOT%% + ', mehs: %%MEHS%%, ratio (w/m): %%RATIO%%.",
+    "voteratio": "/me [!voteratio] @%%NAME%% @%%USERNAME%% ~ woots: %%WOOT%% , mehs: %%MEHS%%, ratio (w/m): %%RATIO%%.",
     "website": "/me [!website] Our Official website is: %%LINK%%",
     "youtube": "/me [%%NAME%%] Subscribe to us on youtube: %%LINK%%",
     "stumblr": "/me [!stumblr] %%NAME%% Selma tumblr: %%LINK%%.",
