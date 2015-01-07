@@ -827,7 +827,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 07.01.2014", true);
 
             if (bBot.settings.voteSkip) {
                 if ((mehs - woots) >= (bBot.settings.voteSkipLimit)) {
-                    API.sendChat(subChat(bBot.chat.voteskipexceededlimit, {name: dj.username, limit: bBot.settings.voteSkipLimit}));
+                    API.sendChat(subChat(bBot.chat.voteskipexceededlimit, {name: chat.un, limit: bBot.settings.voteSkipLimit}));
                     API.moderateForceSkip();
                 }
             }
