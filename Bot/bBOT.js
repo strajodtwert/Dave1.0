@@ -231,7 +231,7 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 07.01.2014", true);
             cycleGuard: true,
             maximumCycletime: 10,
             voteSkip: true,
-            voteSkipLimit: 10,
+            voteSkipLimit: 8,
             timeGuard: true,
             maximumSongLength: 7,
             autodisable: false,
