@@ -2518,6 +2518,106 @@ function autowoot(){ $("#woot").click(); }
                 }
             }, 
             
+            prcCommand: {
+                command: 'prc',
+                rank: 'bouncer',
+                type: 'startsWith',
+                cookies: ['Keva ti se kupa gola',
+		'Nema ti danas kurca',
+		'Vire ti stidne dlake',
+		'Mamuza te kara',
+		'Makse seljanko',
+		'Nema ispale bez tebe',
+		'Nes jebat',
+		'Zanimljivo, skoro pa interesanto...',
+		'Tvoja mama je tolko debela, da kad prolazi ispred TV-a prodje 4 epizode Srecnih ljudi',
+		'Samo tetki da odnesem lek',
+		'I tata bi sine',
+		'Ti abanzujes!!!',
+		'Sta se kacis na moju ogradu u tom pederskom odelu?'
+                ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(subChat(bBot.chat.selfprc, {name: name}));
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = bBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(bBot.chat.nouserprc, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(bBot.chat.selfprc, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(bBot.chat.prc, {nameto: user.username, cookie: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            }, 
+            
+            giftCommand: {
+                command: 'gift',
+                rank: 'user',
+                type: 'startsWith',
+                cookies: ['has given you a red rose, who knows maybe he/she likes you <3',
+                          'thinks you are awesome person, give him a kiss.',
+                          'wants to marry you, please say yes.',
+                          'is in love with you, what about you?',
+                          'thinks you are a beautiful person, what you think about him/her?',
+                          'wants to kill you ........... lol i am just kidding, she/he thinks you are cute.',
+                          'wants to kiss you.',
+                          'thinks you are a beautiful person, give him/her a hug <3',
+                          'Do you love me because I am beautiful or am I beautiful because you love me?',
+                          'The moment he/she saw you he/she fell in love with U',
+                          'cant live without U',
+                          'wanna spend the rest of his life with U',
+                          'said. Falling in love with you is the second best thing in the world, Coz finding you was the first.'
+                ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(bBot.chat.bgift);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = bBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(bBot.chat.nouser, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(bBot.chat.selfgift, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(bBot.chat.gift, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            },
+            
             locktimerCommand: {
                 command: 'locktimer',
                 rank: 'manager',
@@ -2911,7 +3011,7 @@ function autowoot(){ $("#woot").click(); }
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat('/me This bot was made by ' + botCreator + '.');
+                        API.sendChat('/me Bot edited by: ' + botCreator + '.');
                     }
                 }
             },
@@ -2960,7 +3060,7 @@ function autowoot(){ $("#woot").click(); }
                         msg += '. ';
 
                         msg += bBot.chat.voteskip + ': ';
-                        if (Qbot.settings.voteskip) msg += 'ON';
+                        if (bot.settings.voteskip) msg += 'ON';
                         else msg += 'OFF';
                         msg += '. ';
 
