@@ -1,5 +1,5 @@
 /*
-  Copyright (c) 2014 by BalkanParty
+  Copyright (c) 2014-2015 by BalkanParty
  
   Permission to use this software for any purpose without fee is hereby granted, provided
   that the above copyright notice and this permission notice appear in all copies.
