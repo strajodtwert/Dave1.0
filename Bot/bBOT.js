@@ -2575,7 +2575,7 @@ function autowoot(){ $("#woot").click(); }
                                 return API.sendChat(subChat(bBot.chat.selffortuneccookie, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(bBot.chat.selffortuneccookie, {adna: this.getCookie()}));
+                                return API.sendChat(subChat(bBot.chat.selffortuneccookie, {name: name}));
                             }
                         }
                     }
