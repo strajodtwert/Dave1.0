@@ -2518,6 +2518,70 @@ function autowoot(){ $("#woot").click(); }
                 }
             }, 
             
+            fortunecookieCommand: {
+                command: 'fortunecookie',
+                rank: 'user',
+                type: 'startsWith',
+                cookies: ['Your shoes will make you happy today.',
+                'You cannot love life until you live the life you love.',
+                'The man or woman you desire feels the same about you.',
+                'A dream you have will come true.',
+                'Never give up. You are not a failure if you dont give up.',
+                'You will become great if you believe in yourself.',
+                'You will marry your lover.',
+                'A very attractive person has a message for you.',
+                'It is now, and in this world, that we must live.',
+                'You must try, or hate yourself for not trying.',
+                'You can make your own happiness.',
+                'The greatest risk is not taking one.',
+                'Love can last a lifetime, if you want it to.',
+                'Serious trouble will bypass you.',
+                'Now is the time to try something new.',
+                'You are very talented in many ways.',
+                'A stranger, is a friend you have not spoken to yet.',
+                'You will travel to many exotic places in your lifetime.',
+                'Everyone agrees. You are the best.',
+                'Jealousy doesnt open doors, it closes them!',
+                'Never give up. Always find a reason to keep trying.',
+                'Stop wishing. Start doing.',
+                'For success today, look first to yourself.',
+                'If you are happy, you are successful.',
+                'Before trying to please others think of what makes you happy.',
+                'You learn from your mistakes, you will learn a lot today.'
+		
+                ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(subChat(bBot.chat.fortunecookie, {name: chat.un, fortune: this.getCookie()}));
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = bBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(bBot.chat.selffortuneccookie, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(bBot.chat.selffortuneccookie, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(bBot.chat.selffortuneccookie, {adna: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            }, 
+            
             prcCommand: {
                 command: 'prc',
                 rank: 'bouncer',
