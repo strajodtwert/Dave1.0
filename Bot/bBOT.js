@@ -1875,6 +1875,19 @@ API.chatLog("[ BalkanBOT ] LAST UPDATED: 07.01.2014", true);
                 }
             },
             
+            rouletteinfoCommand: {
+                command: 'rouletteinfo',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(subChat(bBot.chat.rouletteinfo, {name: chat.un}));
+                    }
+                }
+            },
+            
             mediaidCommand: {
                 command: 'mediaid',
                 rank: 'residentdj',
