@@ -258,7 +258,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 07.01.2014", true);
             opLink: "http://www.balkan-party.cf/blacklist.html",
             rulesLink: "http://www.balkan-party.cf/rules.html",
             themeLink: null,
-            fbLink: "https://www.facebook.com/groups/balkanparty19/",
+            fbLink: "https://www.facebook.com/groups/bestparty19/",
             youtubeLink: null,
             website: "http://www.balkan-party.cf/",
             intervalMessages: [],
