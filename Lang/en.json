@@ -6,8 +6,6 @@
     "greyuser": " :warning: BalkanBOT Connecting....... Fail",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
     "online": "/me :white_check_mark: %%BOTNAME%% %%VERSION%% online!",
-    "connected": "/me BalkanBOT Connecting.....",
-    "connected1": "/me BalkanBOT Connected Sucesfully.",
 
 
     "welcome": "/me Welcome %%NAME%%",
