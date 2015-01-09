@@ -3,8 +3,7 @@
     "nodatafound": "No previous data found.",
     "retrievingdata": "Retrieving previously stored data.",
     "datarestored": "Previously stored data successfully retrieved.",
-    "greyuser": " :warning: You dont have permission to run a BalkanBOT.",
-    "connectinggrey": "Connecting..... Fail.",
+    "greyuser": " :warning: BalkanBOT Connecting....... Fail",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
     "online": "/me :white_check_mark: %%BOTNAME%% %%VERSION%% online!",
 
