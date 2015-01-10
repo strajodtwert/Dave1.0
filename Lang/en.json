@@ -149,7 +149,7 @@
     "stumblr": "/me [!stumblr] %%NAME%% Selma tumblr: %%LINK%%.",
     "ask": "/me [!ask] [%%NAME%%] Feel free to ask us here: %%LINK%%.",
     "test": "/me [!test] %%NAME%% I am online, No errors detected.",
-    "rouletteinfo": "/me [!rouletteinfo] %%NAME%% I will move you to a random place on wl, doesnt matter if you are first or last in wait list, if you join roulette you can leave by typing !leave.",
+    "rouletteinfo": "/me [!rouletteinfo] %%NAME%% I will move you to a random place on wl, doesnt matter if you are first or last one, if you join roulette you can leave by typing !leave. Good Luck.",
     "roomhelp": "/me [!roomhelp] %%NAME%% Stay active while waiting to play your song or I'll remove you. To prevent lag type /cap 50.",
     "eldox": "/me [%%NAME%%] (EldoX) Lep,voli da pomaže. Nekad prevše smara. Ali uglavnom je Fin. :D",
     "selma": "/me [%%NAME%%] (Selma) Najljepsa djevojka, veoma je pametna i voli da se sali. :sparkling_heart:",
