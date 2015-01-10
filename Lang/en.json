@@ -93,7 +93,7 @@
     "cookie": "/me [!cookie] @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%",
     "prc": "/me [!prc] @%%NAMETO%%, %%COOKIE%%",
     "adna": "/me %%ADNA%%",
-    "fortunecookie": "/me [!fortunecookie] %%NAME%% %%FORTUNE%%",
+    "fortunecookie": "/me %%NAME%% %%FORTUNE%%",
     "selffortunecookie": "/me @%%NAME%%, Sorry you can't do that.",
     "cycleguardtime": "/me [!cycletimer] :white_check_mark: [@%%NAME%%] The cycleguard is set to %%TIME%% minute(s).",
     "dclookuprank": "/me [!dclookup] [@%%NAME%%] Only bouncers and above can do a lookup for others.",
