@@ -162,7 +162,7 @@
     "smrtnik": "/me %%NAME%% [!smrtnik] Lud, nekad zna da bude malo nenormlan, ali jos uvijek radi na tome hehe.",
     "ahmed": "/me %%NAME%% (!ahmed] Zajeban momak,voli se zezat,mlad,lijep,simpatican,i previse romantican,nekad zna da bude iznerviran, al vas sve voli najvise  <3",
     "natalija": "/me %%NAME%% [!natalija] Veoma duhovita djevojka, jako dobar prijatelj, veoma je pametna kao i lijepa, mozemo reci da je malo luda (u pozitivnom smislu) :v:",
-    "tea": "/me [%%NAME%%] [!tea] Debil, voli da j*** iz sale, opasna djevojka, jako voli da dijeli banove <3",
+    "tea": "/me %%NAME%% [!tea] Debil, voli da j*** iz sale, opasna djevojka, jako voli da dijeli banove <3",
     "masicka": "/me %%NAME%% [!masicka] Lijepa i komunikativna djevojka, ima odlican smisao za humor i uvijek zaljubljena  <3",
     "bgift": "/me I am awesome i know, you dont need to tag me :)",
     "nouser": "/em doesn't see %%NAME%% in room and he takes the gift for himself",
