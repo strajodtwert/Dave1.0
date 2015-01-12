@@ -3160,7 +3160,7 @@ function autowoot(){ $("#woot").click(); }
                         msg += '. ';
 
                         msg += bBot.chat.voteskip + ': ';
-                        if (bot.settings.voteskip) msg += 'ON';
+                        if (bBot.settings.voteskip) msg += 'ON';
                         else msg += 'OFF';
                         msg += '. ';
 
