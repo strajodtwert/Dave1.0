@@ -2765,7 +2765,7 @@ function autowoot(){ $("#woot").click(); }
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         var msg = chat.message;
-                        if (msg.length <= cmd.length + 1) return API.sendChat('/me MotD: ' + bBot.settings.motd);
+                        if (msg.length <= cmd.length + 1) return API.sendChat('/me MOTD: ' + bBot.settings.motd);
                         var argument = msg.substring(cmd.length + 1);
                         if (!bBot.settings.motdEnabled) bBot.settings.motdEnabled = !bBot.settings.motdEnabled;
                         if (isNaN(argument)) {
