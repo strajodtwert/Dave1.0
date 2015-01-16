@@ -3261,6 +3261,24 @@ API.on(API.ADVANCE, meh);
                 }
             },
 
+            toggleblCommand: {
+                command: 'togglebl',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var temp = bBot.settings.blacklistEnabled;
+                        bBot.settings.blacklistEnabled = !temp;
+                        if (bBot.settings.blacklistEnabled) {
+                          return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.blacklist}));
+                        }
+                        else return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.blacklist}));
+                    }
+                }
+            },                 
+
             togglemotdCommand: {
                 command: 'togglemotd',
                 rank: 'bouncer',
