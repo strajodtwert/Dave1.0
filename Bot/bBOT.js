@@ -873,7 +873,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 16.01.2014", true);
             var mid = obj.media.format + ':' + obj.media.cid;
             for (var bl in bBot.room.blacklists) {
                 if (bBot.room.blacklists[bl].indexOf(mid) > -1) {
-                    API.sendChat(subChat(bBot.chat.isblacklisted, {blacklist: bl}));
+                    API.sendChat(subChat(bBot.chat.isblacklisted, {name: chat.un, blacklist: bl}));
                     return API.moderateForceSkip();
                 }
             }
