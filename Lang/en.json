@@ -14,7 +14,7 @@
     "timelimit": "/me @%%NAME%%, your song is longer than %%MAXLENGTH%% minutes, suck it.",
     "permissionownsong": "/me :up: @%%NAME%% has permission to play their own production!",
     "isblacklisted": "/me This song is on the %%BLACKLIST%% blacklist, and its banned, for more information type !op",
-    "blacklist": "blacklist",
+    "blacklist": " :white_check_mark: Blacklist",
 
 
     "isopen": "/me [!roulette] :white_check_mark: The roulette is now open! Type !join to participate!",
