@@ -225,6 +225,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 07.01.2014", true);
             afkRemoval: false,
             maximumDc: 20,
             bouncerPlus: false,
+            blacklistEnabled: true,
             lockdownEnabled: false,
             lockGuard: true,
             maximumLocktime: 10,
