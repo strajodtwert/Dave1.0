@@ -212,7 +212,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 16.01.2014", true);
         loggedInID: "23625731",
         scriptLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Bot/bBOT.js",
         cmdLink: "http://www.balkan-party.cf/bbot.html",
-        chatLink: "https://github.com/MrAjdin/BalkanBot/blob/master/Lang/en.json",
+        chatLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Lang/en.json",
         chat: null,
         loadChat: loadChat,
         retrieveSettings: retrieveSettings,
@@ -220,7 +220,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 16.01.2014", true);
         settings: {
             botName: "BalkanBOT",
             language: "english",
-            chatLink: "https://github.com/MrAjdin/BalkanBot/blob/master/Lang/en.json",
+            chatLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Lang/en.json",
             maximumAfk: 90,
             afkRemoval: false,
             maximumDc: 20,
@@ -2092,15 +2092,15 @@ API.sendChat(subChat(bBot.chat.mujo, {name: chat.un}));
 }
 }
 },
-kimaCommand: {
-command: 'kima',
+filipCommand: {
+command: ['filip', 'tjofi'],
 rank: 'user',
 type: 'exact',
 functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-API.sendChat(subChat(bBot.chat.kima, {name: chat.un}));
+API.sendChat(subChat(bBot.chat.filip, {name: chat.un}));
 }
 }
 },
