@@ -61,6 +61,7 @@
     "afklimit": ":white_check_mark: AFK limit",
     "autoskip": ":white_check_mark: autoskip",
     "newblacklisted": "/me [@%%NAME%%] This track belongs on the %%BLACKLIST%% blacklist! [ %%AUTHOR%% - %%TITLE%% - %%MID%% ]",
+    "blinfo": "@%%NAME%% [!blinfo] Blacklist Info - Author: %%AUTHOR%%, Title: %%TITLE%%, Mid: %%SONGID%%",
     "cycleguard": ":white_check_mark: cycleguard",
     "timeguard": ":white_check_mark: timeguard",
     "chatfilter": "chatfilter",
