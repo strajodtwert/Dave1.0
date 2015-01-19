@@ -13,7 +13,7 @@
     "songknown": "/me :repeat: This song has been played %%PLAYS%% time(s) in the last %%TIMETOTAL%%, last play was %%LASTTIME%% ago.",
     "timelimit": "/me @%%NAME%%, your song is longer than %%MAXLENGTH%% minutes.",
     "permissionownsong": "/me :up: @%%NAME%% has permission to play their own production!",
-    "isblacklisted": "/me %%NAME%% This song is on the %%BLACKLIST%% blacklist, and its banned, for more information type !op",
+    "isblacklisted": "/me @%%NAME%% This song is on the %%BLACKLIST%% blacklist, and its banned, for more information type !op",
     "blacklist": " :white_check_mark: Blacklist",
 
 
