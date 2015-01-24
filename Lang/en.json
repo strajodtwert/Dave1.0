@@ -18,7 +18,7 @@
 
 
     "isopen": "/me [!roulette] :white_check_mark: The roulette is now open! Type !join to participate!",
-    "winnerpicked": "/me :white_check_mark: A winner has been picked! @%%NAME%% to position %%POSITION%%.",
+    "winnerpicked": "/me :white_ceheck_mark: A winner has been picked! @%%NAME%% to position %%POSITION%%.",
 
 
     "alreadyadding": "/me User is already being added! Changed the desired position to %%POSITION%%.",
@@ -154,7 +154,7 @@
     "test": "/me [!test] %%NAME%% I am online, No errors detected.",
     "rouletteinfo": "/me [!rouletteinfo] %%NAME%% I will move you to a random place on wl, doesnt matter if you are first or last one, if you join roulette you can leave by typing !leave. Good Luck.",
     "roomhelp": "/me [!roomhelp] %%NAME%% Stay active while waiting to play your song or I'll remove you. To prevent lag type /cap 50.",
-    "eldox": "/me @%%NAME%% [!eldoX] Lep,voli da pomaže. Nekad prevše smara. Ali uglavnom je Fin. :D",
+    "eldox": "/me @%%NAME%% [!eldoX] Lijep, voli da pomaže, nekad previše smara ali je uglavnom fin, :D",
     "selma": "/me @%%NAME%% [!selma] Najljepsa djevojka, veoma je pametna i voli da se sali. :sparkling_heart:",
     "roxor": "/me @%%NAME%% [!roxor] Najveci ljubavnik, zabavan momak, uvijek tu ako nesto zatreba. I voli da daje kolace.",
     "mujo": "/me @%%NAME%% [!mujo] Mujo ko mujo, iskren, uvijek tu ako zatreba, emotivan, dusa od covjeka. :gift_heart:",
