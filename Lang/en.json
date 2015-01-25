@@ -18,7 +18,7 @@
 
 
     "isopen": "/me [!roulette] :white_check_mark: The roulette is now open! Type !join to participate!",
-    "winnerpicked": "/me :white_ceheck_mark: A winner has been picked! @%%NAME%% to position %%POSITION%%.",
+    "winnerpicked": "/me :white_check_mark: A winner has been picked! @%%NAME%% to position %%POSITION%%.",
 
 
     "alreadyadding": "/me User is already being added! Changed the desired position to %%POSITION%%.",
