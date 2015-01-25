@@ -153,7 +153,7 @@
     "ask": "/me [!ask] [%%NAME%%] Feel free to ask us here: %%LINK%%.",
     "test": "/me [!test] %%NAME%% I am online, No errors detected.",
     "rouletteinfo": "/me [!rouletteinfo] %%NAME%% I will move you to a random place on wl, doesnt matter if you are first or last one, if you join roulette you can leave by typing !leave. Good Luck.",
-    "roomhelp": "/me [!roomhelp] %%NAME%% Stay active while waiting to play your song or I'll remove you. To prevent lag type /cap 50.",
+    "roomhelp": "/me [!roomhelp] %%NAME%% Stay active while waiting to play your song or I'll remove you. To prevent lag type /cap 20.",
     "eldox": "/me @%%NAME%% [!eldoX] Lijep, voli da pomaže, nekad previše smara ali je uglavnom fin, :D",
     "selma": "/me @%%NAME%% [!selma] Najljepsa djevojka, veoma je pametna i voli da se sali. :sparkling_heart:",
     "roxor": "/me @%%NAME%% [!roxor] Najveci ljubavnik, zabavan momak, uvijek tu ako nesto zatreba. I voli da daje kolace.",
