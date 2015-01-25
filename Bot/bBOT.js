@@ -148,7 +148,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 16.01.2014", true);
                 API.chatLog(bBot.chat.datarestored);
             }
         }
-        var json_sett = null;
+        /*var json_sett = null;
         var roominfo = document.getElementById("room-info");
         info = roominfo.textContent;
         var ref_bot = "@bBot=";
@@ -167,7 +167,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 16.01.2014", true);
                     }
                 }
             });
-        }
+        }*/
 
     };
 
