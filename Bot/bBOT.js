@@ -886,7 +886,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 16.01.2014", true);
                     var firstPlayed = bBot.room.historyList[i][1];
                     var plays = bBot.room.historyList[i].length - 1;
                     var lastPlayed = bBot.room.historyList[i][plays];
-                    API.sendChat(subChat(bBot.chat.songknown, {plays: plays, timetotal: bBot.roomUtilities.msToStr(Date.now() - firstPlayed), lasttime: bBot.roomUtilities.msToStr(Date.now() - lastPlayed)}));
+                    API.sendChat(subChat(bBot.chat.songknown, {name: name, plays: plays, timetotal: bBot.roomUtilities.msToStr(Date.now() - firstPlayed), lasttime: bBot.roomUtilities.msToStr(Date.now() - lastPlayed)}));
                     API.moderateForceSkip();
                     bBot.room.historyList[i].push(+new Date());
                     alreadyPlayed = true;
