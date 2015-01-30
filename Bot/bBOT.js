@@ -842,6 +842,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 16.01.2014", true);
             }
         },
         eventDjadvance: function (obj) {
+            $("#woot").click();
             var user = bBot.userUtilities.lookupUser(obj.dj.id)
             for(var i = 0; i < bBot.room.users.length; i++){
                 if(bBot.room.users[i].id === user.id){
@@ -1232,6 +1233,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 16.01.2014", true);
             bBot.status = true;
             API.sendChat('/cap 1');
             API.setVolume(0);
+            $("#woot").click();
             loadChat(API.sendChat(subChat(bBot.chat.online, {botname: bBot.settings.botName, version: bBot.version})));
         },
         commands: {
