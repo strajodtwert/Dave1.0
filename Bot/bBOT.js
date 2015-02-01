@@ -30,7 +30,7 @@
 
 // THIS IS EDITED VERSION OF BASIC BOT
 
-API.chatLog("[ Connecting... ] LAST UPDATED: 16.01.2014", true);
+API.chatLog("[ Connecting... ] LAST UPDATED: 02.02.2014", true);
 
 
 (function () {
@@ -206,7 +206,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 16.01.2014", true);
     var botCreatorIDs = [];
 
     var bBot = {
-        version: "2.2.5",
+        version: "v2.2.5",
         status: false,
         name: "BalkanBOT",
         loggedInID: "23625731",
