@@ -1430,6 +1430,27 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 02.02.2014", true);
                     }
                 }
             },
+            
+            autodisableCommand: {
+                command: 'autodisable',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.autodisable) {
+                            bBot.settings.autodisable = !bBot.settings.autodisable;
+                            return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.autodisable}));
+                        }
+                        else {
+                            bBot.settings.autodisable = !bBot.settings.autodisable;
+                            return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.autodisable}));
+                        }
+
+                    }
+                }
+            },
 
             autoskipCommand: {
                 command: 'autoskip',
