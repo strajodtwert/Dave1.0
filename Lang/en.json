@@ -59,6 +59,7 @@
     "afkremoval": ":white_check_mark: AFK removal",
     "afksremoved": "AFK's removed",
     "afklimit": ":white_check_mark: AFK limit",
+    "autodisable": "[!autodisable] autodisable",
     "autoskip": ":white_check_mark: autoskip",
     "newblacklisted": "/me [@%%NAME%%] This track belongs on the %%BLACKLIST%% blacklist! [ %%AUTHOR%% - %%TITLE%% - %%MID%% ]",
     "blinfo": "/me @%%NAME%% [!blinfo] Blacklist Info - author: %%AUTHOR%%, title: %%TITLE%%, mid: %%SONGID%%",
