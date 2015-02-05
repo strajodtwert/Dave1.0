@@ -30,7 +30,7 @@
 
 // THIS IS EDITED VERSION OF BASIC BOT
 
-API.chatLog("[ Connecting... ] LAST UPDATED: 02.02.2014", true);
+API.chatLog("[ Connecting... ] LAST UPDATED: 05.02.2014", true);
 
 
 (function () {
