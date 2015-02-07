@@ -1970,7 +1970,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 05.02.2014", true);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                     	var media = API.getMedia();
-                        var linkToSong = "http://youtubeinmp3.com/fetch/?video=http://www.youtube.com/watch?v=" + media.cid;
+                        var linkToSong = "http://www.video2mp3.net/loading.php?url=http://www.youtube.com/watch?v=" + media.cid;
                         API.sendChat(subChat(bBot.chat.download, {name: chat.un, link: linkToSong}));
                     }
                 }
