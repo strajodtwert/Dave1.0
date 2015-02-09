@@ -44,6 +44,7 @@
     "adfly": "/me @%%NAME%%, Please change your autowoot program: http://www.balkan-party.cf/autowoot.html",
 
     "botwoot": "/me [!dance] :white_check_mark: @%%NAME%%, Autowoot Active!",
+    "rouletteactivate": "/me [!rouletteactivate] :white_check_mark: @%%NAME%%, Roulette every 2h Activated.",
     "botmeh": "/me [!meh] I dont like this song, and sorry for meh, dont be mad :P",
     "songunban": "/me [!songunban] [@%%NAME%%] If you want to unban a song, fill this form: http://www.balkan-party.cf/unban.html",
     "invalidtime": "/me [@%%NAME%%] Invalid time specified.",
