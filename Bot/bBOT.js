@@ -203,7 +203,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 05.02.2014", true);
     };
 
     var botCreator = "BalkanParty";
-    var botCreatorIDs = [];
+    var botCreatorIDs = ["4756576"];
 
     var bBot = {
         version: "v2.2.5",
@@ -423,7 +423,9 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 05.02.2014", true);
                 var u;
                 if (typeof obj === "object") u = obj;
                 else u = API.getUser(obj);
-                if (botCreatorIDs.indexOf(u.id) > -1) return 10;
+                for (var i = 0; i < botCreatorIDs.length; i++) {
+                    if (botCreatorIDs[i].indexOf(u.id) > -1) return 10;
+                }
                 if (u.gRole < 2) return u.role;
                 else {
                     switch (u.gRole) {
