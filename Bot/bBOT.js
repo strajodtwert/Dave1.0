@@ -221,6 +221,9 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 05.02.2014", true);
             botName: "BalkanBOT",
             language: "english",
             chatLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Lang/en.json",
+            startupCap: 1, // 1-200
+            startupVolume: 0, // 0-100
+            startupEmoji: true, // true or false
             maximumAfk: 90,
             afkRemoval: false,
             maximumDc: 20,
@@ -1233,9 +1236,25 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 05.02.2014", true);
             }, 60 * 60 * 1000);
             bBot.loggedInID = API.getUser().id;
             bBot.status = true;
-            API.sendChat('/cap 1');
-            API.setVolume(0);
+            API.sendChat('/cap ' + bBot.settings.startupCap);
+            API.setVolume(bBot.settings.startupVolume);
             $("#woot").click();
+            if (bBot.settings.startupEmoji) {
+                var emojibuttonoff = $(".icon-emoji-off");
+                if (emojibuttonoff.length > 0) {
+                    emojibuttonoff[0].click();
+                }
+                API.chatLog('Emojis enabled.');
+            }
+            else {
+                var emojibuttonon = $(".icon-emoji-on");
+                if (emojibuttonon.length > 0) {
+                    emojibuttonon[0].click();
+                }
+                API.chatLog('Emojis disabled.');
+            }
+            API.chatLog('Avatars capped at ' + bBot.settings.startupCap);
+            API.chatLog('Volume set to ' + bBot.settings.startupVolume);
             loadChat(API.sendChat(subChat(bBot.chat.online, {botname: bBot.settings.botName, version: bBot.version})));
         },
         commands: {
