@@ -1826,7 +1826,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 09.02.2014", true);
                 }
             },
 
-            deletechatCommand: {
+            /*deletechatCommand: {
                 command: 'deletechat',
                 rank: 'mod',
                 type: 'startsWith',
@@ -1850,7 +1850,7 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 09.02.2014", true);
                         API.sendChat(subChat(bBot.chat.deletechat, {name: chat.un, username: name}));
                     }
                 }
-            },
+            },*/
 
             emojiCommand: {
                 command: 'emoji',
