@@ -17,7 +17,7 @@
     "blacklist": " :white_check_mark: Blacklist",
 
 
-    "isopen": "/me [!roulette] :white_check_mark: The roulette is now open! Type !join to participate!",
+    "isopen": "/me [!roulette] :white_check_mark: The roulettmue is now open! Type !join to participate!",
     "winnerpicked": "/me :white_check_mark: A winner has been picked! @%%NAME%% to position %%POSITION%%.",
 
 
@@ -159,7 +159,7 @@
     "eldox": "/me @%%NAME%% [!eldoX] Lijep, voli da pomaže, nekad previše smara ali je uglavnom fin, :D",
     "selma": "/me @%%NAME%% [!selma] Najljepsa djevojka, veoma je pametna i voli da se sali. :sparkling_heart:",
     "roxor": "/me @%%NAME%% [!roxor] Najveci ljubavnik, zabavan momak, uvijek tu ako nesto zatreba. I voli da daje kolace.",
-    "mujo": "/me @%%NAME%% [!mujo] Prvi sam ti prisao, srce ti osvojio, zaklinjao u ljubav vecnu, zivot nam planirao. Ali nije smelo da se desi ovo. Volim te i volecu te zauvek. #A :(",
+    "mujo": "/me @%%NAME%% [!mujo] Mujo ko mujo, fin decko, pametan, uvijek tu ako zatreba, dusa od covijeka <3",
     "filip": "/me @%%NAME%% [!filip, !tjofi] Lep i mlad, simpatican, previse romantican, ni u cemu obican, zivot mu idilican, lep na majku, ponosan, u zivotu prkosan.",
     "mamuza": "/me @%%NAME%% [!mamuza] Voli se zezati, dobar je prijatelj, ponekad smara ali sve to prodje. i jako voli lol, recimo da uziva u tome :)",
     "cobra": "/me @%%NAME%% [!cobra] Dobar drug,voli zezanciju,voli se zezati na svoj i tudji racun,brzo se iznervira,ali zato voli zeleno. :eyes:",
