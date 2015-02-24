@@ -5,7 +5,7 @@
     "datarestored": "Previously stored data successfully retrieved.",
     "greyuser": " :warning: [Connecting to Server...] BalkanBOT Failed to run.",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
-    "online": "/me :white_check_mark: %%BOTNAME%% %%VERSION%% Activated!",
+    "online": "/me :white_check_mark: %%BOTNAME%% %%VERSION%% succesfully started! Write !commands for info.",
 
 
     "welcome": "/me Welcome %%NAME%%",
