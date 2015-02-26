@@ -84,7 +84,7 @@
     "afkstatusreset": "/me [!afkreset] [@%%NAME%%] Reset the afk status of @%%USERNAME%%.",
     "inactivefor": "/me [!afktime] @%%NAME%% @%%USERNAME%% has been inactive for %%TIME%%.",
     "autowoot": "/me [!autowoot] :link: We recommend PlugCubed: http://www.balkan-party.cf/autowoot.html",
-    "brandambassador": "/me A Brand Ambassador is the voice of the plug.dj users. They promote events, engage the community and share the plug.dj message around the world. For more info: http://blog.plug.dj/brand-ambassadors/",
+    "brandambassador": "/me A Brand Ambassador is the voice of the plug.dj users. They promote events, engage the community and share the plug.dj message around the world. For more info: https://plug.dj/ba",
     "bouncerplusrank": "/me [@%%NAME%%] You have to be manager or up to enable Bouncer+.",
     "chatcleared": "/me :white_check_mark: [@%%NAME%%] Cleared the chat.",
     "deletechat": "/me [!delchat] @%%NAME%% Cleared the chat of %%USERNAME%%.",
