@@ -3,7 +3,7 @@
     "nodatafound": "No previous data found.",
     "retrievingdata": "Retrieving previously stored data.",
     "datarestored": "Previously stored data successfully retrieved.",
-    "greyuser": " :warning: [Connecting to "room": { "name": "" },] BalkanBOT Failed to run.",
+    "greyuser": " :warning: [Connecting to %r!] BalkanBOT Failed to run.",
     "bouncer": "The bot can't move people when it's run as a bouncer.",
     "online": "/me :white_check_mark: %%BOTNAME%% %%VERSION%% succesfully started!",
 
