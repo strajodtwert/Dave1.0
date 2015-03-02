@@ -1023,15 +1023,15 @@ API.chatLog("[ Connecting... ] LAST UPDATED: 02.03.2014", true);
                 }
                  **/
                  if (msg.indexOf('hai') > -1) {
-                 API.sendChat('Hi')
+                 API.sendChat("@" + chat.un +" Hi")
                  return true;
                 }
                 if (msg.indexOf('hi') > -1) {
-                 API.sendChat('Hallow')
+                 API.sendChat("@" + chat.un +" Hallo")
                  return true;
                 }
                 if (msg.indexOf('hello') > -1) {
-                 API.sendChat('Hai')
+                 API.sendChat("@" + chat.un +" Hai")
                  return true;
                 }
                 if (msg.indexOf('http://adf.ly/') > -1) {
