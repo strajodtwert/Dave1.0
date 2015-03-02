@@ -1,1 +1,3603 @@
-var _0x41bf=["\x5B\x20\x43\x6F\x6E\x6E\x65\x63\x74\x69\x6E\x67\x2E\x2E\x2E\x20\x5D\x20\x4C\x41\x53\x54\x20\x55\x50\x44\x41\x54\x45\x44\x3A\x20\x30\x39\x2E\x30\x32\x2E\x32\x30\x31\x34","\x63\x68\x61\x74\x4C\x6F\x67","\x63\x61\x6C\x6C","\x67\x65\x74\x57\x61\x69\x74\x4C\x69\x73\x74\x50\x6F\x73\x69\x74\x69\x6F\x6E","\x75\x6E\x64\x65\x66\x69\x6E\x65\x64","\x69\x64","\x67\x65\x74\x55\x73\x65\x72","\x67\x65\x74\x57\x61\x69\x74\x4C\x69\x73\x74","\x6C\x65\x6E\x67\x74\x68","\x61\x75\x74\x6F\x64\x69\x73\x61\x62\x6C\x65\x49\x6E\x74\x65\x72\x76\x61\x6C","\x72\x6F\x6F\x6D","\x61\x66\x6B\x49\x6E\x74\x65\x72\x76\x61\x6C","\x73\x74\x61\x74\x75\x73","\x62\x42\x6F\x74\x73\x65\x74\x74\x69\x6E\x67\x73","\x73\x65\x74\x74\x69\x6E\x67\x73","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x73\x65\x74\x49\x74\x65\x6D","\x62\x42\x6F\x74\x52\x6F\x6F\x6D","\x6E\x6F\x77","\x76\x65\x72\x73\x69\x6F\x6E","\x62\x42\x6F\x74\x53\x74\x6F\x72\x61\x67\x65\x49\x6E\x66\x6F","\x54\x68\x65\x72\x65\x20\x69\x73\x20\x61\x20\x63\x68\x61\x74\x20\x74\x65\x78\x74\x20\x6D\x69\x73\x73\x69\x6E\x67\x2E","\x6C\x6F\x67","\x5B\x45\x72\x72\x6F\x72\x5D\x20\x4E\x6F\x20\x74\x65\x78\x74\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x66\x6F\x75\x6E\x64\x2E","\x25\x25","\x74\x6F\x55\x70\x70\x65\x72\x43\x61\x73\x65","\x72\x65\x70\x6C\x61\x63\x65","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x72\x61\x77\x67\x69\x74\x2E\x63\x6F\x6D\x2F\x4D\x72\x41\x6A\x64\x69\x6E\x2F\x42\x61\x6C\x6B\x61\x6E\x42\x6F\x74\x2F\x6D\x61\x73\x74\x65\x72\x2F\x4C\x61\x6E\x67\x2F\x6C\x61\x6E\x67\x49\x6E\x64\x65\x78\x2E\x6A\x73\x6F\x6E","\x63\x68\x61\x74\x4C\x69\x6E\x6B","\x74\x6F\x4C\x6F\x77\x65\x72\x43\x61\x73\x65","\x6C\x61\x6E\x67\x75\x61\x67\x65","\x73\x74\x72\x69\x6E\x67","\x70\x61\x72\x73\x65","\x63\x68\x61\x74","\x67\x65\x74","\x67\x65\x74\x49\x74\x65\x6D","\x6E\x6F\x64\x61\x74\x61\x66\x6F\x75\x6E\x64","\x74\x69\x6D\x65","\x72\x65\x74\x72\x69\x65\x76\x69\x6E\x67\x64\x61\x74\x61","\x75\x73\x65\x72\x73","\x61\x66\x6B\x4C\x69\x73\x74","\x68\x69\x73\x74\x6F\x72\x79\x4C\x69\x73\x74","\x6D\x75\x74\x65\x64\x55\x73\x65\x72\x73","\x61\x75\x74\x6F\x73\x6B\x69\x70","\x72\x6F\x6F\x6D\x73\x74\x61\x74\x73","\x6D\x65\x73\x73\x61\x67\x65\x73","\x71\x75\x65\x75\x65","\x6E\x65\x77\x42\x6C\x61\x63\x6B\x6C\x69\x73\x74\x65\x64","\x64\x61\x74\x61\x72\x65\x73\x74\x6F\x72\x65\x64","\x73\x70\x6C\x69\x74\x42\x65\x74\x77\x65\x65\x6E","\x70\x72\x6F\x74\x6F\x74\x79\x70\x65","\x73\x70\x6C\x69\x74","\x69\x73\x41\x72\x72\x61\x79","\x70\x75\x73\x68","\x3C\x61\x20\x68\x72\x65\x66\x3D\x22","\x3C\x2F\x61\x3E","\x22","","\x42\x61\x6C\x6B\x61\x6E\x50\x61\x72\x74\x79","\x34\x37\x35\x36\x35\x37\x36","\x76\x32\x2E\x32\x2E\x35","\x42\x61\x6C\x6B\x61\x6E\x42\x4F\x54","\x32\x33\x36\x32\x35\x37\x33\x31","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x72\x61\x77\x67\x69\x74\x2E\x63\x6F\x6D\x2F\x4D\x72\x41\x6A\x64\x69\x6E\x2F\x42\x61\x6C\x6B\x61\x6E\x42\x6F\x74\x2F\x6D\x61\x73\x74\x65\x72\x2F\x42\x6F\x74\x2F\x62\x42\x4F\x54\x2E\x6A\x73","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x62\x61\x6C\x6B\x61\x6E\x2D\x70\x61\x72\x74\x79\x2E\x63\x66\x2F\x62\x62\x6F\x74\x2E\x68\x74\x6D\x6C","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x72\x61\x77\x67\x69\x74\x2E\x63\x6F\x6D\x2F\x4D\x72\x41\x6A\x64\x69\x6E\x2F\x42\x61\x6C\x6B\x61\x6E\x42\x6F\x74\x2F\x6D\x61\x73\x74\x65\x72\x2F\x4C\x61\x6E\x67\x2F\x65\x6E\x2E\x6A\x73\x6F\x6E","\x65\x6E\x67\x6C\x69\x73\x68","\x74\x68\x65\x6D\x65","\x54\x68\x69\x73\x20\x73\x6F\x6E\x67\x20\x64\x6F\x65\x73\x20\x6E\x6F\x74\x20\x66\x69\x74\x20\x74\x68\x65\x20\x72\x6F\x6F\x6D\x20\x74\x68\x65\x6D\x65\x2E\x20","\x6F\x70","\x54\x68\x69\x73\x20\x73\x6F\x6E\x67\x20\x69\x73\x20\x6F\x6E\x20\x74\x68\x65\x20\x4F\x50\x20\x6C\x69\x73\x74\x2E\x20","\x68\x69\x73\x74\x6F\x72\x79","\x54\x68\x69\x73\x20\x73\x6F\x6E\x67\x20\x69\x73\x20\x69\x6E\x20\x74\x68\x65\x20\x68\x69\x73\x74\x6F\x72\x79\x2E\x20","\x6D\x69\x78","\x59\x6F\x75\x20\x70\x6C\x61\x79\x65\x64\x20\x61\x20\x6D\x69\x78\x2C\x20\x77\x68\x69\x63\x68\x20\x69\x73\x20\x61\x67\x61\x69\x6E\x73\x74\x20\x74\x68\x65\x20\x72\x75\x6C\x65\x73\x2E\x20","\x73\x6F\x75\x6E\x64","\x54\x68\x65\x20\x73\x6F\x6E\x67\x20\x79\x6F\x75\x20\x70\x6C\x61\x79\x65\x64\x20\x68\x61\x64\x20\x62\x61\x64\x20\x73\x6F\x75\x6E\x64\x20\x71\x75\x61\x6C\x69\x74\x79\x20\x6F\x72\x20\x6E\x6F\x20\x73\x6F\x75\x6E\x64\x2E\x20","\x6E\x73\x66\x77","\x54\x68\x65\x20\x73\x6F\x6E\x67\x20\x79\x6F\x75\x20\x63\x6F\x6E\x74\x61\x69\x6E\x65\x64\x20\x77\x61\x73\x20\x4E\x53\x46\x57\x20\x28\x69\x6D\x61\x67\x65\x20\x6F\x72\x20\x73\x6F\x75\x6E\x64\x29\x2E\x20","\x75\x6E\x61\x76\x61\x69\x6C\x61\x62\x6C\x65","\x54\x68\x65\x20\x73\x6F\x6E\x67\x20\x79\x6F\x75\x20\x70\x6C\x61\x79\x65\x64\x20\x77\x61\x73\x20\x6E\x6F\x74\x20\x61\x76\x61\x69\x6C\x61\x62\x6C\x65\x20\x66\x6F\x72\x20\x73\x6F\x6D\x65\x20\x75\x73\x65\x72\x73\x2E\x20","\x61\x6D\x62\x61\x73\x73\x61\x64\x6F\x72","\x54\x65\x6D\x70\x6F\x72\x61\x72\x79\x20\x4D\x65\x73\x73\x61\x67\x65\x20\x6F\x66\x20\x74\x68\x65\x20\x44\x61\x79","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x62\x61\x6C\x6B\x61\x6E\x2D\x70\x61\x72\x74\x79\x2E\x63\x66\x2F\x62\x6C\x61\x63\x6B\x6C\x69\x73\x74\x2E\x68\x74\x6D\x6C","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x62\x61\x6C\x6B\x61\x6E\x2D\x70\x61\x72\x74\x79\x2E\x63\x66\x2F\x72\x75\x6C\x65\x73\x2E\x68\x74\x6D\x6C","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x66\x61\x63\x65\x62\x6F\x6F\x6B\x2E\x63\x6F\x6D\x2F\x67\x72\x6F\x75\x70\x73\x2F\x62\x65\x73\x74\x70\x61\x72\x74\x79\x31\x39\x2F","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x62\x61\x6C\x6B\x61\x6E\x2D\x70\x61\x72\x74\x79\x2E\x63\x66\x2F","\x21","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x72\x61\x77\x67\x69\x74\x2E\x63\x6F\x6D\x2F\x4D\x72\x41\x6A\x64\x69\x6E\x2F\x42\x61\x6C\x6B\x61\x6E\x42\x6F\x74\x2F\x6D\x61\x73\x74\x65\x72\x2F\x62\x6C\x61\x63\x6B\x4C\x69\x73\x74\x2F\x4F\x50\x2E\x6A\x73\x6F\x6E","\x61\x75\x74\x6F\x64\x69\x73\x61\x62\x6C\x65","\x21\x61\x66\x6B\x64\x69\x73\x61\x62\x6C\x65","\x73\x65\x6E\x64\x43\x68\x61\x74","\x21\x6A\x6F\x69\x6E\x64\x69\x73\x61\x62\x6C\x65","\x72\x6F\x75\x6C\x65\x74\x74\x65\x53\x74\x61\x74\x75\x73","\x72\x6F\x75\x6C\x65\x74\x74\x65","\x63\x6F\x75\x6E\x74\x64\x6F\x77\x6E","\x65\x6E\x64\x52\x6F\x75\x6C\x65\x74\x74\x65","\x69\x73\x6F\x70\x65\x6E","\x72\x61\x6E\x64\x6F\x6D","\x70\x61\x72\x74\x69\x63\x69\x70\x61\x6E\x74\x73","\x66\x6C\x6F\x6F\x72","\x6C\x6F\x6F\x6B\x75\x70\x55\x73\x65\x72","\x75\x73\x65\x72\x55\x74\x69\x6C\x69\x74\x69\x65\x73","\x75\x73\x65\x72\x6E\x61\x6D\x65","\x77\x69\x6E\x6E\x65\x72\x70\x69\x63\x6B\x65\x64","\x6D\x6F\x76\x65\x55\x73\x65\x72","\x6A\x6F\x69\x6E\x74\x69\x6D\x65","\x6C\x61\x73\x74\x41\x63\x74\x69\x76\x69\x74\x79","\x76\x6F\x74\x65\x73","\x6C\x61\x73\x74\x45\x74\x61","\x61\x66\x6B\x57\x61\x72\x6E\x69\x6E\x67\x43\x6F\x75\x6E\x74","\x61\x66\x6B\x43\x6F\x75\x6E\x74\x64\x6F\x77\x6E","\x69\x6E\x52\x6F\x6F\x6D","\x69\x73\x4D\x75\x74\x65\x64","\x6C\x61\x73\x74\x44\x43","\x6C\x61\x73\x74\x4B\x6E\x6F\x77\x6E\x50\x6F\x73\x69\x74\x69\x6F\x6E","\x70\x6F\x73\x69\x74\x69\x6F\x6E","\x73\x6F\x6E\x67\x43\x6F\x75\x6E\x74","\x74\x72\x69\x6D","\x6D\x65\x68","\x72\x61\x74\x69\x6F","\x74\x6F\x46\x69\x78\x65\x64","\x77\x6F\x6F\x74","\x6F\x62\x6A\x65\x63\x74","\x69\x6E\x64\x65\x78\x4F\x66","\x67\x52\x6F\x6C\x65","\x72\x6F\x6C\x65","\x6D\x6F\x64\x65\x72\x61\x74\x65\x41\x64\x64\x44\x4A","\x6D\x6F\x64\x65\x72\x61\x74\x65\x4D\x6F\x76\x65\x44\x4A","\x61\x6C\x72\x65\x61\x64\x79\x61\x64\x64\x69\x6E\x67","\x6C\x6F\x63\x6B\x42\x6F\x6F\x74\x68","\x62\x6F\x6F\x74\x68","\x72\x6F\x6F\x6D\x55\x74\x69\x6C\x69\x74\x69\x65\x73","\x75\x6E\x73\x68\x69\x66\x74","\x61\x64\x64\x69\x6E\x67","\x62\x6F\x6F\x6C\x65\x61\x6E","\x75\x73\x65\x72\x6E\x6F\x74\x66\x6F\x75\x6E\x64","\x6E\x6F\x74\x64\x69\x73\x63\x6F\x6E\x6E\x65\x63\x74\x65\x64","\x6E\x6F\x70\x6F\x73\x69\x74\x69\x6F\x6E","\x6D\x61\x78\x69\x6D\x75\x6D\x44\x63","\x6D\x73\x54\x6F\x53\x74\x72","\x74\x6F\x6F\x6C\x6F\x6E\x67\x61\x67\x6F","\x76\x61\x6C\x69\x64","\x61\x64\x6D\x69\x6E","\x68\x6F\x73\x74","\x63\x6F\x68\x6F\x73\x74","\x6D\x61\x6E\x61\x67\x65\x72","\x62\x6F\x75\x6E\x63\x65\x72","\x72\x65\x73\x69\x64\x65\x6E\x74\x64\x6A","\x75\x73\x65\x72","\x64\x61\x79","\x64\x61\x79\x73","\x68\x6F\x75\x72","\x68\x6F\x75\x72\x73","\x6D\x69\x6E\x75\x74\x65","\x6D\x69\x6E\x75\x74\x65\x73","\x73\x65\x63\x6F\x6E\x64","\x73\x65\x63\x6F\x6E\x64\x73","\x64","\x68","\x6D","\x73","\x6C\x6F\x63\x6B\x65\x64","\x6D\x6F\x64\x65\x72\x61\x74\x65\x4C\x6F\x63\x6B\x57\x61\x69\x74\x4C\x69\x73\x74","\x6C\x6F\x63\x6B\x47\x75\x61\x72\x64","\x6C\x6F\x63\x6B\x54\x69\x6D\x65\x72","\x6D\x61\x78\x69\x6D\x75\x6D\x4C\x6F\x63\x6B\x74\x69\x6D\x65","\x61\x66\x6B\x52\x65\x6D\x6F\x76\x61\x6C","\x61\x66\x6B\x52\x61\x6E\x6B\x43\x68\x65\x63\x6B","\x72\x61\x6E\x6B\x54\x6F\x4E\x75\x6D\x62\x65\x72","\x61\x66\x6B\x70\x6F\x73\x69\x74\x69\x6F\x6E\x43\x68\x65\x63\x6B","\x6D\x69\x6E","\x67\x65\x74\x50\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E","\x67\x65\x74\x4C\x61\x73\x74\x41\x63\x74\x69\x76\x69\x74\x79","\x6D\x61\x78\x69\x6D\x75\x6D\x41\x66\x6B","\x77\x61\x72\x6E\x69\x6E\x67\x31","\x77\x61\x72\x6E\x69\x6E\x67\x32","\x6D\x6F\x64\x65\x72\x61\x74\x65\x52\x65\x6D\x6F\x76\x65\x44\x4A","\x61\x66\x6B\x72\x65\x6D\x6F\x76\x65","\x2E\x63\x79\x63\x6C\x65\x2D\x74\x6F\x67\x67\x6C\x65","\x64\x69\x73\x61\x62\x6C\x65\x64","\x68\x61\x73\x43\x6C\x61\x73\x73","\x63\x6C\x69\x63\x6B","\x63\x79\x63\x6C\x65\x47\x75\x61\x72\x64","\x63\x79\x63\x6C\x65\x54\x69\x6D\x65\x72","\x65\x6E\x61\x62\x6C\x65\x64","\x63\x79\x63\x6C\x65\x4D\x61\x78\x54\x69\x6D\x65","\x6D\x6F\x74\x64\x45\x6E\x61\x62\x6C\x65\x64","\x6D\x6F\x74\x64\x49\x6E\x74\x65\x72\x76\x61\x6C","\x6D\x65\x73\x73\x61\x67\x65\x49\x6E\x74\x65\x72\x76\x61\x6C","\x6D\x6F\x74\x64","\x69\x6E\x74\x65\x72\x76\x61\x6C\x4D\x65\x73\x73\x61\x67\x65\x73","\x2F\x6D\x65\x20","\x62\x6C\x61\x63\x6B\x6C\x69\x73\x74\x73","\x66\x75\x6E\x63\x74\x69\x6F\x6E","\x6D\x69\x64","\x45\x72\x72\x6F\x72\x20\x73\x65\x74\x74\x69\x6E\x67","\x62\x6C\x61\x63\x6B\x6C\x69\x73\x74\x2E","\x74\x61\x62\x6C\x65","\x6C\x69\x73\x74","\x74\x69\x74\x6C\x65","\x61\x75\x74\x68\x6F\x72","\x6D\x65\x73\x73\x61\x67\x65","\x75\x69\x64","\x73\x65\x74\x4C\x61\x73\x74\x41\x63\x74\x69\x76\x69\x74\x79","\x75\x6E","\x63\x68\x61\x74\x46\x69\x6C\x74\x65\x72","\x63\x68\x61\x74\x55\x74\x69\x6C\x69\x74\x69\x65\x73","\x63\x6F\x6D\x6D\x61\x6E\x64\x43\x68\x65\x63\x6B","\x61\x63\x74\x69\x6F\x6E","\x77\x65\x6C\x63\x6F\x6D\x65","\x77\x65\x6C\x63\x6F\x6D\x65\x62\x61\x63\x6B","\x75\x70\x64\x61\x74\x65\x44\x43","\x76\x6F\x74\x65","\x6E\x65\x67\x61\x74\x69\x76\x65","\x67\x65\x74\x53\x63\x6F\x72\x65","\x70\x6F\x73\x69\x74\x69\x76\x65","\x67\x65\x74\x44\x4A","\x76\x6F\x74\x65\x53\x6B\x69\x70","\x76\x6F\x74\x65\x53\x6B\x69\x70\x4C\x69\x6D\x69\x74","\x76\x6F\x74\x65\x73\x6B\x69\x70\x65\x78\x63\x65\x65\x64\x65\x64\x6C\x69\x6D\x69\x74","\x6D\x6F\x64\x65\x72\x61\x74\x65\x46\x6F\x72\x63\x65\x53\x6B\x69\x70","\x63\x75\x72\x61\x74\x65","\x23\x77\x6F\x6F\x74","\x64\x6A","\x6C\x61\x73\x74\x50\x6C\x61\x79","\x73\x6F\x6E\x67\x73\x74\x61\x74\x73","\x73\x6F\x6E\x67\x73\x74\x61\x74\x69\x73\x74\x69\x63\x73","\x6D\x65\x64\x69\x61","\x20\x2D\x20","\x3A\x20","\x73\x63\x6F\x72\x65","\x57\x2F","\x67\x72\x61\x62\x73","\x47\x2F","\x4D\x2E","\x74\x6F\x74\x61\x6C\x57\x6F\x6F\x74\x73","\x74\x6F\x74\x61\x6C\x4D\x65\x68\x73","\x74\x6F\x74\x61\x6C\x43\x75\x72\x61\x74\x65\x73","\x69\x6E\x74\x65\x72\x76\x61\x6C\x4D\x65\x73\x73\x61\x67\x65","\x63\x75\x72\x72\x65\x6E\x74\x44\x4A\x49\x44","\x66\x6F\x72\x6D\x61\x74","\x3A","\x63\x69\x64","\x69\x73\x62\x6C\x61\x63\x6B\x6C\x69\x73\x74\x65\x64","\x73\x6F\x6E\x67\x6B\x6E\x6F\x77\x6E","\x74\x69\x6D\x65\x47\x75\x61\x72\x64","\x64\x75\x72\x61\x74\x69\x6F\x6E","\x6D\x61\x78\x69\x6D\x75\x6D\x53\x6F\x6E\x67\x4C\x65\x6E\x67\x74\x68","\x72\x6F\x6F\x6D\x65\x76\x65\x6E\x74","\x74\x69\x6D\x65\x6C\x69\x6D\x69\x74","\x6F\x77\x6E\x53\x6F\x6E\x67","\x70\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E\x6F\x77\x6E\x73\x6F\x6E\x67","\x61\x75\x74\x6F\x73\x6B\x69\x70\x54\x69\x6D\x65\x72","\x53\x6B\x69\x70\x70\x69\x6E\x67\x20\x74\x72\x61\x63\x6B\x2E","\x71\x75\x65\x75\x65\x61\x62\x6C\x65","\x71\x75\x65\x75\x65\x69\x6E\x67","\x73\x70\x6C\x69\x63\x65","\x75\x6E\x6C\x6F\x63\x6B\x42\x6F\x6F\x74\x68","\x75\x70\x64\x61\x74\x65\x50\x6F\x73\x69\x74\x69\x6F\x6E","\x66\x69\x6C\x74\x65\x72\x43\x68\x61\x74","\x63\x68\x61\x72\x41\x74","\x61","\x7A","\x41","\x5A","\x30","\x39","\x5E","\x63\x61\x70\x73","\x73\x6B\x69\x70","\x61\x73\x6B\x73\x6B\x69\x70","\x73\x70\x61\x6D","\x6D\x6F\x64\x65\x72\x61\x74\x65\x44\x65\x6C\x65\x74\x65\x43\x68\x61\x74","\x6C\x6F\x63\x6B\x64\x6F\x77\x6E\x45\x6E\x61\x62\x6C\x65\x64","\x63\x68\x61\x74\x63\x6C\x65\x61\x6E\x65\x72","\x68\x74\x74\x70\x3A\x2F\x2F\x61\x64\x66\x2E\x6C\x79\x2F","\x61\x64\x66\x6C\x79","\x61\x75\x74\x6F\x6A\x6F\x69\x6E\x20\x77\x61\x73\x20\x6E\x6F\x74\x20\x65\x6E\x61\x62\x6C\x65\x64","\x41\x46\x4B\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x77\x61\x73\x20\x6E\x6F\x74\x20\x65\x6E\x61\x62\x6C\x65\x64","\x61\x75\x74\x6F\x6A\x6F\x69\x6E\x20\x64\x69\x73\x61\x62\x6C\x65\x64","\x41\x46\x4B\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x64\x69\x73\x61\x62\x6C\x65\x64","\x72\x6F\x75\x6C\x65\x74\x74\x65\x6A\x6F\x69\x6E","\x72\x6F\x75\x6C\x65\x74\x74\x65\x6C\x65\x61\x76\x65","\x25\x25\x4E\x41\x4D\x45\x25\x25","\x6C\x6F\x67\x67\x65\x64\x49\x6E\x49\x44","\x20","\x73\x75\x62\x73\x74\x72\x69\x6E\x67","\x21\x6A\x6F\x69\x6E","\x21\x6C\x65\x61\x76\x65","\x75\x73\x65\x72\x63\x6F\x6D\x6D\x61\x6E\x64","\x61\x6C\x6C\x63\x6F\x6D\x6D\x61\x6E\x64","\x21\x65\x74\x61","\x65\x74\x61\x52\x65\x73\x74\x72\x69\x63\x74\x69\x6F\x6E","\x63\x6F\x6D\x6D\x61\x6E\x64\x73","\x63\x6F\x6D\x6D\x61\x6E\x64","\x63\x6F\x6D\x6D\x61\x6E\x64\x4C\x69\x74\x65\x72\x61\x6C","\x66\x75\x6E\x63\x74\x69\x6F\x6E\x61\x6C\x69\x74\x79","\x63\x6F\x6D\x6D\x61\x6E\x64\x43\x6F\x6F\x6C\x64\x6F\x77\x6E","\x74\x79\x70\x65","\x63\x68\x61\x74\x6D\x65\x73\x73\x61\x67\x65\x73","\x68\x75\x65\x68","\x68\x75\x33","\x62\x72\x62\x72","\x68\x65\x75","\x6B\x6B\x6B\x6B","\x73\x70\x6F\x64\x65\x72","\x6D\x61\x66\x69\x61","\x7A\x75\x65\x72\x61","\x7A\x75\x65\x69\x72\x61","\x7A\x75\x65\x72\x69\x61","\x61\x65\x68\x6F\x6F","\x61\x68\x65\x75","\x61\x6C\x67\x75\x65\x6D","\x61\x6C\x67\x75\x6D","\x62\x72\x61\x7A\x69\x6C","\x7A\x6F\x65\x69\x72\x61","\x66\x75\x63\x6B\x61\x64\x6D\x69\x6E\x73","\x61\x66\x66\x66\x66","\x76\x61\x69\x73\x65\x66\x6F\x64\x65\x72","\x68\x75\x65\x6E\x61\x61\x72\x65\x61","\x68\x69\x74\x6C\x65\x72","\x61\x73\x68\x75\x61","\x61\x68\x73\x75","\x61\x73\x68\x61\x75","\x6C\x75\x6C\x7A","\x68\x75\x65\x68\x75\x65","\x68\x75\x65","\x68\x75\x65\x68\x75\x65\x68\x75\x65","\x6D\x65\x72\x64\x61","\x70\x71\x70","\x70\x75\x74\x61","\x6D\x75\x6C\x68\x65\x72","\x70\x75\x6C\x61","\x72\x65\x74\x61\x72\x64\x61","\x63\x61\x72\x61\x6C\x68\x6F","\x66\x69\x6C\x68\x61","\x70\x70\x6B","\x67\x72\x69\x6E\x67\x6F","\x66\x75\x64\x65\x72","\x66\x6F\x64\x65\x72","\x68\x75\x61","\x61\x68\x75\x65","\x6D\x6F\x64\x61\x66\x75\x6B\x61","\x6D\x6F\x64\x61\x66\x6F\x6B\x61","\x6D\x75\x64\x61\x66\x75\x6B\x61","\x6D\x75\x64\x61\x66\x6F\x6B\x61","\x6F\x6F\x6F\x6F\x6F\x6F\x6F\x6F\x6F\x6F\x6F\x6F\x6F\x6F\x6F","\x66\x6F\x64\x61","\x6E\x69\x67\x67\x65\x72","\x66\x61\x67\x67\x6F\x74","\x6E\x69\x67\x67\x61","\x6E\x69\x71\x71\x61","\x6D\x6F\x74\x68\x65\x72\x66\x75\x63\x6B\x65\x72","\x6D\x6F\x64\x61\x66\x6F\x63\x6B\x61","\x70\x72\x6F\x78\x79","\x65\x76\x65\x6E\x74\x43\x68\x61\x74","\x65\x76\x65\x6E\x74\x55\x73\x65\x72\x73\x6B\x69\x70","\x65\x76\x65\x6E\x74\x55\x73\x65\x72\x6A\x6F\x69\x6E","\x65\x76\x65\x6E\x74\x55\x73\x65\x72\x6C\x65\x61\x76\x65","\x65\x76\x65\x6E\x74\x55\x73\x65\x72\x66\x61\x6E","\x65\x76\x65\x6E\x74\x46\x72\x69\x65\x6E\x64\x6A\x6F\x69\x6E","\x65\x76\x65\x6E\x74\x46\x61\x6E\x6A\x6F\x69\x6E","\x65\x76\x65\x6E\x74\x56\x6F\x74\x65\x75\x70\x64\x61\x74\x65","\x65\x76\x65\x6E\x74\x43\x75\x72\x61\x74\x65\x75\x70\x64\x61\x74\x65","\x65\x76\x65\x6E\x74\x52\x6F\x6F\x6D\x73\x63\x6F\x72\x65\x75\x70\x64\x61\x74\x65","\x65\x76\x65\x6E\x74\x44\x6A\x61\x64\x76\x61\x6E\x63\x65","\x65\x76\x65\x6E\x74\x44\x6A\x75\x70\x64\x61\x74\x65","\x65\x76\x65\x6E\x74\x57\x61\x69\x74\x6C\x69\x73\x74\x75\x70\x64\x61\x74\x65","\x65\x76\x65\x6E\x74\x56\x6F\x74\x65\x73\x6B\x69\x70","\x65\x76\x65\x6E\x74\x4D\x6F\x64\x73\x6B\x69\x70","\x65\x76\x65\x6E\x74\x43\x68\x61\x74\x63\x6F\x6D\x6D\x61\x6E\x64","\x65\x76\x65\x6E\x74\x48\x69\x73\x74\x6F\x72\x79\x75\x70\x64\x61\x74\x65","\x6F\x6E","\x6F\x66\x66","\x74\x6F\x53\x74\x72\x69\x6E\x67","\x46\x75\x6E\x63\x74\x69\x6F\x6E\x2E","\x67\x72\x65\x79\x75\x73\x65\x72","\x63\x6F\x6E\x6E\x65\x63\x74\x41\x50\x49","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x70\x6C\x75\x67\x2E\x64\x6A\x2F\x5F\x2F\x63\x68\x61\x74\x2F","\x44\x45\x4C\x45\x54\x45","\x61\x6A\x61\x78","\x62\x6F\x74","\x75\x70\x64\x61\x74\x65\x42\x6C\x61\x63\x6B\x6C\x69\x73\x74\x73","\x67\x65\x74\x4E\x65\x77\x42\x6C\x61\x63\x6B\x6C\x69\x73\x74\x65\x64\x53\x6F\x6E\x67\x73","\x65\x78\x70\x6F\x72\x74\x4E\x65\x77\x42\x6C\x61\x63\x6B\x6C\x69\x73\x74\x65\x64\x53\x6F\x6E\x67\x73","\x6C\x6F\x67\x4E\x65\x77\x42\x6C\x61\x63\x6B\x6C\x69\x73\x74\x65\x64\x53\x6F\x6E\x67\x73","\x6C\x61\x75\x6E\x63\x68\x54\x69\x6D\x65","\x67\x65\x74\x55\x73\x65\x72\x73","\x61\x66\x6B\x43\x68\x65\x63\x6B","\x61\x75\x74\x6F\x64\x69\x73\x61\x62\x6C\x65\x46\x75\x6E\x63","\x2F\x63\x61\x70\x20","\x73\x74\x61\x72\x74\x75\x70\x43\x61\x70","\x73\x74\x61\x72\x74\x75\x70\x56\x6F\x6C\x75\x6D\x65","\x73\x65\x74\x56\x6F\x6C\x75\x6D\x65","\x73\x74\x61\x72\x74\x75\x70\x45\x6D\x6F\x6A\x69","\x2E\x69\x63\x6F\x6E\x2D\x65\x6D\x6F\x6A\x69\x2D\x6F\x66\x66","\x45\x6D\x6F\x6A\x69\x73\x20\x65\x6E\x61\x62\x6C\x65\x64\x2E","\x2E\x69\x63\x6F\x6E\x2D\x65\x6D\x6F\x6A\x69\x2D\x6F\x6E","\x45\x6D\x6F\x6A\x69\x73\x20\x64\x69\x73\x61\x62\x6C\x65\x64\x2E","\x41\x76\x61\x74\x61\x72\x73\x20\x63\x61\x70\x70\x65\x64\x20\x61\x74\x20","\x56\x6F\x6C\x75\x6D\x65\x20\x73\x65\x74\x20\x74\x6F\x20","\x6F\x6E\x6C\x69\x6E\x65","\x62\x6F\x74\x4E\x61\x6D\x65","\x62\x6F\x75\x6E\x63\x65\x72\x50\x6C\x75\x73","\x6D\x6F\x64","\x65\x72\x72\x6F\x72\x20\x61\x73\x73\x69\x67\x6E\x69\x6E\x67\x20\x6D\x69\x6E\x69\x6D\x75\x6D\x20\x70\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E","\x61\x63\x74\x69\x76\x65","\x73\x74\x61\x72\x74\x73\x57\x69\x74\x68","\x65\x78\x61\x63\x74","\x72\x61\x6E\x6B","\x65\x78\x65\x63\x75\x74\x61\x62\x6C\x65","\x69\x6E\x76\x61\x6C\x69\x64\x74\x69\x6D\x65","\x61\x63\x74\x69\x76\x65\x75\x73\x65\x72\x73\x69\x6E\x74\x69\x6D\x65","\x61\x64\x64","\x6E\x6F\x75\x73\x65\x72\x73\x70\x65\x63\x69\x66\x69\x65\x64","\x73\x75\x62\x73\x74\x72","\x6C\x6F\x6F\x6B\x75\x70\x55\x73\x65\x72\x4E\x61\x6D\x65","\x65\x76\x65\x6E\x74\x41\x72\x74\x69\x73\x74\x73","\x69\x6E\x76\x61\x6C\x69\x64\x75\x73\x65\x72\x73\x70\x65\x63\x69\x66\x69\x65\x64","\x61\x66\x6B\x6C\x69\x6D\x69\x74","\x6E\x6F\x6C\x69\x6D\x69\x74\x73\x70\x65\x63\x69\x66\x69\x65\x64","\x6D\x61\x78\x69\x6D\x75\x6D\x61\x66\x6B\x74\x69\x6D\x65\x73\x65\x74","\x69\x6E\x76\x61\x6C\x69\x64\x6C\x69\x6D\x69\x74\x73\x70\x65\x63\x69\x66\x69\x65\x64","\x61\x66\x6B\x72\x65\x6D\x6F\x76\x61\x6C","\x74\x6F\x67\x67\x6C\x65\x6F\x66\x66","\x74\x6F\x67\x67\x6C\x65\x6F\x6E","\x61\x66\x6B\x72\x65\x73\x65\x74","\x61\x66\x6B\x73\x74\x61\x74\x75\x73\x72\x65\x73\x65\x74","\x61\x66\x6B\x74\x69\x6D\x65","\x69\x6E\x61\x63\x74\x69\x76\x65\x66\x6F\x72","\x61\x75\x74\x6F\x77\x6F\x6F\x74","\x62\x61","\x62\x72\x61\x6E\x64\x61\x6D\x62\x61\x73\x73\x61\x64\x6F\x72","\x62\x61\x6E","\x42\x41\x4E","\x6D\x6F\x64\x65\x72\x61\x74\x65\x42\x61\x6E\x55\x73\x65\x72","\x62\x6C\x61\x63\x6B\x6C\x69\x73\x74","\x62\x6C","\x6E\x6F\x6C\x69\x73\x74\x73\x70\x65\x63\x69\x66\x69\x65\x64","\x69\x6E\x76\x61\x6C\x69\x64\x6C\x69\x73\x74\x73\x70\x65\x63\x69\x66\x69\x65\x64","\x67\x65\x74\x4D\x65\x64\x69\x61","\x6E\x65\x77\x62\x6C\x61\x63\x6B\x6C\x69\x73\x74\x65\x64","\x6E\x65\x77\x42\x6C\x61\x63\x6B\x6C\x69\x73\x74\x65\x64\x53\x6F\x6E\x67\x46\x75\x6E\x63\x74\x69\x6F\x6E","\x62\x6C\x69\x6E\x66\x6F","\x62\x6F\x75\x6E\x63\x65\x72\x2B","\x42\x6F\x75\x6E\x63\x65\x72\x2B","\x62\x6F\x75\x6E\x63\x65\x72\x70\x6C\x75\x73\x72\x61\x6E\x6B","\x63\x6C\x65\x61\x72\x63\x68\x61\x74","\x63\x68\x69\x6C\x64\x72\x65\x6E","\x23\x63\x68\x61\x74\x2D\x6D\x65\x73\x73\x61\x67\x65\x73","\x64\x61\x74\x61\x2D\x63\x69\x64","\x67\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x63\x68\x61\x74\x63\x6C\x65\x61\x72\x65\x64","\x63\x6F\x6D\x6D\x61\x6E\x64\x73\x6C\x69\x6E\x6B","\x63\x6D\x64\x4C\x69\x6E\x6B","\x63\x6F\x6F\x6B\x69\x65","\x68\x61\x73\x20\x67\x69\x76\x65\x6E\x20\x79\x6F\x75\x20\x61\x20\x63\x68\x6F\x63\x6F\x6C\x61\x74\x65\x20\x63\x68\x69\x70\x20\x63\x6F\x6F\x6B\x69\x65\x21","\x68\x61\x73\x20\x67\x69\x76\x65\x6E\x20\x79\x6F\x75\x20\x61\x20\x73\x6F\x66\x74\x20\x68\x6F\x6D\x65\x6D\x61\x64\x65\x20\x6F\x61\x74\x6D\x65\x61\x6C\x20\x63\x6F\x6F\x6B\x69\x65\x21","\x68\x61\x73\x20\x67\x69\x76\x65\x6E\x20\x79\x6F\x75\x20\x61\x20\x70\x6C\x61\x69\x6E\x2C\x20\x64\x72\x79\x2C\x20\x6F\x6C\x64\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x49\x74\x20\x77\x61\x73\x20\x74\x68\x65\x20\x6C\x61\x73\x74\x20\x6F\x6E\x65\x20\x69\x6E\x20\x74\x68\x65\x20\x62\x61\x67\x2E\x20\x47\x72\x6F\x73\x73\x2E","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x73\x75\x67\x61\x72\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x57\x68\x61\x74\x2C\x20\x6E\x6F\x20\x66\x72\x6F\x73\x74\x69\x6E\x67\x20\x61\x6E\x64\x20\x73\x70\x72\x69\x6E\x6B\x6C\x65\x73\x3F\x20\x30\x2F\x31\x30\x20\x77\x6F\x75\x6C\x64\x20\x6E\x6F\x74\x20\x74\x6F\x75\x63\x68\x2E","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x63\x68\x6F\x63\x6F\x6C\x61\x74\x65\x20\x63\x68\x69\x70\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x4F\x68\x20\x77\x61\x69\x74\x2C\x20\x74\x68\x6F\x73\x65\x20\x61\x72\x65\x20\x72\x61\x69\x73\x69\x6E\x73\x2E\x20\x42\x6C\x65\x63\x6B\x21","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x6E\x20\x65\x6E\x6F\x72\x6D\x6F\x75\x73\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x50\x6F\x6B\x69\x6E\x67\x20\x69\x74\x20\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x6D\x6F\x72\x65\x20\x63\x6F\x6F\x6B\x69\x65\x73\x2E\x20\x57\x65\x69\x72\x64\x2E","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x66\x6F\x72\x74\x75\x6E\x65\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x49\x74\x20\x72\x65\x61\x64\x73\x20\x22\x57\x68\x79\x20\x61\x72\x65\x6E\x27\x74\x20\x79\x6F\x75\x20\x77\x6F\x72\x6B\x69\x6E\x67\x20\x6F\x6E\x20\x61\x6E\x79\x20\x70\x72\x6F\x6A\x65\x63\x74\x73\x3F\x22","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x66\x6F\x72\x74\x75\x6E\x65\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x49\x74\x20\x72\x65\x61\x64\x73\x20\x22\x47\x69\x76\x65\x20\x74\x68\x61\x74\x20\x73\x70\x65\x63\x69\x61\x6C\x20\x73\x6F\x6D\x65\x6F\x6E\x65\x20\x61\x20\x63\x6F\x6D\x70\x6C\x69\x6D\x65\x6E\x74\x22","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x66\x6F\x72\x74\x75\x6E\x65\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x49\x74\x20\x72\x65\x61\x64\x73\x20\x22\x54\x61\x6B\x65\x20\x61\x20\x72\x69\x73\x6B\x21\x22","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x66\x6F\x72\x74\x75\x6E\x65\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x49\x74\x20\x72\x65\x61\x64\x73\x20\x22\x47\x6F\x20\x6F\x75\x74\x73\x69\x64\x65\x2E\x22","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x66\x6F\x72\x74\x75\x6E\x65\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x49\x74\x20\x72\x65\x61\x64\x73\x20\x22\x44\x6F\x6E\x27\x74\x20\x66\x6F\x72\x67\x65\x74\x20\x74\x6F\x20\x65\x61\x74\x20\x79\x6F\x75\x72\x20\x76\x65\x67\x67\x69\x65\x73\x21\x22","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x66\x6F\x72\x74\x75\x6E\x65\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x49\x74\x20\x72\x65\x61\x64\x73\x20\x22\x44\x6F\x20\x79\x6F\x75\x20\x65\x76\x65\x6E\x20\x6C\x69\x66\x74\x3F\x22","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x66\x6F\x72\x74\x75\x6E\x65\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x49\x74\x20\x72\x65\x61\x64\x73\x20\x22\x6D\x38\x30\x38\x20\x70\x6C\x73\x22","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x66\x6F\x72\x74\x75\x6E\x65\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x49\x74\x20\x72\x65\x61\x64\x73\x20\x22\x49\x66\x20\x79\x6F\x75\x20\x6D\x6F\x76\x65\x20\x79\x6F\x75\x72\x20\x68\x69\x70\x73\x2C\x20\x79\x6F\x75\x27\x6C\x6C\x20\x67\x65\x74\x20\x61\x6C\x6C\x20\x74\x68\x65\x20\x6C\x61\x64\x69\x65\x73\x2E\x22","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x66\x6F\x72\x74\x75\x6E\x65\x20\x63\x6F\x6F\x6B\x69\x65\x2E\x20\x49\x74\x20\x72\x65\x61\x64\x73\x20\x22\x49\x20\x6C\x6F\x76\x65\x20\x79\x6F\x75\x2E\x22","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x47\x6F\x6C\x64\x65\x6E\x20\x43\x6F\x6F\x6B\x69\x65\x2E\x20\x59\x6F\x75\x20\x63\x61\x6E\x27\x74\x20\x65\x61\x74\x20\x69\x74\x20\x62\x65\x63\x61\x75\x73\x65\x20\x69\x74\x20\x69\x73\x20\x6D\x61\x64\x65\x20\x6F\x66\x20\x67\x6F\x6C\x64\x2E\x20\x44\x61\x6D\x6D\x69\x74\x2E","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x6E\x20\x4F\x72\x65\x6F\x20\x63\x6F\x6F\x6B\x69\x65\x20\x77\x69\x74\x68\x20\x61\x20\x67\x6C\x61\x73\x73\x20\x6F\x66\x20\x6D\x69\x6C\x6B\x21","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x20\x72\x61\x69\x6E\x62\x6F\x77\x20\x63\x6F\x6F\x6B\x69\x65\x20\x6D\x61\x64\x65\x20\x77\x69\x74\x68\x20\x6C\x6F\x76\x65\x20\x3A\x68\x65\x61\x72\x74\x3A","\x67\x69\x76\x65\x73\x20\x79\x6F\x75\x20\x61\x6E\x20\x6F\x6C\x64\x20\x63\x6F\x6F\x6B\x69\x65\x20\x74\x68\x61\x74\x20\x77\x61\x73\x20\x6C\x65\x66\x74\x20\x6F\x75\x74\x20\x69\x6E\x20\x74\x68\x65\x20\x72\x61\x69\x6E\x2C\x20\x69\x74\x27\x73\x20\x6D\x6F\x6C\x64\x79\x2E","\x62\x61\x6B\x65\x73\x20\x79\x6F\x75\x20\x66\x72\x65\x73\x68\x20\x63\x6F\x6F\x6B\x69\x65\x73\x2C\x20\x69\x74\x20\x73\x6D\x65\x6C\x6C\x73\x20\x61\x6D\x61\x7A\x69\x6E\x67\x2E","\x63\x6F\x6F\x6B\x69\x65\x73","\x65\x61\x74\x63\x6F\x6F\x6B\x69\x65","\x6E\x6F\x75\x73\x65\x72\x63\x6F\x6F\x6B\x69\x65","\x73\x65\x6C\x66\x63\x6F\x6F\x6B\x69\x65","\x67\x65\x74\x43\x6F\x6F\x6B\x69\x65","\x63\x79\x63\x6C\x65","\x63\x68\x61\x6E\x67\x65\x44\x4A\x43\x79\x63\x6C\x65","\x63\x79\x63\x6C\x65\x67\x75\x61\x72\x64","\x63\x79\x63\x6C\x65\x74\x69\x6D\x65\x72","\x6D\x61\x78\x69\x6D\x75\x6D\x43\x79\x63\x6C\x65\x74\x69\x6D\x65","\x63\x79\x63\x6C\x65\x67\x75\x61\x72\x64\x74\x69\x6D\x65","\x76\x6F\x74\x65\x73\x6B\x69\x70","\x76\x6F\x74\x65\x73\x6B\x69\x70\x6C\x69\x6D\x69\x74","\x76\x6F\x74\x65\x73\x6B\x69\x70\x69\x6E\x76\x61\x6C\x69\x64\x6C\x69\x6D\x69\x74","\x76\x6F\x74\x65\x73\x6B\x69\x70\x73\x65\x74\x6C\x69\x6D\x69\x74","\x74\x6F\x67\x67\x6C\x65\x76\x6F\x74\x65\x73\x6B\x69\x70","\x64\x63\x6C\x6F\x6F\x6B\x75\x70","\x64\x63","\x64\x63\x6C\x6F\x6F\x6B\x75\x70\x72\x61\x6E\x6B","\x65\x6D\x6F\x6A\x69","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x65\x6D\x6F\x6A\x69\x2D\x63\x68\x65\x61\x74\x2D\x73\x68\x65\x65\x74\x2E\x63\x6F\x6D\x2F","\x65\x6D\x6F\x6A\x69\x6C\x69\x73\x74","\x65\x74\x61","\x6E\x6F\x74\x69\x6E\x77\x61\x69\x74\x6C\x69\x73\x74","\x67\x65\x74\x54\x69\x6D\x65\x52\x65\x6D\x61\x69\x6E\x69\x6E\x67","\x66\x62","\x66\x62\x4C\x69\x6E\x6B","\x66\x61\x63\x65\x62\x6F\x6F\x6B","\x66\x69\x6C\x74\x65\x72","\x63\x68\x61\x74\x66\x69\x6C\x74\x65\x72","\x68\x65\x6C\x70","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x62\x61\x6C\x6B\x61\x6E\x2D\x70\x61\x72\x74\x79\x2E\x63\x66\x2F\x74\x75\x74\x6F\x72\x69\x6A\x61\x6C\x69\x2E\x68\x74\x6D\x6C","\x73\x74\x61\x72\x74\x65\x72\x68\x65\x6C\x70","\x72\x6F\x75\x6C\x65\x74\x74\x65\x69\x6E\x66\x6F","\x6D\x65\x64\x69\x61\x69\x64","\x76\x64\x6F\x77\x6E\x6C\x6F\x61\x64","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x73\x66\x72\x6F\x6D\x2E\x6E\x65\x74\x2F\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x79\x6F\x75\x74\x75\x62\x65\x2E\x63\x6F\x6D\x2F\x77\x61\x74\x63\x68\x3F\x76\x3D","\x64\x6F\x77\x6E\x6C\x6F\x61\x64","\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x76\x69\x64\x65\x6F\x32\x6D\x70\x33\x2E\x6E\x65\x74\x2F\x6C\x6F\x61\x64\x69\x6E\x67\x2E\x70\x68\x70\x3F\x75\x72\x6C\x3D\x68\x74\x74\x70\x3A\x2F\x2F\x77\x77\x77\x2E\x79\x6F\x75\x74\x75\x62\x65\x2E\x63\x6F\x6D\x2F\x77\x61\x74\x63\x68\x3F\x76\x3D","\x72\x6F\x6F\x6D\x68\x65\x6C\x70","\x65\x6C\x64\x6F\x78","\x73\x74\x75\x6D\x62\x6C\x72","\x68\x74\x74\x70\x3A\x2F\x2F\x6E\x61\x6D\x65\x2D\x69\x73\x2D\x61\x6C\x72\x65\x61\x64\x79\x2D\x74\x61\x6B\x65\x6E\x2E\x74\x75\x6D\x62\x6C\x72\x2E\x63\x6F\x6D\x2F","\x61\x73\x6B","\x68\x74\x74\x70\x3A\x2F\x2F\x61\x73\x6B\x2E\x66\x6D\x2F\x42\x61\x6C\x6B\x61\x6E\x50\x61\x72\x74\x79\x31\x32","\x74\x61\x63\x61","\x68\x75\x6C\x69\x67\x61\x6E\x6B\x61","\x76\x6C\x61\x6A\x6B\x6F","\x6D\x61\x73\x69\x63\x6B\x61","\x74\x65\x61","\x6E\x61\x74\x61\x6C\x69\x6A\x61","\x73\x65\x6C\x6D\x61","\x72\x6F\x78\x6F\x72","\x6D\x75\x6A\x6F","\x66\x69\x6C\x69\x70","\x74\x6A\x6F\x66\x69","\x6D\x61\x6D\x75\x7A\x61","\x63\x6F\x62\x72\x61","\x61\x6E\x6A\x61","\x73\x6D\x72\x74\x6E\x69\x6B","\x61\x68\x6D\x65\x64","\x73\x6F\x6E\x67\x75\x6E\x62\x61\x6E","\x64\x61\x6E\x63\x65","\x62\x6F\x74\x77\x6F\x6F\x74","\x62\x6F\x74\x6D\x65\x68","\x23\x6D\x65\x68","\x72\x6F\x75\x6C\x65\x74\x74\x65\x61\x63\x74\x69\x76\x61\x74\x65","\x73\x74\x61\x72\x74\x52\x6F\x75\x6C\x65\x74\x74\x65","\x6A\x6F\x69\x6E","\x67\x65\x74\x4A\x6F\x69\x6E\x74\x69\x6D\x65","\x6B\x69\x63\x6B","\x6C\x61\x73\x74\x49\x6E\x64\x65\x78\x4F\x66","\x6B\x69\x63\x6B\x72\x61\x6E\x6B","\x6D\x6F\x64\x65\x72\x61\x74\x65\x55\x6E\x62\x61\x6E\x55\x73\x65\x72","\x55\x6E\x62\x61\x6E\x6E\x65\x64\x20\x40","\x2E\x20\x28","\x29","\x73\x74\x6F\x70","\x6B\x69\x6C\x6C","\x64\x69\x73\x63\x6F\x6E\x6E\x65\x63\x74\x41\x50\x49","\x6C\x65\x61\x76\x65","\x6C\x69\x6E\x6B","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x79\x6F\x75\x74\x75\x62\x65\x2E\x63\x6F\x6D\x2F\x77\x61\x74\x63\x68\x3F\x76\x3D","\x73\x6F\x6E\x67\x6C\x69\x6E\x6B","\x2F\x74\x72\x61\x63\x6B\x73\x2F","\x70\x65\x72\x6D\x61\x6C\x69\x6E\x6B\x5F\x75\x72\x6C","\x6C\x6F\x63\x6B","\x6C\x6F\x63\x6B\x64\x6F\x77\x6E","\x6C\x6F\x63\x6B\x67\x75\x61\x72\x64","\x6C\x6F\x63\x6B\x73\x6B\x69\x70","\x73\x6B\x69\x70\x70\x61\x62\x6C\x65","\x40","\x75\x73\x65\x64\x6C\x6F\x63\x6B\x73\x6B\x69\x70","\x6C\x6F\x63\x6B\x73\x6B\x69\x70\x50\x6F\x73\x69\x74\x69\x6F\x6E","\x6C\x6F\x63\x6B\x73\x6B\x69\x70\x52\x65\x61\x73\x6F\x6E\x73","\x6C\x6F\x63\x6B\x73\x6B\x69\x70\x70\x6F\x73","\x69\x6E\x76\x61\x6C\x69\x64\x70\x6F\x73\x69\x74\x69\x6F\x6E\x73\x70\x65\x63\x69\x66\x69\x65\x64","\x61\x64\x6E\x61","\x4B\x61\x64\x20\x6E\x61\x73\x20\x74\x69\x73\x75\x63\x65\x20\x6B\x69\x6C\x6F\x6D\x65\x74\x61\x72\x61\x20\x72\x61\x7A\x64\x76\x6F\x6A\x65\x20\x69\x20\x6B\x61\x64\x20\x6E\x61\x6A\x6D\x61\x6E\x6A\x65\x20\x6D\x69\x73\x6C\x69\x73\x20\x6E\x61\x20\x6D\x65\x6E\x65\x2C\x20\x6D\x6F\x6A\x65\x20\x6F\x63\x69\x20\x67\x6C\x65\x64\x61\x6A\x75\x20\x75\x20\x64\x61\x6C\x6A\x69\x6E\x75\x20\x69\x20\x74\x72\x61\x7A\x65\x20\x73\x61\x6D\x6F\x20\x74\x65\x62\x65\x2E","\x54\x65\x6B\x20\x6B\x61\x64\x20\x61\x6E\x64\x65\x6C\x69\x20\x70\x6F\x73\x74\x61\x6E\x75\x20\x7A\x6C\x69\x2C\x20\x6B\x61\x64\x20\x73\x76\x69\x20\x6F\x63\x65\x61\x6E\x69\x20\x70\x72\x65\x73\x75\x73\x65\x20\x74\x61\x64\x20\x63\x65\x20\x73\x72\x63\x65\x20\x70\x72\x65\x73\x74\x61\x74\x69\x20\x67\x6F\x72\x6A\x65\x74\x69\x20\x69\x20\x6A\x61\x20\x73\x75\x20\x74\x65\x62\x65\x20\x70\x72\x65\x73\x74\x61\x74\x69\x20\x76\x6F\x6C\x6A\x65\x74\x69\x2E","\x4B\x61\x64\x20\x74\x69\x20\x6E\x61\x6A\x74\x65\x7A\x65\x20\x62\x75\x64\x65\x20\x69\x6C\x69\x20\x6B\x61\x64\x20\x6F\x73\x6A\x65\x74\x69\x73\x20\x64\x61\x20\x74\x65\x20\x6E\x65\x73\x74\x6F\x20\x62\x6F\x6C\x69\x2C\x20\x73\x6A\x65\x74\x69\x20\x73\x65\x20\x64\x61\x20\x70\x6F\x73\x74\x6F\x6A\x69\x20\x62\x69\x63\x65\x20\x6B\x6F\x6A\x65\x20\x74\x65\x20\x76\x6A\x65\x63\x6E\x6F\x20\x69\x20\x64\x75\x62\x6F\x6B\x6F\x2E\x2E\x2E\x20\x56\x4F\x4C\x49\x21\x2E","\x52\x65\x63\x69\x20\x6D\x69\x20\x64\x61\x20\x6D\x65\x20\x6E\x65\x20\x74\x72\x65\x62\x61\x73\x20\x69\x20\x6F\x74\x69\x63\x69\x20\x63\x75\x2E\x20\x52\x65\x63\x69\x20\x64\x61\x20\x74\x69\x20\x6E\x69\x6A\x65\x20\x73\x74\x61\x6C\x6F\x20\x69\x20\x6E\x65\x73\x74\x61\x74\x20\x63\x75\x2E\x20\x52\x65\x63\x69\x20\x64\x61\x20\x74\x69\x20\x6E\x65\x20\x7A\x6E\x61\x63\x69\x6D\x20\x6E\x69\x73\x74\x61\x2C\x20\x70\x72\x65\x62\x6F\x6C\x6A\x65\x74\x20\x63\x75\x2E\x20\x52\x65\x63\x69\x20\x64\x61\x20\x6D\x65\x20\x6E\x65\x20\x76\x6F\x6C\x69\x73\x20\x69\x20\x75\x6D\x72\x69\x6A\x65\x74\x20\x63\x75\x2E\x2E","\x73\x65\x6C\x66\x61\x64\x6E\x61","\x66\x6F\x72\x74\x75\x6E\x65\x63\x6F\x6F\x6B\x69\x65","\x59\x6F\x75\x72\x20\x73\x68\x6F\x65\x73\x20\x77\x69\x6C\x6C\x20\x6D\x61\x6B\x65\x20\x79\x6F\x75\x20\x68\x61\x70\x70\x79\x20\x74\x6F\x64\x61\x79\x2E","\x59\x6F\x75\x20\x63\x61\x6E\x6E\x6F\x74\x20\x6C\x6F\x76\x65\x20\x6C\x69\x66\x65\x20\x75\x6E\x74\x69\x6C\x20\x79\x6F\x75\x20\x6C\x69\x76\x65\x20\x74\x68\x65\x20\x6C\x69\x66\x65\x20\x79\x6F\x75\x20\x6C\x6F\x76\x65\x2E","\x54\x68\x65\x20\x6D\x61\x6E\x20\x6F\x72\x20\x77\x6F\x6D\x61\x6E\x20\x79\x6F\x75\x20\x64\x65\x73\x69\x72\x65\x20\x66\x65\x65\x6C\x73\x20\x74\x68\x65\x20\x73\x61\x6D\x65\x20\x61\x62\x6F\x75\x74\x20\x79\x6F\x75\x2E","\x41\x20\x64\x72\x65\x61\x6D\x20\x79\x6F\x75\x20\x68\x61\x76\x65\x20\x77\x69\x6C\x6C\x20\x63\x6F\x6D\x65\x20\x74\x72\x75\x65\x2E","\x4E\x65\x76\x65\x72\x20\x67\x69\x76\x65\x20\x75\x70\x2E\x20\x59\x6F\x75\x20\x61\x72\x65\x20\x6E\x6F\x74\x20\x61\x20\x66\x61\x69\x6C\x75\x72\x65\x20\x69\x66\x20\x79\x6F\x75\x20\x64\x6F\x6E\x74\x20\x67\x69\x76\x65\x20\x75\x70\x2E","\x59\x6F\x75\x20\x77\x69\x6C\x6C\x20\x62\x65\x63\x6F\x6D\x65\x20\x67\x72\x65\x61\x74\x20\x69\x66\x20\x79\x6F\x75\x20\x62\x65\x6C\x69\x65\x76\x65\x20\x69\x6E\x20\x79\x6F\x75\x72\x73\x65\x6C\x66\x2E","\x59\x6F\x75\x20\x77\x69\x6C\x6C\x20\x6D\x61\x72\x72\x79\x20\x79\x6F\x75\x72\x20\x6C\x6F\x76\x65\x72\x2E","\x41\x20\x76\x65\x72\x79\x20\x61\x74\x74\x72\x61\x63\x74\x69\x76\x65\x20\x70\x65\x72\x73\x6F\x6E\x20\x68\x61\x73\x20\x61\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x66\x6F\x72\x20\x79\x6F\x75\x2E","\x49\x74\x20\x69\x73\x20\x6E\x6F\x77\x2C\x20\x61\x6E\x64\x20\x69\x6E\x20\x74\x68\x69\x73\x20\x77\x6F\x72\x6C\x64\x2C\x20\x74\x68\x61\x74\x20\x77\x65\x20\x6D\x75\x73\x74\x20\x6C\x69\x76\x65\x2E","\x59\x6F\x75\x20\x6D\x75\x73\x74\x20\x74\x72\x79\x2C\x20\x6F\x72\x20\x68\x61\x74\x65\x20\x79\x6F\x75\x72\x73\x65\x6C\x66\x20\x66\x6F\x72\x20\x6E\x6F\x74\x20\x74\x72\x79\x69\x6E\x67\x2E","\x59\x6F\x75\x20\x63\x61\x6E\x20\x6D\x61\x6B\x65\x20\x79\x6F\x75\x72\x20\x6F\x77\x6E\x20\x68\x61\x70\x70\x69\x6E\x65\x73\x73\x2E","\x54\x68\x65\x20\x67\x72\x65\x61\x74\x65\x73\x74\x20\x72\x69\x73\x6B\x20\x69\x73\x20\x6E\x6F\x74\x20\x74\x61\x6B\x69\x6E\x67\x20\x6F\x6E\x65\x2E","\x4C\x6F\x76\x65\x20\x63\x61\x6E\x20\x6C\x61\x73\x74\x20\x61\x20\x6C\x69\x66\x65\x74\x69\x6D\x65\x2C\x20\x69\x66\x20\x79\x6F\x75\x20\x77\x61\x6E\x74\x20\x69\x74\x20\x74\x6F\x2E","\x53\x65\x72\x69\x6F\x75\x73\x20\x74\x72\x6F\x75\x62\x6C\x65\x20\x77\x69\x6C\x6C\x20\x62\x79\x70\x61\x73\x73\x20\x79\x6F\x75\x2E","\x4E\x6F\x77\x20\x69\x73\x20\x74\x68\x65\x20\x74\x69\x6D\x65\x20\x74\x6F\x20\x74\x72\x79\x20\x73\x6F\x6D\x65\x74\x68\x69\x6E\x67\x20\x6E\x65\x77\x2E","\x59\x6F\x75\x20\x61\x72\x65\x20\x76\x65\x72\x79\x20\x74\x61\x6C\x65\x6E\x74\x65\x64\x20\x69\x6E\x20\x6D\x61\x6E\x79\x20\x77\x61\x79\x73\x2E","\x41\x20\x73\x74\x72\x61\x6E\x67\x65\x72\x2C\x20\x69\x73\x20\x61\x20\x66\x72\x69\x65\x6E\x64\x20\x79\x6F\x75\x20\x68\x61\x76\x65\x20\x6E\x6F\x74\x20\x73\x70\x6F\x6B\x65\x6E\x20\x74\x6F\x20\x79\x65\x74\x2E","\x59\x6F\x75\x20\x77\x69\x6C\x6C\x20\x74\x72\x61\x76\x65\x6C\x20\x74\x6F\x20\x6D\x61\x6E\x79\x20\x65\x78\x6F\x74\x69\x63\x20\x70\x6C\x61\x63\x65\x73\x20\x69\x6E\x20\x79\x6F\x75\x72\x20\x6C\x69\x66\x65\x74\x69\x6D\x65\x2E","\x45\x76\x65\x72\x79\x6F\x6E\x65\x20\x61\x67\x72\x65\x65\x73\x2E\x20\x59\x6F\x75\x20\x61\x72\x65\x20\x74\x68\x65\x20\x62\x65\x73\x74\x2E","\x4A\x65\x61\x6C\x6F\x75\x73\x79\x20\x64\x6F\x65\x73\x6E\x74\x20\x6F\x70\x65\x6E\x20\x64\x6F\x6F\x72\x73\x2C\x20\x69\x74\x20\x63\x6C\x6F\x73\x65\x73\x20\x74\x68\x65\x6D\x21","\x4E\x65\x76\x65\x72\x20\x67\x69\x76\x65\x20\x75\x70\x2E\x20\x41\x6C\x77\x61\x79\x73\x20\x66\x69\x6E\x64\x20\x61\x20\x72\x65\x61\x73\x6F\x6E\x20\x74\x6F\x20\x6B\x65\x65\x70\x20\x74\x72\x79\x69\x6E\x67\x2E","\x53\x74\x6F\x70\x20\x77\x69\x73\x68\x69\x6E\x67\x2E\x20\x53\x74\x61\x72\x74\x20\x64\x6F\x69\x6E\x67\x2E","\x46\x6F\x72\x20\x73\x75\x63\x63\x65\x73\x73\x20\x74\x6F\x64\x61\x79\x2C\x20\x6C\x6F\x6F\x6B\x20\x66\x69\x72\x73\x74\x20\x74\x6F\x20\x79\x6F\x75\x72\x73\x65\x6C\x66\x2E","\x49\x66\x20\x79\x6F\x75\x20\x61\x72\x65\x20\x68\x61\x70\x70\x79\x2C\x20\x79\x6F\x75\x20\x61\x72\x65\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x2E","\x42\x65\x66\x6F\x72\x65\x20\x74\x72\x79\x69\x6E\x67\x20\x74\x6F\x20\x70\x6C\x65\x61\x73\x65\x20\x6F\x74\x68\x65\x72\x73\x20\x74\x68\x69\x6E\x6B\x20\x6F\x66\x20\x77\x68\x61\x74\x20\x6D\x61\x6B\x65\x73\x20\x79\x6F\x75\x20\x68\x61\x70\x70\x79\x2E","\x59\x6F\x75\x20\x6C\x65\x61\x72\x6E\x20\x66\x72\x6F\x6D\x20\x79\x6F\x75\x72\x20\x6D\x69\x73\x74\x61\x6B\x65\x73\x2C\x20\x79\x6F\x75\x20\x77\x69\x6C\x6C\x20\x6C\x65\x61\x72\x6E\x20\x61\x20\x6C\x6F\x74\x20\x74\x6F\x64\x61\x79\x2E","\x49\x6D\x70\x6F\x73\x73\x69\x62\x6C\x65\x20\x69\x73\x20\x61\x20\x77\x6F\x72\x64\x20\x6F\x6E\x6C\x79\x20\x74\x6F\x20\x62\x65\x20\x66\x6F\x75\x6E\x64\x20\x69\x6E\x20\x74\x68\x65\x20\x64\x69\x63\x74\x69\x6F\x6E\x61\x72\x79\x20\x6F\x66\x20\x66\x6F\x6F\x6C\x73\x2E","\x59\x6F\x75\x20\x77\x69\x6C\x6C\x20\x73\x6F\x6F\x6E\x20\x77\x69\x74\x6E\x65\x73\x73\x20\x61\x20\x6D\x69\x72\x61\x63\x6C\x65\x2E","\x4C\x6F\x76\x65\x20\x69\x73\x20\x61\x73\x20\x6E\x65\x63\x65\x73\x73\x61\x72\x79\x20\x74\x6F\x20\x68\x75\x6D\x61\x6E\x20\x62\x65\x69\x6E\x67\x73\x20\x61\x73\x20\x66\x6F\x6F\x64\x20\x61\x6E\x64\x20\x73\x68\x65\x6C\x74\x65\x72\x2E","\x59\x6F\x75\x20\x61\x72\x65\x20\x65\x78\x74\x72\x65\x6D\x65\x6C\x79\x20\x6C\x6F\x76\x65\x64\x2E\x20\x44\x6F\x6E\x74\x20\x77\x6F\x72\x72\x79\x20\x3A\x29","\x49\x66\x20\x79\x6F\x75\x20\x61\x72\x65\x20\x6E\x65\x76\x65\x72\x20\x70\x61\x74\x69\x65\x6E\x74\x2C\x20\x79\x6F\x75\x20\x77\x69\x6C\x6C\x20\x6E\x65\x76\x65\x72\x20\x67\x65\x74\x20\x61\x6E\x79\x74\x68\x69\x6E\x67\x20\x64\x6F\x6E\x65\x2E\x20\x49\x66\x20\x79\x6F\x75\x20\x62\x65\x6C\x69\x65\x76\x65\x20\x79\x6F\x75\x20\x63\x61\x6E\x20\x64\x6F\x20\x69\x74\x2C\x20\x79\x6F\x75\x20\x77\x69\x6C\x6C\x20\x62\x65\x20\x72\x65\x77\x61\x72\x64\x65\x64\x20\x77\x69\x74\x68\x20\x73\x75\x63\x63\x65\x73\x73\x2E","\x59\x6F\x75\x20\x62\x65\x6C\x69\x65\x76\x65\x20\x69\x6E\x20\x74\x68\x65\x20\x67\x6F\x6F\x64\x6E\x65\x73\x73\x20\x6F\x66\x20\x6D\x61\x6E\x20\x6B\x69\x6E\x64\x2E","\x59\x6F\x75\x20\x77\x69\x6C\x6C\x20\x68\x61\x76\x65\x20\x61\x20\x6C\x6F\x6E\x67\x20\x61\x6E\x64\x20\x77\x65\x61\x6C\x74\x68\x79\x20\x6C\x69\x66\x65\x2E","\x59\x6F\x75\x20\x61\x72\x65\x20\x61\x20\x70\x65\x72\x73\x6F\x6E\x20\x6F\x66\x20\x63\x75\x6C\x74\x75\x72\x65\x2E","\x4B\x65\x65\x70\x20\x69\x74\x20\x73\x69\x6D\x70\x6C\x65\x2E\x20\x54\x68\x65\x20\x6D\x6F\x72\x65\x20\x79\x6F\x75\x20\x73\x61\x79\x2C\x20\x74\x68\x65\x20\x6C\x65\x73\x73\x20\x70\x65\x6F\x70\x6C\x65\x20\x72\x65\x6D\x65\x6D\x62\x65\x72\x2E","\x4E\x6F\x74\x68\x69\x6E\x67\x20\x73\x65\x65\x6D\x73\x20\x69\x6D\x70\x6F\x73\x73\x69\x62\x6C\x65\x20\x74\x6F\x20\x79\x6F\x75\x2E","\x50\x61\x74\x69\x65\x6E\x63\x65\x20\x69\x73\x20\x62\x69\x74\x74\x65\x72\x2C\x20\x62\x75\x74\x20\x69\x74\x73\x20\x66\x72\x75\x69\x74\x20\x69\x73\x20\x73\x77\x65\x65\x74\x2E","\x57\x68\x65\x6E\x20\x79\x6F\x75\x20\x65\x78\x70\x65\x63\x74\x20\x79\x6F\x75\x72\x20\x6F\x70\x70\x6F\x6E\x65\x6E\x74\x20\x74\x6F\x20\x79\x69\x65\x6C\x64\x2C\x20\x79\x6F\x75\x20\x61\x6C\x73\x6F\x20\x73\x68\x6F\x75\x6C\x64\x20\x61\x76\x6F\x69\x64\x20\x68\x75\x72\x74\x69\x6E\x67\x20\x68\x69\x6D\x2E","\x59\x6F\x75\x72\x20\x64\x65\x61\x72\x65\x73\x74\x20\x77\x69\x73\x68\x20\x77\x69\x6C\x6C\x20\x63\x6F\x6D\x65\x20\x74\x72\x75\x65\x2E\x20","\x49\x66\x20\x79\x6F\x75\x20\x64\x6F\x6E\u2019\x74\x20\x64\x6F\x20\x69\x74\x20\x65\x78\x63\x65\x6C\x6C\x65\x6E\x74\x6C\x79\x2C\x20\x64\x6F\x6E\u2019\x74\x20\x64\x6F\x20\x69\x74\x20\x61\x74\x20\x61\x6C\x6C\x2E","\x59\x6F\x75\x20\x77\x69\x6C\x6C\x20\x73\x6F\x6F\x6E\x20\x62\x65\x20\x68\x6F\x6E\x6F\x72\x65\x64\x20\x62\x79\x20\x73\x6F\x6D\x65\x6F\x6E\x65\x20\x79\x6F\x75\x20\x72\x65\x73\x70\x65\x63\x74\x2E","\x59\x6F\x75\x72\x20\x73\x6D\x69\x6C\x65\x20\x62\x72\x69\x6E\x67\x73\x20\x68\x61\x70\x70\x69\x6E\x65\x73\x73\x20\x74\x6F\x20\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x79\x6F\x75\x20\x6D\x65\x65\x74\x2E\x20","\x41\x20\x77\x69\x73\x68\x20\x69\x73\x20\x77\x68\x61\x74\x20\x6D\x61\x6B\x65\x73\x20\x6C\x69\x66\x65\x20\x68\x61\x70\x70\x65\x6E\x20\x77\x68\x65\x6E\x20\x79\x6F\x75\x20\x64\x72\x65\x61\x6D\x20\x6F\x66\x20\x72\x6F\x73\x65\x20\x70\x65\x74\x61\x6C\x73\x2E","\x4C\x6F\x76\x65\x20\x63\x61\x6E\x20\x74\x75\x72\x6E\x20\x63\x6F\x74\x74\x61\x67\x65\x20\x69\x6E\x74\x6F\x20\x61\x20\x67\x6F\x6C\x64\x65\x6E\x20\x70\x61\x6C\x61\x63\x65\x2E\x20","\x59\x6F\x75\x20\x77\x69\x6C\x6C\x20\x6B\x69\x73\x73\x20\x79\x6F\x75\x72\x20\x63\x72\x75\x73\x68\x20\x6F\x68\x68\x68\x20\x6C\x61\x6C\x61\x68\x68","\x4E\x6F\x20\x64\x69\x73\x74\x61\x6E\x63\x65\x20\x69\x73\x20\x74\x6F\x6F\x20\x66\x61\x72\x2C\x20\x69\x66\x20\x74\x77\x6F\x20\x68\x65\x61\x72\x74\x73\x20\x61\x72\x65\x20\x74\x69\x65\x64\x20\x74\x6F\x67\x65\x74\x68\x65\x72\x2E\x20","\x54\x72\x79\x3F\x20\x4E\x6F\x21\x20\x44\x6F\x20\x6F\x72\x20\x64\x6F\x20\x6E\x6F\x74\x2C\x20\x74\x68\x65\x72\x65\x20\x69\x73\x20\x6E\x6F\x20\x74\x72\x79\x2E","\x49\x74\x73\x20\x61\x62\x6F\x75\x74\x20\x74\x69\x6D\x65\x20\x79\x6F\x75\x20\x61\x73\x6B\x65\x64\x20\x74\x68\x61\x74\x20\x73\x70\x65\x63\x69\x61\x6C\x20\x73\x6F\x6D\x65\x6F\x6E\x65\x20\x6F\x6E\x20\x61\x20\x64\x61\x74\x65\x2E","\x47\x6F\x6F\x64\x20\x74\x68\x69\x6E\x67\x73\x20\x74\x61\x6B\x65\x20\x74\x69\x6D\x65\x2E","\x73\x65\x6C\x66\x66\x6F\x72\x74\x75\x6E\x65\x63\x63\x6F\x6F\x6B\x69\x65","\x70\x72\x63","\x4B\x65\x76\x61\x20\x74\x69\x20\x73\x65\x20\x6B\x75\x70\x61\x20\x67\x6F\x6C\x61","\x4E\x65\x6D\x61\x20\x74\x69\x20\x64\x61\x6E\x61\x73\x20\x6B\x75\x72\x63\x61","\x56\x69\x72\x65\x20\x74\x69\x20\x73\x74\x69\x64\x6E\x65\x20\x64\x6C\x61\x6B\x65","\x4D\x61\x6D\x75\x7A\x61\x20\x74\x65\x20\x6B\x61\x72\x61","\x4D\x61\x6B\x73\x65\x20\x73\x65\x6C\x6A\x61\x6E\x6B\x6F","\x4E\x65\x6D\x61\x20\x69\x73\x70\x61\x6C\x65\x20\x62\x65\x7A\x20\x74\x65\x62\x65","\x4E\x65\x73\x20\x6A\x65\x62\x61\x74","\x5A\x61\x6E\x69\x6D\x6C\x6A\x69\x76\x6F\x2C\x20\x73\x6B\x6F\x72\x6F\x20\x70\x61\x20\x69\x6E\x74\x65\x72\x65\x73\x61\x6E\x74\x6F\x2E\x2E\x2E","\x54\x76\x6F\x6A\x61\x20\x6D\x61\x6D\x61\x20\x6A\x65\x20\x74\x6F\x6C\x6B\x6F\x20\x64\x65\x62\x65\x6C\x61\x2C\x20\x64\x61\x20\x6B\x61\x64\x20\x70\x72\x6F\x6C\x61\x7A\x69\x20\x69\x73\x70\x72\x65\x64\x20\x54\x56\x2D\x61\x20\x70\x72\x6F\x64\x6A\x65\x20\x34\x20\x65\x70\x69\x7A\x6F\x64\x65\x20\x53\x72\x65\x63\x6E\x69\x68\x20\x6C\x6A\x75\x64\x69","\x53\x61\x6D\x6F\x20\x74\x65\x74\x6B\x69\x20\x64\x61\x20\x6F\x64\x6E\x65\x73\x65\x6D\x20\x6C\x65\x6B","\x49\x20\x74\x61\x74\x61\x20\x62\x69\x20\x73\x69\x6E\x65","\x54\x69\x20\x61\x62\x61\x6E\x7A\x75\x6A\x65\x73\x21\x21\x21","\x53\x74\x61\x20\x73\x65\x20\x6B\x61\x63\x69\x73\x20\x6E\x61\x20\x6D\x6F\x6A\x75\x20\x6F\x67\x72\x61\x64\x75\x20\x75\x20\x74\x6F\x6D\x20\x70\x65\x64\x65\x72\x73\x6B\x6F\x6D\x20\x6F\x64\x65\x6C\x75\x3F","\x73\x65\x6C\x66\x70\x72\x63","\x6E\x6F\x75\x73\x65\x72\x70\x72\x63","\x67\x69\x66\x74","\x68\x61\x73\x20\x67\x69\x76\x65\x6E\x20\x79\x6F\x75\x20\x61\x20\x72\x65\x64\x20\x72\x6F\x73\x65\x2C\x20\x77\x68\x6F\x20\x6B\x6E\x6F\x77\x73\x20\x6D\x61\x79\x62\x65\x20\x68\x65\x2F\x73\x68\x65\x20\x6C\x69\x6B\x65\x73\x20\x79\x6F\x75\x20\x3C\x33","\x74\x68\x69\x6E\x6B\x73\x20\x79\x6F\x75\x20\x61\x72\x65\x20\x61\x77\x65\x73\x6F\x6D\x65\x20\x70\x65\x72\x73\x6F\x6E\x2C\x20\x67\x69\x76\x65\x20\x68\x69\x6D\x20\x61\x20\x6B\x69\x73\x73\x2E","\x77\x61\x6E\x74\x73\x20\x74\x6F\x20\x6D\x61\x72\x72\x79\x20\x79\x6F\x75\x2C\x20\x70\x6C\x65\x61\x73\x65\x20\x73\x61\x79\x20\x79\x65\x73\x2E","\x69\x73\x20\x69\x6E\x20\x6C\x6F\x76\x65\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x2C\x20\x77\x68\x61\x74\x20\x61\x62\x6F\x75\x74\x20\x79\x6F\x75\x3F","\x74\x68\x69\x6E\x6B\x73\x20\x79\x6F\x75\x20\x61\x72\x65\x20\x61\x20\x62\x65\x61\x75\x74\x69\x66\x75\x6C\x20\x70\x65\x72\x73\x6F\x6E\x2C\x20\x77\x68\x61\x74\x20\x79\x6F\x75\x20\x74\x68\x69\x6E\x6B\x20\x61\x62\x6F\x75\x74\x20\x68\x69\x6D\x2F\x68\x65\x72\x3F","\x77\x61\x6E\x74\x73\x20\x74\x6F\x20\x6B\x69\x6C\x6C\x20\x79\x6F\x75\x20\x2E\x2E\x2E\x2E\x2E\x2E\x2E\x2E\x2E\x2E\x2E\x20\x6C\x6F\x6C\x20\x69\x20\x61\x6D\x20\x6A\x75\x73\x74\x20\x6B\x69\x64\x64\x69\x6E\x67\x2C\x20\x73\x68\x65\x2F\x68\x65\x20\x74\x68\x69\x6E\x6B\x73\x20\x79\x6F\x75\x20\x61\x72\x65\x20\x63\x75\x74\x65\x2E","\x77\x61\x6E\x74\x73\x20\x74\x6F\x20\x6B\x69\x73\x73\x20\x79\x6F\x75\x2E","\x74\x68\x69\x6E\x6B\x73\x20\x79\x6F\x75\x20\x61\x72\x65\x20\x61\x20\x62\x65\x61\x75\x74\x69\x66\x75\x6C\x20\x70\x65\x72\x73\x6F\x6E\x2C\x20\x67\x69\x76\x65\x20\x68\x69\x6D\x2F\x68\x65\x72\x20\x61\x20\x68\x75\x67\x20\x3C\x33","\x44\x6F\x20\x79\x6F\x75\x20\x6C\x6F\x76\x65\x20\x6D\x65\x20\x62\x65\x63\x61\x75\x73\x65\x20\x49\x20\x61\x6D\x20\x62\x65\x61\x75\x74\x69\x66\x75\x6C\x20\x6F\x72\x20\x61\x6D\x20\x49\x20\x62\x65\x61\x75\x74\x69\x66\x75\x6C\x20\x62\x65\x63\x61\x75\x73\x65\x20\x79\x6F\x75\x20\x6C\x6F\x76\x65\x20\x6D\x65\x3F","\x54\x68\x65\x20\x6D\x6F\x6D\x65\x6E\x74\x20\x68\x65\x2F\x73\x68\x65\x20\x73\x61\x77\x20\x79\x6F\x75\x20\x68\x65\x2F\x73\x68\x65\x20\x66\x65\x6C\x6C\x20\x69\x6E\x20\x6C\x6F\x76\x65\x20\x77\x69\x74\x68\x20\x55","\x63\x61\x6E\x74\x20\x6C\x69\x76\x65\x20\x77\x69\x74\x68\x6F\x75\x74\x20\x55","\x77\x61\x6E\x6E\x61\x20\x73\x70\x65\x6E\x64\x20\x74\x68\x65\x20\x72\x65\x73\x74\x20\x6F\x66\x20\x68\x69\x73\x20\x6C\x69\x66\x65\x20\x77\x69\x74\x68\x20\x55","\x73\x61\x69\x64\x2E\x20\x46\x61\x6C\x6C\x69\x6E\x67\x20\x69\x6E\x20\x6C\x6F\x76\x65\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x20\x69\x73\x20\x74\x68\x65\x20\x73\x65\x63\x6F\x6E\x64\x20\x62\x65\x73\x74\x20\x74\x68\x69\x6E\x67\x20\x69\x6E\x20\x74\x68\x65\x20\x77\x6F\x72\x6C\x64\x2C\x20\x43\x6F\x7A\x20\x66\x69\x6E\x64\x69\x6E\x67\x20\x79\x6F\x75\x20\x77\x61\x73\x20\x74\x68\x65\x20\x66\x69\x72\x73\x74\x2E","\x62\x67\x69\x66\x74","\x6E\x6F\x75\x73\x65\x72","\x73\x65\x6C\x66\x67\x69\x66\x74","\x6C\x6F\x63\x6B\x74\x69\x6D\x65\x72","\x6C\x6F\x63\x6B\x67\x75\x61\x72\x64\x74\x69\x6D\x65","\x6D\x61\x78\x6C\x65\x6E\x67\x74\x68","\x6D\x61\x78\x6C\x65\x6E\x67\x74\x68\x74\x69\x6D\x65","\x2F\x6D\x65\x20\x4D\x4F\x54\x44\x3A\x20","\x6D\x6F\x74\x64\x73\x65\x74","\x6D\x6F\x74\x64\x69\x6E\x74\x65\x72\x76\x61\x6C\x73\x65\x74","\x6D\x6F\x76\x65","\x61\x64\x64\x62\x6F\x74\x77\x61\x69\x74\x6C\x69\x73\x74","\x6D\x75\x74\x65","\x6D\x75\x74\x65\x64\x6D\x61\x78\x74\x69\x6D\x65","\x34\x35","\x4D\x55\x54\x45","\x6D\x6F\x64\x65\x72\x61\x74\x65\x4D\x75\x74\x65\x55\x73\x65\x72","\x6D\x75\x74\x65\x64\x74\x69\x6D\x65","\x6D\x6F\x64\x65\x72\x61\x74\x65\x55\x6E\x6D\x75\x74\x65\x55\x73\x65\x72","\x6D\x75\x74\x65\x72\x61\x6E\x6B","\x6F\x70\x4C\x69\x6E\x6B","\x6F\x70\x6C\x69\x73\x74","\x70\x69\x6E\x67","\x70\x6F\x6E\x67","\x72\x65\x66\x72\x65\x73\x68","\x72\x65\x6C\x6F\x61\x64","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x73\x63\x72\x69\x70\x74\x4C\x69\x6E\x6B","\x67\x65\x74\x53\x63\x72\x69\x70\x74","\x72\x65\x6D\x6F\x76\x65","\x72\x65\x6D\x6F\x76\x65\x6E\x6F\x74\x69\x6E\x77\x6C","\x72\x65\x73\x74\x72\x69\x63\x74\x65\x74\x61","\x65\x74\x61\x72\x65\x73\x74\x72\x69\x63\x74\x69\x6F\x6E","\x72\x75\x6C\x65\x73","\x72\x75\x6C\x65\x73\x4C\x69\x6E\x6B","\x72\x6F\x6F\x6D\x72\x75\x6C\x65\x73","\x73\x65\x73\x73\x69\x6F\x6E\x73\x74\x61\x74\x73","\x73\x6F\x75\x72\x63\x65","\x2F\x6D\x65\x20\x42\x6F\x74\x20\x65\x64\x69\x74\x65\x64\x20\x62\x79\x3A\x20","\x2E","\x2F\x6D\x65\x20\x5B\x40","\x5D\x20","\x4F\x4E","\x4F\x46\x46","\x2E\x20","\x61\x66\x6B\x73\x72\x65\x6D\x6F\x76\x65\x64","\x42\x6F\x75\x6E\x63\x65\x72\x2B\x3A\x20","\x74\x69\x6D\x65\x67\x75\x61\x72\x64","\x61\x63\x74\x69\x76\x65\x66\x6F\x72","\x73\x77\x61\x70","\x73\x77\x61\x70\x69\x6E\x76\x61\x6C\x69\x64","\x61\x64\x64\x62\x6F\x74\x74\x6F\x77\x61\x69\x74\x6C\x69\x73\x74","\x73\x77\x61\x70\x77\x6C\x6F\x6E\x6C\x79","\x73\x77\x61\x70\x70\x69\x6E\x67","\x74\x68\x65\x6D\x65\x4C\x69\x6E\x6B","\x67\x65\x6E\x72\x65\x73","\x74\x6F\x67\x67\x6C\x65\x62\x6C","\x62\x6C\x61\x63\x6B\x6C\x69\x73\x74\x45\x6E\x61\x62\x6C\x65\x64","\x74\x6F\x67\x67\x6C\x65\x6D\x6F\x74\x64","\x75\x6E\x62\x61\x6E","\x2E\x69\x63\x6F\x6E\x2D\x70\x6F\x70\x75\x6C\x61\x74\x69\x6F\x6E","\x2E\x69\x63\x6F\x6E\x2D\x62\x61\x6E","\x67\x65\x74\x42\x61\x6E\x6E\x65\x64\x55\x73\x65\x72\x73","\x2E\x69\x63\x6F\x6E\x2D\x63\x68\x61\x74","\x6E\x6F\x74\x62\x61\x6E\x6E\x65\x64","\x55\x6E\x62\x61\x6E\x6E\x65\x64\x20","\x75\x6E\x6C\x6F\x63\x6B","\x75\x6E\x6D\x75\x74\x65","\x75\x6E\x6D\x75\x74\x65\x64","\x6E\x6F\x74\x6D\x75\x74\x65\x64","\x75\x6E\x6D\x75\x74\x65\x72\x61\x6E\x6B","\x75\x73\x65\x72\x63\x6D\x64\x63\x64","\x63\x6F\x6D\x6D\x61\x6E\x64\x73\x63\x64","\x75\x73\x65\x72\x63\x6F\x6D\x6D\x61\x6E\x64\x73","\x75\x73\x65\x72\x63\x6F\x6D\x6D\x61\x6E\x64\x73\x45\x6E\x61\x62\x6C\x65\x64","\x76\x6F\x74\x65\x72\x61\x74\x69\x6F","\x77\x65\x6C\x63\x6F\x6D\x65\x6D\x73\x67","\x77\x65\x62\x73\x69\x74\x65","\x79\x6F\x75\x74\x75\x62\x65","\x79\x6F\x75\x74\x75\x62\x65\x4C\x69\x6E\x6B","\x73\x74\x61\x72\x74\x75\x70"];API[_0x41bf[1]](_0x41bf[0],true);(function(){API[_0x41bf[3]]=function(_0xf94fx1){if( typeof _0xf94fx1===_0x41bf[4]||_0xf94fx1===null){_0xf94fx1=API[_0x41bf[6]]()[_0x41bf[5]]};var _0xf94fx2=API[_0x41bf[7]]();for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx2[_0x41bf[8]];_0xf94fx3++){if(_0xf94fx2[_0xf94fx3][_0x41bf[5]]===_0xf94fx1){return _0xf94fx3}};return -1;};var _0xf94fx4=function(){clearInterval(_0xf94fx21[_0x41bf[10]][_0x41bf[9]]);clearInterval(_0xf94fx21[_0x41bf[10]][_0x41bf[11]]);_0xf94fx21[_0x41bf[12]]=false;};var _0xf94fx5=function(){localStorage[_0x41bf[16]](_0x41bf[13],JSON[_0x41bf[15]](_0xf94fx21[_0x41bf[14]]));localStorage[_0x41bf[16]](_0x41bf[17],JSON[_0x41bf[15]](_0xf94fx21[_0x41bf[10]]));var _0xf94fx6={time:Date[_0x41bf[18]](),stored:true,version:_0xf94fx21[_0x41bf[19]]};localStorage[_0x41bf[16]](_0x41bf[20],JSON[_0x41bf[15]](_0xf94fx6));};var _0xf94fx7=function(_0xf94fx8,_0xf94fx9){if( typeof _0xf94fx8===_0x41bf[4]){API[_0x41bf[1]](_0x41bf[21]);console[_0x41bf[22]](_0x41bf[21]);return _0x41bf[23];};var _0xf94fxa=_0x41bf[24];for(var _0xf94fxb in _0xf94fx9){_0xf94fx8=_0xf94fx8[_0x41bf[26]](_0xf94fxa+_0xf94fxb[_0x41bf[25]]()+_0xf94fxa,_0xf94fx9[_0xf94fxb])};return _0xf94fx8;};var _0xf94fxc=function(_0xf94fxd){if(!_0xf94fxd){_0xf94fxd=function(){}};$[_0x41bf[34]](_0x41bf[27],function(_0xf94fxe){var _0xf94fxf=_0xf94fx21[_0x41bf[28]];if(_0xf94fxe!==null&& typeof _0xf94fxe!==_0x41bf[4]){langIndex=_0xf94fxe;_0xf94fxf=langIndex[_0xf94fx21[_0x41bf[14]][_0x41bf[30]][_0x41bf[29]]()];if(_0xf94fx21[_0x41bf[14]][_0x41bf[28]]!==_0xf94fx21[_0x41bf[28]]){_0xf94fxf=_0xf94fx21[_0x41bf[14]][_0x41bf[28]]}else {if( typeof _0xf94fxf===_0x41bf[4]){_0xf94fxf=_0xf94fx21[_0x41bf[28]]}};$[_0x41bf[34]](_0xf94fxf,function(_0xf94fxe){if(_0xf94fxe!==null&& typeof _0xf94fxe!==_0x41bf[4]){if( typeof _0xf94fxe===_0x41bf[31]){_0xf94fxe=JSON[_0x41bf[32]](_0xf94fxe)};_0xf94fx21[_0x41bf[33]]=_0xf94fxe;_0xf94fxd();}});}else {$[_0x41bf[34]](_0xf94fx21[_0x41bf[28]],function(_0xf94fxe){if(_0xf94fxe!==null&& typeof _0xf94fxe!==_0x41bf[4]){if( typeof _0xf94fxe===_0x41bf[31]){_0xf94fxe=JSON[_0x41bf[32]](_0xf94fxe)};_0xf94fx21[_0x41bf[33]]=_0xf94fxe;_0xf94fxd();}})};});};var _0xf94fx10=function(){var _0xf94fx11=JSON[_0x41bf[32]](localStorage[_0x41bf[35]](_0x41bf[13]));if(_0xf94fx11!==null){for(var _0xf94fxb in _0xf94fx11){_0xf94fx21[_0x41bf[14]][_0xf94fxb]=_0xf94fx11[_0xf94fxb]}};};var _0xf94fx12=function(){var _0xf94fx13=localStorage[_0x41bf[35]](_0x41bf[20]);if(_0xf94fx13===null){API[_0x41bf[1]](_0xf94fx21[_0x41bf[33]][_0x41bf[36]])}else {var _0xf94fx11=JSON[_0x41bf[32]](localStorage[_0x41bf[35]](_0x41bf[13]));var _0xf94fx14=JSON[_0x41bf[32]](localStorage[_0x41bf[35]](_0x41bf[17]));var _0xf94fx15=Date[_0x41bf[18]]()-JSON[_0x41bf[32]](_0xf94fx13)[_0x41bf[37]];if((_0xf94fx15<1*60*60*1000)){API[_0x41bf[1]](_0xf94fx21[_0x41bf[33]][_0x41bf[38]]);for(var _0xf94fxb in _0xf94fx11){_0xf94fx21[_0x41bf[14]][_0xf94fxb]=_0xf94fx11[_0xf94fxb]};_0xf94fx21[_0x41bf[10]][_0x41bf[39]]=_0xf94fx14[_0x41bf[39]];_0xf94fx21[_0x41bf[10]][_0x41bf[40]]=_0xf94fx14[_0x41bf[40]];_0xf94fx21[_0x41bf[10]][_0x41bf[41]]=_0xf94fx14[_0x41bf[41]];_0xf94fx21[_0x41bf[10]][_0x41bf[42]]=_0xf94fx14[_0x41bf[42]];_0xf94fx21[_0x41bf[10]][_0x41bf[43]]=_0xf94fx14[_0x41bf[43]];_0xf94fx21[_0x41bf[10]][_0x41bf[44]]=_0xf94fx14[_0x41bf[44]];_0xf94fx21[_0x41bf[10]][_0x41bf[45]]=_0xf94fx14[_0x41bf[45]];_0xf94fx21[_0x41bf[10]][_0x41bf[46]]=_0xf94fx14[_0x41bf[46]];_0xf94fx21[_0x41bf[10]][_0x41bf[47]]=_0xf94fx14[_0x41bf[47]];API[_0x41bf[1]](_0xf94fx21[_0x41bf[33]][_0x41bf[48]]);};};};String[_0x41bf[50]][_0x41bf[49]]=function(_0xf94fx16,_0xf94fx17){var _0xf94fx18=this;_0xf94fx18=this[_0x41bf[51]](_0xf94fx16);for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx18[_0x41bf[8]];_0xf94fx3++){_0xf94fx18[_0xf94fx3]=_0xf94fx18[_0xf94fx3][_0x41bf[51]](_0xf94fx17)};var _0xf94fx19=[];for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx18[_0x41bf[8]];_0xf94fx3++){if(Array[_0x41bf[52]](_0xf94fx18[_0xf94fx3])){for(var _0xf94fx1a=0;_0xf94fx1a<_0xf94fx18[_0xf94fx3][_0x41bf[8]];_0xf94fx1a++){_0xf94fx19[_0x41bf[53]](_0xf94fx18[_0xf94fx3][_0xf94fx1a])}}else {_0xf94fx19[_0x41bf[53]](_0xf94fx18[_0xf94fx3])}};return _0xf94fx19;};var _0xf94fx1b=function(_0xf94fx1c){var _0xf94fx1d=_0xf94fx1c[_0x41bf[49]](_0x41bf[54],_0x41bf[55]);for(var _0xf94fx3=1;_0xf94fx3<_0xf94fx1d[_0x41bf[8]];_0xf94fx3=_0xf94fx3+2){var _0xf94fxf=_0xf94fx1d[_0xf94fx3][_0x41bf[51]](_0x41bf[56])[0];_0xf94fx1d[_0xf94fx3]=_0xf94fxf;};var _0xf94fx1e=_0x41bf[57];for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx1d[_0x41bf[8]];_0xf94fx3++){_0xf94fx1e+=_0xf94fx1d[_0xf94fx3]};return _0xf94fx1e;};var _0xf94fx1f=_0x41bf[58];var _0xf94fx20=[_0x41bf[59]];var _0xf94fx21={version:_0x41bf[60],status:false,name:_0x41bf[61],loggedInID:_0x41bf[62],scriptLink:_0x41bf[63],cmdLink:_0x41bf[64],chatLink:_0x41bf[65],chat:null,loadChat:_0xf94fxc,retrieveSettings:_0xf94fx10,retrieveFromStorage:_0xf94fx12,settings:{botName:_0x41bf[61],language:_0x41bf[66],chatLink:_0x41bf[65],startupCap:1,startupVolume:0,startupEmoji:true,maximumAfk:90,afkRemoval:false,maximumDc:20,bouncerPlus:false,blacklistEnabled:true,lockdownEnabled:false,lockGuard:true,maximumLocktime:10,cycleGuard:true,maximumCycletime:10,voteSkip:true,voteSkipLimit:8,timeGuard:true,maximumSongLength:7,autodisable:false,commandCooldown:6,usercommandsEnabled:true,lockskipPosition:3,lockskipReasons:[[_0x41bf[67],_0x41bf[68]],[_0x41bf[69],_0x41bf[70]],[_0x41bf[71],_0x41bf[72]],[_0x41bf[73],_0x41bf[74]],[_0x41bf[75],_0x41bf[76]],[_0x41bf[77],_0x41bf[78]],[_0x41bf[79],_0x41bf[80]]],afkpositionCheck:15,afkRankCheck:_0x41bf[81],motdEnabled:false,motdInterval:10,motd:_0x41bf[82],filterChat:true,etaRestriction:false,welcome:false,opLink:_0x41bf[83],rulesLink:_0x41bf[84],themeLink:null,fbLink:_0x41bf[85],youtubeLink:null,website:_0x41bf[86],intervalMessages:[],messageInterval:5,songstats:false,commandLiteral:_0x41bf[87],blacklists:{OP:_0x41bf[88]}},room:{users:[],afkList:[],mutedUsers:[],bannedUsers:[],skippable:true,usercommand:true,allcommand:true,afkInterval:null,autoskip:false,autoskipTimer:null,autodisableInterval:null,autodisableFunc:function(){if(_0xf94fx21[_0x41bf[12]]&&_0xf94fx21[_0x41bf[14]][_0x41bf[89]]){API[_0x41bf[91]](_0x41bf[90]);API[_0x41bf[91]](_0x41bf[92]);}},queueing:0,queueable:true,currentDJID:null,historyList:[],cycleTimer:setTimeout(function(){},1),roomstats:{accountName:null,totalWoots:0,totalCurates:0,totalMehs:0,launchTime:null,songCount:0,chatmessages:0},messages:{from:[],to:[],message:[]},queue:{id:[],position:[]},blacklists:{},newBlacklisted:[],newBlacklistedSongFunction:null,roulette:{rouletteStatus:false,participants:[],countdown:null,startRoulette:function(){_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[93]]=true;_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[95]]=setTimeout(function(){_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[96]]()},60*1000);API[_0x41bf[91]](_0xf94fx21[_0x41bf[33]][_0x41bf[97]]);},endRoulette:function(){_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[93]]=false;var _0xf94fx22=Math[_0x41bf[100]](Math[_0x41bf[98]]()*_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[99]][_0x41bf[8]]);var _0xf94fx23=_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[99]][_0xf94fx22];_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[99]]=[];var _0xf94fx24=Math[_0x41bf[100]]((Math[_0x41bf[98]]()*API[_0x41bf[7]]()[_0x41bf[8]])+1);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[101]](_0xf94fx23);var _0xf94fx26=_0xf94fx25[_0x41bf[103]];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[104]],{name:_0xf94fx26,position:_0xf94fx24}));setTimeout(function(_0xf94fx23,_0xf94fx24){_0xf94fx21[_0x41bf[102]][_0x41bf[105]](_0xf94fx23,_0xf94fx24,false)},1*1000,_0xf94fx23,_0xf94fx24);}}},User:function(_0xf94fx1,_0xf94fx26){this[_0x41bf[5]]=_0xf94fx1;this[_0x41bf[103]]=_0xf94fx26;this[_0x41bf[106]]=Date[_0x41bf[18]]();this[_0x41bf[107]]=Date[_0x41bf[18]]();this[_0x41bf[108]]={woot:0,meh:0,curate:0};this[_0x41bf[109]]=null;this[_0x41bf[110]]=0;this[_0x41bf[111]]=null;this[_0x41bf[112]]=true;this[_0x41bf[113]]=false;this[_0x41bf[114]]={time:null,position:null,songCount:0};this[_0x41bf[115]]=null;},userUtilities:{getJointime:function(_0xf94fx25){return _0xf94fx25[_0x41bf[106]]},getUser:function(_0xf94fx25){return API[_0x41bf[6]](_0xf94fx25[_0x41bf[5]])},updatePosition:function(_0xf94fx25,_0xf94fx27){_0xf94fx25[_0x41bf[115]]=_0xf94fx27},updateDC:function(_0xf94fx25){_0xf94fx25[_0x41bf[114]][_0x41bf[37]]=Date[_0x41bf[18]]();_0xf94fx25[_0x41bf[114]][_0x41bf[116]]=_0xf94fx25[_0x41bf[115]];_0xf94fx25[_0x41bf[114]][_0x41bf[117]]=_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[117]];},setLastActivity:function(_0xf94fx25){_0xf94fx25[_0x41bf[107]]=Date[_0x41bf[18]]();_0xf94fx25[_0x41bf[110]]=0;clearTimeout(_0xf94fx25[_0x41bf[111]]);},getLastActivity:function(_0xf94fx25){return _0xf94fx25[_0x41bf[107]]},getWarningCount:function(_0xf94fx25){return _0xf94fx25[_0x41bf[110]]},setWarningCount:function(_0xf94fx25,_0xf94fx28){_0xf94fx25[_0x41bf[110]]=_0xf94fx28},lookupUser:function(_0xf94fx1){for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx3++){if(_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[5]]===_0xf94fx1){return _0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3]}};return false;},lookupUserName:function(_0xf94fx26){for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx3++){var _0xf94fx29=_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[103]][_0x41bf[118]]()==_0xf94fx26[_0x41bf[118]]();if(_0xf94fx29){return _0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3]};};return false;},voteRatio:function(_0xf94fx1){var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[101]](_0xf94fx1);var _0xf94fx2a=_0xf94fx25[_0x41bf[108]];if(_0xf94fx2a[_0x41bf[119]]===0){_0xf94fx2a[_0x41bf[120]]=1}else {_0xf94fx2a[_0x41bf[120]]=(_0xf94fx2a[_0x41bf[122]]/_0xf94fx2a[_0x41bf[119]])[_0x41bf[121]](2)};return _0xf94fx2a;},getPermission:function(_0xf94fx9){var _0xf94fx2b;if( typeof _0xf94fx9===_0x41bf[123]){_0xf94fx2b=_0xf94fx9}else {_0xf94fx2b=API[_0x41bf[6]](_0xf94fx9)};for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx20[_0x41bf[8]];_0xf94fx3++){if(_0xf94fx20[_0xf94fx3][_0x41bf[124]](_0xf94fx2b[_0x41bf[5]])> -1){return 10}};if(_0xf94fx2b[_0x41bf[125]]<2){return _0xf94fx2b[_0x41bf[126]]}else {switch(_0xf94fx2b[_0x41bf[125]]){case 2:return 7;;case 3:return 8;;case 4:return 9;;case 5:return 10;;}};return 0;},moveUser:function(_0xf94fx1,_0xf94fx24,_0xf94fx2c){var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[101]](_0xf94fx1);var _0xf94fx2d=API[_0x41bf[7]]();if(API[_0x41bf[3]](_0xf94fx1)=== -1){if(_0xf94fx2d[_0x41bf[8]]<50){API[_0x41bf[127]](_0xf94fx1);if(_0xf94fx24!==0){setTimeout(function(_0xf94fx1,_0xf94fx24){API[_0x41bf[128]](_0xf94fx1,_0xf94fx24)},1250,_0xf94fx1,_0xf94fx24)};}else {var _0xf94fx2e=-1;for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[5]][_0x41bf[8]];_0xf94fx3++){if(_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[5]][_0xf94fx3]===_0xf94fx1){_0xf94fx2e=_0xf94fx3}};if(_0xf94fx2e!== -1){_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[116]][_0xf94fx2e]=_0xf94fx24;return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[129]],{position:_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[116]][_0xf94fx2e]}));};_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[130]]();if(_0xf94fx2c){_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[5]][_0x41bf[133]](_0xf94fx1);_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[116]][_0x41bf[133]](_0xf94fx24);}else {_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[5]][_0x41bf[53]](_0xf94fx1);_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[116]][_0x41bf[53]](_0xf94fx24);};var _0xf94fx26=_0xf94fx25[_0x41bf[103]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[134]],{name:_0xf94fx26,position:_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[116]][_0x41bf[8]]}));}}else {API[_0x41bf[128]](_0xf94fx1,_0xf94fx24)};},dclookup:function(_0xf94fx1){var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[101]](_0xf94fx1);if( typeof _0xf94fx25===_0x41bf[135]){return _0xf94fx21[_0x41bf[33]][_0x41bf[136]]};var _0xf94fx26=_0xf94fx25[_0x41bf[103]];if(_0xf94fx25[_0x41bf[114]][_0x41bf[37]]===null){return _0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[137]],{name:_0xf94fx26})};var _0xf94fx2f=_0xf94fx25[_0x41bf[114]][_0x41bf[37]];var _0xf94fx24=_0xf94fx25[_0x41bf[114]][_0x41bf[116]];if(_0xf94fx24===null){return _0xf94fx21[_0x41bf[33]][_0x41bf[138]]};var _0xf94fx30=Date[_0x41bf[18]]()-_0xf94fx2f;var _0xf94fx31=false;if(_0xf94fx21[_0x41bf[14]][_0x41bf[139]]*60*1000>_0xf94fx30){_0xf94fx31=true};var _0xf94fx32=_0xf94fx21[_0x41bf[132]][_0x41bf[140]](_0xf94fx30);if(!_0xf94fx31){return (_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[141]],{name:_0xf94fx21[_0x41bf[102]][_0x41bf[6]](_0xf94fx25)[_0x41bf[103]],time:_0xf94fx32}))};var _0xf94fx33=_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[117]]-_0xf94fx25[_0x41bf[114]][_0x41bf[117]];var _0xf94fx34=0;var _0xf94fx35=_0xf94fx21[_0x41bf[10]][_0x41bf[40]];for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx35[_0x41bf[8]];_0xf94fx3++){var _0xf94fx36=_0xf94fx35[_0xf94fx3][1];var _0xf94fx37=_0xf94fx35[_0xf94fx3][2];if(_0xf94fx2f<_0xf94fx36&&_0xf94fx37<_0xf94fx24){_0xf94fx34++};};var _0xf94fx38=_0xf94fx25[_0x41bf[114]][_0x41bf[116]]-_0xf94fx33-_0xf94fx34;if(_0xf94fx38<=0){_0xf94fx38=1};var _0xf94fx1c=_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[142]],{name:_0xf94fx21[_0x41bf[102]][_0x41bf[6]](_0xf94fx25)[_0x41bf[103]],time:_0xf94fx32,position:_0xf94fx38});_0xf94fx21[_0x41bf[102]][_0x41bf[105]](_0xf94fx25[_0x41bf[5]],_0xf94fx38,true);return _0xf94fx1c;}},roomUtilities:{rankToNumber:function(_0xf94fx39){var _0xf94fx3a=null;switch(_0xf94fx39){case _0x41bf[143]:_0xf94fx3a=10;break ;;case _0x41bf[81]:_0xf94fx3a=7;break ;;case _0x41bf[144]:_0xf94fx3a=5;break ;;case _0x41bf[145]:_0xf94fx3a=4;break ;;case _0x41bf[146]:_0xf94fx3a=3;break ;;case _0x41bf[147]:_0xf94fx3a=2;break ;;case _0x41bf[148]:_0xf94fx3a=1;break ;;case _0x41bf[149]:_0xf94fx3a=0;break ;;};return _0xf94fx3a;},msToStr:function(_0xf94fx3b){var _0xf94fx3c,_0xf94fx1c,_0xf94fx3d;_0xf94fx1c=_0x41bf[57];_0xf94fx3d={"\x64\x61\x79\x73":0,"\x68\x6F\x75\x72\x73":0,"\x6D\x69\x6E\x75\x74\x65\x73":0,"\x73\x65\x63\x6F\x6E\x64\x73":0};_0xf94fx3c={"\x64\x61\x79":24*60*60*1000,"\x68\x6F\x75\x72":60*60*1000,"\x6D\x69\x6E\x75\x74\x65":60*1000,"\x73\x65\x63\x6F\x6E\x64":1000};if(_0xf94fx3b>_0xf94fx3c[_0x41bf[150]]){_0xf94fx3d[_0x41bf[151]]=Math[_0x41bf[100]](_0xf94fx3b/_0xf94fx3c[_0x41bf[150]]);_0xf94fx3b=_0xf94fx3b%_0xf94fx3c[_0x41bf[150]];};if(_0xf94fx3b>_0xf94fx3c[_0x41bf[152]]){_0xf94fx3d[_0x41bf[153]]=Math[_0x41bf[100]](_0xf94fx3b/_0xf94fx3c[_0x41bf[152]]);_0xf94fx3b=_0xf94fx3b%_0xf94fx3c[_0x41bf[152]];};if(_0xf94fx3b>_0xf94fx3c[_0x41bf[154]]){_0xf94fx3d[_0x41bf[155]]=Math[_0x41bf[100]](_0xf94fx3b/_0xf94fx3c[_0x41bf[154]]);_0xf94fx3b=_0xf94fx3b%_0xf94fx3c[_0x41bf[154]];};if(_0xf94fx3b>_0xf94fx3c[_0x41bf[156]]){_0xf94fx3d[_0x41bf[157]]=Math[_0x41bf[100]](_0xf94fx3b/_0xf94fx3c[_0x41bf[156]])};if(_0xf94fx3d[_0x41bf[151]]!==0){_0xf94fx1c+=_0xf94fx3d[_0x41bf[151]].toString()+_0x41bf[158]};if(_0xf94fx3d[_0x41bf[153]]!==0){_0xf94fx1c+=_0xf94fx3d[_0x41bf[153]].toString()+_0x41bf[159]};if(_0xf94fx3d[_0x41bf[155]]!==0){_0xf94fx1c+=_0xf94fx3d[_0x41bf[155]].toString()+_0x41bf[160]};if(_0xf94fx3d[_0x41bf[155]]<1&&_0xf94fx3d[_0x41bf[153]]<1&&_0xf94fx3d[_0x41bf[151]]<1){_0xf94fx1c+=_0xf94fx3d[_0x41bf[157]].toString()+_0x41bf[161]};if(_0xf94fx1c!==_0x41bf[57]){return _0xf94fx1c}else {return false};},booth:{lockTimer:setTimeout(function(){},1000),locked:false,lockBooth:function(){API[_0x41bf[163]](!_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[162]]);_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[162]]=false;if(_0xf94fx21[_0x41bf[14]][_0x41bf[164]]){_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[165]]=setTimeout(function(){API[_0x41bf[163]](_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[162]])},_0xf94fx21[_0x41bf[14]][_0x41bf[166]]*60*1000)};},unlockBooth:function(){API[_0x41bf[163]](_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[162]]);clearTimeout(_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[165]]);}},afkCheck:function(){if(!_0xf94fx21[_0x41bf[12]]||!_0xf94fx21[_0x41bf[14]][_0x41bf[167]]){return void((0))};var _0xf94fx3e=_0xf94fx21[_0x41bf[132]][_0x41bf[169]](_0xf94fx21[_0x41bf[14]][_0x41bf[168]]);var _0xf94fx3f=API[_0x41bf[7]]();var _0xf94fx40=Math[_0x41bf[171]](_0xf94fx3f[_0x41bf[8]],_0xf94fx21[_0x41bf[14]][_0x41bf[170]]);if(_0xf94fx40-1>_0xf94fx3f[_0x41bf[8]]){return void((0))};for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx40;_0xf94fx3++){if( typeof _0xf94fx3f[_0xf94fx3]!==_0x41bf[4]){var _0xf94fx1=_0xf94fx3f[_0xf94fx3][_0x41bf[5]];var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[101]](_0xf94fx1);if( typeof _0xf94fx25!==_0x41bf[135]){var _0xf94fx41=_0xf94fx21[_0x41bf[102]][_0x41bf[6]](_0xf94fx25);if(_0xf94fx3e!==null&&_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx41)<=_0xf94fx3e){var _0xf94fx26=_0xf94fx41[_0x41bf[103]];var _0xf94fx42=_0xf94fx21[_0x41bf[102]][_0x41bf[173]](_0xf94fx25);var _0xf94fx43=Date[_0x41bf[18]]()-_0xf94fx42;var _0xf94fx32=_0xf94fx21[_0x41bf[132]][_0x41bf[140]](_0xf94fx43);var _0xf94fx44=_0xf94fx25[_0x41bf[110]];if(_0xf94fx43>_0xf94fx21[_0x41bf[14]][_0x41bf[174]]*60*1000){if(_0xf94fx44===0){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[175]],{name:_0xf94fx26,time:_0xf94fx32}));_0xf94fx25[_0x41bf[110]]=3;_0xf94fx25[_0x41bf[111]]=setTimeout(function(_0xf94fx45){_0xf94fx45[_0x41bf[110]]=1},90*1000,_0xf94fx25);}else {if(_0xf94fx44===1){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[176]],{name:_0xf94fx26}));_0xf94fx25[_0x41bf[110]]=3;_0xf94fx25[_0x41bf[111]]=setTimeout(function(_0xf94fx45){_0xf94fx45[_0x41bf[110]]=2},30*1000,_0xf94fx25);}else {if(_0xf94fx44===2){var _0xf94fx24=API[_0x41bf[3]](_0xf94fx1);if(_0xf94fx24!== -1){_0xf94fx24++;_0xf94fx21[_0x41bf[10]][_0x41bf[40]][_0x41bf[53]]([_0xf94fx1,Date[_0x41bf[18]](),_0xf94fx24]);_0xf94fx25[_0x41bf[114]]={time:null,position:null,songCount:0};API[_0x41bf[177]](_0xf94fx1);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[178]],{name:_0xf94fx26,time:_0xf94fx32,position:_0xf94fx24,maximumafk:_0xf94fx21[_0x41bf[14]][_0x41bf[174]]}));};_0xf94fx25[_0x41bf[110]]=0;}}}};};};}};},changeDJCycle:function(){var _0xf94fx46=$(_0x41bf[179]);if(_0xf94fx46[_0x41bf[181]](_0x41bf[180])){_0xf94fx46[_0x41bf[182]]();if(_0xf94fx21[_0x41bf[14]][_0x41bf[183]]){_0xf94fx21[_0x41bf[10]][_0x41bf[184]]=setTimeout(function(){if(_0xf94fx46[_0x41bf[181]](_0x41bf[185])){_0xf94fx46[_0x41bf[182]]()}},_0xf94fx21[_0x41bf[14]][_0x41bf[186]]*60*1000)};}else {_0xf94fx46[_0x41bf[182]]();clearTimeout(_0xf94fx21[_0x41bf[10]][_0x41bf[184]]);};},intervalMessage:function(){var _0xf94fx47;if(_0xf94fx21[_0x41bf[14]][_0x41bf[187]]){_0xf94fx47=_0xf94fx21[_0x41bf[14]][_0x41bf[188]]}else {_0xf94fx47=_0xf94fx21[_0x41bf[14]][_0x41bf[189]]};if((_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[117]]%_0xf94fx47)===0&&_0xf94fx21[_0x41bf[12]]){var _0xf94fx1c;if(_0xf94fx21[_0x41bf[14]][_0x41bf[187]]){_0xf94fx1c=_0xf94fx21[_0x41bf[14]][_0x41bf[190]]}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[191]][_0x41bf[8]]===0){return void((0))};var _0xf94fx48=_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[117]]%_0xf94fx21[_0x41bf[14]][_0x41bf[191]][_0x41bf[8]];_0xf94fx1c=_0xf94fx21[_0x41bf[14]][_0x41bf[191]][_0xf94fx48];};API[_0x41bf[91]](_0x41bf[192]+_0xf94fx1c);};},updateBlacklists:function(){for(var _0xf94fx49 in _0xf94fx21[_0x41bf[14]][_0x41bf[193]]){_0xf94fx21[_0x41bf[10]][_0x41bf[193]][_0xf94fx49]=[];if( typeof _0xf94fx21[_0x41bf[14]][_0x41bf[193]][_0xf94fx49]===_0x41bf[194]){_0xf94fx21[_0x41bf[10]][_0x41bf[193]][_0xf94fx49]=_0xf94fx21[_0x41bf[14]][_0x41bf[193]]()}else {if( typeof _0xf94fx21[_0x41bf[14]][_0x41bf[193]][_0xf94fx49]===_0x41bf[31]){if(_0xf94fx21[_0x41bf[14]][_0x41bf[193]][_0xf94fx49]===_0x41bf[57]){continue };try{(function(_0xf94fx4a){$[_0x41bf[34]](_0xf94fx21[_0x41bf[14]][_0x41bf[193]][_0xf94fx4a],function(_0xf94fx4b){if( typeof _0xf94fx4b===_0x41bf[31]){_0xf94fx4b=JSON[_0x41bf[32]](_0xf94fx4b)};var _0xf94fx4c=[];for(var _0xf94fxb in _0xf94fx4b){if( typeof _0xf94fx4b[_0xf94fxb][_0x41bf[195]]!==_0x41bf[4]){_0xf94fx4c[_0x41bf[53]](_0xf94fx4b[_0xf94fxb][_0x41bf[195]])}};_0xf94fx21[_0x41bf[10]][_0x41bf[193]][_0xf94fx4a]=_0xf94fx4c;})})(_0xf94fx49)}catch(e){API[_0x41bf[1]](_0x41bf[196]+_0xf94fx49+_0x41bf[197]);console[_0x41bf[22]](_0x41bf[196]+_0xf94fx49+_0x41bf[197]);console[_0x41bf[22]](e);};}};}},logNewBlacklistedSongs:function(){if( typeof console[_0x41bf[198]]!==_0x41bf[4]){console[_0x41bf[198]](_0xf94fx21[_0x41bf[10]][_0x41bf[47]])}else {console[_0x41bf[22]](_0xf94fx21[_0x41bf[10]][_0x41bf[47]])}},exportNewBlacklistedSongs:function(){var _0xf94fx4c={};for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[47]][_0x41bf[8]];_0xf94fx3++){var _0xf94fx4d=_0xf94fx21[_0x41bf[10]][_0x41bf[47]][_0xf94fx3];_0xf94fx4c[_0xf94fx4d[_0x41bf[199]]]=[];_0xf94fx4c[_0xf94fx4d[_0x41bf[199]]][_0x41bf[53]]({title:_0xf94fx4d[_0x41bf[200]],author:_0xf94fx4d[_0x41bf[201]],mid:_0xf94fx4d[_0x41bf[195]]});};return _0xf94fx4c;}},eventChat:function(_0xf94fx8){_0xf94fx8[_0x41bf[202]]=_0xf94fx1b(_0xf94fx8[_0x41bf[202]]);_0xf94fx8[_0x41bf[202]]=_0xf94fx8[_0x41bf[202]][_0x41bf[118]]();for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx3++){if(_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[5]]===_0xf94fx8[_0x41bf[203]]){_0xf94fx21[_0x41bf[102]][_0x41bf[204]](_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3]);if(_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[103]]!==_0xf94fx8[_0x41bf[205]]){_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[103]]=_0xf94fx8[_0x41bf[205]]};}};if(_0xf94fx21[_0x41bf[207]][_0x41bf[206]](_0xf94fx8)){return void((0))};if(!_0xf94fx21[_0x41bf[207]][_0x41bf[208]](_0xf94fx8)){_0xf94fx21[_0x41bf[207]][_0x41bf[209]](_0xf94fx8)};},eventUserjoin:function(_0xf94fx25){var _0xf94fx4e=false;var _0xf94fx4f=null;for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx3++){if(_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[5]]===_0xf94fx25[_0x41bf[5]]){_0xf94fx4e=true;_0xf94fx4f=_0xf94fx3;}};var _0xf94fx50=true;var _0xf94fx51=null;if(_0xf94fx4e){_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx4f][_0x41bf[112]]=true;var _0xf94fx2b=_0xf94fx21[_0x41bf[102]][_0x41bf[101]](_0xf94fx25[_0x41bf[5]]);var _0xf94fx52=_0xf94fx2b[_0x41bf[106]];var _0xf94fx53=Date[_0x41bf[18]]()-_0xf94fx52;if(_0xf94fx53<10*1000){_0xf94fx50=false}else {_0xf94fx51=true};}else {_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[53]]( new _0xf94fx21.User(_0xf94fx25[_0x41bf[5]],_0xf94fx25[_0x41bf[103]]));_0xf94fx51=false;};for(var _0xf94fx1a=0;_0xf94fx1a<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx1a++){if(_0xf94fx21[_0x41bf[102]][_0x41bf[6]](_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx1a])[_0x41bf[5]]===_0xf94fx25[_0x41bf[5]]){_0xf94fx21[_0x41bf[102]][_0x41bf[204]](_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx1a]);_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx1a][_0x41bf[106]]=Date[_0x41bf[18]]();}};if(_0xf94fx21[_0x41bf[14]][_0x41bf[210]]&&_0xf94fx50){_0xf94fx51?setTimeout(function(_0xf94fx25){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[211]],{name:_0xf94fx25[_0x41bf[103]]}))},1*1000,_0xf94fx25):setTimeout(function(_0xf94fx25){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[210]],{name:_0xf94fx25[_0x41bf[103]]}))},1*1000,_0xf94fx25)};},eventUserleave:function(_0xf94fx25){for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx3++){if(_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[5]]===_0xf94fx25[_0x41bf[5]]){_0xf94fx21[_0x41bf[102]][_0x41bf[212]](_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3]);_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[112]]=false;}}},eventVoteupdate:function(_0xf94fx9){for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx3++){if(_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[5]]===_0xf94fx9[_0x41bf[149]][_0x41bf[5]]){if(_0xf94fx9[_0x41bf[213]]===1){_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[108]][_0x41bf[122]]++}else {_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[108]][_0x41bf[119]]++}}};var _0xf94fx54=API[_0x41bf[215]]()[_0x41bf[214]];var _0xf94fx55=API[_0x41bf[215]]()[_0x41bf[216]];var _0xf94fx56=API[_0x41bf[217]]();if(_0xf94fx21[_0x41bf[14]][_0x41bf[218]]){if((_0xf94fx54-_0xf94fx55)>=(_0xf94fx21[_0x41bf[14]][_0x41bf[219]])){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[220]],{name:chat[_0x41bf[205]],limit:_0xf94fx21[_0x41bf[14]][_0x41bf[219]]}));API[_0x41bf[221]]();}};},eventCurateupdate:function(_0xf94fx9){for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx3++){if(_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[5]]===_0xf94fx9[_0x41bf[149]][_0x41bf[5]]){_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[108]][_0x41bf[222]]++}}},eventDjadvance:function(_0xf94fx9){$(_0x41bf[223])[_0x41bf[182]]();var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[101]](_0xf94fx9[_0x41bf[224]][_0x41bf[5]]);for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx3++){if(_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[5]]===_0xf94fx25[_0x41bf[5]]){_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3][_0x41bf[114]]={time:null,position:null,songCount:0}}};var _0xf94fx57=_0xf94fx9[_0x41bf[225]];if( typeof _0xf94fx57===_0x41bf[4]){return };if(_0xf94fx21[_0x41bf[14]][_0x41bf[226]]){if( typeof _0xf94fx21[_0x41bf[33]][_0x41bf[227]]===_0x41bf[4]){API[_0x41bf[91]](_0x41bf[192]+_0xf94fx57[_0x41bf[228]][_0x41bf[201]]+_0x41bf[229]+_0xf94fx57[_0x41bf[228]][_0x41bf[200]]+_0x41bf[230]+_0xf94fx57[_0x41bf[231]][_0x41bf[216]]+_0x41bf[232]+_0xf94fx57[_0x41bf[231]][_0x41bf[233]]+_0x41bf[234]+_0xf94fx57[_0x41bf[231]][_0x41bf[214]]+_0x41bf[235])}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[227]],{artist:_0xf94fx57[_0x41bf[228]][_0x41bf[201]],title:_0xf94fx57[_0x41bf[228]][_0x41bf[200]],woots:_0xf94fx57[_0x41bf[231]][_0x41bf[216]],grabs:_0xf94fx57[_0x41bf[231]][_0x41bf[233]],mehs:_0xf94fx57[_0x41bf[231]][_0x41bf[214]]}))}};_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[236]]+=_0xf94fx57[_0x41bf[231]][_0x41bf[216]];_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[237]]+=_0xf94fx57[_0x41bf[231]][_0x41bf[214]];_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[238]]+=_0xf94fx57[_0x41bf[231]][_0x41bf[233]];_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[117]]++;_0xf94fx21[_0x41bf[132]][_0x41bf[239]]();_0xf94fx21[_0x41bf[10]][_0x41bf[240]]=_0xf94fx9[_0x41bf[224]][_0x41bf[5]];var _0xf94fx58=_0xf94fx9[_0x41bf[228]][_0x41bf[241]]+_0x41bf[242]+_0xf94fx9[_0x41bf[228]][_0x41bf[243]];for(var _0xf94fx49 in _0xf94fx21[_0x41bf[10]][_0x41bf[193]]){if(_0xf94fx21[_0x41bf[10]][_0x41bf[193]][_0xf94fx49][_0x41bf[124]](_0xf94fx58)> -1){var _0xf94fx26=_0xf94fx9[_0x41bf[224]][_0x41bf[103]];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[244]],{name:_0xf94fx26,blacklist:_0xf94fx49}));return API[_0x41bf[221]]();}};var _0xf94fx59=false;for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[41]][_0x41bf[8]];_0xf94fx3++){if(_0xf94fx21[_0x41bf[10]][_0x41bf[41]][_0xf94fx3][0]===_0xf94fx9[_0x41bf[228]][_0x41bf[243]]){var _0xf94fx5a=_0xf94fx21[_0x41bf[10]][_0x41bf[41]][_0xf94fx3][1];var _0xf94fx5b=_0xf94fx21[_0x41bf[10]][_0x41bf[41]][_0xf94fx3][_0x41bf[8]]-1;var _0xf94fx5c=_0xf94fx21[_0x41bf[10]][_0x41bf[41]][_0xf94fx3][_0xf94fx5b];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[245]],{name:_0xf94fx26,plays:_0xf94fx5b,timetotal:_0xf94fx21[_0x41bf[132]][_0x41bf[140]](Date[_0x41bf[18]]()-_0xf94fx5a),lasttime:_0xf94fx21[_0x41bf[132]][_0x41bf[140]](Date[_0x41bf[18]]()-_0xf94fx5c)}));API[_0x41bf[221]]();_0xf94fx21[_0x41bf[10]][_0x41bf[41]][_0xf94fx3][_0x41bf[53]](+ new Date());_0xf94fx59=true;}};if(!_0xf94fx59){_0xf94fx21[_0x41bf[10]][_0x41bf[41]][_0x41bf[53]]([_0xf94fx9[_0x41bf[228]][_0x41bf[243]],+ new Date()])};var _0xf94fx5d=_0xf94fx9[_0x41bf[228]];if(_0xf94fx21[_0x41bf[14]][_0x41bf[246]]&&_0xf94fx5d[_0x41bf[247]]>_0xf94fx21[_0x41bf[14]][_0x41bf[248]]*60&&!_0xf94fx21[_0x41bf[10]][_0x41bf[249]]){var _0xf94fx26=_0xf94fx9[_0x41bf[224]][_0x41bf[103]];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[250]],{name:_0xf94fx26,maxlength:_0xf94fx21[_0x41bf[14]][_0x41bf[248]]}));API[_0x41bf[221]]();};if(_0xf94fx25[_0x41bf[251]]){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[252]],{name:_0xf94fx25[_0x41bf[103]]}));_0xf94fx25[_0x41bf[251]]=false;};clearTimeout(_0xf94fx21[_0x41bf[10]][_0x41bf[253]]);if(_0xf94fx21[_0x41bf[10]][_0x41bf[43]]){var _0xf94fx5e=_0xf94fx9[_0x41bf[228]][_0x41bf[247]]*1000;_0xf94fx21[_0x41bf[10]][_0x41bf[253]]=setTimeout(function(){console[_0x41bf[22]](_0x41bf[254]);API[_0x41bf[221]]();},_0xf94fx5e+3000);};_0xf94fx5();},eventWaitlistupdate:function(_0xf94fx5f){if(_0xf94fx5f[_0x41bf[8]]<50){if(_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[5]][_0x41bf[8]]>0&&_0xf94fx21[_0x41bf[10]][_0x41bf[255]]){_0xf94fx21[_0x41bf[10]][_0x41bf[255]]=false;setTimeout(function(){_0xf94fx21[_0x41bf[10]][_0x41bf[255]]=true},500);_0xf94fx21[_0x41bf[10]][_0x41bf[256]]++;var _0xf94fx1,_0xf94fx24;setTimeout(function(){_0xf94fx1=_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[5]][_0x41bf[257]](0,1)[0];_0xf94fx24=_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[116]][_0x41bf[257]](0,1)[0];API[_0x41bf[127]](_0xf94fx1,_0xf94fx24);setTimeout(function(_0xf94fx1,_0xf94fx24){API[_0x41bf[128]](_0xf94fx1,_0xf94fx24);_0xf94fx21[_0x41bf[10]][_0x41bf[256]]--;if(_0xf94fx21[_0x41bf[10]][_0x41bf[46]][_0x41bf[5]][_0x41bf[8]]===0){setTimeout(function(){_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[258]]()},1000)};},1000,_0xf94fx1,_0xf94fx24);},1000+_0xf94fx21[_0x41bf[10]][_0x41bf[256]]*2500);}};for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx5f[_0x41bf[8]];_0xf94fx3++){var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[101]](_0xf94fx5f[_0xf94fx3][_0x41bf[5]]);_0xf94fx21[_0x41bf[102]][_0x41bf[259]](_0xf94fx25,API[_0x41bf[3]](_0xf94fx5f[_0xf94fx3][_0x41bf[5]])+1);};},chatcleaner:function(_0xf94fx8){if(!_0xf94fx21[_0x41bf[14]][_0x41bf[260]]){return false};if(_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx8[_0x41bf[203]])>1){return false};var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx60=false;for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx1c[_0x41bf[8]];_0xf94fx3++){_0xf94fx62=_0xf94fx1c[_0x41bf[261]](_0xf94fx3);if((_0xf94fx62>=_0x41bf[262]&&_0xf94fx62<=_0x41bf[263])||(_0xf94fx62>=_0x41bf[264]&&_0xf94fx62<=_0x41bf[265])||(_0xf94fx62>=_0x41bf[266]&&_0xf94fx62<=_0x41bf[267])||_0xf94fx62===_0x41bf[242]||_0xf94fx62===_0x41bf[268]){_0xf94fx60=true};};if(_0xf94fx1c===_0x41bf[57]){return true};if(!_0xf94fx60&&(_0xf94fx1c[_0x41bf[8]]===1||_0xf94fx1c[_0x41bf[8]]>3)){return true};_0xf94fx1c=_0xf94fx1c[_0x41bf[26]](/[ ,;.:\/=~+%^*\-\\"'&@#]/g,_0x41bf[57]);var _0xf94fx61=0;var _0xf94fx62;for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx1c[_0x41bf[8]];_0xf94fx3++){_0xf94fx62=_0xf94fx1c[_0x41bf[261]](_0xf94fx3);if(_0xf94fx62>=_0x41bf[264]&&_0xf94fx62<=_0x41bf[265]){_0xf94fx61++};};if(_0xf94fx61>=40){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[269]],{name:_0xf94fx8[_0x41bf[205]]}));return true;};_0xf94fx1c=_0xf94fx1c[_0x41bf[29]]();if(_0xf94fx1c===_0x41bf[270]){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[271]],{name:_0xf94fx8[_0x41bf[205]]}));return true;};for(var _0xf94fx1a=0;_0xf94fx1a<_0xf94fx21[_0x41bf[207]][_0x41bf[272]][_0x41bf[8]];_0xf94fx1a++){if(_0xf94fx1c===_0xf94fx21[_0x41bf[207]][_0x41bf[272]][_0xf94fx1a]){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[272]],{name:_0xf94fx8[_0x41bf[205]]}));return true;}};return false;},chatUtilities:{chatFilter:function(_0xf94fx8){var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx63=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx8[_0x41bf[203]]);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[101]](_0xf94fx8[_0x41bf[203]]);var _0xf94fx64=false;for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[42]][_0x41bf[8]];_0xf94fx3++){if(_0xf94fx21[_0x41bf[10]][_0x41bf[42]][_0xf94fx3]===_0xf94fx8[_0x41bf[203]]){_0xf94fx64=true}};if(_0xf94fx64){API[_0x41bf[273]](_0xf94fx8[_0x41bf[243]]);return true;};if(_0xf94fx21[_0x41bf[14]][_0x41bf[274]]){if(_0xf94fx63===0){API[_0x41bf[273]](_0xf94fx8[_0x41bf[243]]);return true;}};if(_0xf94fx21[_0x41bf[275]](_0xf94fx8)){API[_0x41bf[273]](_0xf94fx8[_0x41bf[243]]);return true;};if(_0xf94fx1c[_0x41bf[124]](_0x41bf[276])> -1){API[_0x41bf[273]](_0xf94fx8[_0x41bf[243]]);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[277]],{name:_0xf94fx8[_0x41bf[205]]}));return true;};if(_0xf94fx1c[_0x41bf[124]](_0x41bf[278])>0||_0xf94fx1c[_0x41bf[124]](_0x41bf[279])>0||_0xf94fx1c[_0x41bf[124]](_0x41bf[90])>0||_0xf94fx1c[_0x41bf[124]](_0x41bf[92])>0||_0xf94fx1c[_0x41bf[124]](_0x41bf[280])>0||_0xf94fx1c[_0x41bf[124]](_0x41bf[281])>0){API[_0x41bf[273]](_0xf94fx8[_0x41bf[243]]);return true;};var _0xf94fx65=_0xf94fx21[_0x41bf[33]][_0x41bf[282]];var _0xf94fx66=_0xf94fx21[_0x41bf[33]][_0x41bf[283]];var _0xf94fx67=_0xf94fx65[_0x41bf[51]](_0x41bf[284]);if(_0xf94fx67[1][_0x41bf[8]]>_0xf94fx67[0][_0x41bf[8]]){_0xf94fx67=_0xf94fx67[1]}else {_0xf94fx67=_0xf94fx67[0]};var _0xf94fx68=_0xf94fx66[_0x41bf[51]](_0x41bf[284]);if(_0xf94fx68[1][_0x41bf[8]]>_0xf94fx68[0][_0x41bf[8]]){_0xf94fx68=_0xf94fx68[1]}else {_0xf94fx68=_0xf94fx68[0]};if((_0xf94fx1c[_0x41bf[124]](_0xf94fx67)>-1||_0xf94fx1c[_0x41bf[124]](_0xf94fx68)> -1)&&_0xf94fx8[_0x41bf[203]]===_0xf94fx21[_0x41bf[285]]){setTimeout(function(_0xf94fx1){API[_0x41bf[273]](_0xf94fx1)},2*1000,_0xf94fx8[_0x41bf[243]]);return true;};return false;},commandCheck:function(_0xf94fx8){var _0xf94fx69;if(_0xf94fx8[_0x41bf[202]][_0x41bf[261]](0)===_0x41bf[87]){var _0xf94fx6a=_0xf94fx8[_0x41bf[202]][_0x41bf[124]](_0x41bf[286]);if(_0xf94fx6a=== -1){_0xf94fx69=_0xf94fx8[_0x41bf[202]]}else {_0xf94fx69=_0xf94fx8[_0x41bf[202]][_0x41bf[287]](0,_0xf94fx6a)};}else {return false};var _0xf94fx6b=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx8[_0x41bf[203]]);if(_0xf94fx8[_0x41bf[202]]!==_0x41bf[288]&&_0xf94fx8[_0x41bf[202]]!==_0x41bf[289]){if(_0xf94fx6b===0&&!_0xf94fx21[_0x41bf[10]][_0x41bf[290]]){return void((0))};if(!_0xf94fx21[_0x41bf[10]][_0x41bf[291]]){return void((0))};};if(_0xf94fx8[_0x41bf[202]]===_0x41bf[292]&&_0xf94fx21[_0x41bf[14]][_0x41bf[293]]){if(_0xf94fx6b<2){var _0xf94fx2b=_0xf94fx21[_0x41bf[102]][_0x41bf[101]](_0xf94fx8[_0x41bf[203]]);if(_0xf94fx2b[_0x41bf[109]]!==null&&(Date[_0x41bf[18]]()-_0xf94fx2b[_0x41bf[109]])<1*60*60*1000){API[_0x41bf[273]](_0xf94fx8[_0x41bf[243]]);return void((0));}else {_0xf94fx2b[_0x41bf[109]]=Date[_0x41bf[18]]()};}};var _0xf94fx6c=false;for(var _0xf94fx6d in _0xf94fx21[_0x41bf[294]]){var _0xf94fx6e=_0xf94fx21[_0x41bf[294]][_0xf94fx6d][_0x41bf[295]];if(!Array[_0x41bf[52]](_0xf94fx6e)){_0xf94fx6e=[_0xf94fx6e]};for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx6e[_0x41bf[8]];_0xf94fx3++){if(_0xf94fx21[_0x41bf[14]][_0x41bf[296]]+_0xf94fx6e[_0xf94fx3]===_0xf94fx69){_0xf94fx21[_0x41bf[294]][_0xf94fx6d][_0x41bf[297]](_0xf94fx8,_0xf94fx21[_0x41bf[14]][_0x41bf[296]]+_0xf94fx6e[_0xf94fx3]);_0xf94fx6c=true;break ;}};};if(_0xf94fx6c&&_0xf94fx6b===0){_0xf94fx21[_0x41bf[10]][_0x41bf[290]]=false;setTimeout(function(){_0xf94fx21[_0x41bf[10]][_0x41bf[290]]=true},_0xf94fx21[_0x41bf[14]][_0x41bf[298]]*1000);};if(_0xf94fx6c){API[_0x41bf[273]](_0xf94fx8[_0x41bf[243]]);_0xf94fx21[_0x41bf[10]][_0x41bf[291]]=false;setTimeout(function(){_0xf94fx21[_0x41bf[10]][_0x41bf[291]]=true},5*1000);};return _0xf94fx6c;},action:function(_0xf94fx8){var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[101]](_0xf94fx8[_0x41bf[203]]);if(_0xf94fx8[_0x41bf[299]]===_0x41bf[202]){for(var _0xf94fx1a=0;_0xf94fx1a<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx1a++){if(_0xf94fx21[_0x41bf[102]][_0x41bf[6]](_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx1a])[_0x41bf[5]]===_0xf94fx8[_0x41bf[203]]){_0xf94fx21[_0x41bf[102]][_0x41bf[204]](_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx1a])}}};_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[300]]++;},spam:[_0x41bf[301],_0x41bf[302],_0x41bf[303],_0x41bf[304],_0x41bf[303],_0x41bf[305],_0x41bf[306],_0x41bf[307],_0x41bf[308],_0x41bf[309],_0x41bf[310],_0x41bf[311],_0x41bf[312],_0x41bf[313],_0x41bf[314],_0x41bf[315],_0x41bf[316],_0x41bf[317],_0x41bf[318],_0x41bf[319],_0x41bf[320],_0x41bf[321],_0x41bf[322],_0x41bf[323],_0x41bf[324],_0x41bf[325],_0x41bf[326],_0x41bf[327],_0x41bf[328],_0x41bf[329],_0x41bf[330],_0x41bf[331],_0x41bf[332],_0x41bf[333],_0x41bf[334],_0x41bf[335],_0x41bf[336],_0x41bf[337],_0x41bf[338],_0x41bf[339],_0x41bf[340],_0x41bf[341],_0x41bf[342],_0x41bf[343],_0x41bf[344],_0x41bf[345],_0x41bf[346],_0x41bf[347],_0x41bf[348]],curses:[_0x41bf[349],_0x41bf[350],_0x41bf[351],_0x41bf[352],_0x41bf[353],_0x41bf[354]]},connectAPI:function(){this[_0x41bf[355]]={eventChat:$[_0x41bf[355]](this[_0x41bf[356]],this),eventUserskip:$[_0x41bf[355]](this[_0x41bf[357]],this),eventUserjoin:$[_0x41bf[355]](this[_0x41bf[358]],this),eventUserleave:$[_0x41bf[355]](this[_0x41bf[359]],this),eventUserfan:$[_0x41bf[355]](this[_0x41bf[360]],this),eventFriendjoin:$[_0x41bf[355]](this[_0x41bf[361]],this),eventFanjoin:$[_0x41bf[355]](this[_0x41bf[362]],this),eventVoteupdate:$[_0x41bf[355]](this[_0x41bf[363]],this),eventCurateupdate:$[_0x41bf[355]](this[_0x41bf[364]],this),eventRoomscoreupdate:$[_0x41bf[355]](this[_0x41bf[365]],this),eventDjadvance:$[_0x41bf[355]](this[_0x41bf[366]],this),eventDjupdate:$[_0x41bf[355]](this[_0x41bf[367]],this),eventWaitlistupdate:$[_0x41bf[355]](this[_0x41bf[368]],this),eventVoteskip:$[_0x41bf[355]](this[_0x41bf[369]],this),eventModskip:$[_0x41bf[355]](this[_0x41bf[370]],this),eventChatcommand:$[_0x41bf[355]](this[_0x41bf[371]],this),eventHistoryupdate:$[_0x41bf[355]](this[_0x41bf[372]],this)};API[_0x41bf[373]](API.CHAT,this[_0x41bf[355]][_0x41bf[356]]);API[_0x41bf[373]](API.USER_SKIP,this[_0x41bf[355]][_0x41bf[357]]);API[_0x41bf[373]](API.USER_JOIN,this[_0x41bf[355]][_0x41bf[358]]);API[_0x41bf[373]](API.USER_LEAVE,this[_0x41bf[355]][_0x41bf[359]]);API[_0x41bf[373]](API.USER_FAN,this[_0x41bf[355]][_0x41bf[360]]);API[_0x41bf[373]](API.VOTE_UPDATE,this[_0x41bf[355]][_0x41bf[363]]);API[_0x41bf[373]](API.GRAB_UPDATE,this[_0x41bf[355]][_0x41bf[364]]);API[_0x41bf[373]](API.ROOM_SCORE_UPDATE,this[_0x41bf[355]][_0x41bf[365]]);API[_0x41bf[373]](API.ADVANCE,this[_0x41bf[355]][_0x41bf[366]]);API[_0x41bf[373]](API.WAIT_LIST_UPDATE,this[_0x41bf[355]][_0x41bf[368]]);API[_0x41bf[373]](API.MOD_SKIP,this[_0x41bf[355]][_0x41bf[370]]);API[_0x41bf[373]](API.CHAT_COMMAND,this[_0x41bf[355]][_0x41bf[371]]);API[_0x41bf[373]](API.HISTORY_UPDATE,this[_0x41bf[355]][_0x41bf[372]]);},disconnectAPI:function(){API[_0x41bf[374]](API.CHAT,this[_0x41bf[355]][_0x41bf[356]]);API[_0x41bf[374]](API.USER_SKIP,this[_0x41bf[355]][_0x41bf[357]]);API[_0x41bf[374]](API.USER_JOIN,this[_0x41bf[355]][_0x41bf[358]]);API[_0x41bf[374]](API.USER_LEAVE,this[_0x41bf[355]][_0x41bf[359]]);API[_0x41bf[374]](API.USER_FAN,this[_0x41bf[355]][_0x41bf[360]]);API[_0x41bf[374]](API.VOTE_UPDATE,this[_0x41bf[355]][_0x41bf[363]]);API[_0x41bf[374]](API.CURATE_UPDATE,this[_0x41bf[355]][_0x41bf[364]]);API[_0x41bf[374]](API.ROOM_SCORE_UPDATE,this[_0x41bf[355]][_0x41bf[365]]);API[_0x41bf[374]](API.ADVANCE,this[_0x41bf[355]][_0x41bf[366]]);API[_0x41bf[374]](API.WAIT_LIST_UPDATE,this[_0x41bf[355]][_0x41bf[368]]);API[_0x41bf[374]](API.MOD_SKIP,this[_0x41bf[355]][_0x41bf[370]]);API[_0x41bf[374]](API.CHAT_COMMAND,this[_0x41bf[355]][_0x41bf[371]]);API[_0x41bf[374]](API.HISTORY_UPDATE,this[_0x41bf[355]][_0x41bf[372]]);},startup:function(){Function[_0x41bf[50]][_0x41bf[375]]=function(){return _0x41bf[376]};var _0xf94fx2b=API[_0x41bf[6]]();if(_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx2b)<2){return API[_0x41bf[1]](_0xf94fx21[_0x41bf[33]][_0x41bf[377]])};if(_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx2b)===2){API[_0x41bf[1]](_0xf94fx21[_0x41bf[33]][_0x41bf[147]])};_0xf94fx21[_0x41bf[378]]();API[_0x41bf[273]]=function(_0xf94fx6f){$[_0x41bf[381]]({url:_0x41bf[379]+_0xf94fx6f,type:_0x41bf[380]})};_0xf94fx10();_0xf94fx12();window[_0x41bf[382]]=_0xf94fx21;_0xf94fx21[_0x41bf[132]][_0x41bf[383]]();setInterval(_0xf94fx21[_0x41bf[132]][_0x41bf[383]],60*60*1000);_0xf94fx21[_0x41bf[384]]=_0xf94fx21[_0x41bf[132]][_0x41bf[385]];_0xf94fx21[_0x41bf[386]]=_0xf94fx21[_0x41bf[132]][_0x41bf[386]];if(_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[387]]===null){_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[387]]=Date[_0x41bf[18]]()};for(var _0xf94fx1a=0;_0xf94fx1a<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx1a++){_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx1a][_0x41bf[112]]=false};var _0xf94fx70=API[_0x41bf[388]]();for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx70[_0x41bf[8]];_0xf94fx3++){var _0xf94fx4e=false;var _0xf94fx22=null;for(var _0xf94fx1a=0;_0xf94fx1a<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx1a++){if(_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx1a][_0x41bf[5]]===_0xf94fx70[_0xf94fx3][_0x41bf[5]]){_0xf94fx4e=true;_0xf94fx22=_0xf94fx1a;}};if(_0xf94fx4e){_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx22][_0x41bf[112]]=true}else {_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[53]]( new _0xf94fx21.User(_0xf94fx70[_0xf94fx3][_0x41bf[5]],_0xf94fx70[_0xf94fx3][_0x41bf[103]]));_0xf94fx22=_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]]-1;};var _0xf94fx71=API[_0x41bf[3]](_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx22][_0x41bf[5]])+1;_0xf94fx21[_0x41bf[102]][_0x41bf[259]](_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx22],_0xf94fx71);};_0xf94fx21[_0x41bf[10]][_0x41bf[11]]=setInterval(function(){_0xf94fx21[_0x41bf[132]][_0x41bf[389]]()},10*1000);_0xf94fx21[_0x41bf[10]][_0x41bf[9]]=setInterval(function(){_0xf94fx21[_0x41bf[10]][_0x41bf[390]]()},60*60*1000);_0xf94fx21[_0x41bf[285]]=API[_0x41bf[6]]()[_0x41bf[5]];_0xf94fx21[_0x41bf[12]]=true;API[_0x41bf[91]](_0x41bf[391]+_0xf94fx21[_0x41bf[14]][_0x41bf[392]]);API[_0x41bf[394]](_0xf94fx21[_0x41bf[14]][_0x41bf[393]]);$(_0x41bf[223])[_0x41bf[182]]();if(_0xf94fx21[_0x41bf[14]][_0x41bf[395]]){var _0xf94fx72=$(_0x41bf[396]);if(_0xf94fx72[_0x41bf[8]]>0){_0xf94fx72[0][_0x41bf[182]]()};API[_0x41bf[1]](_0x41bf[397]);}else {var _0xf94fx73=$(_0x41bf[398]);if(_0xf94fx73[_0x41bf[8]]>0){_0xf94fx73[0][_0x41bf[182]]()};API[_0x41bf[1]](_0x41bf[399]);};API[_0x41bf[1]](_0x41bf[400]+_0xf94fx21[_0x41bf[14]][_0x41bf[392]]);API[_0x41bf[1]](_0x41bf[401]+_0xf94fx21[_0x41bf[14]][_0x41bf[393]]);_0xf94fxc(API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[402]],{botname:_0xf94fx21[_0x41bf[14]][_0x41bf[403]],version:_0xf94fx21[_0x41bf[19]]})));},commands:{executable:function(_0xf94fx74,_0xf94fx8){var _0xf94fx1=_0xf94fx8[_0x41bf[203]];var _0xf94fx63=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx1);var _0xf94fx75;switch(_0xf94fx74){case _0x41bf[143]:_0xf94fx75=10;break ;;case _0x41bf[81]:_0xf94fx75=7;break ;;case _0x41bf[144]:_0xf94fx75=5;break ;;case _0x41bf[145]:_0xf94fx75=4;break ;;case _0x41bf[146]:_0xf94fx75=3;break ;;case _0x41bf[405]:if(_0xf94fx21[_0x41bf[14]][_0x41bf[404]]){_0xf94fx75=2}else {_0xf94fx75=3};break ;;case _0x41bf[147]:_0xf94fx75=2;break ;;case _0x41bf[148]:_0xf94fx75=1;break ;;case _0x41bf[149]:_0xf94fx75=0;break ;;default:API[_0x41bf[1]](_0x41bf[406]);;};return _0xf94fx63>=_0xf94fx75;},activeCommand:{command:_0x41bf[407],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx76=Date[_0x41bf[18]]();var _0xf94fx77=0;var _0xf94fx32;if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){_0xf94fx32=60}else {_0xf94fx32=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+1);if(isNaN(_0xf94fx32)){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[412]],{name:_0xf94fx8[_0x41bf[205]]}))};};for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0x41bf[8]];_0xf94fx3++){userTime=_0xf94fx21[_0x41bf[102]][_0x41bf[173]](_0xf94fx21[_0x41bf[10]][_0x41bf[39]][_0xf94fx3]);if((_0xf94fx76-userTime)<=(_0xf94fx32*60*1000)){_0xf94fx77++};};API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[413]],{name:_0xf94fx8[_0x41bf[205]],amount:_0xf94fx77,time:_0xf94fx32}));};}},addCommand:{command:_0x41bf[414],rank:_0x41bf[405],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[415]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx26=_0xf94fx1c[_0x41bf[416]](_0xf94fx69[_0x41bf[8]]+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if(_0xf94fx1c[_0x41bf[8]]>_0xf94fx69[_0x41bf[8]]+2){if( typeof _0xf94fx25!==_0x41bf[4]){if(_0xf94fx21[_0x41bf[10]][_0x41bf[249]]){_0xf94fx21[_0x41bf[10]][_0x41bf[418]][_0x41bf[53]](_0xf94fx25[_0x41bf[5]])};API[_0x41bf[127]](_0xf94fx25[_0x41bf[5]]);}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[419]],{name:_0xf94fx8[_0x41bf[205]]}))}};};}},afklimitCommand:{command:_0x41bf[420],rank:_0x41bf[146],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[421]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx78=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+1);if(!isNaN(_0xf94fx78)){_0xf94fx21[_0x41bf[14]][_0x41bf[174]]=parseInt(_0xf94fx78,10);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[422]],{name:_0xf94fx8[_0x41bf[205]],time:_0xf94fx21[_0x41bf[14]][_0x41bf[174]]}));}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[423]],{name:_0xf94fx8[_0x41bf[205]]}))};};}},afkremovalCommand:{command:_0x41bf[424],rank:_0x41bf[405],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[167]]){_0xf94fx21[_0x41bf[14]][_0x41bf[167]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[167]];clearInterval(_0xf94fx21[_0x41bf[10]][_0x41bf[11]]);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[424]]}));}else {_0xf94fx21[_0x41bf[14]][_0x41bf[167]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[167]];_0xf94fx21[_0x41bf[10]][_0x41bf[11]]=setInterval(function(){_0xf94fx21[_0x41bf[132]][_0x41bf[389]]()},2*1000);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[424]]}));}};}},afkresetCommand:{command:_0x41bf[427],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[415]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if( typeof _0xf94fx25===_0x41bf[135]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[419]],{name:_0xf94fx8[_0x41bf[205]]}))};_0xf94fx21[_0x41bf[102]][_0x41bf[204]](_0xf94fx25);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[428]],{name:_0xf94fx8[_0x41bf[205]],username:_0xf94fx26}));};}},afktimeCommand:{command:_0x41bf[429],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[415]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if( typeof _0xf94fx25===_0x41bf[135]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[419]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx42=_0xf94fx21[_0x41bf[102]][_0x41bf[173]](_0xf94fx25);var _0xf94fx43=Date[_0x41bf[18]]()-_0xf94fx42;var _0xf94fx32=_0xf94fx21[_0x41bf[132]][_0x41bf[140]](_0xf94fx43);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[430]],{name:_0xf94fx8[_0x41bf[205]],username:_0xf94fx26,time:_0xf94fx32}));};}},autodisableCommand:{command:_0x41bf[89],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[89]]){_0xf94fx21[_0x41bf[14]][_0x41bf[89]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[89]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[89]]}));}else {_0xf94fx21[_0x41bf[14]][_0x41bf[89]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[89]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[89]]}));}};}},autoskipCommand:{command:_0x41bf[43],rank:_0x41bf[405],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[10]][_0x41bf[43]]){_0xf94fx21[_0x41bf[10]][_0x41bf[43]]=!_0xf94fx21[_0x41bf[10]][_0x41bf[43]];clearTimeout(_0xf94fx21[_0x41bf[10]][_0x41bf[253]]);return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[43]]}));}else {_0xf94fx21[_0x41bf[10]][_0x41bf[43]]=!_0xf94fx21[_0x41bf[10]][_0x41bf[43]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[43]]}));}};}},autowootCommand:{command:_0x41bf[431],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx21[_0x41bf[33]][_0x41bf[431]])};}},baCommand:{command:_0x41bf[432],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx21[_0x41bf[33]][_0x41bf[433]])};}},banCommand:{command:_0x41bf[434],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[415]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx26=_0xf94fx1c[_0x41bf[416]](_0xf94fx69[_0x41bf[8]]+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if( typeof _0xf94fx25===_0x41bf[135]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[419]],{name:_0xf94fx8[_0x41bf[205]]}))};API[_0x41bf[436]](_0xf94fx25[_0x41bf[5]],1,API[_0x41bf[435]].DAY);};}},blacklistCommand:{command:[_0x41bf[437],_0x41bf[438]],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[439]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx4c=_0xf94fx1c[_0x41bf[416]](_0xf94fx69[_0x41bf[8]]+1);if( typeof _0xf94fx21[_0x41bf[10]][_0x41bf[193]][_0xf94fx4c]===_0x41bf[4]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[440]],{name:_0xf94fx8[_0x41bf[205]]}))}else {var _0xf94fx79=API[_0x41bf[441]]();var _0xf94fx4d={list:_0xf94fx4c,author:_0xf94fx79[_0x41bf[201]],title:_0xf94fx79[_0x41bf[200]],mid:_0xf94fx79[_0x41bf[241]]+_0x41bf[242]+_0xf94fx79[_0x41bf[243]]};_0xf94fx21[_0x41bf[10]][_0x41bf[47]][_0x41bf[53]](_0xf94fx4d);_0xf94fx21[_0x41bf[10]][_0x41bf[193]][_0xf94fx4c][_0x41bf[53]](_0xf94fx79[_0x41bf[241]]+_0x41bf[242]+_0xf94fx79[_0x41bf[243]]);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[442]],{name:_0xf94fx8[_0x41bf[205]],blacklist:_0xf94fx4c,author:_0xf94fx79[_0x41bf[201]],title:_0xf94fx79[_0x41bf[200]],mid:_0xf94fx79[_0x41bf[241]]+_0x41bf[242]+_0xf94fx79[_0x41bf[243]]}));API[_0x41bf[221]]();if( typeof _0xf94fx21[_0x41bf[10]][_0x41bf[443]]===_0x41bf[194]){_0xf94fx21[_0x41bf[10]][_0x41bf[443]](_0xf94fx4d)};};};}},blinfoCommand:{command:_0x41bf[444],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx7a=API[_0x41bf[441]]()[_0x41bf[201]];var _0xf94fx7b=API[_0x41bf[441]]()[_0x41bf[200]];var _0xf94fx26=_0xf94fx8[_0x41bf[205]];var _0xf94fx7c=API[_0x41bf[441]]()[_0x41bf[241]];var _0xf94fx6f=API[_0x41bf[441]]()[_0x41bf[243]];var _0xf94fx7d=_0xf94fx7c+_0x41bf[242]+_0xf94fx6f;API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[444]],{name:_0xf94fx26,author:_0xf94fx7a,title:_0xf94fx7b,songid:_0xf94fx7d}));};}},bouncerPlusCommand:{command:_0x41bf[445],rank:_0x41bf[405],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx21[_0x41bf[14]][_0x41bf[404]]){_0xf94fx21[_0x41bf[14]][_0x41bf[404]]=false;return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0x41bf[446]}));}else {if(!_0xf94fx21[_0x41bf[14]][_0x41bf[404]]){var _0xf94fx1=_0xf94fx8[_0x41bf[203]];var _0xf94fx63=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx1);if(_0xf94fx63>2){_0xf94fx21[_0x41bf[14]][_0x41bf[404]]=true;return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0x41bf[446]}));};}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[447]],{name:_0xf94fx8[_0x41bf[205]]}))}};};}},clearchatCommand:{command:_0x41bf[448],rank:_0x41bf[146],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx7e=$(_0x41bf[450])[_0x41bf[449]]();for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx7e[_0x41bf[8]];_0xf94fx3++){API[_0x41bf[273]](_0xf94fx7e[_0xf94fx3][_0x41bf[452]](_0x41bf[451]))};return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[453]],{name:_0xf94fx8[_0x41bf[205]]}));};}},commandsCommand:{command:_0x41bf[294],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[454]],{botname:_0xf94fx21[_0x41bf[14]][_0x41bf[403]],link:_0xf94fx21[_0x41bf[455]]}))};}},cookieCommand:{command:_0x41bf[456],rank:_0x41bf[149],type:_0x41bf[408],cookies:[_0x41bf[457],_0x41bf[458],_0x41bf[459],_0x41bf[460],_0x41bf[461],_0x41bf[462],_0x41bf[463],_0x41bf[464],_0x41bf[465],_0x41bf[466],_0x41bf[467],_0x41bf[468],_0x41bf[469],_0x41bf[470],_0x41bf[471],_0x41bf[472],_0x41bf[473],_0x41bf[474],_0x41bf[475],_0x41bf[476]],getCookie:function(){var _0xf94fx7f=Math[_0x41bf[100]](Math[_0x41bf[98]]()*this[_0x41bf[477]][_0x41bf[8]]);return this[_0x41bf[477]][_0xf94fx7f];},functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx6a=_0xf94fx1c[_0x41bf[124]](_0x41bf[286]);if(_0xf94fx6a=== -1){API[_0x41bf[91]](_0xf94fx21[_0x41bf[33]][_0x41bf[478]]);return false;}else {var _0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx6a+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if(_0xf94fx25===false||!_0xf94fx25[_0x41bf[112]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[479]],{name:_0xf94fx26}))}else {if(_0xf94fx25[_0x41bf[103]]===_0xf94fx8[_0x41bf[205]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[480]],{name:_0xf94fx26}))}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[456]],{nameto:_0xf94fx25[_0x41bf[103]],namefrom:_0xf94fx8[_0x41bf[205]],cookie:this[_0x41bf[481]]()}))}};};};}},cycleCommand:{command:_0x41bf[482],rank:_0x41bf[146],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {_0xf94fx21[_0x41bf[132]][_0x41bf[483]]()};}},cycleguardCommand:{command:_0x41bf[484],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[183]]){_0xf94fx21[_0x41bf[14]][_0x41bf[183]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[183]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[484]]}));}else {_0xf94fx21[_0x41bf[14]][_0x41bf[183]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[183]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[484]]}));}};}},cycletimerCommand:{command:_0x41bf[485],rank:_0x41bf[146],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx80=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+1);if(!isNaN(_0xf94fx80)&&_0xf94fx80!==_0x41bf[57]){_0xf94fx21[_0x41bf[14]][_0x41bf[486]]=_0xf94fx80;return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[487]],{name:_0xf94fx8[_0x41bf[205]],time:_0xf94fx21[_0x41bf[14]][_0x41bf[486]]}));}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[412]],{name:_0xf94fx8[_0x41bf[205]]}))};};}},voteskipCommand:{command:_0x41bf[488],rank:_0x41bf[146],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]<=_0xf94fx69[_0x41bf[8]]+1){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[489]],{name:_0xf94fx8[_0x41bf[205]],limit:_0xf94fx21[_0x41bf[14]][_0x41bf[219]]}))};var _0xf94fx81=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+1);if(!_0xf94fx21[_0x41bf[14]][_0x41bf[218]]){_0xf94fx21[_0x41bf[14]][_0x41bf[218]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[218]]};if(isNaN(_0xf94fx81)){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[490]],{name:_0xf94fx8[_0x41bf[205]]}))}else {_0xf94fx21[_0x41bf[14]][_0x41bf[219]]=_0xf94fx81;API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[491]],{name:_0xf94fx8[_0x41bf[205]],limit:_0xf94fx21[_0x41bf[14]][_0x41bf[219]]}));};};}},togglevoteskipCommand:{command:_0x41bf[492],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[218]]){_0xf94fx21[_0x41bf[14]][_0x41bf[218]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[218]];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[488]]}));}else {_0xf94fx21[_0x41bf[14]][_0x41bf[187]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[187]];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[488]]}));}};}},dclookupCommand:{command:[_0x41bf[493],_0x41bf[494]],rank:_0x41bf[149],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx26;if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){_0xf94fx26=_0xf94fx8[_0x41bf[205]]}else {_0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2);var _0xf94fx63=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx8[_0x41bf[203]]);if(_0xf94fx63<2){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[495]],{name:_0xf94fx8[_0x41bf[205]]}))};};var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if( typeof _0xf94fx25===_0x41bf[135]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[419]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx82=_0xf94fx21[_0x41bf[102]][_0x41bf[493]](_0xf94fx25[_0x41bf[5]]);API[_0x41bf[91]](_0xf94fx82);};}},emojiCommand:{command:_0x41bf[496],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fxf=_0x41bf[497];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[498]],{link:_0xf94fxf}));};}},etaCommand:{command:_0x41bf[499],rank:_0x41bf[149],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx63=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx8[_0x41bf[203]]);var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx26;if(_0xf94fx1c[_0x41bf[8]]>_0xf94fx69[_0x41bf[8]]){if(_0xf94fx63<2){return void((0))};_0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2);}else {_0xf94fx26=_0xf94fx8[_0x41bf[205]]};var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if( typeof _0xf94fx25===_0x41bf[135]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[419]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx24=API[_0x41bf[3]](_0xf94fx25[_0x41bf[5]]);if(_0xf94fx24<0){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[500]],{name:_0xf94fx26}))};var _0xf94fx83=API[_0x41bf[501]]();var _0xf94fx84=((_0xf94fx24+1)*4*60+_0xf94fx83)*1000;var _0xf94fx85=_0xf94fx21[_0x41bf[132]][_0x41bf[140]](_0xf94fx84);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[499]],{name:_0xf94fx26,time:_0xf94fx85}));};}},fbCommand:{command:_0x41bf[502],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if( typeof _0xf94fx21[_0x41bf[14]][_0x41bf[503]]===_0x41bf[31]){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[504]],{name:_0xf94fx8[_0x41bf[205]],link:_0xf94fx21[_0x41bf[14]][_0x41bf[503]]}))}};}},filterCommand:{command:_0x41bf[505],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[260]]){_0xf94fx21[_0x41bf[14]][_0x41bf[260]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[260]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[506]]}));}else {_0xf94fx21[_0x41bf[14]][_0x41bf[260]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[260]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[506]]}));}};}},helpCommand:{command:_0x41bf[507],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fxf=_0x41bf[508];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[509]],{name:_0xf94fx8[_0x41bf[205]],link:_0xf94fxf}));};}},rouletteinfoCommand:{command:_0x41bf[510],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[510]],{name:_0xf94fx8[_0x41bf[205]]}))};}},mediaidCommand:{command:_0x41bf[511],rank:_0x41bf[148],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](API[_0x41bf[441]]()[_0x41bf[241]]+_0x41bf[242]+API[_0x41bf[441]]()[_0x41bf[243]],true)};}},vdownloadCommand:{command:_0x41bf[512],rank:_0x41bf[148],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx79=API[_0x41bf[441]]();var _0xf94fx86=_0x41bf[513]+_0xf94fx79[_0x41bf[243]];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[512]],{name:_0xf94fx8[_0x41bf[205]],link:_0xf94fx86}));};}},downloadCommand:{command:_0x41bf[514],rank:_0x41bf[148],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx79=API[_0x41bf[441]]();var _0xf94fx86=_0x41bf[515]+_0xf94fx79[_0x41bf[243]];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[514]],{name:_0xf94fx8[_0x41bf[205]],link:_0xf94fx86}));};}},roomhelpCommand:{command:_0x41bf[516],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[516]],{name:_0xf94fx8[_0x41bf[205]]}))};}},eldoxCommand:{command:_0x41bf[517],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[517]],{name:_0xf94fx8[_0x41bf[205]]}))};}},stumblrCommand:{command:_0x41bf[518],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fxf=_0x41bf[519];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[518]],{name:_0xf94fx8[_0x41bf[205]],link:_0xf94fxf}));};}},askCommand:{command:_0x41bf[520],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fxf=_0x41bf[521];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[520]],{name:_0xf94fx8[_0x41bf[205]],link:_0xf94fxf}));};}},tacaCommand:{command:_0x41bf[522],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[522]],{name:_0xf94fx8[_0x41bf[205]]}))};}},huligankaCommand:{command:_0x41bf[523],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[523]],{name:_0xf94fx8[_0x41bf[205]]}))};}},vlajkoCommand:{command:_0x41bf[524],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[524]],{name:_0xf94fx8[_0x41bf[205]]}))};}},masickaCommand:{command:_0x41bf[525],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[525]],{name:_0xf94fx8[_0x41bf[205]]}))};}},teaCommand:{command:_0x41bf[526],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[526]],{name:_0xf94fx8[_0x41bf[205]]}))};}},natalijaCommand:{command:_0x41bf[527],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[527]],{name:_0xf94fx8[_0x41bf[205]]}))};}},selmaCommand:{command:_0x41bf[528],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[528]],{name:_0xf94fx8[_0x41bf[205]]}))};}},roxorCommand:{command:_0x41bf[529],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[529]],{name:_0xf94fx8[_0x41bf[205]]}))};}},mujoCommand:{command:_0x41bf[530],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[530]],{name:_0xf94fx8[_0x41bf[205]]}))};}},filipCommand:{command:[_0x41bf[531],_0x41bf[532]],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[531]],{name:_0xf94fx8[_0x41bf[205]]}))};}},mamuzaCommand:{command:_0x41bf[533],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[533]],{name:_0xf94fx8[_0x41bf[205]]}))};}},cobraCommand:{command:_0x41bf[534],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[534]],{name:_0xf94fx8[_0x41bf[205]]}))};}},anjaCommand:{command:_0x41bf[535],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[535]],{name:_0xf94fx8[_0x41bf[205]]}))};}},smrtnikCommand:{command:_0x41bf[536],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[536]],{name:_0xf94fx8[_0x41bf[205]]}))};}},ahmedCommand:{command:_0x41bf[537],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[537]],{name:_0xf94fx8[_0x41bf[205]]}))};}},songunbanCommand:{command:_0x41bf[538],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[538]],{name:_0xf94fx8[_0x41bf[205]]}))};}},danceCommand:{command:_0x41bf[539],rank:_0x41bf[405],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[540]],{name:_0xf94fx8[_0x41bf[205]]}));$(_0x41bf[223])[_0x41bf[182]]();API[_0x41bf[373]](API.ADVANCE,_0xf94fx87);function _0xf94fx87(){$(_0x41bf[223])[_0x41bf[182]]()}};}},mehCommand:{command:_0x41bf[119],rank:_0x41bf[405],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[541]]));$(_0x41bf[542])[_0x41bf[182]]();API[_0x41bf[373]](API.ADVANCE,meh);};}},rouletteactivateCommand:{command:_0x41bf[543],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[543]],{name:_0xf94fx8[_0x41bf[205]]}));setInterval(function(){if(!_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[93]]){_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[544]]()}},7200000);};}},joinCommand:{command:_0x41bf[545],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[93]]&&_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[99]][_0x41bf[124]](_0xf94fx8[_0x41bf[203]])<0){_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[99]][_0x41bf[53]](_0xf94fx8[_0x41bf[203]]);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[282]],{name:_0xf94fx8[_0x41bf[205]]}));}};}},jointimeCommand:{command:_0x41bf[106],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[415]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if( typeof _0xf94fx25===_0x41bf[135]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[419]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx88=_0xf94fx21[_0x41bf[102]][_0x41bf[546]](_0xf94fx25);var _0xf94fx32=Date[_0x41bf[18]]()-_0xf94fx88;var _0xf94fx89=_0xf94fx21[_0x41bf[132]][_0x41bf[140]](_0xf94fx32);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[106]],{namefrom:_0xf94fx8[_0x41bf[205]],username:_0xf94fx26,time:_0xf94fx89}));};}},kickCommand:{command:_0x41bf[547],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx8a=_0xf94fx1c[_0x41bf[548]](_0x41bf[286]);var _0xf94fx32;var _0xf94fx26;if(_0xf94fx8a===_0xf94fx1c[_0x41bf[124]](_0x41bf[286])){_0xf94fx32=0.25;_0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2);}else {_0xf94fx32=_0xf94fx1c[_0x41bf[287]](_0xf94fx8a+1);_0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2,_0xf94fx8a);};var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);var _0xf94fx8b=_0xf94fx8[_0x41bf[205]];if( typeof _0xf94fx25===_0x41bf[135]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[415]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx8c=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx8[_0x41bf[203]]);var _0xf94fx8d=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx25[_0x41bf[5]]);if(_0xf94fx8c<=_0xf94fx8d){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[549]],{name:_0xf94fx8[_0x41bf[205]]}))};if(!isNaN(_0xf94fx32)){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[547]],{name:_0xf94fx8[_0x41bf[205]],username:_0xf94fx26,time:_0xf94fx32}));if(_0xf94fx32>24*60*60){API[_0x41bf[436]](_0xf94fx25[_0x41bf[5]],1,API[_0x41bf[435]].PERMA)}else {API[_0x41bf[436]](_0xf94fx25[_0x41bf[5]],1,API[_0x41bf[435]].DAY)};setTimeout(function(_0xf94fx1,_0xf94fx26){API[_0x41bf[550]](_0xf94fx1);console[_0x41bf[22]](_0x41bf[551]+_0xf94fx26+_0x41bf[552]+_0xf94fx1+_0x41bf[553]);},_0xf94fx32*60*1000,_0xf94fx25[_0x41bf[5]],_0xf94fx26);}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[412]],{name:_0xf94fx8[_0x41bf[205]]}))};};}},stopCommand:{command:_0x41bf[554],rank:_0x41bf[145],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {_0xf94fx5();API[_0x41bf[91]](_0xf94fx21[_0x41bf[33]][_0x41bf[555]]);_0xf94fx21[_0x41bf[556]]();setTimeout(function(){_0xf94fx4()},1000);};}},leaveCommand:{command:_0x41bf[557],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx22=_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[99]][_0x41bf[124]](_0xf94fx8[_0x41bf[203]]);if(_0xf94fx22> -1){_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[99]][_0x41bf[257]](_0xf94fx22,1);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[283]],{name:_0xf94fx8[_0x41bf[205]]}));};};}},linkCommand:{command:_0x41bf[558],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx79=API[_0x41bf[441]]();var _0xf94fx8b=_0xf94fx8[_0x41bf[205]];var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[101]](_0xf94fx8[_0x41bf[203]]);var _0xf94fx63=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx8[_0x41bf[203]]);var _0xf94fx56=API[_0x41bf[217]]()[_0x41bf[5]];var _0xf94fx8e=false;if(_0xf94fx56===_0xf94fx8[_0x41bf[203]]){_0xf94fx8e=true};if(_0xf94fx63>=1||_0xf94fx8e){if(_0xf94fx79[_0x41bf[241]]===1){var _0xf94fx86=_0x41bf[559]+_0xf94fx79[_0x41bf[243]];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[560]],{name:_0xf94fx8b,link:_0xf94fx86}));};if(_0xf94fx79[_0x41bf[241]]===2){SC[_0x41bf[34]](_0x41bf[561]+_0xf94fx79[_0x41bf[243]],function(_0xf94fx8f){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[560]],{name:_0xf94fx8b,link:_0xf94fx8f[_0x41bf[562]]}))})};};};}},lockCommand:{command:_0x41bf[563],rank:_0x41bf[405],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[130]]()};}},lockdownCommand:{command:_0x41bf[564],rank:_0x41bf[405],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx90=_0xf94fx21[_0x41bf[14]][_0x41bf[274]];_0xf94fx21[_0x41bf[14]][_0x41bf[274]]= !_0xf94fx90;if(_0xf94fx21[_0x41bf[14]][_0x41bf[274]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[564]]}))}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[564]]}))};};}},lockguardCommand:{command:_0x41bf[565],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[164]]){_0xf94fx21[_0x41bf[14]][_0x41bf[164]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[164]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[564]]}));}else {_0xf94fx21[_0x41bf[14]][_0x41bf[164]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[164]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[565]]}));}};}},lockskipCommand:{command:_0x41bf[566],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[10]][_0x41bf[567]]){var _0xf94fx56=API[_0x41bf[217]]();var _0xf94fx1=_0xf94fx56[_0x41bf[5]];var _0xf94fx26=_0xf94fx56[_0x41bf[103]];var _0xf94fx91=_0x41bf[568]+_0xf94fx26+_0x41bf[230];_0xf94fx21[_0x41bf[10]][_0x41bf[255]]=false;if(_0xf94fx8[_0x41bf[202]][_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[569]],{name:_0xf94fx8[_0x41bf[205]]}));_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[130]]();setTimeout(function(_0xf94fx1){API[_0x41bf[221]]();_0xf94fx21[_0x41bf[10]][_0x41bf[567]]=false;setTimeout(function(){_0xf94fx21[_0x41bf[10]][_0x41bf[567]]=true},5*1000);setTimeout(function(_0xf94fx1){_0xf94fx21[_0x41bf[102]][_0x41bf[105]](_0xf94fx1,_0xf94fx21[_0x41bf[14]][_0x41bf[570]],false);_0xf94fx21[_0x41bf[10]][_0x41bf[255]]=true;setTimeout(function(){_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[258]]()},1000);},1500,_0xf94fx1);},1000,_0xf94fx1);return void((0));};var _0xf94fx92=false;var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx93=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+1);for(var _0xf94fx3=0;_0xf94fx3<_0xf94fx21[_0x41bf[14]][_0x41bf[571]][_0x41bf[8]];_0xf94fx3++){var _0xf94fx94=_0xf94fx21[_0x41bf[14]][_0x41bf[571]][_0xf94fx3][0];if(_0xf94fx93[_0x41bf[124]](_0xf94fx94)!== -1){_0xf94fx92=true;_0xf94fx91+=_0xf94fx21[_0x41bf[14]][_0x41bf[571]][_0xf94fx3][1];};};if(_0xf94fx92){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[569]],{name:_0xf94fx8[_0x41bf[205]]}));_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[130]]();setTimeout(function(_0xf94fx1){API[_0x41bf[221]]();_0xf94fx21[_0x41bf[10]][_0x41bf[567]]=false;API[_0x41bf[91]](_0xf94fx91);setTimeout(function(){_0xf94fx21[_0x41bf[10]][_0x41bf[567]]=true},5*1000);setTimeout(function(_0xf94fx1){_0xf94fx21[_0x41bf[102]][_0x41bf[105]](_0xf94fx1,_0xf94fx21[_0x41bf[14]][_0x41bf[570]],false);_0xf94fx21[_0x41bf[10]][_0x41bf[255]]=true;setTimeout(function(){_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[258]]()},1000);},1500,_0xf94fx1);},1000,_0xf94fx1);return void((0));};}};}},lockskipposCommand:{command:_0x41bf[572],rank:_0x41bf[146],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx24=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+1);if(!isNaN(_0xf94fx24)){_0xf94fx21[_0x41bf[14]][_0x41bf[570]]=_0xf94fx24;return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[572]],{name:_0xf94fx8[_0x41bf[205]],position:_0xf94fx21[_0x41bf[14]][_0x41bf[570]]}));}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[573]],{name:_0xf94fx8[_0x41bf[205]]}))};};}},adnaCommand:{command:_0x41bf[574],rank:_0x41bf[149],type:_0x41bf[408],cookies:[_0x41bf[575],_0x41bf[576],_0x41bf[577],_0x41bf[578]],getCookie:function(){var _0xf94fx7f=Math[_0x41bf[100]](Math[_0x41bf[98]]()*this[_0x41bf[477]][_0x41bf[8]]);return this[_0x41bf[477]][_0xf94fx7f];},functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx6a=_0xf94fx1c[_0x41bf[124]](_0x41bf[286]);if(_0xf94fx6a=== -1){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[574]],{adna:this[_0x41bf[481]]()}));return false;}else {var _0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx6a+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if(_0xf94fx25===false||!_0xf94fx25[_0x41bf[112]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[579]],{name:_0xf94fx26}))}else {if(_0xf94fx25[_0x41bf[103]]===_0xf94fx8[_0x41bf[205]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[579]],{name:_0xf94fx26}))}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[579]],{adna:this[_0x41bf[481]]()}))}};};};}},fortunecookieCommand:{command:_0x41bf[580],rank:_0x41bf[149],type:_0x41bf[408],cookies:[_0x41bf[581],_0x41bf[582],_0x41bf[583],_0x41bf[584],_0x41bf[585],_0x41bf[586],_0x41bf[587],_0x41bf[588],_0x41bf[589],_0x41bf[590],_0x41bf[591],_0x41bf[592],_0x41bf[593],_0x41bf[594],_0x41bf[595],_0x41bf[596],_0x41bf[597],_0x41bf[598],_0x41bf[599],_0x41bf[600],_0x41bf[601],_0x41bf[602],_0x41bf[603],_0x41bf[604],_0x41bf[605],_0x41bf[606],_0x41bf[607],_0x41bf[608],_0x41bf[609],_0x41bf[610],_0x41bf[611],_0x41bf[612],_0x41bf[613],_0x41bf[614],_0x41bf[615],_0x41bf[616],_0x41bf[617],_0x41bf[618],_0x41bf[619],_0x41bf[620],_0x41bf[621],_0x41bf[622],_0x41bf[623],_0x41bf[624],_0x41bf[625],_0x41bf[626],_0x41bf[627],_0x41bf[628],_0x41bf[629]],getCookie:function(){var _0xf94fx7f=Math[_0x41bf[100]](Math[_0x41bf[98]]()*this[_0x41bf[477]][_0x41bf[8]]);return this[_0x41bf[477]][_0xf94fx7f];},functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx6a=_0xf94fx1c[_0x41bf[124]](_0x41bf[286]);if(_0xf94fx6a=== -1){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[580]],{name:_0xf94fx8[_0x41bf[205]],fortune:this[_0x41bf[481]]()}));return false;}else {var _0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx6a+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if(_0xf94fx25===false||!_0xf94fx25[_0x41bf[112]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[630]],{name:_0xf94fx26}))}else {if(_0xf94fx25[_0x41bf[103]]===_0xf94fx8[_0x41bf[205]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[630]],{name:_0xf94fx26}))}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[630]],{name:_0xf94fx26}))}};};};}},prcCommand:{command:_0x41bf[631],rank:_0x41bf[147],type:_0x41bf[408],cookies:[_0x41bf[632],_0x41bf[633],_0x41bf[634],_0x41bf[635],_0x41bf[636],_0x41bf[637],_0x41bf[638],_0x41bf[639],_0x41bf[640],_0x41bf[641],_0x41bf[642],_0x41bf[643],_0x41bf[644]],getCookie:function(){var _0xf94fx7f=Math[_0x41bf[100]](Math[_0x41bf[98]]()*this[_0x41bf[477]][_0x41bf[8]]);return this[_0x41bf[477]][_0xf94fx7f];},functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx6a=_0xf94fx1c[_0x41bf[124]](_0x41bf[286]);if(_0xf94fx6a=== -1){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[645]],{name:_0xf94fx26}));return false;}else {var _0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx6a+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if(_0xf94fx25===false||!_0xf94fx25[_0x41bf[112]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[646]],{name:_0xf94fx26}))}else {if(_0xf94fx25[_0x41bf[103]]===_0xf94fx8[_0x41bf[205]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[645]],{name:_0xf94fx26}))}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[631]],{nameto:_0xf94fx25[_0x41bf[103]],cookie:this[_0x41bf[481]]()}))}};};};}},giftCommand:{command:_0x41bf[647],rank:_0x41bf[149],type:_0x41bf[408],cookies:[_0x41bf[648],_0x41bf[649],_0x41bf[650],_0x41bf[651],_0x41bf[652],_0x41bf[653],_0x41bf[654],_0x41bf[655],_0x41bf[656],_0x41bf[657],_0x41bf[658],_0x41bf[659],_0x41bf[660]],getCookie:function(){var _0xf94fx7f=Math[_0x41bf[100]](Math[_0x41bf[98]]()*this[_0x41bf[477]][_0x41bf[8]]);return this[_0x41bf[477]][_0xf94fx7f];},functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx6a=_0xf94fx1c[_0x41bf[124]](_0x41bf[286]);if(_0xf94fx6a=== -1){API[_0x41bf[91]](_0xf94fx21[_0x41bf[33]][_0x41bf[661]]);return false;}else {var _0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx6a+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if(_0xf94fx25===false||!_0xf94fx25[_0x41bf[112]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[662]],{name:_0xf94fx26}))}else {if(_0xf94fx25[_0x41bf[103]]===_0xf94fx8[_0x41bf[205]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[663]],{name:_0xf94fx26}))}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[647]],{nameto:_0xf94fx25[_0x41bf[103]],namefrom:_0xf94fx8[_0x41bf[205]],cookie:this[_0x41bf[481]]()}))}};};};}},locktimerCommand:{command:_0x41bf[664],rank:_0x41bf[146],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx95=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+1);if(!isNaN(_0xf94fx95)&&_0xf94fx95!==_0x41bf[57]){_0xf94fx21[_0x41bf[14]][_0x41bf[166]]=_0xf94fx95;return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[665]],{name:_0xf94fx8[_0x41bf[205]],time:_0xf94fx21[_0x41bf[14]][_0x41bf[166]]}));}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[412]],{name:_0xf94fx8[_0x41bf[205]]}))};};}},maxlengthCommand:{command:_0x41bf[666],rank:_0x41bf[146],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx96=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+1);if(!isNaN(_0xf94fx96)){_0xf94fx21[_0x41bf[14]][_0x41bf[248]]=_0xf94fx96;return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[667]],{name:_0xf94fx8[_0x41bf[205]],time:_0xf94fx21[_0x41bf[14]][_0x41bf[248]]}));}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[412]],{name:_0xf94fx8[_0x41bf[205]]}))};};}},motdCommand:{command:_0x41bf[190],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]<=_0xf94fx69[_0x41bf[8]]+1){return API[_0x41bf[91]](_0x41bf[668]+_0xf94fx21[_0x41bf[14]][_0x41bf[190]])};var _0xf94fx81=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+1);if(!_0xf94fx21[_0x41bf[14]][_0x41bf[187]]){_0xf94fx21[_0x41bf[14]][_0x41bf[187]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[187]]};if(isNaN(_0xf94fx81)){_0xf94fx21[_0x41bf[14]][_0x41bf[190]]=_0xf94fx81;API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[669]],{msg:_0xf94fx21[_0x41bf[14]][_0x41bf[190]]}));}else {_0xf94fx21[_0x41bf[14]][_0x41bf[188]]=_0xf94fx81;API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[670]],{interval:_0xf94fx21[_0x41bf[14]][_0x41bf[188]]}));};};}},moveCommand:{command:_0x41bf[671],rank:_0x41bf[405],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[415]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx97=_0xf94fx1c[_0x41bf[124]](_0x41bf[286]);var _0xf94fx8a=_0xf94fx1c[_0x41bf[548]](_0x41bf[286]);var _0xf94fx24;var _0xf94fx26;if(isNaN(parseInt(_0xf94fx1c[_0x41bf[287]](_0xf94fx8a+1)))){_0xf94fx24=1;_0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2);}else {_0xf94fx24=parseInt(_0xf94fx1c[_0x41bf[287]](_0xf94fx8a+1));_0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2,_0xf94fx8a);};var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if( typeof _0xf94fx25===_0x41bf[135]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[419]],{name:_0xf94fx8[_0x41bf[205]]}))};if(_0xf94fx25[_0x41bf[5]]===_0xf94fx21[_0x41bf[285]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[672]],{name:_0xf94fx8[_0x41bf[205]]}))};if(!isNaN(_0xf94fx24)){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[671]],{name:_0xf94fx8[_0x41bf[205]]}));_0xf94fx21[_0x41bf[102]][_0x41bf[105]](_0xf94fx25[_0x41bf[5]],_0xf94fx24,false);}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[573]],{name:_0xf94fx8[_0x41bf[205]]}))};};}},muteCommand:{command:_0x41bf[673],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[415]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx8a=_0xf94fx1c[_0x41bf[548]](_0x41bf[286]);var _0xf94fx32=null;var _0xf94fx26;if(_0xf94fx8a===_0xf94fx1c[_0x41bf[124]](_0x41bf[286])){_0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2);_0xf94fx32=45;}else {_0xf94fx32=_0xf94fx1c[_0x41bf[287]](_0xf94fx8a+1);if(isNaN(_0xf94fx32)||_0xf94fx32==_0x41bf[57]||_0xf94fx32==null|| typeof _0xf94fx32==_0x41bf[4]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[412]],{name:_0xf94fx8[_0x41bf[205]]}))};_0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2,_0xf94fx8a);};var _0xf94fx8b=_0xf94fx8[_0x41bf[205]];var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if( typeof _0xf94fx25===_0x41bf[135]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[419]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx8c=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx8[_0x41bf[203]]);var _0xf94fx98=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx25[_0x41bf[5]]);if(_0xf94fx8c>_0xf94fx98){if(_0xf94fx32>45){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[674]],{name:_0xf94fx8[_0x41bf[205]],time:_0x41bf[675]}));API[_0x41bf[677]](_0xf94fx25[_0x41bf[5]],1,API[_0x41bf[676]].LONG);}else {if(_0xf94fx32===45){API[_0x41bf[677]](_0xf94fx25[_0x41bf[5]],1,API[_0x41bf[676]].LONG);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[678]],{name:_0xf94fx8[_0x41bf[205]],username:_0xf94fx26,time:_0xf94fx32}));}else {if(_0xf94fx32>30){API[_0x41bf[677]](_0xf94fx25[_0x41bf[5]],1,API[_0x41bf[676]].LONG);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[678]],{name:_0xf94fx8[_0x41bf[205]],username:_0xf94fx26,time:_0xf94fx32}));setTimeout(function(_0xf94fx1){API[_0x41bf[679]](_0xf94fx1)},_0xf94fx32*60*1000,_0xf94fx25[_0x41bf[5]]);}else {if(_0xf94fx32>15){API[_0x41bf[677]](_0xf94fx25[_0x41bf[5]],1,API[_0x41bf[676]].MEDIUM);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[678]],{name:_0xf94fx8[_0x41bf[205]],username:_0xf94fx26,time:_0xf94fx32}));setTimeout(function(_0xf94fx1){API[_0x41bf[679]](_0xf94fx1)},_0xf94fx32*60*1000,_0xf94fx25[_0x41bf[5]]);}else {API[_0x41bf[677]](_0xf94fx25[_0x41bf[5]],1,API[_0x41bf[676]].SHORT);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[678]],{name:_0xf94fx8[_0x41bf[205]],username:_0xf94fx26,time:_0xf94fx32}));setTimeout(function(_0xf94fx1){API[_0x41bf[679]](_0xf94fx1)},_0xf94fx32*60*1000,_0xf94fx25[_0x41bf[5]]);}}}}}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[680]],{name:_0xf94fx8[_0x41bf[205]]}))};};}},opCommand:{command:_0x41bf[69],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if( typeof _0xf94fx21[_0x41bf[14]][_0x41bf[681]]===_0x41bf[31]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[682]],{name:_0xf94fx8[_0x41bf[205]],link:_0xf94fx21[_0x41bf[14]][_0x41bf[681]]}))}};}},pingCommand:{command:_0x41bf[683],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx21[_0x41bf[33]][_0x41bf[684]])};}},refreshCommand:{command:_0x41bf[685],rank:_0x41bf[145],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {_0xf94fx5();_0xf94fx21[_0x41bf[556]]();setTimeout(function(){window[_0x41bf[687]][_0x41bf[686]](false)},1000);};}},reloadCommand:{command:_0x41bf[686],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx21[_0x41bf[33]][_0x41bf[686]]);_0xf94fx5();_0xf94fx21[_0x41bf[556]]();_0xf94fx4();setTimeout(function(){$[_0x41bf[689]](_0xf94fx21[_0x41bf[688]])},2000);};}},removeCommand:{command:_0x41bf[690],rank:_0x41bf[405],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]>_0xf94fx69[_0x41bf[8]]+2){var _0xf94fx26=_0xf94fx1c[_0x41bf[416]](_0xf94fx69[_0x41bf[8]]+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if( typeof _0xf94fx25!==_0x41bf[135]){_0xf94fx25[_0x41bf[114]]={time:null,position:null,songCount:0};if(API[_0x41bf[217]]()[_0x41bf[5]]===_0xf94fx25[_0x41bf[5]]){API[_0x41bf[221]]();setTimeout(function(){API[_0x41bf[177]](_0xf94fx25[_0x41bf[5]])},1*1000,_0xf94fx25);}else {API[_0x41bf[177]](_0xf94fx25[_0x41bf[5]])};}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[691]],{name:_0xf94fx8[_0x41bf[205]],username:_0xf94fx26}))};}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[415]],{name:_0xf94fx8[_0x41bf[205]]}))};};}},restrictetaCommand:{command:_0x41bf[692],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[293]]){_0xf94fx21[_0x41bf[14]][_0x41bf[293]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[293]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[693]]}));}else {_0xf94fx21[_0x41bf[14]][_0x41bf[293]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[293]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[693]]}));}};}},rouletteCommand:{command:_0x41bf[94],rank:_0x41bf[405],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(!_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[93]]){_0xf94fx21[_0x41bf[10]][_0x41bf[94]][_0x41bf[544]]()}};}},rulesCommand:{command:_0x41bf[694],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if( typeof _0xf94fx21[_0x41bf[14]][_0x41bf[695]]===_0x41bf[31]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[696]],{link:_0xf94fx21[_0x41bf[14]][_0x41bf[695]]}))}};}},sessionstatsCommand:{command:_0x41bf[697],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx8b=_0xf94fx8[_0x41bf[205]];var _0xf94fx55=_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[236]];var _0xf94fx54=_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[237]];var _0xf94fx99=_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[238]];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[697]],{name:_0xf94fx8b,woots:_0xf94fx55,mehs:_0xf94fx54,grabs:_0xf94fx99}));};}},skipCommand:{command:_0x41bf[270],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[270]],{name:_0xf94fx8[_0x41bf[205]]}));API[_0x41bf[221]]();_0xf94fx21[_0x41bf[10]][_0x41bf[567]]=false;setTimeout(function(){_0xf94fx21[_0x41bf[10]][_0x41bf[567]]=true},5*1000);};}},songstatsCommand:{command:_0x41bf[226],rank:_0x41bf[405],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[226]]){_0xf94fx21[_0x41bf[14]][_0x41bf[226]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[226]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[226]]}));}else {_0xf94fx21[_0x41bf[14]][_0x41bf[226]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[226]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[226]]}));}};}},sourceCommand:{command:_0x41bf[698],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {API[_0x41bf[91]](_0x41bf[699]+_0xf94fx1f+_0x41bf[700])};}},statusCommand:{command:_0x41bf[12],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx8b=_0xf94fx8[_0x41bf[205]];var _0xf94fx1c=_0x41bf[701]+_0xf94fx8b+_0x41bf[702];_0xf94fx1c+=_0xf94fx21[_0x41bf[33]][_0x41bf[424]]+_0x41bf[230];if(_0xf94fx21[_0x41bf[14]][_0x41bf[167]]){_0xf94fx1c+=_0x41bf[703]}else {_0xf94fx1c+=_0x41bf[704]};_0xf94fx1c+=_0x41bf[705];_0xf94fx1c+=_0xf94fx21[_0x41bf[33]][_0x41bf[706]]+_0x41bf[230]+_0xf94fx21[_0x41bf[10]][_0x41bf[40]][_0x41bf[8]]+_0x41bf[705];_0xf94fx1c+=_0xf94fx21[_0x41bf[33]][_0x41bf[420]]+_0x41bf[230]+_0xf94fx21[_0x41bf[14]][_0x41bf[174]]+_0x41bf[705];_0xf94fx1c+=_0x41bf[707];if(_0xf94fx21[_0x41bf[14]][_0x41bf[404]]){_0xf94fx1c+=_0x41bf[703]}else {_0xf94fx1c+=_0x41bf[704]};_0xf94fx1c+=_0x41bf[705];_0xf94fx1c+=_0xf94fx21[_0x41bf[33]][_0x41bf[565]]+_0x41bf[230];if(_0xf94fx21[_0x41bf[14]][_0x41bf[164]]){_0xf94fx1c+=_0x41bf[703]}else {_0xf94fx1c+=_0x41bf[704]};_0xf94fx1c+=_0x41bf[705];_0xf94fx1c+=_0xf94fx21[_0x41bf[33]][_0x41bf[484]]+_0x41bf[230];if(_0xf94fx21[_0x41bf[14]][_0x41bf[183]]){_0xf94fx1c+=_0x41bf[703]}else {_0xf94fx1c+=_0x41bf[704]};_0xf94fx1c+=_0x41bf[705];_0xf94fx1c+=_0xf94fx21[_0x41bf[33]][_0x41bf[708]]+_0x41bf[230];if(_0xf94fx21[_0x41bf[14]][_0x41bf[246]]){_0xf94fx1c+=_0x41bf[703]}else {_0xf94fx1c+=_0x41bf[704]};_0xf94fx1c+=_0x41bf[705];_0xf94fx1c+=_0xf94fx21[_0x41bf[33]][_0x41bf[506]]+_0x41bf[230];if(_0xf94fx21[_0x41bf[14]][_0x41bf[260]]){_0xf94fx1c+=_0x41bf[703]}else {_0xf94fx1c+=_0x41bf[704]};_0xf94fx1c+=_0x41bf[705];_0xf94fx1c+=_0xf94fx21[_0x41bf[33]][_0x41bf[488]]+_0x41bf[230];if(_0xf94fx21[_0x41bf[14]][_0x41bf[488]]){_0xf94fx1c+=_0x41bf[703]}else {_0xf94fx1c+=_0x41bf[704]};_0xf94fx1c+=_0x41bf[705];var _0xf94fx9a=_0xf94fx21[_0x41bf[10]][_0x41bf[44]][_0x41bf[387]];var _0xf94fx9b=Date[_0x41bf[18]]()-_0xf94fx9a;var _0xf94fx9c=_0xf94fx21[_0x41bf[132]][_0x41bf[140]](_0xf94fx9b);_0xf94fx1c+=_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[709]],{time:_0xf94fx9c});return API[_0x41bf[91]](_0xf94fx1c);};}},swapCommand:{command:_0x41bf[710],rank:_0x41bf[405],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[415]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx97=_0xf94fx1c[_0x41bf[124]](_0x41bf[286]);var _0xf94fx8a=_0xf94fx1c[_0x41bf[548]](_0x41bf[286]);var _0xf94fx9d=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2,_0xf94fx8a);var _0xf94fx9e=_0xf94fx1c[_0x41bf[287]](_0xf94fx8a+2);var _0xf94fx9f=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx9d);var _0xf94fxa0=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx9e);if( typeof _0xf94fx9f===_0x41bf[135]|| typeof _0xf94fxa0===_0x41bf[135]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[711]],{name:_0xf94fx8[_0x41bf[205]]}))};if(_0xf94fx9f[_0x41bf[5]]===_0xf94fx21[_0x41bf[285]]||_0xf94fxa0[_0x41bf[5]]===_0xf94fx21[_0x41bf[285]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[712]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fxa1=API[_0x41bf[3]](_0xf94fx9f[_0x41bf[5]])+1;var _0xf94fxa2=API[_0x41bf[3]](_0xf94fxa0[_0x41bf[5]])+1;if(_0xf94fxa1<0||_0xf94fxa2<0){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[713]],{name:_0xf94fx8[_0x41bf[205]]}))};API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[714]],{"\x6E\x61\x6D\x65\x31":_0xf94fx9d,"\x6E\x61\x6D\x65\x32":_0xf94fx9e}));if(_0xf94fxa1<_0xf94fxa2){_0xf94fx21[_0x41bf[102]][_0x41bf[105]](_0xf94fxa0[_0x41bf[5]],_0xf94fxa1,false);setTimeout(function(_0xf94fx9f,_0xf94fxa2){_0xf94fx21[_0x41bf[102]][_0x41bf[105]](_0xf94fx9f[_0x41bf[5]],_0xf94fxa2,false)},2000,_0xf94fx9f,_0xf94fxa2);}else {_0xf94fx21[_0x41bf[102]][_0x41bf[105]](_0xf94fx9f[_0x41bf[5]],_0xf94fxa2,false);setTimeout(function(_0xf94fxa0,_0xf94fxa1){_0xf94fx21[_0x41bf[102]][_0x41bf[105]](_0xf94fxa0[_0x41bf[5]],_0xf94fxa1,false)},2000,_0xf94fxa0,_0xf94fxa1);};};}},themeCommand:{command:_0x41bf[67],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if( typeof _0xf94fx21[_0x41bf[14]][_0x41bf[715]]===_0x41bf[31]){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[716]],{link:_0xf94fx21[_0x41bf[14]][_0x41bf[715]]}))}};}},timeguardCommand:{command:_0x41bf[708],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[246]]){_0xf94fx21[_0x41bf[14]][_0x41bf[246]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[246]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[708]]}));}else {_0xf94fx21[_0x41bf[14]][_0x41bf[246]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[246]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[708]]}));}};}},toggleblCommand:{command:_0x41bf[717],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx90=_0xf94fx21[_0x41bf[14]][_0x41bf[718]];_0xf94fx21[_0x41bf[14]][_0x41bf[718]]= !_0xf94fx90;if(_0xf94fx21[_0x41bf[14]][_0x41bf[718]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[437]]}))}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[437]]}))};};}},togglemotdCommand:{command:_0x41bf[719],rank:_0x41bf[147],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[187]]){_0xf94fx21[_0x41bf[14]][_0x41bf[187]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[187]];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[190]]}));}else {_0xf94fx21[_0x41bf[14]][_0x41bf[187]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[187]];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[190]]}));}};}},unbanCommand:{command:_0x41bf[720],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {$(_0x41bf[721])[_0x41bf[182]]();$(_0x41bf[722])[_0x41bf[182]]();setTimeout(function(_0xf94fx8){var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){return API[_0x41bf[91]]()};var _0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2);var _0xf94fxa3=API[_0x41bf[723]]();var _0xf94fxa4=false;var _0xf94fxa5=null;for(var _0xf94fx3=0;_0xf94fx3<_0xf94fxa3[_0x41bf[8]];_0xf94fx3++){var _0xf94fx25=_0xf94fxa3[_0xf94fx3];if(_0xf94fx25[_0x41bf[103]]===_0xf94fx26){_0xf94fxa5=_0xf94fx25;_0xf94fxa4=true;};};if(!_0xf94fxa4){$(_0x41bf[724])[_0x41bf[182]]();return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[725]],{name:_0xf94fx8[_0x41bf[205]]}));};API[_0x41bf[550]](_0xf94fxa5[_0x41bf[5]]);console[_0x41bf[22]](_0x41bf[726]+_0xf94fx26);setTimeout(function(){$(_0x41bf[724])[_0x41bf[182]]()},1000);},1000,_0xf94fx8);};}},unlockCommand:{command:_0x41bf[727],rank:_0x41bf[405],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {_0xf94fx21[_0x41bf[132]][_0x41bf[131]][_0x41bf[258]]()};}},unmuteCommand:{command:_0x41bf[728],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fx8c=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx8[_0x41bf[203]]);var _0xf94fx8b=_0xf94fx8[_0x41bf[205]];var _0xf94fx26=_0xf94fx1c[_0x41bf[416]](_0xf94fx69[_0x41bf[8]]+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if( typeof _0xf94fx25===_0x41bf[135]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[419]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx98=_0xf94fx21[_0x41bf[102]][_0x41bf[172]](_0xf94fx25[_0x41bf[5]]);if(_0xf94fx8c>_0xf94fx98){try{API[_0x41bf[679]](_0xf94fx25[_0x41bf[5]]);API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[729]],{name:_0xf94fx8[_0x41bf[205]],username:_0xf94fx26}));}catch(e){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[730]],{name:_0xf94fx8[_0x41bf[205]]}))}}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[731]],{name:_0xf94fx8[_0x41bf[205]]}))};};}},usercmdcdCommand:{command:_0x41bf[732],rank:_0x41bf[146],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];var _0xf94fxa6=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+1);if(!isNaN(_0xf94fxa6)){_0xf94fx21[_0x41bf[14]][_0x41bf[298]]=_0xf94fxa6;return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[733]],{name:_0xf94fx8[_0x41bf[205]],time:_0xf94fx21[_0x41bf[14]][_0x41bf[298]]}));}else {return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[412]],{name:_0xf94fx8[_0x41bf[205]]}))};};}},usercommandsCommand:{command:_0x41bf[734],rank:_0x41bf[146],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[735]]){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[734]]}));_0xf94fx21[_0x41bf[14]][_0x41bf[735]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[735]];}else {API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[734]]}));_0xf94fx21[_0x41bf[14]][_0x41bf[735]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[735]];}};}},voteratioCommand:{command:_0x41bf[736],rank:_0x41bf[147],type:_0x41bf[408],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {var _0xf94fx1c=_0xf94fx8[_0x41bf[202]];if(_0xf94fx1c[_0x41bf[8]]===_0xf94fx69[_0x41bf[8]]){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[415]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fx26=_0xf94fx1c[_0x41bf[287]](_0xf94fx69[_0x41bf[8]]+2);var _0xf94fx25=_0xf94fx21[_0x41bf[102]][_0x41bf[417]](_0xf94fx26);if(_0xf94fx25===false){return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[419]],{name:_0xf94fx8[_0x41bf[205]]}))};var _0xf94fxa7=_0xf94fx25[_0x41bf[108]];var _0xf94fxa8=_0xf94fxa7[_0x41bf[122]]/_0xf94fxa7[_0x41bf[119]];API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[736]],{name:_0xf94fx8[_0x41bf[205]],username:_0xf94fx26,woot:_0xf94fxa7[_0x41bf[122]],mehs:_0xf94fxa7[_0x41bf[119]],ratio:_0xf94fxa8[_0x41bf[121]](2)}));};}},welcomeCommand:{command:_0x41bf[210],rank:_0x41bf[405],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if(_0xf94fx21[_0x41bf[14]][_0x41bf[210]]){_0xf94fx21[_0x41bf[14]][_0x41bf[210]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[210]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[425]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[737]]}));}else {_0xf94fx21[_0x41bf[14]][_0x41bf[210]]=!_0xf94fx21[_0x41bf[14]][_0x41bf[210]];return API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[426]],{name:_0xf94fx8[_0x41bf[205]],"\x66\x75\x6E\x63\x74\x69\x6F\x6E":_0xf94fx21[_0x41bf[33]][_0x41bf[737]]}));}};}},websiteCommand:{command:_0x41bf[738],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if( typeof _0xf94fx21[_0x41bf[14]][_0x41bf[738]]===_0x41bf[31]){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[738]],{link:_0xf94fx21[_0x41bf[14]][_0x41bf[738]]}))}};}},youtubeCommand:{command:_0x41bf[739],rank:_0x41bf[149],type:_0x41bf[409],functionality:function(_0xf94fx8,_0xf94fx69){if(this[_0x41bf[299]]===_0x41bf[409]&&_0xf94fx8[_0x41bf[202]][_0x41bf[8]]!==_0xf94fx69[_0x41bf[8]]){return void((0))};if(!_0xf94fx21[_0x41bf[294]][_0x41bf[411]](this[_0x41bf[410]],_0xf94fx8)){return void((0))}else {if( typeof _0xf94fx21[_0x41bf[14]][_0x41bf[740]]===_0x41bf[31]){API[_0x41bf[91]](_0xf94fx7(_0xf94fx21[_0x41bf[33]][_0x41bf[739]],{name:_0xf94fx8[_0x41bf[205]],link:_0xf94fx21[_0x41bf[14]][_0x41bf[740]]}))}};}}}};_0xf94fxc(_0xf94fx21[_0x41bf[741]]);})[_0x41bf[2]](this);
+/*
+  Copyright (c) 2014-2015 by BalkanParty
+ 
+  Permission to use this software for any purpose without fee is hereby granted, provided
+  that the above copyright notice and this permission notice appear in all copies.
+
+   Permission to copy and/or edit this software or parts of it for any purpose is permitted,
+   provided that the following points are followed.
+ - The above copyright notice and this permission notice appear in all copies
+ - Within two (2) days after modification is proven working, any modifications are send back
+   to the original authors to be inspected with the goal of inclusion in the official software
+ - Any edited version are only test versions and not permitted to be run as a final product
+ - Any edited version aren't to be distributed
+ - Any edited version have the prerelease version set to something that can be distinguished
+   from a version used in the original software
+ 
+ 
+ TERMS OF REPRODUCTION USE
+ 
+ Failure to follow these terms will result in me getting very angry at you
+ and having your software tweaked or removed if possible. Either way, you're
+ still an idiot for not following such a basic rule.
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHORS DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE
+ INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS
+ BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER
+ RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+  */
+
+// THIS IS EDITED VERSION OF BASIC BOT
+
+API.chatLog("[ Connecting... ] LAST UPDATED: 02.03.2014", true);
+
+
+(function () {
+
+    API.getWaitListPosition = function(id){
+        if(typeof id === 'undefined' || id === null){
+            id = API.getUser().id;
+        }
+        var wl = API.getWaitList();
+        for(var i = 0; i < wl.length; i++){
+            if(wl[i].id === id){
+                return i;
+            }
+        }
+        return -1;
+    };
+
+    var kill = function () {
+        clearInterval(bBot.room.autodisableInterval);
+        clearInterval(bBot.room.afkInterval);
+        bBot.status = false;
+    };
+
+    var storeToStorage = function () {
+        localStorage.setItem("bBotsettings", JSON.stringify(bBot.settings));
+        localStorage.setItem("bBotRoom", JSON.stringify(bBot.room));
+        var bBotStorageInfo = {
+            time: Date.now(),
+            stored: true,
+            version: bBot.version
+        };
+        localStorage.setItem("bBotStorageInfo", JSON.stringify(bBotStorageInfo));
+
+    };
+
+    var subChat = function (chat, obj) {
+        if (typeof chat === "undefined") {
+            API.chatLog("There is a chat text missing.");
+            console.log("There is a chat text missing.");
+            return "[Error] No text message found.";
+        }
+        var lit = '%%';
+        for (var prop in obj) {
+            chat = chat.replace(lit + prop.toUpperCase() + lit, obj[prop]);
+        }
+        return chat;
+    };
+
+    var loadChat = function (cb) {
+        if (!cb) cb = function () {
+        };
+        $.get("https://rawgit.com/MrAjdin/BalkanBot/master/Lang/langIndex.json", function (json) {
+            var link = bBot.chatLink;
+            if (json !== null && typeof json !== "undefined") {
+                langIndex = json;
+                link = langIndex[bBot.settings.language.toLowerCase()];
+                if (bBot.settings.chatLink !== bBot.chatLink) {
+                    link = bBot.settings.chatLink;
+                }
+                else {
+                    if (typeof link === "undefined") {
+                        link = bBot.chatLink;
+                    }
+                }
+                $.get(link, function (json) {
+                    if (json !== null && typeof json !== "undefined") {
+                        if (typeof json === "string") json = JSON.parse(json);
+                        bBot.chat = json;
+                        cb();
+                    }
+                });
+            }
+            else {
+                $.get(bBot.chatLink, function (json) {
+                    if (json !== null && typeof json !== "undefined") {
+                        if (typeof json === "string") json = JSON.parse(json);
+                        bBot.chat = json;
+                        cb();
+                    }
+                });
+            }
+        });
+    };
+
+    var retrieveSettings = function () {
+        var settings = JSON.parse(localStorage.getItem("bBotsettings"));
+        if (settings !== null) {
+            for (var prop in settings) {
+                bBot.settings[prop] = settings[prop];
+            }
+        }
+    };
+
+    var retrieveFromStorage = function () {
+        var info = localStorage.getItem("bBotStorageInfo");
+        if (info === null) API.chatLog(bBot.chat.nodatafound);
+        else {
+            var settings = JSON.parse(localStorage.getItem("bBotsettings"));
+            var room = JSON.parse(localStorage.getItem("bBotRoom"));
+            var elapsed = Date.now() - JSON.parse(info).time;
+            if ((elapsed < 1 * 60 * 60 * 1000)) {
+                API.chatLog(bBot.chat.retrievingdata);
+                for (var prop in settings) {
+                    bBot.settings[prop] = settings[prop];
+                }
+                bBot.room.users = room.users;
+                bBot.room.afkList = room.afkList;
+                bBot.room.historyList = room.historyList;
+                bBot.room.mutedUsers = room.mutedUsers;
+                bBot.room.autoskip = room.autoskip;
+                bBot.room.roomstats = room.roomstats;
+                bBot.room.messages = room.messages;
+                bBot.room.queue = room.queue;
+                bBot.room.newBlacklisted = room.newBlacklisted;
+                API.chatLog(bBot.chat.datarestored);
+            }
+        }
+        /*var json_sett = null;
+        var roominfo = document.getElementById("room-info");
+        info = roominfo.textContent;
+        var ref_bot = "@bBot=";
+        var ind_ref = info.indexOf(ref_bot);
+        if (ind_ref > 0) {
+            var link = info.substring(ind_ref + ref_bot.length, info.length);
+            var ind_space = null;
+            if (link.indexOf(" ") < link.indexOf("\n")) ind_space = link.indexOf(" ");
+            else ind_space = link.indexOf("\n");
+            link = link.substring(0, ind_space);
+            $.get(link, function (json) {
+                if (json !== null && typeof json !== "undefined") {
+                    json_sett = JSON.parse(json);
+                    for (var prop in json_sett) {
+                        bBot.settings[prop] = json_sett[prop];
+                    }
+                }
+            });
+        }*/
+
+    };
+
+    String.prototype.splitBetween = function (a, b) {
+        var self = this;
+        self = this.split(a);
+        for (var i = 0; i < self.length; i++) {
+            self[i] = self[i].split(b);
+        }
+        var arr = [];
+        for (var i = 0; i < self.length; i++) {
+            if (Array.isArray(self[i])) {
+                for (var j = 0; j < self[i].length; j++) {
+                    arr.push(self[i][j]);
+                }
+            }
+            else arr.push(self[i]);
+        }
+        return arr;
+    };
+
+    var linkFixer = function (msg) {
+        var parts = msg.splitBetween('<a href="', '<\/a>');
+        for (var i = 1; i < parts.length; i = i + 2) {
+            var link = parts[i].split('"')[0];
+            parts[i] = link;
+        }
+        var m = '';
+        for (var i = 0; i < parts.length; i++) {
+            m += parts[i];
+        }
+        return m;
+    };
+
+    var botCreator = "BalkanParty";
+    var botCreatorIDs = ["4756576"];
+
+    var bBot = {
+        version: "v2.2.6",
+        status: false,
+        name: "BalkanBOT",
+        loggedInID: "23625731",
+        scriptLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Bot/bBOT.js",
+        cmdLink: "http://www.balkan-party.cf/bbot.html",
+        chatLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Lang/en.json",
+        chat: null,
+        loadChat: loadChat,
+        retrieveSettings: retrieveSettings,
+        retrieveFromStorage: retrieveFromStorage,
+        settings: {
+            botName: "BalkanBOT",
+            language: "english",
+            chatLink: "https://rawgit.com/MrAjdin/BalkanBot/master/Lang/en.json",
+            startupCap: 1, // 1-200
+            startupVolume: 0, // 0-100
+            startupEmoji: true, // true or false
+            maximumAfk: 90,
+            afkRemoval: false,
+            maximumDc: 20,
+            bouncerPlus: false,
+            blacklistEnabled: true,
+            lockdownEnabled: false,
+            lockGuard: true,
+            maximumLocktime: 10,
+            cycleGuard: true,
+            maximumCycletime: 10,
+            voteSkip: true,
+            voteSkipLimit: 8,
+            timeGuard: true,
+            maximumSongLength: 7,
+            autodisable: false,
+            commandCooldown: 6,
+            usercommandsEnabled: true,
+            lockskipPosition: 3,
+            lockskipReasons: [
+                ["theme", "This song does not fit the room theme. "],
+                ["op", "This song is on the OP list. "],
+                ["history", "This song is in the history. "],
+                ["mix", "You played a mix, which is against the rules. "],
+                ["sound", "The song you played had bad sound quality or no sound. "],
+                ["nsfw", "The song you contained was NSFW (image or sound). "],
+                ["unavailable", "The song you played was not available for some users. "]
+            ],
+            afkpositionCheck: 15,
+            afkRankCheck: "ambassador",
+            motdEnabled: false,
+            motdInterval: 10,
+            motd: "Temporary Message of the Day",
+            filterChat: true,
+            etaRestriction: false,
+            welcome: false,
+            opLink: "http://www.balkan-party.cf/blacklist.html",
+            rulesLink: "http://www.balkan-party.cf/rules.html",
+            themeLink: null,
+            fbLink: "https://www.facebook.com/groups/bestparty19/",
+            youtubeLink: null,
+            website: "http://www.balkan-party.cf/",
+            intervalMessages: [],
+            messageInterval: 5,
+            songstats: false,
+            commandLiteral: "!",
+            blacklists: {
+                OP: "https://rawgit.com/MrAjdin/BalkanBot/master/blackList/OP.json"
+            }
+        },
+        room: {
+            users: [],
+            afkList: [],
+            mutedUsers: [],
+            bannedUsers: [],
+            skippable: true,
+            usercommand: true,
+            allcommand: true,
+            afkInterval: null,
+            autoskip: false,
+            autoskipTimer: null,
+            autodisableInterval: null,
+            autodisableFunc: function () {
+                if (bBot.status && bBot.settings.autodisable) {
+                    API.sendChat('!afkdisable');
+                    API.sendChat('!joindisable');
+                }
+            },
+            queueing: 0,
+            queueable: true,
+            currentDJID: null,
+            historyList: [],
+            cycleTimer: setTimeout(function () {
+            }, 1),
+            roomstats: {
+                accountName: null,
+                totalWoots: 0,
+                totalCurates: 0,
+                totalMehs: 0,
+                launchTime: null,
+                songCount: 0,
+                chatmessages: 0
+            },
+            messages: {
+                from: [],
+                to: [],
+                message: []
+            },
+            queue: {
+                id: [],
+                position: []
+            },
+            blacklists: {
+
+            },
+            newBlacklisted: [],
+            newBlacklistedSongFunction: null,
+            roulette: {
+                rouletteStatus: false,
+                participants: [],
+                countdown: null,
+                startRoulette: function () {
+                    bBot.room.roulette.rouletteStatus = true;
+                    bBot.room.roulette.countdown = setTimeout(function () {
+                        bBot.room.roulette.endRoulette();
+                    }, 60 * 1000);
+                    API.sendChat(bBot.chat.isopen);
+                },
+                endRoulette: function () {
+                    bBot.room.roulette.rouletteStatus = false;
+                    var ind = Math.floor(Math.random() * bBot.room.roulette.participants.length);
+                    var winner = bBot.room.roulette.participants[ind];
+                    bBot.room.roulette.participants = [];
+                    var pos = Math.floor((Math.random() * API.getWaitList().length) + 1);
+                    var user = bBot.userUtilities.lookupUser(winner);
+                    var name = user.username;
+                    API.sendChat(subChat(bBot.chat.winnerpicked, {name: name, position: pos}));
+                    setTimeout(function (winner, pos) {
+                        bBot.userUtilities.moveUser(winner, pos, false);
+                    }, 1 * 1000, winner, pos);
+                }
+            }
+        },
+        User: function (id, name) {
+            this.id = id;
+            this.username = name;
+            this.jointime = Date.now();
+            this.lastActivity = Date.now();
+            this.votes = {
+                woot: 0,
+                meh: 0,
+                curate: 0
+            };
+            this.lastEta = null;
+            this.afkWarningCount = 0;
+            this.afkCountdown = null;
+            this.inRoom = true;
+            this.isMuted = false;
+            this.lastDC = {
+                time: null,
+                position: null,
+                songCount: 0
+            };
+            this.lastKnownPosition = null;
+        },
+        userUtilities: {
+            getJointime: function (user) {
+                return user.jointime;
+            },
+            getUser: function (user) {
+                return API.getUser(user.id);
+            },
+            updatePosition: function (user, newPos) {
+                user.lastKnownPosition = newPos;
+            },
+            updateDC: function (user) {
+                user.lastDC.time = Date.now();
+                user.lastDC.position = user.lastKnownPosition;
+                user.lastDC.songCount = bBot.room.roomstats.songCount;
+            },
+            setLastActivity: function (user) {
+                user.lastActivity = Date.now();
+                user.afkWarningCount = 0;
+                clearTimeout(user.afkCountdown);
+            },
+            getLastActivity: function (user) {
+                return user.lastActivity;
+            },
+            getWarningCount: function (user) {
+                return user.afkWarningCount;
+            },
+            setWarningCount: function (user, value) {
+                user.afkWarningCount = value;
+            },
+            lookupUser: function (id) {
+                for (var i = 0; i < bBot.room.users.length; i++) {
+                    if (bBot.room.users[i].id === id) {
+                        return bBot.room.users[i];
+                    }
+                }
+                return false;
+            },
+            lookupUserName: function (name) {
+                for (var i = 0; i < bBot.room.users.length; i++) {
+                    var match = bBot.room.users[i].username.trim() == name.trim();
+                    if (match) {
+                        return bBot.room.users[i];
+                    }
+                }
+                return false;
+            },
+            voteRatio: function (id) {
+                var user = bBot.userUtilities.lookupUser(id);
+                var votes = user.votes;
+                if (votes.meh === 0) votes.ratio = 1;
+                else votes.ratio = (votes.woot / votes.meh).toFixed(2);
+                return votes;
+
+            },
+            getPermission: function (obj) { //1 requests
+                var u;
+                if (typeof obj === "object") u = obj;
+                else u = API.getUser(obj);
+                for (var i = 0; i < botCreatorIDs.length; i++) {
+                    if (botCreatorIDs[i].indexOf(u.id) > -1) return 10;
+                }
+                if (u.gRole < 2) return u.role;
+                else {
+                    switch (u.gRole) {
+                        case 2:
+                            return 7;
+                        case 3:
+                            return 8;
+                        case 4:
+                            return 9;
+                        case 5:
+                            return 10;
+                    }
+                }
+                return 0;
+            },
+            moveUser: function (id, pos, priority) {
+                var user = bBot.userUtilities.lookupUser(id);
+                var wlist = API.getWaitList();
+                if (API.getWaitListPosition(id) === -1) {
+                    if (wlist.length < 50) {
+                        API.moderateAddDJ(id);
+                        if (pos !== 0) setTimeout(function (id, pos) {
+                            API.moderateMoveDJ(id, pos);
+                        }, 1250, id, pos);
+                    }
+                    else {
+                        var alreadyQueued = -1;
+                        for (var i = 0; i < bBot.room.queue.id.length; i++) {
+                            if (bBot.room.queue.id[i] === id) alreadyQueued = i;
+                        }
+                        if (alreadyQueued !== -1) {
+                            bBot.room.queue.position[alreadyQueued] = pos;
+                            return API.sendChat(subChat(bBot.chat.alreadyadding, {position: bBot.room.queue.position[alreadyQueued]}));
+                        }
+                        bBot.roomUtilities.booth.lockBooth();
+                        if (priority) {
+                            bBot.room.queue.id.unshift(id);
+                            bBot.room.queue.position.unshift(pos);
+                        }
+                        else {
+                            bBot.room.queue.id.push(id);
+                            bBot.room.queue.position.push(pos);
+                        }
+                        var name = user.username;
+                        return API.sendChat(subChat(bBot.chat.adding, {name: name, position: bBot.room.queue.position.length}));
+                    }
+                }
+                else API.moderateMoveDJ(id, pos);
+            },
+            dclookup: function (id) {
+                var user = bBot.userUtilities.lookupUser(id);
+                if (typeof user === 'boolean') return bBot.chat.usernotfound;
+                var name = user.username;
+                if (user.lastDC.time === null) return subChat(bBot.chat.notdisconnected, {name: name});
+                var dc = user.lastDC.time;
+                var pos = user.lastDC.position;
+                if (pos === null) return bBot.chat.noposition;
+                var timeDc = Date.now() - dc;
+                var validDC = false;
+                if (bBot.settings.maximumDc * 60 * 1000 > timeDc) {
+                    validDC = true;
+                }
+                var time = bBot.roomUtilities.msToStr(timeDc);
+                if (!validDC) return (subChat(bBot.chat.toolongago, {name: bBot.userUtilities.getUser(user).username, time: time}));
+                var songsPassed = bBot.room.roomstats.songCount - user.lastDC.songCount;
+                var afksRemoved = 0;
+                var afkList = bBot.room.afkList;
+                for (var i = 0; i < afkList.length; i++) {
+                    var timeAfk = afkList[i][1];
+                    var posAfk = afkList[i][2];
+                    if (dc < timeAfk && posAfk < pos) {
+                        afksRemoved++;
+                    }
+                }
+                var newPosition = user.lastDC.position - songsPassed - afksRemoved;
+                if (newPosition <= 0) newPosition = 1;
+                var msg = subChat(bBot.chat.valid, {name: bBot.userUtilities.getUser(user).username, time: time, position: newPosition});
+                bBot.userUtilities.moveUser(user.id, newPosition, true);
+                return msg;
+            }
+        },
+
+        roomUtilities: {
+            rankToNumber: function (rankString) {
+                var rankInt = null;
+                switch (rankString) {
+                    case "admin":
+                        rankInt = 10;
+                        break;
+                    case "ambassador":
+                        rankInt = 7;
+                        break;
+                    case "host":
+                        rankInt = 5;
+                        break;
+                    case "cohost":
+                        rankInt = 4;
+                        break;
+                    case "manager":
+                        rankInt = 3;
+                        break;
+                    case "bouncer":
+                        rankInt = 2;
+                        break;
+                    case "residentdj":
+                        rankInt = 1;
+                        break;
+                    case "user":
+                        rankInt = 0;
+                        break;
+                }
+                return rankInt;
+            },
+            msToStr: function (msTime) {
+                var ms, msg, timeAway;
+                msg = '';
+                timeAway = {
+                    'days': 0,
+                    'hours': 0,
+                    'minutes': 0,
+                    'seconds': 0
+                };
+                ms = {
+                    'day': 24 * 60 * 60 * 1000,
+                    'hour': 60 * 60 * 1000,
+                    'minute': 60 * 1000,
+                    'second': 1000
+                };
+                if (msTime > ms.day) {
+                    timeAway.days = Math.floor(msTime / ms.day);
+                    msTime = msTime % ms.day;
+                }
+                if (msTime > ms.hour) {
+                    timeAway.hours = Math.floor(msTime / ms.hour);
+                    msTime = msTime % ms.hour;
+                }
+                if (msTime > ms.minute) {
+                    timeAway.minutes = Math.floor(msTime / ms.minute);
+                    msTime = msTime % ms.minute;
+                }
+                if (msTime > ms.second) {
+                    timeAway.seconds = Math.floor(msTime / ms.second);
+                }
+                if (timeAway.days !== 0) {
+                    msg += timeAway.days.toString() + 'd';
+                }
+                if (timeAway.hours !== 0) {
+                    msg += timeAway.hours.toString() + 'h';
+                }
+                if (timeAway.minutes !== 0) {
+                    msg += timeAway.minutes.toString() + 'm';
+                }
+                if (timeAway.minutes < 1 && timeAway.hours < 1 && timeAway.days < 1) {
+                    msg += timeAway.seconds.toString() + 's';
+                }
+                if (msg !== '') {
+                    return msg;
+                } else {
+                    return false;
+                }
+            },
+            booth: {
+                lockTimer: setTimeout(function () {
+                }, 1000),
+                locked: false,
+                lockBooth: function () {
+                    API.moderateLockWaitList(!bBot.roomUtilities.booth.locked);
+                    bBot.roomUtilities.booth.locked = false;
+                    if (bBot.settings.lockGuard) {
+                        bBot.roomUtilities.booth.lockTimer = setTimeout(function () {
+                            API.moderateLockWaitList(bBot.roomUtilities.booth.locked);
+                        }, bBot.settings.maximumLocktime * 60 * 1000);
+                    }
+                },
+                unlockBooth: function () {
+                    API.moderateLockWaitList(bBot.roomUtilities.booth.locked);
+                    clearTimeout(bBot.roomUtilities.booth.lockTimer);
+                }
+            },
+            afkCheck: function () {
+                if (!bBot.status || !bBot.settings.afkRemoval) return void (0);
+                var rank = bBot.roomUtilities.rankToNumber(bBot.settings.afkRankCheck);
+                var djlist = API.getWaitList();
+                var lastPos = Math.min(djlist.length, bBot.settings.afkpositionCheck);
+                if (lastPos - 1 > djlist.length) return void (0);
+                for (var i = 0; i < lastPos; i++) {
+                    if (typeof djlist[i] !== 'undefined') {
+                        var id = djlist[i].id;
+                        var user = bBot.userUtilities.lookupUser(id);
+                        if (typeof user !== 'boolean') {
+                            var plugUser = bBot.userUtilities.getUser(user);
+                            if (rank !== null && bBot.userUtilities.getPermission(plugUser) <= rank) {
+                                var name = plugUser.username;
+                                var lastActive = bBot.userUtilities.getLastActivity(user);
+                                var inactivity = Date.now() - lastActive;
+                                var time = bBot.roomUtilities.msToStr(inactivity);
+                                var warncount = user.afkWarningCount;
+                                if (inactivity > bBot.settings.maximumAfk * 60 * 1000) {
+                                    if (warncount === 0) {
+                                        API.sendChat(subChat(bBot.chat.warning1, {name: name, time: time}));
+                                        user.afkWarningCount = 3;
+                                        user.afkCountdown = setTimeout(function (userToChange) {
+                                            userToChange.afkWarningCount = 1;
+                                        }, 90 * 1000, user);
+                                    }
+                                    else if (warncount === 1) {
+                                        API.sendChat(subChat(bBot.chat.warning2, {name: name}));
+                                        user.afkWarningCount = 3;
+                                        user.afkCountdown = setTimeout(function (userToChange) {
+                                            userToChange.afkWarningCount = 2;
+                                        }, 30 * 1000, user);
+                                    }
+                                    else if (warncount === 2) {
+                                        var pos = API.getWaitListPosition(id);
+                                        if (pos !== -1) {
+                                            pos++;
+                                            bBot.room.afkList.push([id, Date.now(), pos]);
+                                            user.lastDC = {
+
+                                                time: null,
+                                                position: null,
+                                                songCount: 0
+                                            };
+                                            API.moderateRemoveDJ(id);
+                                            API.sendChat(subChat(bBot.chat.afkremove, {name: name, time: time, position: pos, maximumafk: bBot.settings.maximumAfk}));
+                                        }
+                                        user.afkWarningCount = 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            changeDJCycle: function () {
+                var toggle = $(".cycle-toggle");
+                if (toggle.hasClass("disabled")) {
+                    toggle.click();
+                    if (bBot.settings.cycleGuard) {
+                        bBot.room.cycleTimer = setTimeout(function () {
+                            if (toggle.hasClass("enabled")) toggle.click();
+                        }, bBot.settings.cycleMaxTime * 60 * 1000);
+                    }
+                }
+                else {
+                    toggle.click();
+                    clearTimeout(bBot.room.cycleTimer);
+                }
+            },
+            intervalMessage: function () {
+                var interval;
+                if (bBot.settings.motdEnabled) interval = bBot.settings.motdInterval;
+                else interval = bBot.settings.messageInterval;
+                if ((bBot.room.roomstats.songCount % interval) === 0 && bBot.status) {
+                    var msg;
+                    if (bBot.settings.motdEnabled) {
+                        msg = bBot.settings.motd;
+                    }
+                    else {
+                        if (bBot.settings.intervalMessages.length === 0) return void (0);
+                        var messageNumber = bBot.room.roomstats.songCount % bBot.settings.intervalMessages.length;
+                        msg = bBot.settings.intervalMessages[messageNumber];
+                    }
+                    API.sendChat('/me ' + msg);
+                }
+            },
+            updateBlacklists: function () {
+                for (var bl in bBot.settings.blacklists) {
+                    bBot.room.blacklists[bl] = [];
+                    if (typeof bBot.settings.blacklists[bl] === 'function') {
+                        bBot.room.blacklists[bl] = bBot.settings.blacklists();
+                    }
+                    else if (typeof bBot.settings.blacklists[bl] === 'string') {
+                        if (bBot.settings.blacklists[bl] === '') {
+                            continue;
+                        }
+                        try {
+                            (function (l) {
+                                $.get(bBot.settings.blacklists[l], function (data) {
+                                    if (typeof data === 'string') {
+                                        data = JSON.parse(data);
+                                    }
+                                    var list = [];
+                                    for (var prop in data) {
+                                        if (typeof data[prop].mid !== 'undefined') {
+                                            list.push(data[prop].mid);
+                                        }
+                                    }
+                                    bBot.room.blacklists[l] = list;
+                                })
+                            })(bl);
+                        }
+                        catch (e) {
+                            API.chatLog('Error setting' + bl + 'blacklist.');
+                            console.log('Error setting' + bl + 'blacklist.');
+                            console.log(e);
+                        }
+                    }
+                }
+            },
+            logNewBlacklistedSongs: function () {
+                if (typeof console.table !== 'undefined') {
+                    console.table(bBot.room.newBlacklisted);
+                }
+                else {
+                    console.log(bBot.room.newBlacklisted);
+                }
+            },
+            exportNewBlacklistedSongs: function () {
+                var list = {};
+                for (var i = 0; i < bBot.room.newBlacklisted.length; i++) {
+                    var track = bBot.room.newBlacklisted[i];
+                    list[track.list] = [];
+                    list[track.list].push({
+                        title: track.title,
+                        author: track.author,
+                        mid: track.mid
+                    });
+                }
+                return list;
+            }
+        },
+        eventChat: function (chat) {
+            chat.message = linkFixer(chat.message);
+            chat.message = chat.message.trim();
+            for (var i = 0; i < bBot.room.users.length; i++) {
+                if (bBot.room.users[i].id === chat.uid) {
+                    bBot.userUtilities.setLastActivity(bBot.room.users[i]);
+                    if (bBot.room.users[i].username !== chat.un) {
+                        bBot.room.users[i].username = chat.un;
+                    }
+                }
+            }
+            if (bBot.chatUtilities.chatFilter(chat)) return void (0);
+            if (!bBot.chatUtilities.commandCheck(chat))
+                bBot.chatUtilities.action(chat);
+        },
+        eventUserjoin: function (user) {
+            var known = false;
+            var index = null;
+            for (var i = 0; i < bBot.room.users.length; i++) {
+                if (bBot.room.users[i].id === user.id) {
+                    known = true;
+                    index = i;
+                }
+            }
+            var greet = true;
+            var welcomeback = null;
+            if (known) {
+                bBot.room.users[index].inRoom = true;
+                var u = bBot.userUtilities.lookupUser(user.id);
+                var jt = u.jointime;
+                var t = Date.now() - jt;
+                if (t < 10 * 1000) greet = false;
+                else welcomeback = true;
+            }
+            else {
+                bBot.room.users.push(new bBot.User(user.id, user.username));
+                welcomeback = false;
+            }
+            for (var j = 0; j < bBot.room.users.length; j++) {
+                if (bBot.userUtilities.getUser(bBot.room.users[j]).id === user.id) {
+                    bBot.userUtilities.setLastActivity(bBot.room.users[j]);
+                    bBot.room.users[j].jointime = Date.now();
+                }
+
+            }
+            if (bBot.settings.welcome && greet) {
+                welcomeback ?
+                    setTimeout(function (user) {
+                        API.sendChat(subChat(bBot.chat.welcomeback, {name: user.username}));
+                    }, 1 * 1000, user)
+                    :
+                    setTimeout(function (user) {
+                        API.sendChat(subChat(bBot.chat.welcome, {name: user.username}));
+                    }, 1 * 1000, user);
+            }
+        },
+        eventUserleave: function (user) {
+            for (var i = 0; i < bBot.room.users.length; i++) {
+                if (bBot.room.users[i].id === user.id) {
+                    bBot.userUtilities.updateDC(bBot.room.users[i]);
+                    bBot.room.users[i].inRoom = false;
+                }
+            }
+        },
+        eventVoteupdate: function (obj) {
+            for (var i = 0; i < bBot.room.users.length; i++) {
+                if (bBot.room.users[i].id === obj.user.id) {
+                    if (obj.vote === 1) {
+                        bBot.room.users[i].votes.woot++;
+                    }
+                    else {
+                        bBot.room.users[i].votes.meh++;
+                    }
+                }
+            }
+
+            var mehs = API.getScore().negative;
+            var woots = API.getScore().positive;
+            var dj = API.getDJ();
+
+            if (bBot.settings.voteSkip) {
+                if ((mehs - woots) >= (bBot.settings.voteSkipLimit)) {
+                    API.sendChat(subChat(bBot.chat.voteskipexceededlimit, {name: chat.un, limit: bBot.settings.voteSkipLimit}));
+                    API.moderateForceSkip();
+                }
+            }
+
+        },
+        eventCurateupdate: function (obj) {
+            for (var i = 0; i < bBot.room.users.length; i++) {
+                if (bBot.room.users[i].id === obj.user.id) {
+                    bBot.room.users[i].votes.curate++;
+                }
+            }
+        },
+        eventDjadvance: function (obj) {
+            $("#woot").click();
+            var user = bBot.userUtilities.lookupUser(obj.dj.id)
+            for(var i = 0; i < bBot.room.users.length; i++){
+                if(bBot.room.users[i].id === user.id){
+                    bBot.room.users[i].lastDC = {
+                        time: null,
+                        position: null,
+                        songCount: 0
+                    };
+                }
+            }
+
+            var lastplay = obj.lastPlay;
+            if (typeof lastplay === 'undefined') return;
+            if (bBot.settings.songstats) {
+                if (typeof bBot.chat.songstatistics === "undefined") {
+                    API.sendChat("/me " + lastplay.media.author + " - " + lastplay.media.title + ": " + lastplay.score.positive + "W/" + lastplay.score.grabs + "G/" + lastplay.score.negative + "M.")
+                }
+                else {
+                    API.sendChat(subChat(bBot.chat.songstatistics, {artist: lastplay.media.author, title: lastplay.media.title, woots: lastplay.score.positive, grabs: lastplay.score.grabs, mehs: lastplay.score.negative}))
+                }
+            }
+            bBot.room.roomstats.totalWoots += lastplay.score.positive;
+            bBot.room.roomstats.totalMehs += lastplay.score.negative;
+            bBot.room.roomstats.totalCurates += lastplay.score.grabs;
+            bBot.room.roomstats.songCount++;
+            bBot.roomUtilities.intervalMessage();
+            bBot.room.currentDJID = obj.dj.id;
+
+            var mid = obj.media.format + ':' + obj.media.cid;
+            for (var bl in bBot.room.blacklists) {
+                if (bBot.room.blacklists[bl].indexOf(mid) > -1) {
+                    var name = obj.dj.username;
+                    API.sendChat(subChat(bBot.chat.isblacklisted, {name: name, blacklist: bl}));
+                    return API.moderateForceSkip();
+                }
+            }
+
+            var alreadyPlayed = false;
+            for (var i = 0; i < bBot.room.historyList.length; i++) {
+                if (bBot.room.historyList[i][0] === obj.media.cid) {
+                    var firstPlayed = bBot.room.historyList[i][1];
+                    var plays = bBot.room.historyList[i].length - 1;
+                    var lastPlayed = bBot.room.historyList[i][plays];
+                    API.sendChat(subChat(bBot.chat.songknown, {name: name, plays: plays, timetotal: bBot.roomUtilities.msToStr(Date.now() - firstPlayed), lasttime: bBot.roomUtilities.msToStr(Date.now() - lastPlayed)}));
+                    API.moderateForceSkip();
+                    bBot.room.historyList[i].push(+new Date());
+                    alreadyPlayed = true;
+                }
+            }
+            if (!alreadyPlayed) {
+                bBot.room.historyList.push([obj.media.cid, +new Date()]);
+            }
+            var newMedia = obj.media;
+            if (bBot.settings.timeGuard && newMedia.duration > bBot.settings.maximumSongLength * 60 && !bBot.room.roomevent) {
+                var name = obj.dj.username;
+                API.sendChat(subChat(bBot.chat.timelimit, {name: name, maxlength: bBot.settings.maximumSongLength}));
+                API.moderateForceSkip();
+            }
+            if (user.ownSong) {
+                API.sendChat(subChat(bBot.chat.permissionownsong, {name: user.username}));
+                user.ownSong = false;
+            }
+            clearTimeout(bBot.room.autoskipTimer);
+            if (bBot.room.autoskip) {
+                var remaining = obj.media.duration * 1000;
+                bBot.room.autoskipTimer = setTimeout(function () {
+                    console.log("Skipping track.");
+                    //API.sendChat('Song stuck, skipping...');
+                    API.moderateForceSkip();
+                }, remaining + 3000);
+            }
+            storeToStorage();
+
+        },
+        eventWaitlistupdate: function (users) {
+            if (users.length < 50) {
+                if (bBot.room.queue.id.length > 0 && bBot.room.queueable) {
+                    bBot.room.queueable = false;
+                    setTimeout(function () {
+                        bBot.room.queueable = true;
+                    }, 500);
+                    bBot.room.queueing++;
+                    var id, pos;
+                    setTimeout(
+                        function () {
+                            id = bBot.room.queue.id.splice(0, 1)[0];
+                            pos = bBot.room.queue.position.splice(0, 1)[0];
+                            API.moderateAddDJ(id, pos);
+                            setTimeout(
+                                function (id, pos) {
+                                    API.moderateMoveDJ(id, pos);
+                                    bBot.room.queueing--;
+                                    if (bBot.room.queue.id.length === 0) setTimeout(function () {
+                                        bBot.roomUtilities.booth.unlockBooth();
+                                    }, 1000);
+                                }, 1000, id, pos);
+                        }, 1000 + bBot.room.queueing * 2500);
+                }
+            }
+            for (var i = 0; i < users.length; i++) {
+                var user = bBot.userUtilities.lookupUser(users[i].id);
+                bBot.userUtilities.updatePosition(user, API.getWaitListPosition(users[i].id) + 1);
+            }
+        },
+        chatcleaner: function (chat) {
+            if (!bBot.settings.filterChat) return false;
+            if (bBot.userUtilities.getPermission(chat.uid) > 1) return false;
+            var msg = chat.message;
+            var containsLetters = false;
+            for (var i = 0; i < msg.length; i++) {
+                ch = msg.charAt(i);
+                if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z') || (ch >= '0' && ch <= '9') || ch === ':' || ch === '^') containsLetters = true;
+            }
+            if (msg === '') {
+                return true;
+            }
+            if (!containsLetters && (msg.length === 1 || msg.length > 3)) return true;
+            msg = msg.replace(/[ ,;.:\/=~+%^*\-\\"'&@#]/g, '');
+            var capitals = 0;
+            var ch;
+            for (var i = 0; i < msg.length; i++) {
+                ch = msg.charAt(i);
+                if (ch >= 'A' && ch <= 'Z') capitals++;
+            }
+            if (capitals >= 40) {
+                API.sendChat(subChat(bBot.chat.caps, {name: chat.un}));
+                return true;
+            }
+            msg = msg.toLowerCase();
+            if (msg === 'skip') {
+                API.sendChat(subChat(bBot.chat.askskip, {name: chat.un}));
+                return true;
+            }
+            for (var j = 0; j < bBot.chatUtilities.spam.length; j++) {
+                if (msg === bBot.chatUtilities.spam[j]) {
+                    API.sendChat(subChat(bBot.chat.spam, {name: chat.un}));
+                    return true;
+                }
+            }
+            return false;
+        },
+        chatUtilities: {
+            chatFilter: function (chat) {
+                var msg = chat.message;
+                var perm = bBot.userUtilities.getPermission(chat.uid);
+                var user = bBot.userUtilities.lookupUser(chat.uid);
+                var isMuted = false;
+                for (var i = 0; i < bBot.room.mutedUsers.length; i++) {
+                    if (bBot.room.mutedUsers[i] === chat.uid) isMuted = true;
+                }
+                if (isMuted) {
+                    API.moderateDeleteChat(chat.cid);
+                    return true;
+                }
+                if (bBot.settings.lockdownEnabled) {
+                    if (perm === 0) {
+                        API.moderateDeleteChat(chat.cid);
+                        return true;
+                    }
+                }
+                if (bBot.chatcleaner(chat)) {
+                    API.moderateDeleteChat(chat.cid);
+                    return true;
+                }
+                /**
+                 var plugRoomLinkPatt = /(\bhttps?:\/\/(www.)?plug\.dj[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+                 if (plugRoomLinkPatt.exec(msg)) {
+                    if (perm === 0) {
+                        API.sendChat(subChat(bBot.chat.roomadvertising, {name: chat.un}));
+                        API.moderateDeleteChat(chat.cid);
+                        return true;
+                    }
+                }
+                 **/
+                 if (msg.indexOf('hai') > -1) {
+                 API.sendChat('Hi')
+                 return true;
+                }
+                if (msg.indexOf('hi') > -1) {
+                 API.sendChat('Hallow')
+                 return true;
+                }
+                if (msg.indexOf('hello') > -1) {
+                 API.sendChat('Hai')
+                 return true;
+                }
+                if (msg.indexOf('http://adf.ly/') > -1) {
+                    API.moderateDeleteChat(chat.cid);
+                    API.sendChat(subChat(bBot.chat.adfly, {name: chat.un}));
+                    return true;
+                }
+                if (msg.indexOf('autojoin was not enabled') > 0 || msg.indexOf('AFK message was not enabled') > 0 || msg.indexOf('!afkdisable') > 0 || msg.indexOf('!joindisable') > 0 || msg.indexOf('autojoin disabled') > 0 || msg.indexOf('AFK message disabled') > 0) {
+                    API.moderateDeleteChat(chat.cid);
+                    return true;
+                }
+
+                var rlJoinChat = bBot.chat.roulettejoin;
+                var rlLeaveChat = bBot.chat.rouletteleave;
+
+                var joinedroulette = rlJoinChat.split('%%NAME%%');
+                if (joinedroulette[1].length > joinedroulette[0].length) joinedroulette = joinedroulette[1];
+                else joinedroulette = joinedroulette[0];
+
+                var leftroulette = rlLeaveChat.split('%%NAME%%');
+                if (leftroulette[1].length > leftroulette[0].length) leftroulette = leftroulette[1];
+                else leftroulette = leftroulette[0];
+
+                if ((msg.indexOf(joinedroulette) > -1 || msg.indexOf(leftroulette) > -1) && chat.uid === bBot.loggedInID) {
+                    setTimeout(function (id) {
+                        API.moderateDeleteChat(id);
+                    }, 2 * 1000, chat.cid);
+                    return true;
+                }
+                return false;
+            },
+            commandCheck: function (chat) {
+                var cmd;
+                if (chat.message.charAt(0) === '!') {
+                    var space = chat.message.indexOf(' ');
+                    if (space === -1) {
+                        cmd = chat.message;
+                    }
+                    else cmd = chat.message.substring(0, space);
+                }
+                else return false;
+                var userPerm = bBot.userUtilities.getPermission(chat.uid);
+                //console.log("name: " + chat.un + ", perm: " + userPerm);
+                if (chat.message !== "!join" && chat.message !== "!leave") {
+                    if (userPerm === 0 && !bBot.room.usercommand) return void (0);
+                    if (!bBot.room.allcommand) return void (0);
+                }
+                if (chat.message === '!eta' && bBot.settings.etaRestriction) {
+                    if (userPerm < 2) {
+                        var u = bBot.userUtilities.lookupUser(chat.uid);
+                        if (u.lastEta !== null && (Date.now() - u.lastEta) < 1 * 60 * 60 * 1000) {
+                            API.moderateDeleteChat(chat.cid);
+                            return void (0);
+                        }
+                        else u.lastEta = Date.now();
+                    }
+                }
+                var executed = false;
+
+                for (var comm in bBot.commands) {
+                    var cmdCall = bBot.commands[comm].command;
+                    if (!Array.isArray(cmdCall)) {
+                        cmdCall = [cmdCall]
+                    }
+                    for (var i = 0; i < cmdCall.length; i++) {
+                        if (bBot.settings.commandLiteral + cmdCall[i] === cmd) {
+                            bBot.commands[comm].functionality(chat, bBot.settings.commandLiteral + cmdCall[i]);
+                            executed = true;
+                            break;
+                        }
+                    }
+                }
+
+                if (executed && userPerm === 0) {
+                    bBot.room.usercommand = false;
+                    setTimeout(function () {
+                        bBot.room.usercommand = true;
+                    }, bBot.settings.commandCooldown * 1000);
+                }
+                if (executed) {
+                    API.moderateDeleteChat(chat.cid);
+                    bBot.room.allcommand = false;
+                    setTimeout(function () {
+                        bBot.room.allcommand = true;
+                    }, 5 * 1000);
+                }
+                return executed;
+            },
+            action: function (chat) {
+                var user = bBot.userUtilities.lookupUser(chat.uid);
+                if (chat.type === 'message') {
+                    for (var j = 0; j < bBot.room.users.length; j++) {
+                        if (bBot.userUtilities.getUser(bBot.room.users[j]).id === chat.uid) {
+                            bBot.userUtilities.setLastActivity(bBot.room.users[j]);
+                        }
+
+                    }
+                }
+                bBot.room.roomstats.chatmessages++;
+            },
+            spam: [
+                'hueh', 'hu3', 'brbr', 'heu', 'brbr', 'kkkk', 'spoder', 'mafia', 'zuera', 'zueira',
+                'zueria', 'aehoo', 'aheu', 'alguem', 'algum', 'brazil', 'zoeira', 'fuckadmins', 'affff', 'vaisefoder', 'huenaarea',
+                'hitler', 'ashua', 'ahsu', 'ashau', 'lulz', 'huehue', 'hue', 'huehuehue', 'merda', 'pqp', 'puta', 'mulher', 'pula', 'retarda', 'caralho', 'filha', 'ppk',
+                'gringo', 'fuder', 'foder', 'hua', 'ahue', 'modafuka', 'modafoka', 'mudafuka', 'mudafoka', 'ooooooooooooooo', 'foda'
+            ],
+            curses: [
+                'nigger', 'faggot', 'nigga', 'niqqa', 'motherfucker', 'modafocka'
+            ]
+        },
+        connectAPI: function () {
+            this.proxy = {
+                eventChat: $.proxy(this.eventChat, this),
+                eventUserskip: $.proxy(this.eventUserskip, this),
+                eventUserjoin: $.proxy(this.eventUserjoin, this),
+                eventUserleave: $.proxy(this.eventUserleave, this),
+                eventUserfan: $.proxy(this.eventUserfan, this),
+                eventFriendjoin: $.proxy(this.eventFriendjoin, this),
+                eventFanjoin: $.proxy(this.eventFanjoin, this),
+                eventVoteupdate: $.proxy(this.eventVoteupdate, this),
+                eventCurateupdate: $.proxy(this.eventCurateupdate, this),
+                eventRoomscoreupdate: $.proxy(this.eventRoomscoreupdate, this),
+                eventDjadvance: $.proxy(this.eventDjadvance, this),
+                eventDjupdate: $.proxy(this.eventDjupdate, this),
+                eventWaitlistupdate: $.proxy(this.eventWaitlistupdate, this),
+                eventVoteskip: $.proxy(this.eventVoteskip, this),
+                eventModskip: $.proxy(this.eventModskip, this),
+                eventChatcommand: $.proxy(this.eventChatcommand, this),
+                eventHistoryupdate: $.proxy(this.eventHistoryupdate, this)
+
+            };
+            API.on(API.CHAT, this.proxy.eventChat);
+            API.on(API.USER_SKIP, this.proxy.eventUserskip);
+            API.on(API.USER_JOIN, this.proxy.eventUserjoin);
+            API.on(API.USER_LEAVE, this.proxy.eventUserleave);
+            API.on(API.USER_FAN, this.proxy.eventUserfan);
+            API.on(API.VOTE_UPDATE, this.proxy.eventVoteupdate);
+            API.on(API.GRAB_UPDATE, this.proxy.eventCurateupdate);
+            API.on(API.ROOM_SCORE_UPDATE, this.proxy.eventRoomscoreupdate);
+            API.on(API.ADVANCE, this.proxy.eventDjadvance);
+            API.on(API.WAIT_LIST_UPDATE, this.proxy.eventWaitlistupdate);
+            API.on(API.MOD_SKIP, this.proxy.eventModskip);
+            API.on(API.CHAT_COMMAND, this.proxy.eventChatcommand);
+            API.on(API.HISTORY_UPDATE, this.proxy.eventHistoryupdate);
+        },
+        disconnectAPI: function () {
+            API.off(API.CHAT, this.proxy.eventChat);
+            API.off(API.USER_SKIP, this.proxy.eventUserskip);
+            API.off(API.USER_JOIN, this.proxy.eventUserjoin);
+            API.off(API.USER_LEAVE, this.proxy.eventUserleave);
+            API.off(API.USER_FAN, this.proxy.eventUserfan);
+            API.off(API.VOTE_UPDATE, this.proxy.eventVoteupdate);
+            API.off(API.CURATE_UPDATE, this.proxy.eventCurateupdate);
+            API.off(API.ROOM_SCORE_UPDATE, this.proxy.eventRoomscoreupdate);
+            API.off(API.ADVANCE, this.proxy.eventDjadvance);
+            API.off(API.WAIT_LIST_UPDATE, this.proxy.eventWaitlistupdate);
+            API.off(API.MOD_SKIP, this.proxy.eventModskip);
+            API.off(API.CHAT_COMMAND, this.proxy.eventChatcommand);
+            API.off(API.HISTORY_UPDATE, this.proxy.eventHistoryupdate);
+        },
+        startup: function () {
+            Function.prototype.toString = function () {
+                return 'Function.'
+            };
+            var u = API.getUser();
+            if (bBot.userUtilities.getPermission(u) < 2) return API.chatLog(bBot.chat.greyuser);
+            if (bBot.userUtilities.getPermission(u) === 2) API.chatLog(bBot.chat.bouncer);
+            bBot.connectAPI();
+            API.moderateDeleteChat = function (cid) {
+                $.ajax({
+                    url: "https://plug.dj/_/chat/" + cid,
+                    type: "DELETE"
+                })
+            };
+            retrieveSettings();
+            retrieveFromStorage();
+            window.bot = bBot;
+            bBot.roomUtilities.updateBlacklists();
+            setInterval(bBot.roomUtilities.updateBlacklists, 60 * 60 * 1000);
+            bBot.getNewBlacklistedSongs = bBot.roomUtilities.exportNewBlacklistedSongs;
+            bBot.logNewBlacklistedSongs = bBot.roomUtilities.logNewBlacklistedSongs;
+            if (bBot.room.roomstats.launchTime === null) {
+                bBot.room.roomstats.launchTime = Date.now();
+            }
+
+            for (var j = 0; j < bBot.room.users.length; j++) {
+                bBot.room.users[j].inRoom = false;
+            }
+            var userlist = API.getUsers();
+            for (var i = 0; i < userlist.length; i++) {
+                var known = false;
+                var ind = null;
+                for (var j = 0; j < bBot.room.users.length; j++) {
+                    if (bBot.room.users[j].id === userlist[i].id) {
+                        known = true;
+                        ind = j;
+                    }
+                }
+                if (known) {
+                    bBot.room.users[ind].inRoom = true;
+                }
+                else {
+                    bBot.room.users.push(new bBot.User(userlist[i].id, userlist[i].username));
+                    ind = bBot.room.users.length - 1;
+                }
+                var wlIndex = API.getWaitListPosition(bBot.room.users[ind].id) + 1;
+                bBot.userUtilities.updatePosition(bBot.room.users[ind], wlIndex);
+            }
+            bBot.room.afkInterval = setInterval(function () {
+                bBot.roomUtilities.afkCheck()
+            }, 10 * 1000);
+            bBot.room.autodisableInterval = setInterval(function () {
+                bBot.room.autodisableFunc();
+            }, 60 * 60 * 1000);
+            bBot.loggedInID = API.getUser().id;
+            bBot.status = true;
+            API.sendChat('/cap ' + bBot.settings.startupCap);
+            API.setVolume(bBot.settings.startupVolume);
+            $("#woot").click();
+            if (bBot.settings.startupEmoji) {
+                var emojibuttonoff = $(".icon-emoji-off");
+                if (emojibuttonoff.length > 0) {
+                    emojibuttonoff[0].click();
+                }
+                API.chatLog('Emojis enabled.');
+            }
+            else {
+                var emojibuttonon = $(".icon-emoji-on");
+                if (emojibuttonon.length > 0) {
+                    emojibuttonon[0].click();
+                }
+                API.chatLog('Emojis disabled.');
+            }
+            API.chatLog('Avatars capped at ' + bBot.settings.startupCap);
+            API.chatLog('Volume set to ' + bBot.settings.startupVolume);
+            loadChat(API.sendChat(subChat(bBot.chat.online, {botname: bBot.settings.botName, version: bBot.version})));
+        },
+        commands: {
+            executable: function (minRank, chat) {
+                var id = chat.uid;
+                var perm = bBot.userUtilities.getPermission(id);
+                var minPerm;
+                switch (minRank) {
+                    case 'admin':
+                        minPerm = 10;
+                        break;
+                    case 'ambassador':
+                        minPerm = 7;
+                        break;
+                    case 'host':
+                        minPerm = 5;
+                        break;
+                    case 'cohost':
+                        minPerm = 4;
+                        break;
+                    case 'manager':
+                        minPerm = 3;
+                        break;
+                    case 'mod':
+                        if (bBot.settings.bouncerPlus) {
+                            minPerm = 2;
+                        }
+                        else {
+                            minPerm = 3;
+                        }
+                        break;
+                    case 'bouncer':
+                        minPerm = 2;
+                        break;
+                    case 'residentdj':
+                        minPerm = 1;
+                        break;
+                    case 'user':
+                        minPerm = 0;
+                        break;
+                    default:
+                        API.chatLog('error assigning minimum permission');
+                }
+                return perm >= minPerm;
+
+            },
+            /**
+             command: {
+                        command: 'cmd',
+                        rank: 'user/bouncer/mod/manager',
+                        type: 'startsWith/exact',
+                        functionality: function(chat, cmd){
+                                if(this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                                if( !bBot.commands.executable(this.rank, chat) ) return void (0);
+                                else{
+                                
+                                }
+                        }
+                },
+             **/
+
+            activeCommand: {
+                command: 'active',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var now = Date.now();
+                        var chatters = 0;
+                        var time;
+                        if (msg.length === cmd.length) time = 60;
+                        else {
+                            time = msg.substring(cmd.length + 1);
+                            if (isNaN(time)) return API.sendChat(subChat(bBot.chat.invalidtime, {name: chat.un}));
+                        }
+                        for (var i = 0; i < bBot.room.users.length; i++) {
+                            userTime = bBot.userUtilities.getLastActivity(bBot.room.users[i]);
+                            if ((now - userTime) <= (time * 60 * 1000)) {
+                                chatters++;
+                            }
+                        }
+                        API.sendChat(subChat(bBot.chat.activeusersintime, {name: chat.un, amount: chatters, time: time}));
+                    }
+                }
+            },
+
+            addCommand: {
+                command: 'add',
+                rank: 'mod',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+                        var name = msg.substr(cmd.length + 2);
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        if (msg.length > cmd.length + 2) {
+                            if (typeof user !== 'undefined') {
+                                if (bBot.room.roomevent) {
+                                    bBot.room.eventArtists.push(user.id);
+                                }
+                                API.moderateAddDJ(user.id);
+                            } else API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+                        }
+                    }
+                }
+            },
+
+            afklimitCommand: {
+                command: 'afklimit',
+                rank: 'manager',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nolimitspecified, {name: chat.un}));
+                        var limit = msg.substring(cmd.length + 1);
+                        if (!isNaN(limit)) {
+                            bBot.settings.maximumAfk = parseInt(limit, 10);
+                            API.sendChat(subChat(bBot.chat.maximumafktimeset, {name: chat.un, time: bBot.settings.maximumAfk}));
+                        }
+                        else API.sendChat(subChat(bBot.chat.invalidlimitspecified, {name: chat.un}));
+                    }
+                }
+            },
+
+            afkremovalCommand: {
+                command: 'afkremoval',
+                rank: 'mod',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.afkRemoval) {
+                            bBot.settings.afkRemoval = !bBot.settings.afkRemoval;
+                            clearInterval(bBot.room.afkInterval);
+                            API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.afkremoval}));
+                        }
+                        else {
+                            bBot.settings.afkRemoval = !bBot.settings.afkRemoval;
+                            bBot.room.afkInterval = setInterval(function () {
+                                bBot.roomUtilities.afkCheck()
+                            }, 2 * 1000);
+                            API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.afkremoval}));
+                        }
+                    }
+                }
+            },
+
+            afkresetCommand: {
+                command: 'afkreset',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+                        var name = msg.substring(cmd.length + 2);
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+                        bBot.userUtilities.setLastActivity(user);
+                        API.sendChat(subChat(bBot.chat.afkstatusreset, {name: chat.un, username: name}));
+                    }
+                }
+            },
+
+            afktimeCommand: {
+                command: 'afktime',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+                        var name = msg.substring(cmd.length + 2);
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+                        var lastActive = bBot.userUtilities.getLastActivity(user);
+                        var inactivity = Date.now() - lastActive;
+                        var time = bBot.roomUtilities.msToStr(inactivity);
+                        API.sendChat(subChat(bBot.chat.inactivefor, {name: chat.un, username: name, time: time}));
+                    }
+                }
+            },
+            
+            autodisableCommand: {
+                command: 'autodisable',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.autodisable) {
+                            bBot.settings.autodisable = !bBot.settings.autodisable;
+                            return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.autodisable}));
+                        }
+                        else {
+                            bBot.settings.autodisable = !bBot.settings.autodisable;
+                            return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.autodisable}));
+                        }
+
+                    }
+                }
+            },
+
+            autoskipCommand: {
+                command: 'autoskip',
+                rank: 'mod',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.room.autoskip) {
+                            bBot.room.autoskip = !bBot.room.autoskip;
+                            clearTimeout(bBot.room.autoskipTimer);
+                            return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.autoskip}));
+                        }
+                        else {
+                            bBot.room.autoskip = !bBot.room.autoskip;
+                            return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.autoskip}));
+                        }
+                    }
+                }
+            },
+
+            autowootCommand: {
+                command: 'autowoot',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(bBot.chat.autowoot);
+                    }
+                }
+            },
+
+            baCommand: {
+                command: 'ba',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(bBot.chat.brandambassador);
+                    }
+                }
+            },
+
+            banCommand: {
+                command: 'ban',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+                        var name = msg.substr(cmd.length + 2);
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+                        API.moderateBanUser(user.id, 1, API.BAN.DAY);
+                    }
+                }
+            },
+
+            blacklistCommand: {
+                command: ['blacklist', 'bl'],
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nolistspecified, {name: chat.un}));
+                        var list = msg.substr(cmd.length + 1);
+                        if (typeof bBot.room.blacklists[list] === 'undefined') return API.sendChat(subChat(bBot.chat.invalidlistspecified, {name: chat.un}));
+                        else {
+                            var media = API.getMedia();
+                            var track = {
+                                list: list,
+                                author: media.author,
+                                title: media.title,
+                                mid: media.format + ':' + media.cid
+                            };
+                            bBot.room.newBlacklisted.push(track);
+                            bBot.room.blacklists[list].push(media.format + ':' + media.cid);
+                            API.sendChat(subChat(bBot.chat.newblacklisted, {name: chat.un, blacklist: list, author: media.author, title: media.title, mid: media.format + ':' + media.cid}));
+                            API.moderateForceSkip();
+                            if (typeof bBot.room.newBlacklistedSongFunction === 'function') {
+                                bBot.room.newBlacklistedSongFunction(track);
+                            }
+                        }
+                    }
+                }
+            },
+
+            blinfoCommand: {
+                command: 'blinfo',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var author = API.getMedia().author;
+                        var title = API.getMedia().title;
+                        var name = chat.un;
+                        var format = API.getMedia().format;
+                        var cid = API.getMedia().cid;
+                        var songid = format + ":" + cid;
+
+                        API.sendChat(subChat(bBot.chat.blinfo, {name: name, author: author, title: title, songid: songid}));
+                    }
+                }
+            },
+
+            bouncerPlusCommand: {
+                command: 'bouncer+',
+                rank: 'mod',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (bBot.settings.bouncerPlus) {
+                            bBot.settings.bouncerPlus = false;
+                            return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': 'Bouncer+'}));
+                        }
+                        else {
+                            if (!bBot.settings.bouncerPlus) {
+                                var id = chat.uid;
+                                var perm = bBot.userUtilities.getPermission(id);
+                                if (perm > 2) {
+                                    bBot.settings.bouncerPlus = true;
+                                    return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': 'Bouncer+'}));
+                                }
+                            }
+                            else return API.sendChat(subChat(bBot.chat.bouncerplusrank, {name: chat.un}));
+                        }
+                    }
+                }
+            },
+
+            clearchatCommand: {
+                command: 'clearchat',
+                rank: 'manager',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var currentchat = $('#chat-messages').children();
+                        for (var i = 0; i < currentchat.length; i++) {
+                            API.moderateDeleteChat(currentchat[i].getAttribute("data-cid"));
+                        }
+                        return API.sendChat(subChat(bBot.chat.chatcleared, {name: chat.un}));
+                    }
+                }
+            },
+
+            commandsCommand: {
+                command: 'commands',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(subChat(bBot.chat.commandslink, {botname: bBot.settings.botName, link: bBot.cmdLink}));
+                    }
+                }
+            },
+
+            cookieCommand: {
+                command: 'cookie',
+                rank: 'user',
+                type: 'startsWith',
+                cookies: ['has given you a chocolate chip cookie!',
+                    'has given you a soft homemade oatmeal cookie!',
+                    'has given you a plain, dry, old cookie. It was the last one in the bag. Gross.',
+                    'gives you a sugar cookie. What, no frosting and sprinkles? 0/10 would not touch.',
+                    'gives you a chocolate chip cookie. Oh wait, those are raisins. Bleck!',
+                    'gives you an enormous cookie. Poking it gives you more cookies. Weird.',
+                    'gives you a fortune cookie. It reads "Why aren\'t you working on any projects?"',
+                    'gives you a fortune cookie. It reads "Give that special someone a compliment"',
+                    'gives you a fortune cookie. It reads "Take a risk!"',
+                    'gives you a fortune cookie. It reads "Go outside."',
+                    'gives you a fortune cookie. It reads "Don\'t forget to eat your veggies!"',
+                    'gives you a fortune cookie. It reads "Do you even lift?"',
+                    'gives you a fortune cookie. It reads "m808 pls"',
+                    'gives you a fortune cookie. It reads "If you move your hips, you\'ll get all the ladies."',
+                    'gives you a fortune cookie. It reads "I love you."',
+                    'gives you a Golden Cookie. You can\'t eat it because it is made of gold. Dammit.',
+                    'gives you an Oreo cookie with a glass of milk!',
+                    'gives you a rainbow cookie made with love :heart:',
+                    'gives you an old cookie that was left out in the rain, it\'s moldy.',
+                    'bakes you fresh cookies, it smells amazing.'
+                ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(bBot.chat.eatcookie);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = bBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(bBot.chat.nousercookie, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(bBot.chat.selfcookie, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(bBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            },
+
+            cycleCommand: {
+                command: 'cycle',
+                rank: 'manager',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        bBot.roomUtilities.changeDJCycle();
+                    }
+                }
+            },
+
+            cycleguardCommand: {
+                command: 'cycleguard',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.cycleGuard) {
+                            bBot.settings.cycleGuard = !bBot.settings.cycleGuard;
+                            return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.cycleguard}));
+                        }
+                        else {
+                            bBot.settings.cycleGuard = !bBot.settings.cycleGuard;
+                            return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.cycleguard}));
+                        }
+
+                    }
+                }
+            },
+
+            cycletimerCommand: {
+                command: 'cycletimer',
+                rank: 'manager',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var cycleTime = msg.substring(cmd.length + 1);
+                        if (!isNaN(cycleTime) && cycleTime !== "") {
+                            bBot.settings.maximumCycletime = cycleTime;
+                            return API.sendChat(subChat(bBot.chat.cycleguardtime, {name: chat.un, time: bBot.settings.maximumCycletime}));
+                        }
+                        else return API.sendChat(subChat(bBot.chat.invalidtime, {name: chat.un}));
+
+                    }
+                }
+            },
+
+            voteskipCommand: {
+                command: 'voteskip',
+                rank: 'manager',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length <= cmd.length + 1) return API.sendChat(subChat(bBot.chat.voteskiplimit, {name: chat.un, limit: bBot.settings.voteSkipLimit}));
+                        var argument = msg.substring(cmd.length + 1);
+                        if (!bBot.settings.voteSkip) bBot.settings.voteSkip = !bBot.settings.voteSkip;
+                        if (isNaN(argument)) {
+                            API.sendChat(subChat(bBot.chat.voteskipinvalidlimit, {name: chat.un}));
+                        }
+                        else {
+                            bBot.settings.voteSkipLimit = argument;
+                            API.sendChat(subChat(bBot.chat.voteskipsetlimit, {name: chat.un, limit: bBot.settings.voteSkipLimit}));
+                        }
+                    }
+                }
+            },
+
+            togglevoteskipCommand: {
+                command: 'togglevoteskip',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.voteSkip) {
+                            bBot.settings.voteSkip = !bBot.settings.voteSkip;
+                            API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.voteskip}));
+                        }
+                        else {
+                            bBot.settings.motdEnabled = !bBot.settings.motdEnabled;
+                            API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.voteskip}));
+                        }
+                    }
+                }
+            },
+
+            dclookupCommand: {
+                command: ['dclookup', 'dc'],
+                rank: 'user',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var name;
+                        if (msg.length === cmd.length) name = chat.un;
+                        else {
+                            name = msg.substring(cmd.length + 2);
+                            var perm = bBot.userUtilities.getPermission(chat.uid);
+                            if (perm < 2) return API.sendChat(subChat(bBot.chat.dclookuprank, {name: chat.un}));
+                        }
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+                        var toChat = bBot.userUtilities.dclookup(user.id);
+                        API.sendChat(toChat);
+                    }
+                }
+            },
+
+            /*deletechatCommand: {
+                command: 'deletechat',
+                rank: 'mod',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+                        var name = msg.substring(cmd.length + 2);
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+                        var chats = $('.from');
+                        for (var i = 0; i < chats.length; i++) {
+                            var n = chats[i].textContent;
+                            if (name.trim() === n.trim()) {
+                                var cid = $(chats[i]).parent()[0].getAttribute('data-cid');
+                                API.moderateDeleteChat(cid);
+                            }
+                        }
+                        API.sendChat(subChat(bBot.chat.deletechat, {name: chat.un, username: name}));
+                    }
+                }
+            },*/
+
+            emojiCommand: {
+                command: 'emoji',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var link = 'http://www.emoji-cheat-sheet.com/';
+                        API.sendChat(subChat(bBot.chat.emojilist, {link: link}));
+                    }
+                }
+            },
+
+            etaCommand: {
+                command: 'eta',
+                rank: 'user',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var perm = bBot.userUtilities.getPermission(chat.uid);
+                        var msg = chat.message;
+                        var name;
+                        if (msg.length > cmd.length) {
+                            if (perm < 2) return void (0);
+                            name = msg.substring(cmd.length + 2);
+                        } else name = chat.un;
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+                        var pos = API.getWaitListPosition(user.id);
+                        if (pos < 0) return API.sendChat(subChat(bBot.chat.notinwaitlist, {name: name}));
+                        var timeRemaining = API.getTimeRemaining();
+                        var estimateMS = ((pos + 1) * 4 * 60 + timeRemaining) * 1000;
+                        var estimateString = bBot.roomUtilities.msToStr(estimateMS);
+                        API.sendChat(subChat(bBot.chat.eta, {name: name, time: estimateString}));
+                    }
+                }
+            },
+
+            fbCommand: {
+                command: 'fb',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof bBot.settings.fbLink === "string")
+                            API.sendChat(subChat(bBot.chat.facebook, {name: chat.un, link: bBot.settings.fbLink}));
+                    }
+                }
+            },
+
+            filterCommand: {
+                command: 'filter',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.filterChat) {
+                            bBot.settings.filterChat = !bBot.settings.filterChat;
+                            return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.chatfilter}));
+                        }
+                        else {
+                            bBot.settings.filterChat = !bBot.settings.filterChat;
+                            return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.chatfilter}));
+                        }
+                    }
+                }
+            },
+
+            helpCommand: {
+                command: 'help',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var link = "http://www.balkan-party.cf/tutorijali.html";
+                        API.sendChat(subChat(bBot.chat.starterhelp, {name: chat.un, link: link}));
+                    }
+                }
+            },
+            
+            rouletteinfoCommand: {
+                command: 'rouletteinfo',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(subChat(bBot.chat.rouletteinfo, {name: chat.un}));
+                    }
+                }
+            },
+            
+            mediaidCommand: {
+                command: 'mediaid',
+                rank: 'residentdj',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                    	API.sendChat(API.getMedia().format+":"+API.getMedia().cid, true);
+                    }
+                }
+            },
+            
+            vdownloadCommand: {
+                command: 'vdownload',
+                rank: 'residentdj',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                    	var media = API.getMedia();
+                        var linkToSong = "http://www.sfrom.net/https://www.youtube.com/watch?v=" + media.cid;
+                        API.sendChat(subChat(bBot.chat.vdownload, {name: chat.un, link: linkToSong}));
+                    }
+                }
+            },
+            
+            downloadCommand: {
+                command: 'download',
+                rank: 'residentdj',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                    	var media = API.getMedia();
+                        var linkToSong = "http://www.video2mp3.net/loading.php?url=http://www.youtube.com/watch?v=" + media.cid;
+                        API.sendChat(subChat(bBot.chat.download, {name: chat.un, link: linkToSong}));
+                    }
+                }
+            },
+            
+            roomhelpCommand: {
+                command: 'roomhelp',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                    	API.sendChat(subChat(bBot.chat.roomhelp, {name: chat.un}));
+                    }
+                }
+            },
+             
+            eldoxCommand: {
+command: 'eldox',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.eldox, {name: chat.un}));
+}
+}
+},
+stumblrCommand: {
+command: 'stumblr',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+var link = "http://name-is-already-taken.tumblr.com/";
+API.sendChat(subChat(bBot.chat.stumblr, {name: chat.un, link: link}));
+}
+}
+},
+askCommand: {
+command: 'ask',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+var link = "http://ask.fm/BalkanParty12";
+API.sendChat(subChat(bBot.chat.ask, {name: chat.un, link: link}));
+}
+}
+},
+tacaCommand: {
+command: 'taca',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.taca, {name: chat.un}));
+}
+}
+},
+huligankaCommand: {
+command: 'huliganka',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.huliganka, {name: chat.un}));
+}
+}
+},
+vlajkoCommand: {
+command: 'vlajko',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.vlajko, {name: chat.un}));
+}
+}
+},
+masickaCommand: {
+command: 'masicka',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.masicka, {name: chat.un}));
+}
+}
+},
+teaCommand: {
+command: 'tea',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.tea, {name: chat.un}));
+}
+}
+},
+natalijaCommand: {
+command: 'natalija',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.natalija, {name: chat.un}));
+}
+}
+},
+selmaCommand: {
+command: 'selma',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.selma, {name: chat.un}));
+}
+}
+},
+roxorCommand: {
+command: 'roxor',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.roxor, {name: chat.un}));
+}
+}
+},
+mujoCommand: {
+command: 'mujo',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.mujo, {name: chat.un}));
+}
+}
+},
+filipCommand: {
+command: ['filip', 'tjofi'],
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.filip, {name: chat.un}));
+}
+}
+},
+mamuzaCommand: {
+command: 'mamuza',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.mamuza, {name: chat.un}));
+}
+}
+},
+cobraCommand: {
+command: 'cobra',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.cobra, {name: chat.un}));
+}
+}
+},
+anjaCommand: {
+command: 'anja',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.anja, {name: chat.un}));
+}
+}
+},
+smrtnikCommand: {
+command: 'smrtnik',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.smrtnik, {name: chat.un}));
+}
+}
+},
+ahmedCommand: {
+command: 'ahmed',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.ahmed, {name: chat.un}));
+}
+}
+},
+songunbanCommand: {
+command: 'songunban',
+rank: 'user',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.songunban, {name: chat.un}));
+}
+}
+},
+danceCommand: {
+command: 'dance',
+rank: 'mod',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.botwoot, {name: chat.un}));
+$("#woot").click();
+API.on(API.ADVANCE, autowoot);
+function autowoot(){ $("#woot").click(); }
+}
+}
+},
+mehCommand: {
+command: 'meh',
+rank: 'mod',
+type: 'exact',
+functionality: function (chat, cmd) {
+if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+if (!bBot.commands.executable(this.rank, chat)) return void (0);
+else {
+API.sendChat(subChat(bBot.chat.botmeh));
+$("#meh").click();
+API.on(API.ADVANCE, meh);
+}
+}
+},
+
+            rouletteactivateCommand: {
+                command: 'rouletteactivate',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else { 
+                    API.sendChat(subChat(bBot.chat.rouletteactivate, {name: chat.un}));
+                    setInterval(function(){
+    	            if (!bBot.room.roulette.rouletteStatus) {
+    		    bBot.room.roulette.startRoulette();
+    	    }
+        }, 7200000);
+                    }
+          }
+},
+
+            joinCommand: {
+                command: 'join',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.room.roulette.rouletteStatus && bBot.room.roulette.participants.indexOf(chat.uid) < 0) {
+                            bBot.room.roulette.participants.push(chat.uid);
+                            API.sendChat(subChat(bBot.chat.roulettejoin, {name: chat.un}));
+                        }
+                    }
+                }
+            },
+
+            jointimeCommand: {
+                command: 'jointime',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+                        var name = msg.substring(cmd.length + 2);
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+                        var join = bBot.userUtilities.getJointime(user);
+                        var time = Date.now() - join;
+                        var timeString = bBot.roomUtilities.msToStr(time);
+                        API.sendChat(subChat(bBot.chat.jointime, {namefrom: chat.un, username: name, time: timeString}));
+                    }
+                }
+            },
+
+            kickCommand: {
+                command: 'kick',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var lastSpace = msg.lastIndexOf(' ');
+                        var time;
+                        var name;
+                        if (lastSpace === msg.indexOf(' ')) {
+                            time = 0.25;
+                            name = msg.substring(cmd.length + 2);
+                        }
+                        else {
+                            time = msg.substring(lastSpace + 1);
+                            name = msg.substring(cmd.length + 2, lastSpace);
+                        }
+
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        var from = chat.un;
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+
+                        var permFrom = bBot.userUtilities.getPermission(chat.uid);
+                        var permTokick = bBot.userUtilities.getPermission(user.id);
+
+                        if (permFrom <= permTokick)
+                            return API.sendChat(subChat(bBot.chat.kickrank, {name: chat.un}));
+
+                        if (!isNaN(time)) {
+                            API.sendChat(subChat(bBot.chat.kick, {name: chat.un, username: name, time: time}));
+                            if (time > 24 * 60 * 60) API.moderateBanUser(user.id, 1, API.BAN.PERMA);
+                            else API.moderateBanUser(user.id, 1, API.BAN.DAY);
+                            setTimeout(function (id, name) {
+                                API.moderateUnbanUser(id);
+                                console.log('Unbanned @' + name + '. (' + id + ')');
+                            }, time * 60 * 1000, user.id, name);
+                        }
+                        else API.sendChat(subChat(bBot.chat.invalidtime, {name: chat.un}));
+                    }
+                }
+            },
+
+            stopCommand: {
+                command: 'stop',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        storeToStorage();
+                        API.sendChat(bBot.chat.kill);
+                        bBot.disconnectAPI();
+                        setTimeout(function () {
+                            kill();
+                        }, 1000);
+                    }
+                }
+            },
+
+            leaveCommand: {
+                command: 'leave',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var ind = bBot.room.roulette.participants.indexOf(chat.uid);
+                        if (ind > -1) {
+                            bBot.room.roulette.participants.splice(ind, 1);
+                            API.sendChat(subChat(bBot.chat.rouletteleave, {name: chat.un}));
+                        }
+                    }
+                }
+            },
+
+            linkCommand: {
+                command: 'link',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var media = API.getMedia();
+                        var from = chat.un;
+                        var user = bBot.userUtilities.lookupUser(chat.uid);
+                        var perm = bBot.userUtilities.getPermission(chat.uid);
+                        var dj = API.getDJ().id;
+                        var isDj = false;
+                        if (dj === chat.uid) isDj = true;
+                        if (perm >= 1 || isDj) {
+                            if (media.format === 1) {
+                                var linkToSong = "https://www.youtube.com/watch?v=" + media.cid;
+                                API.sendChat(subChat(bBot.chat.songlink, {name: from, link: linkToSong}));
+                            }
+                            if (media.format === 2) {
+                                SC.get('/tracks/' + media.cid, function (sound) {
+                                    API.sendChat(subChat(bBot.chat.songlink, {name: from, link: sound.permalink_url}));
+                                });
+                            }
+                        }
+                    }
+                }
+            },
+
+            lockCommand: {
+                command: 'lock',
+                rank: 'mod',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        bBot.roomUtilities.booth.lockBooth();
+                    }
+                }
+            },
+
+            lockdownCommand: {
+                command: 'lockdown',
+                rank: 'mod',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var temp = bBot.settings.lockdownEnabled;
+                        bBot.settings.lockdownEnabled = !temp;
+                        if (bBot.settings.lockdownEnabled) {
+                            return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.lockdown}));
+                        }
+                        else return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.lockdown}));
+                    }
+                }
+            },
+
+            lockguardCommand: {
+                command: 'lockguard',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.lockGuard) {
+                            bBot.settings.lockGuard = !bBot.settings.lockGuard;
+                            return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.lockdown}));
+                        }
+                        else {
+                            bBot.settings.lockGuard = !bBot.settings.lockGuard;
+                            return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.lockguard}));
+                        }
+                    }
+                }
+            },
+
+            lockskipCommand: {
+                command: 'lockskip',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.room.skippable) {
+                            var dj = API.getDJ();
+                            var id = dj.id;
+                            var name = dj.username;
+                            var msgSend = '@' + name + ': ';
+                            bBot.room.queueable = false;
+
+                            if (chat.message.length === cmd.length) {
+                                API.sendChat(subChat(bBot.chat.usedlockskip, {name: chat.un}));
+                                bBot.roomUtilities.booth.lockBooth();
+                                setTimeout(function (id) {
+                                    API.moderateForceSkip();
+                                    bBot.room.skippable = false;
+                                    setTimeout(function () {
+                                        bBot.room.skippable = true
+                                    }, 5 * 1000);
+                                    setTimeout(function (id) {
+                                        bBot.userUtilities.moveUser(id, bBot.settings.lockskipPosition, false);
+                                        bBot.room.queueable = true;
+                                        setTimeout(function () {
+                                            bBot.roomUtilities.booth.unlockBooth();
+                                        }, 1000);
+                                    }, 1500, id);
+                                }, 1000, id);
+                                return void (0);
+                            }
+                            var validReason = false;
+                            var msg = chat.message;
+                            var reason = msg.substring(cmd.length + 1);
+                            for (var i = 0; i < bBot.settings.lockskipReasons.length; i++) {
+                                var r = bBot.settings.lockskipReasons[i][0];
+                                if (reason.indexOf(r) !== -1) {
+                                    validReason = true;
+                                    msgSend += bBot.settings.lockskipReasons[i][1];
+                                }
+                            }
+                            if (validReason) {
+                                API.sendChat(subChat(bBot.chat.usedlockskip, {name: chat.un}));
+                                bBot.roomUtilities.booth.lockBooth();
+                                setTimeout(function (id) {
+                                    API.moderateForceSkip();
+                                    bBot.room.skippable = false;
+                                    API.sendChat(msgSend);
+                                    setTimeout(function () {
+                                        bBot.room.skippable = true
+                                    }, 5 * 1000);
+                                    setTimeout(function (id) {
+                                        bBot.userUtilities.moveUser(id, bBot.settings.lockskipPosition, false);
+                                        bBot.room.queueable = true;
+                                        setTimeout(function () {
+                                            bBot.roomUtilities.booth.unlockBooth();
+                                        }, 1000);
+                                    }, 1500, id);
+                                }, 1000, id);
+                                return void (0);
+                            }
+                        }
+                    }
+                }
+            },
+
+            lockskipposCommand: {
+                command: 'lockskippos',
+                rank: 'manager',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var pos = msg.substring(cmd.length + 1);
+                        if (!isNaN(pos)) {
+                            bBot.settings.lockskipPosition = pos;
+                            return API.sendChat(subChat(bBot.chat.lockskippos, {name: chat.un, position: bBot.settings.lockskipPosition}));
+                        }
+                        else return API.sendChat(subChat(bBot.chat.invalidpositionspecified, {name: chat.un}));
+                    }
+                }
+            },
+            
+            // HiddenComand For someone special...
+             adnaCommand: {
+                command: 'adna',
+                rank: 'user',
+                type: 'startsWith',
+                cookies: ['Kad nas tisuce kilometara razdvoje i kad najmanje mislis na mene, moje oci gledaju u daljinu i traze samo tebe.',
+                'Tek kad andeli postanu zli, kad svi oceani presuse tad ce srce prestati gorjeti i ja su tebe prestati voljeti.',
+                'Kad ti najteze bude ili kad osjetis da te nesto boli, sjeti se da postoji bice koje te vjecno i duboko... VOLI!.',
+                'Reci mi da me ne trebas i otici cu. Reci da ti nije stalo i nestat cu. Reci da ti ne znacim nista, preboljet cu. Reci da me ne volis i umrijet cu..'
+		
+                ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(subChat(bBot.chat.adna, {adna: this.getCookie()}));
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = bBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(bBot.chat.selfadna, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(bBot.chat.selfadna, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(bBot.chat.selfadna, {adna: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            }, 
+            
+            fortunecookieCommand: {
+                command: 'fortunecookie',
+                rank: 'user',
+                type: 'startsWith',
+                cookies: ['Your shoes will make you happy today.',
+                'You cannot love life until you live the life you love.',
+                'The man or woman you desire feels the same about you.',
+                'A dream you have will come true.',
+                'Never give up. You are not a failure if you dont give up.',
+                'You will become great if you believe in yourself.',
+                'You will marry your lover.',
+                'A very attractive person has a message for you.',
+                'It is now, and in this world, that we must live.',
+                'You must try, or hate yourself for not trying.',
+                'You can make your own happiness.',
+                'The greatest risk is not taking one.',
+                'Love can last a lifetime, if you want it to.',
+                'Serious trouble will bypass you.',
+                'Now is the time to try something new.',
+                'You are very talented in many ways.',
+                'A stranger, is a friend you have not spoken to yet.',
+                'You will travel to many exotic places in your lifetime.',
+                'Everyone agrees. You are the best.',
+                'Jealousy doesnt open doors, it closes them!',
+                'Never give up. Always find a reason to keep trying.',
+                'Stop wishing. Start doing.',
+                'For success today, look first to yourself.',
+                'If you are happy, you are successful.',
+                'Before trying to please others think of what makes you happy.',
+                'You learn from your mistakes, you will learn a lot today.',
+                'Impossible is a word only to be found in the dictionary of fools.',
+                'You will soon witness a miracle.',
+                'Love is as necessary to human beings as food and shelter.',
+                'You are extremely loved. Dont worry :)',
+                'If you are never patient, you will never get anything done. If you believe you can do it, you will be rewarded with success.',
+                'You believe in the goodness of man kind.',
+                'You will have a long and wealthy life.',
+                'You are a person of culture.',
+                'Keep it simple. The more you say, the less people remember.',
+                'Nothing seems impossible to you.',
+                'Patience is bitter, but its fruit is sweet.',
+                'When you expect your opponent to yield, you also should avoid hurting him.',
+                'Your dearest wish will come true. ',
+                'If you don’t do it excellently, don’t do it at all.',
+                'You will soon be honored by someone you respect.',
+                'Your smile brings happiness to everyone you meet. ',
+                'A wish is what makes life happen when you dream of rose petals.',
+                'Love can turn cottage into a golden palace. ',
+                'You will kiss your crush ohhh lalahh',
+                'No distance is too far, if two hearts are tied together. ',
+                'Try? No! Do or do not, there is no try.',
+                'Its about time you asked that special someone on a date.',
+                'Good things take time.'
+		
+                ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(subChat(bBot.chat.fortunecookie, {name: chat.un, fortune: this.getCookie()}));
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = bBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(bBot.chat.selffortuneccookie, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(bBot.chat.selffortuneccookie, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(bBot.chat.selffortuneccookie, {name: name}));
+                            }
+                        }
+                    }
+                }
+            }, 
+            
+            prcCommand: {
+                command: 'prc',
+                rank: 'bouncer',
+                type: 'startsWith',
+                cookies: ['Keva ti se kupa gola',
+		'Nema ti danas kurca',
+		'Vire ti stidne dlake',
+		'Mamuza te kara',
+		'Makse seljanko',
+		'Nema ispale bez tebe',
+		'Nes jebat',
+		'Zanimljivo, skoro pa interesanto...',
+		'Tvoja mama je tolko debela, da kad prolazi ispred TV-a prodje 4 epizode Srecnih ljudi',
+		'Samo tetki da odnesem lek',
+		'I tata bi sine',
+		'Ti abanzujes!!!',
+		'Sta se kacis na moju ogradu u tom pederskom odelu?'
+                ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(subChat(bBot.chat.selfprc, {name: name}));
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = bBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(bBot.chat.nouserprc, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(bBot.chat.selfprc, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(bBot.chat.prc, {nameto: user.username, cookie: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            }, 
+            
+            giftCommand: {
+                command: 'gift',
+                rank: 'user',
+                type: 'startsWith',
+                cookies: ['has given you a red rose, who knows maybe he/she likes you <3',
+                          'thinks you are awesome person, give him a kiss.',
+                          'wants to marry you, please say yes.',
+                          'is in love with you, what about you?',
+                          'thinks you are a beautiful person, what you think about him/her?',
+                          'wants to kill you ........... lol i am just kidding, she/he thinks you are cute.',
+                          'wants to kiss you.',
+                          'thinks you are a beautiful person, give him/her a hug <3',
+                          'Do you love me because I am beautiful or am I beautiful because you love me?',
+                          'The moment he/she saw you he/she fell in love with U',
+                          'cant live without U',
+                          'wanna spend the rest of his life with U',
+                          'said. Falling in love with you is the second best thing in the world, Coz finding you was the first.'
+                ],
+                getCookie: function () {
+                    var c = Math.floor(Math.random() * this.cookies.length);
+                    return this.cookies[c];
+                },
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+
+                        var space = msg.indexOf(' ');
+                        if (space === -1) {
+                            API.sendChat(bBot.chat.bgift);
+                            return false;
+                        }
+                        else {
+                            var name = msg.substring(space + 2);
+                            var user = bBot.userUtilities.lookupUserName(name);
+                            if (user === false || !user.inRoom) {
+                                return API.sendChat(subChat(bBot.chat.nouser, {name: name}));
+                            }
+                            else if (user.username === chat.un) {
+                                return API.sendChat(subChat(bBot.chat.selfgift, {name: name}));
+                            }
+                            else {
+                                return API.sendChat(subChat(bBot.chat.gift, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                            }
+                        }
+                    }
+                }
+            },
+            
+            locktimerCommand: {
+                command: 'locktimer',
+                rank: 'manager',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var lockTime = msg.substring(cmd.length + 1);
+                        if (!isNaN(lockTime) && lockTime !== "") {
+                            bBot.settings.maximumLocktime = lockTime;
+                            return API.sendChat(subChat(bBot.chat.lockguardtime, {name: chat.un, time: bBot.settings.maximumLocktime}));
+                        }
+                        else return API.sendChat(subChat(bBot.chat.invalidtime, {name: chat.un}));
+                    }
+                }
+            },
+
+            maxlengthCommand: {
+                command: 'maxlength',
+                rank: 'manager',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var maxTime = msg.substring(cmd.length + 1);
+                        if (!isNaN(maxTime)) {
+                            bBot.settings.maximumSongLength = maxTime;
+                            return API.sendChat(subChat(bBot.chat.maxlengthtime, {name: chat.un, time: bBot.settings.maximumSongLength}));
+                        }
+                        else return API.sendChat(subChat(bBot.chat.invalidtime, {name: chat.un}));
+                    }
+                }
+            },
+
+            motdCommand: {
+                command: 'motd',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length <= cmd.length + 1) return API.sendChat('/me MOTD: ' + bBot.settings.motd);
+                        var argument = msg.substring(cmd.length + 1);
+                        if (!bBot.settings.motdEnabled) bBot.settings.motdEnabled = !bBot.settings.motdEnabled;
+                        if (isNaN(argument)) {
+                            bBot.settings.motd = argument;
+                            API.sendChat(subChat(bBot.chat.motdset, {msg: bBot.settings.motd}));
+                        }
+                        else {
+                            bBot.settings.motdInterval = argument;
+                            API.sendChat(subChat(bBot.chat.motdintervalset, {interval: bBot.settings.motdInterval}));
+                        }
+                    }
+                }
+            },
+
+            moveCommand: {
+                command: 'move',
+                rank: 'mod',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+                        var firstSpace = msg.indexOf(' ');
+                        var lastSpace = msg.lastIndexOf(' ');
+                        var pos;
+                        var name;
+                        if (isNaN(parseInt(msg.substring(lastSpace + 1)))) {
+                            pos = 1;
+                            name = msg.substring(cmd.length + 2);
+                        }
+                        else {
+                            pos = parseInt(msg.substring(lastSpace + 1));
+                            name = msg.substring(cmd.length + 2, lastSpace);
+                        }
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+                        if (user.id === bBot.loggedInID) return API.sendChat(subChat(bBot.chat.addbotwaitlist, {name: chat.un}));
+                        if (!isNaN(pos)) {
+                            API.sendChat(subChat(bBot.chat.move, {name: chat.un}));
+                            bBot.userUtilities.moveUser(user.id, pos, false);
+                        } else return API.sendChat(subChat(bBot.chat.invalidpositionspecified, {name: chat.un}));
+                    }
+                }
+            },
+
+            muteCommand: {
+                command: 'mute',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+                        var lastSpace = msg.lastIndexOf(' ');
+                        var time = null;
+                        var name;
+                        if (lastSpace === msg.indexOf(' ')) {
+                            name = msg.substring(cmd.length + 2);
+                            time = 45;
+                        }
+                        else {
+                            time = msg.substring(lastSpace + 1);
+                            if (isNaN(time) || time == "" || time == null || typeof time == "undefined") {
+                                return API.sendChat(subChat(bBot.chat.invalidtime, {name: chat.un}));
+                            }
+                            name = msg.substring(cmd.length + 2, lastSpace);
+                        }
+                        var from = chat.un;
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+                        var permFrom = bBot.userUtilities.getPermission(chat.uid);
+                        var permUser = bBot.userUtilities.getPermission(user.id);
+                        if (permFrom > permUser) {
+                            /*
+                             bBot.room.mutedUsers.push(user.id);
+                             if (time === null) API.sendChat(subChat(bBot.chat.mutednotime, {name: chat.un, username: name}));
+                             else {
+                             API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
+                             setTimeout(function (id) {
+                             var muted = bBot.room.mutedUsers;
+                             var wasMuted = false;
+                             var indexMuted = -1;
+                             for (var i = 0; i < muted.length; i++) {
+                             if (muted[i] === id) {
+                             indexMuted = i;
+                             wasMuted = true;
+                             }
+                             }
+                             if (indexMuted > -1) {
+                             bBot.room.mutedUsers.splice(indexMuted);
+                             var u = bBot.userUtilities.lookupUser(id);
+                             var name = u.username;
+                             API.sendChat(subChat(bBot.chat.unmuted, {name: chat.un, username: name}));
+                             }
+                             }, time * 60 * 1000, user.id);
+                             }
+                             */
+                            if (time > 45) {
+                                API.sendChat(subChat(bBot.chat.mutedmaxtime, {name: chat.un, time: "45"}));
+                                API.moderateMuteUser(user.id, 1, API.MUTE.LONG);
+                            }
+                            else if (time === 45) {
+                                API.moderateMuteUser(user.id, 1, API.MUTE.LONG);
+                                API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
+
+                            }
+                            else if (time > 30) {
+                                API.moderateMuteUser(user.id, 1, API.MUTE.LONG);
+                                API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
+                                setTimeout(function (id) {
+                                    API.moderateUnmuteUser(id);
+                                }, time * 60 * 1000, user.id);
+                            }
+                            else if (time > 15) {
+                                API.moderateMuteUser(user.id, 1, API.MUTE.MEDIUM);
+                                API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
+                                setTimeout(function (id) {
+                                    API.moderateUnmuteUser(id);
+                                }, time * 60 * 1000, user.id);
+                            }
+                            else {
+                                API.moderateMuteUser(user.id, 1, API.MUTE.SHORT);
+                                API.sendChat(subChat(bBot.chat.mutedtime, {name: chat.un, username: name, time: time}));
+                                setTimeout(function (id) {
+                                    API.moderateUnmuteUser(id);
+                                }, time * 60 * 1000, user.id);
+                            }
+                        }
+                        else API.sendChat(subChat(bBot.chat.muterank, {name: chat.un}));
+                    }
+                }
+            },
+
+            opCommand: {
+                command: 'op',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof bBot.settings.opLink === "string")
+                            return API.sendChat(subChat(bBot.chat.oplist, {name: chat.un, link: bBot.settings.opLink}));
+                    }
+                }
+            },
+
+            pingCommand: {
+                command: 'ping',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(bBot.chat.pong)
+                    }
+                }
+            },
+
+            refreshCommand: {
+                command: 'refresh',
+                rank: 'manager',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        storeToStorage();
+                        bBot.disconnectAPI();
+                        setTimeout(function () {
+                            window.location.reload(false);
+                        }, 1000);
+
+                    }
+                }
+            },
+
+            reloadCommand: {
+                command: 'reload',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(bBot.chat.reload);
+                        storeToStorage();
+                        bBot.disconnectAPI();
+                        kill();
+                        setTimeout(function () {
+                            $.getScript(bBot.scriptLink);
+                        }, 2000);
+                    }
+                }
+            },
+
+            removeCommand: {
+                command: 'remove',
+                rank: 'mod',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length > cmd.length + 2) {
+                            var name = msg.substr(cmd.length + 2);
+                            var user = bBot.userUtilities.lookupUserName(name);
+                            if (typeof user !== 'boolean') {
+                                user.lastDC = {
+                                    time: null,
+                                    position: null,
+                                    songCount: 0
+                                };
+                                if (API.getDJ().id === user.id) {
+                                    API.moderateForceSkip();
+                                    setTimeout(function () {
+                                        API.moderateRemoveDJ(user.id);
+                                    }, 1 * 1000, user);
+                                }
+                                else API.moderateRemoveDJ(user.id);
+                            } else API.sendChat(subChat(bBot.chat.removenotinwl, {name: chat.un, username: name}));
+                        } else API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+                    }
+                }
+            },
+
+            restrictetaCommand: {
+                command: 'restricteta',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.etaRestriction) {
+                            bBot.settings.etaRestriction = !bBot.settings.etaRestriction;
+                            return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.etarestriction}));
+                        }
+                        else {
+                            bBot.settings.etaRestriction = !bBot.settings.etaRestriction;
+                            return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.etarestriction}));
+                        }
+                    }
+                }
+            },
+
+            rouletteCommand: {
+                command: 'roulette',
+                rank: 'mod',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (!bBot.room.roulette.rouletteStatus) {
+                            bBot.room.roulette.startRoulette();
+                        }
+                    }
+                }
+            },
+
+            rulesCommand: {
+                command: 'rules',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof bBot.settings.rulesLink === "string")
+                            return API.sendChat(subChat(bBot.chat.roomrules, {link: bBot.settings.rulesLink}));
+                    }
+                }
+            },
+
+            sessionstatsCommand: {
+                command: 'sessionstats',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var from = chat.un;
+                        var woots = bBot.room.roomstats.totalWoots;
+                        var mehs = bBot.room.roomstats.totalMehs;
+                        var grabs = bBot.room.roomstats.totalCurates;
+                        API.sendChat(subChat(bBot.chat.sessionstats, {name: from, woots: woots, mehs: mehs, grabs: grabs}));
+                    }
+                }
+            },
+
+            skipCommand: {
+                command: 'skip',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat(subChat(bBot.chat.skip, {name: chat.un}));
+                        API.moderateForceSkip();
+                        bBot.room.skippable = false;
+                        setTimeout(function () {
+                            bBot.room.skippable = true
+                        }, 5 * 1000);
+
+                    }
+                }
+            },
+
+            songstatsCommand: {
+                command: 'songstats',
+                rank: 'mod',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.songstats) {
+                            bBot.settings.songstats = !bBot.settings.songstats;
+                            return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.songstats}));
+                        }
+                        else {
+                            bBot.settings.songstats = !bBot.settings.songstats;
+                            return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.songstats}));
+                        }
+                    }
+                }
+            },
+
+            sourceCommand: {
+                command: 'source',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        API.sendChat('/me Bot edited by: ' + botCreator + '.');
+                    }
+                }
+            },
+
+            statusCommand: {
+                command: 'status',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var from = chat.un;
+                        var msg = '/me [@' + from + '] ';
+
+                        msg += bBot.chat.afkremoval + ': ';
+                        if (bBot.settings.afkRemoval) msg += 'ON';
+                        else msg += 'OFF';
+                        msg += '. ';
+                        msg += bBot.chat.afksremoved + ": " + bBot.room.afkList.length + '. ';
+                        msg += bBot.chat.afklimit + ': ' + bBot.settings.maximumAfk + '. ';
+
+                        msg += 'Bouncer+: ';
+                        if (bBot.settings.bouncerPlus) msg += 'ON';
+                        else msg += 'OFF';
+                        msg += '. ';
+
+                        msg += bBot.chat.lockguard + ': ';
+                        if (bBot.settings.lockGuard) msg += 'ON';
+                        else msg += 'OFF';
+                        msg += '. ';
+
+                        msg += bBot.chat.cycleguard + ': ';
+                        if (bBot.settings.cycleGuard) msg += 'ON';
+                        else msg += 'OFF';
+                        msg += '. ';
+
+                        msg += bBot.chat.timeguard + ': ';
+                        if (bBot.settings.timeGuard) msg += 'ON';
+                        else msg += 'OFF';
+                        msg += '. ';
+
+                        msg += bBot.chat.chatfilter + ': ';
+                        if (bBot.settings.filterChat) msg += 'ON';
+                        else msg += 'OFF';
+                        msg += '. ';
+
+                        msg += bBot.chat.voteskip + ': ';
+                        if (bBot.settings.voteskip) msg += 'ON';
+                        else msg += 'OFF';
+                        msg += '. ';
+
+                        var launchT = bBot.room.roomstats.launchTime;
+                        var durationOnline = Date.now() - launchT;
+                        var since = bBot.roomUtilities.msToStr(durationOnline);
+                        msg += subChat(bBot.chat.activefor, {time: since});
+
+                        return API.sendChat(msg);
+                    }
+                }
+            },
+
+            swapCommand: {
+                command: 'swap',
+                rank: 'mod',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+                        var firstSpace = msg.indexOf(' ');
+                        var lastSpace = msg.lastIndexOf(' ');
+                        var name1 = msg.substring(cmd.length + 2, lastSpace);
+                        var name2 = msg.substring(lastSpace + 2);
+                        var user1 = bBot.userUtilities.lookupUserName(name1);
+                        var user2 = bBot.userUtilities.lookupUserName(name2);
+                        if (typeof user1 === 'boolean' || typeof user2 === 'boolean') return API.sendChat(subChat(bBot.chat.swapinvalid, {name: chat.un}));
+                        if (user1.id === bBot.loggedInID || user2.id === bBot.loggedInID) return API.sendChat(subChat(bBot.chat.addbottowaitlist, {name: chat.un}));
+                        var p1 = API.getWaitListPosition(user1.id) + 1;
+                        var p2 = API.getWaitListPosition(user2.id) + 1;
+                        if (p1 < 0 || p2 < 0) return API.sendChat(subChat(bBot.chat.swapwlonly, {name: chat.un}));
+                        API.sendChat(subChat(bBot.chat.swapping, {'name1': name1, 'name2': name2}));
+                        if (p1 < p2) {
+                            bBot.userUtilities.moveUser(user2.id, p1, false);
+                            setTimeout(function (user1, p2) {
+                                bBot.userUtilities.moveUser(user1.id, p2, false);
+                            }, 2000, user1, p2);
+                        }
+                        else {
+                            bBot.userUtilities.moveUser(user1.id, p2, false);
+                            setTimeout(function (user2, p1) {
+                                bBot.userUtilities.moveUser(user2.id, p1, false);
+                            }, 2000, user2, p1);
+                        }
+                    }
+                }
+            },
+
+            themeCommand: {
+                command: 'theme',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof bBot.settings.themeLink === "string")
+                            API.sendChat(subChat(bBot.chat.genres, {link: bBot.settings.themeLink}));
+                    }
+                }
+            },
+
+            timeguardCommand: {
+                command: 'timeguard',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.timeGuard) {
+                            bBot.settings.timeGuard = !bBot.settings.timeGuard;
+                            return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.timeguard}));
+                        }
+                        else {
+                            bBot.settings.timeGuard = !bBot.settings.timeGuard;
+                            return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.timeguard}));
+                        }
+
+                    }
+                }
+            },
+
+            toggleblCommand: {
+                command: 'togglebl',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var temp = bBot.settings.blacklistEnabled;
+                        bBot.settings.blacklistEnabled = !temp;
+                        if (bBot.settings.blacklistEnabled) {
+                          return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.blacklist}));
+                        }
+                        else return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.blacklist}));
+                    }
+                }
+            },                 
+
+            togglemotdCommand: {
+                command: 'togglemotd',
+                rank: 'bouncer',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.motdEnabled) {
+                            bBot.settings.motdEnabled = !bBot.settings.motdEnabled;
+                            API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.motd}));
+                        }
+                        else {
+                            bBot.settings.motdEnabled = !bBot.settings.motdEnabled;
+                            API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.motd}));
+                        }
+                    }
+                }
+            },
+
+            unbanCommand: {
+                command: 'unban',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        $(".icon-population").click();
+                        $(".icon-ban").click();
+                        setTimeout(function (chat) {
+                            var msg = chat.message;
+                            if (msg.length === cmd.length) return API.sendChat();
+                            var name = msg.substring(cmd.length + 2);
+                            var bannedUsers = API.getBannedUsers();
+                            var found = false;
+                            var bannedUser = null;
+                            for (var i = 0; i < bannedUsers.length; i++) {
+                                var user = bannedUsers[i];
+                                if (user.username === name) {
+                                    bannedUser = user;
+                                    found = true;
+                                }
+                            }
+                            if (!found) {
+                                $(".icon-chat").click();
+                                return API.sendChat(subChat(bBot.chat.notbanned, {name: chat.un}));
+                            }
+                            API.moderateUnbanUser(bannedUser.id);
+                            console.log("Unbanned " + name);
+                            setTimeout(function () {
+                                $(".icon-chat").click();
+                            }, 1000);
+                        }, 1000, chat);
+                    }
+                }
+            },
+
+            unlockCommand: {
+                command: 'unlock',
+                rank: 'mod',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        bBot.roomUtilities.booth.unlockBooth();
+                    }
+                }
+            },
+
+            unmuteCommand: {
+                command: 'unmute',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var permFrom = bBot.userUtilities.getPermission(chat.uid);
+                        /**
+                         if (msg.indexOf('@') === -1 && msg.indexOf('all') !== -1) {
+                            if (permFrom > 2) {
+                                bBot.room.mutedUsers = [];
+                                return API.sendChat(subChat(bBot.chat.unmutedeveryone, {name: chat.un}));
+                            }
+                            else return API.sendChat(subChat(bBot.chat.unmuteeveryonerank, {name: chat.un}));
+                        }
+                         **/
+                        var from = chat.un;
+                        var name = msg.substr(cmd.length + 2);
+
+                        var user = bBot.userUtilities.lookupUserName(name);
+
+                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+
+                        var permUser = bBot.userUtilities.getPermission(user.id);
+                        if (permFrom > permUser) {
+                            /*
+                             var muted = bBot.room.mutedUsers;
+                             var wasMuted = false;
+                             var indexMuted = -1;
+                             for (var i = 0; i < muted.length; i++) {
+                             if (muted[i] === user.id) {
+                             indexMuted = i;
+                             wasMuted = true;
+                             }
+
+                             }
+                             if (!wasMuted) return API.sendChat(subChat(bBot.chat.notmuted, {name: chat.un}));
+                             bBot.room.mutedUsers.splice(indexMuted);
+                             API.sendChat(subChat(bBot.chat.unmuted, {name: chat.un, username: name}));
+                             */
+                            try {
+                                API.moderateUnmuteUser(user.id);
+                                API.sendChat(subChat(bBot.chat.unmuted, {name: chat.un, username: name}));
+                            }
+                            catch (e) {
+                                API.sendChat(subChat(bBot.chat.notmuted, {name: chat.un}));
+                            }
+                        }
+                        else API.sendChat(subChat(bBot.chat.unmuterank, {name: chat.un}));
+                    }
+                }
+            },
+
+            usercmdcdCommand: {
+                command: 'usercmdcd',
+                rank: 'manager',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var cd = msg.substring(cmd.length + 1);
+                        if (!isNaN(cd)) {
+                            bBot.settings.commandCooldown = cd;
+                            return API.sendChat(subChat(bBot.chat.commandscd, {name: chat.un, time: bBot.settings.commandCooldown}));
+                        }
+                        else return API.sendChat(subChat(bBot.chat.invalidtime, {name: chat.un}));
+                    }
+                }
+            },
+
+            usercommandsCommand: {
+                command: 'usercommands',
+                rank: 'manager',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.usercommandsEnabled) {
+                            API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.usercommands}));
+                            bBot.settings.usercommandsEnabled = !bBot.settings.usercommandsEnabled;
+                        }
+                        else {
+                            API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.usercommands}));
+                            bBot.settings.usercommandsEnabled = !bBot.settings.usercommandsEnabled;
+                        }
+                    }
+                }
+            },
+
+            voteratioCommand: {
+                command: 'voteratio',
+                rank: 'bouncer',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        if (msg.length === cmd.length) return API.sendChat(subChat(bBot.chat.nouserspecified, {name: chat.un}));
+                        var name = msg.substring(cmd.length + 2);
+                        var user = bBot.userUtilities.lookupUserName(name);
+                        if (user === false) return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
+                        var vratio = user.votes;
+                        var ratio = vratio.woot / vratio.meh;
+                        API.sendChat(subChat(bBot.chat.voteratio, {name: chat.un, username: name, woot: vratio.woot, mehs: vratio.meh, ratio: ratio.toFixed(2)}));
+                    }
+                }
+            },
+
+            welcomeCommand: {
+                command: 'welcome',
+                rank: 'mod',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (bBot.settings.welcome) {
+                            bBot.settings.welcome = !bBot.settings.welcome;
+                            return API.sendChat(subChat(bBot.chat.toggleoff, {name: chat.un, 'function': bBot.chat.welcomemsg}));
+                        }
+                        else {
+                            bBot.settings.welcome = !bBot.settings.welcome;
+                            return API.sendChat(subChat(bBot.chat.toggleon, {name: chat.un, 'function': bBot.chat.welcomemsg}));
+                        }
+                    }
+                }
+            },
+
+            websiteCommand: {
+                command: 'website',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof bBot.settings.website === "string")
+                            API.sendChat(subChat(bBot.chat.website, {link: bBot.settings.website}));
+                    }
+                }
+            },
+
+            youtubeCommand: {
+                command: 'youtube',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof bBot.settings.youtubeLink === "string")
+                            API.sendChat(subChat(bBot.chat.youtube, {name: chat.un, link: bBot.settings.youtubeLink}));
+                    }
+                }
+            }
+        }
+    };
+
+    loadChat(bBot.startup);
+}).call(this);
