@@ -89,7 +89,7 @@
     "chatcleared": "/me :white_check_mark: [@%%NAME%%] Je ocistio chat.",
     "deletechat": "/me [!delchat] @%%NAME%% Ocistio chat od %%USERNAME%%.",
     "commandslink": "/me :link: %%BOTNAME%% komande mozete pronaci ovdje: %%LINK%%",
-    "eatcookie": "/me Jede kolac.",
+    "eatcookie": "/me BalkanBOT Jede kolac.",
     "nousercookie": "/em ne vidi %%NAME%% u sobi i uzima kolac samo za sebe.",
     "nouserprc": "/em ne vidi %%NAME%% u sobi.",
     "selfcookie": "/me [!cookie] @%%NAME%%, ti si malo pohlepan, zar ne? Dajes kolacice sebi, bah. Podijeli i sa ostalima",
