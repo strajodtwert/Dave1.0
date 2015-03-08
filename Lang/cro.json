@@ -104,7 +104,7 @@
     "dclookuprank": "/me [!dclookup] [@%%NAME%%] Samo bounceri i visi rank mogu !dclookup za ostale",
     "emojilist": "/me [!emoji] :link: Listu svih Emoji mozete pronaci ovdje: %%LINK%%",
     "notinwaitlist": "/me @%%NAME%%, nisi na listi cekanja",
-    "eta": "/me [!eta] @%%NAME%% doci ces na red za  %%TIME%%.",
+    "eta": "/me [!eta] @%%NAME%% Doci ces na red otprilike za  %%TIME%%.",
     "facebook": "/me [!fb] @%%NAME%% Nasa fb grupa: %%LINK%%",
     "starterhelp": "/me [!help] @%%NAME%% Za pocetka pogledaj sljedeci link: %%LINK%%",
     "roulettejoin": "/me [!join] @%%NAME%% se pridruzio ruletu! (!leave ako zelis da napustis.)",
