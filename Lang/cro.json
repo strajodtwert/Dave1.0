@@ -10,7 +10,7 @@
 
     "welcome": "/me Dobrodosao %%NAME%%",
     "welcomeback": "/me Dobrodosao nazad, %%NAME%%",
-    "songknown": "/me @%%NAME%% Ova pjesma je vec bila %%PLAYS%% puta u zadnjih %%TIMETOTAL%%, zadnje vrijeme prije %%LASTTIME%%",
+    "songknown": "/me @%%NAME%% Ova pjesma je u history.",
     "timelimit": "/me @%%NAME%%, tvoja pjesma je duza od %%MAXLENGTH%% minuta.",
     "permissionownsong": "/me :up: @%%NAME%% ima dozvolu.",
     "isblacklisted": "/me @%%NAME%% Ova pjesma se nalazi na %%BLACKLIST%% blacklisti, i zbog toga je zabranjena, za vise info kucaj !op.",
