@@ -1,1 +1,1 @@
-API.chatLog("The bot link has been changed, ask admin", true);
+API.chatLog("The bot link has been changed: http://bit.ly/BalkanBot", true);
