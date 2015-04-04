@@ -19,6 +19,16 @@
 
     "isopen": "/me [!roulette] :white_check_mark: Rulet je uspijesno pokrenut. Kucaj !join da bi ucestvovao. !leave da bi napustio.",
     "winnerpicked": "/me :white_check_mark: Pobjednik je odabran! @%%NAME%% na poziciju %%POSITION%%.",
+    "ball": "/me [!8ball] %%NAME%% je pitao: \"%%QUESTION%%\" i %%BOTNAME%% odgovara: \"%%RESPONSE%%\"",
+    "notghosting": "[%%NAME1%%] %%NAME2%% is not ghosting.",
+    "ghosting": "[%%NAME1%%] %%NAME2%% is either ghosting or not here.",
+    "validgiftags": "/me [!gif] @%%NAME%% http://media.giphy.com/media/%%ID%%/giphy.gif [Tags: %%TAGS%%]",
+    "invalidgiftags": "/me @%%NAME%% Pogresna oznaka, pokusaj nesto drugo. [Oznaka: %%TAGS%%]",
+    "validgifrandom": "/me @%%NAME%% http://media.giphy.com/media/%%ID%%/giphy.gif [Slucajno odabran GIF]",
+    "invalidgifrandom": "/me @%%NAME%% Greska, pokusaj ponovo.",
+    "whois": "/me [!whois] %%NAME1%% Username: %%NAME2%%, ID: %%ID%%, Rank: %%RANK%%, Joined: %%JOINED%%, Level: %%LEVEL%%, Language: %%LANGUAGE%%, Avatar: %%AVATAR%%, Status: %%STATUS%%%%PROFILE%%",
+    "logout": "/me [!logout] @%%NAME%% Odjavljujem se... %%BOTNAME%%",
+    "purchase": "/me [!purchase] @%%NAME%% PP mozes kupit ovdje: https://plug.dj/purchase",
 
 
     "alreadyadding": "/me Korisnik je vec dodan! Premjestanje na %%POSITION%%.",
