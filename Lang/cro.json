@@ -67,6 +67,7 @@
     "invalidpositionspecified": "/me [@%%NAME%%] Navedena pozicija nepoznata.",
     "toggleon": "/me [@%%NAME%%] %%FUNCTION%% enabled.",
     "toggleoff": "/me [@%%NAME%%] %%FUNCTION%% disabled.",
+    "cmddeletion": ":white_check_mark: command deletion",
     "afkremoval": ":white_check_mark: AFK removal",
     "afksremoved": "AFK's removed",
     "afklimit": ":white_check_mark: AFK limit",
