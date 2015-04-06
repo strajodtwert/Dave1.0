@@ -8,7 +8,7 @@
     "online": "/me :white_check_mark: %%BOTNAME%% %%VERSION%% uspijesno pokrenut.",
 
 
-    "welcome": "/me Dobrodosao %%NAME%%",
+    "welcome": "/me Dobrodosao %%NAME%%, ukoliko si novi procitaj pravila: http://j.mp/BpPravila",
     "welcomeback": "/me Dobrodosao nazad, %%NAME%%",
     "songknown": "/me @%%NAME%% Ova pjesma je u history.",
     "timelimit": "/me @%%NAME%%, tvoja pjesma je duza od %%MAXLENGTH%% minuta.",
