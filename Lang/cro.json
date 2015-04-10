@@ -19,7 +19,7 @@
 
     "isopen": "/me [!roulette] @djs :white_check_mark: Rulet je uspijesno pokrenut. Kucaj !join da bi ucestvovao. !leave da bi napustio.",
     "winnerpicked": "/me :white_check_mark: Pobjednik je odabran! @%%NAME%% na poziciju %%POSITION%%.",
-    "ball": "/me [!8ball] %%NAME%% je pitao: \"%%QUESTION%%\" i %%BOTNAME%% odgovara: \"%%RESPONSE%%\"",
+    "ball": "/me [!8ball] %%NAME%%, bote \"%%QUESTION%%\" - %%BOTNAME%%: \"%%RESPONSE%%\"",
     "notghosting": "[%%NAME1%%] %%NAME2%% is not ghosting.",
     "ghosting": "[%%NAME1%%] %%NAME2%% is either ghosting or not here.",
     "validgiftags": "/me [!gif] @%%NAME%% http://media.giphy.com/media/%%ID%%/giphy.gif [Tags: %%TAGS%%]",
