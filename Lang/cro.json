@@ -54,8 +54,8 @@
     "adfly": "/me @%%NAME%%, Promjenite vas autowoot: http://www.balkan-party.cf/autowoot.html",
 
     "botwoot": "/me [!dance] :white_check_mark: @%%NAME%%, Autowoot aktiviran.",
-    "autorulteton": "/me [!autoroulette] :white_check_mark: @%%NAME%%, AutoRulet Ukljucen.",
-    "autorultetoff": "/me [!autoroulette] :white_check_mark: @%%NAME%%, AutoRulet Iskljucen.",
+    "autorouletteon": "/me [!autoroulette] :white_check_mark: @%%NAME%%, AutoRulet Ukljucen.",
+    "autorouletteoff": "/me [!autoroulette] :white_check_mark: @%%NAME%%, AutoRulet Iskljucen.",
     "botmeh": "/me [!meh] Admin je zatrazio da meh ovu pjesmu.",
     "songunban": "/me [!songunban] [@%%NAME%%] Ova komanda je uklonjena.",
     "invalidtime": "/me [@%%NAME%%] Neispravno vrijeme navedeno.",
