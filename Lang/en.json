@@ -1,6 +1,9 @@
 {
 
     "nodatafound": "No previous data found.",
+    "currentlang": "\/me Language currently set to: %%LANGUAGE%%",
+    "langerror": "\/me The language you've selected isn't available. Please visit %%LINK%% to find a list of languages available.",
+    "langset": "\/me Language now set to: %%LANGUAGE%%",
     "retrievingdata": "Retrieving previously stored data.",
     "datarestored": "Previously stored data successfully retrieved.",
     "greyuser": " :warning: [Connecting to %r!] BalkanBOT Failed to run.",
@@ -19,6 +22,17 @@
 
     "isopen": "/me [!roulette] :white_check_mark: The roulettmue is now open! Type !join to participate!",
     "winnerpicked": "/me :white_check_mark: A winner has been picked! @%%NAME%% to position %%POSITION%%.",
+    "ball": "/me [!8ball] %%NAME%%, bote \"%%QUESTION%%\"? - %%BOTNAME%%: \"%%RESPONSE%%\"",
+    "notghosting": "[%%NAME1%%] %%NAME2%% is not ghosting.",
+    "ghosting": "[%%NAME1%%] %%NAME2%% is either ghosting or not here.",
+    "validgiftags": "/me [!gif] @%%NAME%% http://media.giphy.com/media/%%ID%%/giphy.gif [Tags: %%TAGS%%]",
+    "invalidgiftags": "/me @%%NAME%% Invalid tags, try something different. [TAGS: %%TAGS%%]",
+    "validgifrandom": "/me @%%NAME%% http://media.giphy.com/media/%%ID%%/giphy.gif [Random GIF]",
+    "invalidgifrandom": "/me @%%NAME%% Error, try again.",
+    "whois": "/me [!whois] %%NAME1%% Username: %%NAME2%%, ID: %%ID%%, Rank: %%RANK%%, Joined: %%JOINED%%, Level: %%LEVEL%%, Language: %%LANGUAGE%%, Avatar: %%AVATAR%%, Status: %%STATUS%%%%PROFILE%%",
+    "logout": "/me [!logout] @%%NAME%% Logging Out... %%BOTNAME%%",
+    "purchase": "/me [!subscribe] @%%NAME%% Subscribe here: https://plug.dj/purchase",
+
 
 
     "alreadyadding": "/me User is already being added! Changed the desired position to %%POSITION%%.",
