@@ -1,6 +1,8 @@
 {
     "1":{
-        "mid": "1:NSFWsongID1"
+        "mid": "1:NSFWsongID1",
+        "title": "This is a NSFW song",
+        "author": "The NSFW band"
     },
     "2":{
         "title": "This is a NSFW song",
@@ -8,6 +10,8 @@
         "mid": "1:NSFWsongID2"
     },
     "3":{
-        "mid": "1:NSFWsongID3"
+        "mid": "1:NSFWsongID3",
+        "title": "This is a NSFW song",
+        "author": "The NSFW band"
     }
 }
