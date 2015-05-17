@@ -155,7 +155,7 @@
     "activefor": " [!status] Aktivan sam %%TIME%%.",
     "swapinvalid": "/me [!swap] @%%NAME%% Navedeni korisnik nije pronadjen. (Bez imena sa razmakom!)",
     "swapwlonly": "/me [!swap] @%%NAME%% Molim, samo zamjenjuj korisnike koji se nalaze na listi cekanja",
-    "swapping": "/me [!swap] :white_check_mark: Zamjewnjujem %%NAME1%% sa %%NAME2%%.",
+    "swapping": "/me [!swap] :white_check_mark: Zamjenjujem %%NAME1%% sa %%NAME2%%.",
     "genres": "/me Dopustene zanrove mozete pronaci ovdje: %%LINK%%",
     "notbanned": "/me [!unban] [@%%NAME%%] Korisnik nije banovan.",
     "unmutedeveryone": "/me :white_check_mark: [@%%NAME%%] Je ponistio mute od sviju.",
