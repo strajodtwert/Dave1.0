@@ -6,7 +6,7 @@
     "langset": "\/me Jezik je sada podesen na: %%LANGUAGE%%",
     "retrievingdata": "Preuzimanje sacuvani podataka.",
     "datarestored": "Prosli sacuvani podaci uspijesno preuzeti.",
-    "greyuser": " :warning: [Povezivanje na %r!] BalkanBOT Error.",
+    "greyuser": " :warning: [Connecting Failed!] BalkanBOT Error.",
     "bouncer": "Bot ne moze premjestati usere ako je pokrenut od strane bouncer-a.",
     "online": "/me :white_check_mark: %%BOTNAME%% %%VERSION%% uspijesno pokrenut.",
 
