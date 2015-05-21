@@ -31,7 +31,9 @@
     "invalidgifrandom": "/me @%%NAME%% Greska, pokusaj ponovo.",
     "whois": "/me [!whois] %%NAME1%% Username: %%NAME2%%, ID: %%ID%%, Rank: %%RANK%%, Joined: %%JOINED%%, Level: %%LEVEL%%, Language: %%LANGUAGE%%, Avatar: %%AVATAR%%, Status: %%STATUS%%%%PROFILE%%",
     "logout": "/me [!logout] @%%NAME%% Odjavljujem se... %%BOTNAME%%",
-    "purchase": "/me [!purchase] @%%NAME%% PP mozes kupit ovdje: https://plug.dj/purchase",
+    "subscribe": "/me [!subscribe] @%%NAME%% Pretplati se: https://plug.dj/subscribe/",
+    "botnameset": "\/me :white_check_mark: Ime Bota podeseno na:: %%BOTNAME%%",
+    "currentbotname": "\/me Ime bota trenutno podeseno na: %%BOTNAME%%",
 
 
     "alreadyadding": "/me Korisnik je vec dodan! Premjestanje na %%POSITION%%.",
