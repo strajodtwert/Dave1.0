@@ -34,6 +34,7 @@
     "subscribe": "/me [!subscribe] @%%NAME%% Pretplati se: https://plug.dj/subscribe/",
     "botnameset": "\/me :white_check_mark: Ime Bota podeseno na:: %%BOTNAME%%",
     "currentbotname": "\/me Ime bota trenutno podeseno na: %%BOTNAME%%",
+    "gameon": "/me @djs %%NAME%% Je pokrenuo PickTheNumber. Napisi broj od :one: do :nine:. Ukoliko te bot oznaci sa istim brojem koji si napisao pobjedio si. Ukoliko ima vise pobjednika racuna se onaj prvi kojeg je bot oznacio.",
 
 
     "alreadyadding": "/me Korisnik je vec dodan! Premjestanje na %%POSITION%%.",
