@@ -1,9 +1,9 @@
 {
 
     "nodatafound": "Nema sacuvani podataka.",
-    "currentlang": "\/me Jezik trenutno podesen na: %%LANGUAGE%%",
-    "langerror": "\/me Jezik koji ste odabrali nije dostupan. Posjeti %%LINK%% za dostupne jezike.",
-    "langset": "\/me Jezik je sada podesen na: %%LANGUAGE%%",
+    "currentlang": "/me Jezik trenutno podesen na: %%LANGUAGE%%",
+    "langerror": "/me Jezik koji ste odabrali nije dostupan. Posjeti %%LINK%% za dostupne jezike.",
+    "langset": "/me Jezik je sada podesen na: %%LANGUAGE%%",
     "retrievingdata": "Preuzimanje sacuvani podataka.",
     "datarestored": "Prosli sacuvani podaci uspijesno preuzeti.",
     "greyuser": " :warning: [Connecting Failed!] BalkanBOT Error.",
