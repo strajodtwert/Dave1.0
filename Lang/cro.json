@@ -60,6 +60,9 @@
     "adfly": "/me @%%NAME%%, Promjenite vas autowoot: http://www.balkan-party.cf/autowoot.html",
 
     "botwoot": "/me [!dance] :white_check_mark: @%%NAME%%, Autowoot aktiviran.",
+    "youaredj": "\/me @%%NAME%%, Vec si Dj.",
+    "notinwaitlist": "\/me @%%NAME%%, Nisi na listi cekanja.",
+    "youarenext": "\/me @%%NAME%%, Poslije ove pjesme si ti.",
     "autorouletteon": "/me [!autoroulette] :white_check_mark: @%%NAME%%, AutoRulet Ukljucen.",
     "autorouletteoff": "/me [!autoroulette] :white_check_mark: @%%NAME%%, AutoRulet Iskljucen.",
     "botmeh": "/me [!meh] Admin je zatrazio da meh ovu pjesmu.",
@@ -97,7 +100,7 @@
     "voteskipexceededlimit": "/me @%%NAME%%, pjesma dostigla glasajte skip limit (%%LIMIT%% mehs).",
     "voteskipinvalidlimit": "/me [!voteskip] @%%NAME%% Navedeni limit nepoznat, molim pokusajte ponovo sa drugim brojem mehova.",
     "voteskipsetlimit": "/me :white_check_mark: [!voteskip] @%%NAME%% Glasajte skip postavljen na %%LIMIT%%.",
-    "activeusersintime": "/me [!active] :white_check_mark: [@%%NAME%% Trenutno je %%AMOUNT%% korisnika koji su chatovali u zadnjih %%TIME%% minuta.",
+    "activeusersintime": "/me [!active] :white_check_mark: @%%NAME%% Trenutno je %%AMOUNT%% korisnika koji su chatovali u zadnjih %%TIME%% minuta.",
     "maximumafktimeset": "/me [!afklimit] :white_check_mark: @%%NAME%% Maksimalno afk trajanje postavljeno na %%TIME%% minuta.",
     "afkstatusreset": "/me [!afkreset] @%%NAME%% Je resetovao afk status od @%%USERNAME%%.",
     "inactivefor": "/me [!afktime] @%%NAME%% @%%USERNAME%% je neaktivan %%TIME%%.",
