@@ -29,7 +29,7 @@
     "invalidgiftags": "/me @%%NAME%% Pogresna oznaka, pokusaj nesto drugo. [Oznaka: %%TAGS%%]",
     "validgifrandom": "/me @%%NAME%% http:\/\/i.giphy.com\/%%ID%%.gif [Nasumicno odabran GIF]",
     "invalidgifrandom": "/me @%%NAME%% Greska, pokusaj ponovo.",
-    "whois": "/me [!whois] %%NAME1%% Username: %%NAME2%%, ID: %%ID%%, Rank: %%RANK%%, Joined: %%JOINED%%, Level: %%LEVEL%%, Language: %%LANGUAGE%%, Avatar: %%AVATAR%%, Status: %%STATUS%%%%PROFILE%%",
+    "whois": "/me [!whois] %%NAME1%% Username: %%NAME2%%, ID: %%ID%%, Rank: %%RANK%%, Joined: %%JOINED%%, Level: %%LEVEL%%, Language: %%LANGUAGE%%, Avatar: %%AVATAR%%, Profile: %%PROFILE%%",
     "logout": "/me [!logout] @%%NAME%% Odjavljujem se... %%BOTNAME%%",
     "subscribe": "/me [!subscribe] @%%NAME%% Pretplati se: https://plug.dj/subscribe/",
     "botnameset": "\/me :white_check_mark: Ime Bota podeseno na:: %%BOTNAME%%",
