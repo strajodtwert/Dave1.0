@@ -11,8 +11,8 @@
     "online": "/me :white_check_mark: %%BOTNAME%% %%VERSION%% uspijesno pokrenut.",
 
 
-    "welcome": "/me Dobrodosao %%NAME%% na Balkan Party, pravila i ostale linkove mozes pronaci u opisu sobe.",
-    "welcomeback": "/me Dobrodosao nazad, %%NAME%%",
+    "welcome": "/me Dobrodosao/la %%NAME%% na Balkan Party, pravila i ostale linkove mozes pronaci u opisu sobe.",
+    "welcomeback": "/me Dobrodosao/la nazad, %%NAME%%",
     "songknown": "/me @%%NAME%% Ova pjesma je u history.",
     "timelimit": "/me @%%NAME%%, tvoja pjesma je duza od %%MAXLENGTH%% minuta.",
     "permissionownsong": "/me :up: @%%NAME%% ima dozvolu.",
