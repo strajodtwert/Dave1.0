@@ -81,7 +81,7 @@
     "afkremoval": ":white_check_mark: AFK removal",
     "afksremoved": "AFK's removed",
     "afklimit": ":white_check_mark: AFK limit",
-    "autodisable": "[!autodisable] autodisable",
+    "autoroulette": "[!aroulette] autoroulette",
     "autoskip": ":white_check_mark: autoskip",
     "newblacklisted": "/me [@%%NAME%%] Pjesma pripada %%BLACKLIST%% blacklisti! [ %%AUTHOR%% - %%TITLE%% - %%MID%% ]",
     "blinfo": "/me @%%NAME%% [!blinfo] Blacklista Info - author: %%AUTHOR%%, title: %%TITLE%%, mid: %%SONGID%%",
