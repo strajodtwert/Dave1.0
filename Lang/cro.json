@@ -175,7 +175,7 @@
     "stumblr": "/me [!stumblr] %%NAME%% Selma tumblr: %%LINK%%.",
     "ask": "/me [!ask] [%%NAME%%] Sva pitanje mozete postavit ovdje: %%LINK%%.",
     "test": "/me [!test] %%NAME%% Ja sam online, nema greski trenutno.",
-    "rouletteinfo": "/me [!rouletteinfo] %%NAME%% Ja cu te premjestit na slucajno odabrano mjesto na listi cekanja, nema veze ako si vec prvi ili zadnji, ukoliko si se prijavio za rulet mozes kucati !leave da napustis.",
+    "rouletteinfo": "/me [!rouletteinfo] %%NAME%% Rulet je svako2h, ukoliko si pobjedio/la premjestit cu te na slucajno odabrano mjesto na listi cekanja, nema veze ako si vec prvi ili zadnji, ukoliko si se prijavio za rulet mozes kucati !leave da napustis.",
     "roomhelp": "/me [!roomhelp] %%NAME%% Ostani aktivan dok cekas svoju pjesmu, pricaj sa ostalima, da bi smanjio lag pisi /cap20.",
     "eldox": "/me @%%NAME%% [!eldoX] Lijep, voli da pomaže, nekad previše smara ali je uglavnom fin, :D",
     "selma": "/me @%%NAME%% [!selma] Najljepsa djevojka, veoma je pametna i voli da se sali. :sparkling_heart:",
