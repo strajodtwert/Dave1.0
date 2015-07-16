@@ -207,7 +207,7 @@
     "removenotinwl": "/me [!remove] @%%NAME%% Odredjeni korisnik @%%USERNAME%% nije na listi cekanja..",
     "roomrules": "/me [!rules] Pravila sobe mozete pronaci ovdje: %%LINK%%",
     "sessionstats": "/me [!sessionstats] @%%NAME%% Total woots: %%WOOTS%%, total mehs: %%MEHS%%, total grabs: %%GRABS%%.",
-    "skip": "/me [!skip] :white_check_mark: %%NAME%% je iskoristio skip",
+    "forceskip": "/me [!forceskip] :white_check_mark: %%NAME%% je iskoristio skip",
     "madeby": "/me BBot editovan od strane admina %%NAME%%.",
     "activefor": " [!status] Aktivan sam %%TIME%%.",
     "swapinvalid": "/me [!swap] @%%NAME%% Navedeni korisnik nije pronadjen. (Bez imena sa razmakom!)",
