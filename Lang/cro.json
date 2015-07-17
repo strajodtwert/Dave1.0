@@ -114,8 +114,6 @@
     "youaredj": "\/me @%%NAME%%, Vec si Dj.",
     "notinwaitlist": "\/me @%%NAME%%, Nisi na listi cekanja.",
     "youarenext": "\/me @%%NAME%%, Poslije ove pjesme si ti.",
-    "autorouletteon": "/me [!autoroulette] :white_check_mark: @%%NAME%%, AutoRulet Ukljucen.",
-    "autorouletteoff": "/me [!autoroulette] :white_check_mark: @%%NAME%%, AutoRulet Iskljucen.",
     "botmeh": "/me [!meh] Admin je zatrazio da meh ovu pjesmu.",
     "songunban": "/me [!songunban] [@%%NAME%%] Ova komanda je uklonjena.",
     "invalidtime": "/me [@%%NAME%%] Neispravno vrijeme navedeno.",
