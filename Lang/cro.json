@@ -1,4 +1,19 @@
 {
+     "gifts": [
+     	"ti daje crvenu ruzu, ko zna mozda joj/mu se svidjas <3",
+        "misli da si super osoba, daj joj/mu poljubac <3",
+        "se zeli ozeniti sa tobom, reci da.2,
+        "je zaljubljen/a u tebe, a ti?",
+        "misli da si prelijepa osoba, sta ti mislis o njemu/njoj?",
+        "zeli da te ubije......lool salim se, misli da si sladak/slatka",
+        "te zeli poljubiti2,
+        "misli da si prelijepa osoba, daj joj/mu jedan zagrljaj",
+        "Da li me volis zato sto sam prelijep/a?",
+        "Onog trenutka kada te je vidjeo/la odmah se zaljubio/la u tebe",
+        "ne moze da zivi bez tebe",
+        "zeli provesti ostatak svog zivota sa tobom",
+        "je rekao. Zaljubljivanje u tebe je najbolja druga stvar na svijetu, jer pronalazak tebe je prva <3."
+    ],
     "cookies": [
         "Keva ti se kupa gola",
 		"Nema ti danas kurca",
@@ -239,8 +254,8 @@
     "natalija": "/me @%%NAME%% [!natalija] Veoma duhovita djevojka, jako dobar prijatelj, veoma je pametna kao i lijepa, mozemo reci da je malo luda (u pozitivnom smislu) :v:",
     "tea": "/me @%%NAME%% [!tea] Debil, voli da j*** iz sale, opasna djevojka, jako voli da dijeli banove <3",
     "masicka": "/me @%%NAME%% [!masicka] Lijepa i komunikativna djevojka, ima odlican smisao za humor i uvijek zaljubljena  <3",
-    "bgift": "/me Ne moras mene tagovati :P",
-    "nouser": "/em ne vidi %%NAME%% u sobi i uzima poklon samo za sebe",
+    "sgift": "/me Ne moras mene tagovati :P",
+    "nousergift": "/em ne vidi %%NAME%% u sobi i uzima poklon samo za sebe",
     "selfgift": "/me @%%NAME%%, Ne mozes to, prc",
     "gift": "/me [!gift] @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%",
     "vlajko": "/me @%%NAME%% [!vlajko] Fina osoba, lijep, pametan ali steta sto ima veliku glavu :D",
