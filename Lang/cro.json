@@ -256,7 +256,7 @@
     "selfprc": "/me [!prc] @%%NAME%%, Moras oznacit nekoga.",
     "selfadna": "/me @%%NAME%%, Ne mozes uradit to.",
     "cookie": "/me [!cookie] @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%",
-    "prc": "/me [!prc] @%%NAMETO%%, %%COOKIE%%",
+    "prc": "/me [!prc] @%%NAMETO%%, %%PRC%%",
     "adna": "/me %%ADNAA%%",
     "fortunecookie": "/me %%NAME%% %%FORTUNE%%",
     "selffortunecookie": "/me @%%NAME%%, Zao mi je ne mozes to..",
