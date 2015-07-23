@@ -332,7 +332,7 @@
     "sgift": "/me Pokusaj oznaciti nekoga",
     "nousergift": "/em ne vidi %%NAME%% u sobi i uzima poklon samo za sebe",
     "selfgift": "/me @%%NAME%%, Ne mozes to, prc",
-    "gift": "/me [!gift] @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%",
+    "gift": "/me [!gift] @%%NAMETO%%, @%%NAMEFROM%% %%GIFT%%",
     "vlajko": "/me @%%NAME%% [!vlajko] Fina osoba, lijep, pametan ali steta sto ima veliku glavu :D",
     "huliganka": "/me @%%NAME%% [!Huliganka] Dusa od covijeka, nekad puno zajebaje ali ne smeta to nama ipak je ona huligan, (takodje pervezna i malo retardirana <3)",
     "taca": "/me @%%NAME%% [!taca] Voli da se svadja, ne odustaje tako lahko, jedna od njenih jacih strana, mozemo reci da je carica <3"
