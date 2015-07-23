@@ -257,7 +257,7 @@
     "selfadna": "/me @%%NAME%%, Ne mozes uradit to.",
     "cookie": "/me [!cookie] @%%NAMETO%%, @%%NAMEFROM%% %%COOKIE%%",
     "prc": "/me [!prc] @%%NAMETO%%, %%COOKIE%%",
-    "adna": "/me %%ADNA%%",
+    "adna": "/me %%ADNA1%%",
     "fortunecookie": "/me %%NAME%% %%FORTUNE%%",
     "selffortunecookie": "/me @%%NAME%%, Zao mi je ne mozes to..",
     "cycleguardtime": "/me [!cycletimer] :white_check_mark: [@%%NAME%%] Cycleguard je postavljen na %%TIME%% minuta.",
