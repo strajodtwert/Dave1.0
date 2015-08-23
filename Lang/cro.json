@@ -154,7 +154,7 @@
     "welcome": "/me Dobrodosao/la %%NAME%% na Balkan Party, pravila i ostale linkove mozes pronaci u opisu sobe.",
     "welcomeback": "/me Dobrodosao/la nazad, %%NAME%%",
     "songknown": "/me @%%NAME%% Ova pjesma je u history.",
-    "notavailable": "\/me @%%NAME%%, tvoja pjesma nije dostupna.",
+    "notavailable": "\/me @%%NAME%%, tvoja pjesma nije dostupna za neke clanove, ili je video privatan.",
     "timelimit": "/me @%%NAME%%, tvoja pjesma je duza od %%MAXLENGTH%% minuta.",
     "permissionownsong": "/me :up: @%%NAME%% ima dozvolu.",
     "isblacklisted": "/me @%%NAME%% Ova pjesma se nalazi na %%BLACKLIST%% blacklisti, i zbog toga je zabranjena, za vise info kucaj !op.",
