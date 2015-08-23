@@ -148,7 +148,7 @@
     "datarestored": "Prosli sacuvani podaci uspijesno preuzeti.",
     "greyuser": " :warning: [Connecting Failed!] SqueeBOT Error.",
     "bouncer": "Bot ne moze premjestati usere ako je pokrenut od strane bouncer-a.",
-    "online": "/me :white_check_mark: %%BOTNAME%% %%VERSION%% uspijesno pokrenut.",
+    "online": "/me :white_check_mark: %%BOTNAME%% %%VERSION%% uspijesno aktiviran.",
 
 
     "welcome": "/me Dobrodosao/la %%NAME%% na Balkan Party, pravila i ostale linkove mozes pronaci u opisu sobe.",
