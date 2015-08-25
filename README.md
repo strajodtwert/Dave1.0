@@ -1,6 +1,7 @@
-BalkanBot
+>Dave1.0
 =========
 
+Bot name changed to Dave1.0
 This is edited version of basic bot,
 
 I am not the full owner of this bot , i only used it to edit links, and necessary files, 
