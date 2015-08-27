@@ -153,9 +153,9 @@
 
     "welcome": "/me Dobrodosao/la %%NAME%% na Balkan Party, pravila i ostale linkove mozes pronaci u opisu sobe.",
     "welcomeback": "/me Dobrodosao/la nazad, %%NAME%%",
-    "songknown": "/me @%%NAME%% Ova pjesma je u history.",
+    "songknown": "/me @%%NAME%% Ova pjesma je u history. Prebacujem...",
     "notavailable": "\/me @%%NAME%%, tvoja pjesma nije dostupna za neke clanove, ili je video privatan.",
-    "timelimit": "/me @%%NAME%%, tvoja pjesma je duza od %%MAXLENGTH%% minuta.",
+    "timelimit": "/me @%%NAME%%, tvoja pjesma je duza od %%MAXLENGTH%% minuta. Ogranicenje je 7 min, postuj pravila.",
     "permissionownsong": "/me :up: @%%NAME%% ima dozvolu.",
     "isblacklisted": "/me @%%NAME%% Ova pjesma se nalazi na %%BLACKLIST%% blacklisti, i zbog toga je zabranjena, za vise info kucaj !op.",
     "blacklist": " :white_check_mark: Blacklist",
@@ -164,8 +164,8 @@
     "isopen": "/me [!roulette] @djs :white_check_mark: Rulet je uspijesno pokrenut. Kucaj !join da bi ucestvovao. !leave da bi napustio.",
     "winnerpicked": "/me :white_check_mark: Pobjednik je odabran! @%%NAME%% na poziciju %%POSITION%%.",
     "ball": "/me [!8ball] %%NAME%%, bote \"%%QUESTION%%\"? - %%BOTNAME%%: \"%%RESPONSE%%\"",
-    "notghosting": "[%%NAME1%%] %%NAME2%% is not ghosting.",
-    "ghosting": "[%%NAME1%%] %%NAME2%% is either ghosting or not here.",
+    "notghosting": "[%%NAME1%%] %%NAME2%% je regularan korisnik u sobi a ne vrsta korisnika podesena da radi automatski.",
+    "ghosting": "[%%NAME1%%] %%NAME2%% je vrsta korisnika podesena da radi automatski ili korisnik nije tu.",
     "validgiftags": "/me [!gif] @%%NAME%% http:\/\/i.giphy.com\/%%ID%%.gif [Tags: %%TAGS%%]",
     "invalidgiftags": "/me @%%NAME%% Oznaka ne postoji, pokusaj nesto drugo. [Oznaka: %%TAGS%%]",
     "validgifrandom": "/me @%%NAME%% http:\/\/i.giphy.com\/%%ID%%.gif [Nasumicno odabran GIF]",
@@ -195,9 +195,9 @@
 
 
     "caps": "/me @%%NAME%%, Caps nije dozvoljen ovdje. Kucaj !rules za vise informacija",
-    "askskip": "/me @%%NAME%%, Ne trazi skip.",
-    "spam": "/me :warning: @%%NAME%%, molim, ne spamaj",
-    "roomadvertising": "/me :warning: @%%NAME%%, nemoj postavljati linkove od drugih soba.",
+    "askskip": "/me @%%NAME%%, Traziti skip je protiv pravila, ukoliko ih ne znas napisi !rules",
+    "spam": "/me :warning: @%%NAME%%, [Poruka obrisana] Spamati ovdje je zabranjeno, za vise info procitaj pravila.",
+    "roomadvertising": "/me :warning: @%%NAME%%, Postavljati linkove od drugih soba ovdje je strogo zabranjeno.",
     "adfly": "/me @%%NAME%%, Promjenite vas autowoot: http://www.balkan-party.cf/autowoot.html",
 
     "botwoot": "/me [!dance] :white_check_mark: @%%NAME%%, Autowoot aktiviran.",
