@@ -155,7 +155,7 @@
     "welcomeback": "/me Dobrodosao/la nazad, %%NAME%%",
     "songknown": "/me @%%NAME%% Ova pjesma je u history. Prebacujem...",
     "notavailable": "\/me @%%NAME%%, tvoja pjesma nije dostupna za neke clanove, ili je video privatan.",
-    "timelimit": "/me @%%NAME%%, tvoja pjesma je duza od %%MAXLENGTH%% minuta. Ogranicenje je 7 min, postuj pravila.",
+    "timelimit": "/me @%%NAME%%, tvoja pjesma je duza od %%MAXLENGTH%% minuta, molim procitaj pravila sobe.",
     "permissionownsong": "/me :up: @%%NAME%% ima dozvolu.",
     "isblacklisted": "/me @%%NAME%% Ova pjesma se nalazi na %%BLACKLIST%% blacklisti, i zbog toga je zabranjena, za vise info kucaj !op.",
     "blacklist": " :white_check_mark: Blacklist",
