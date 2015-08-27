@@ -167,7 +167,7 @@
     "notghosting": "[%%NAME1%%] %%NAME2%% is not ghosting.",
     "ghosting": "[%%NAME1%%] %%NAME2%% is either ghosting or not here.",
     "validgiftags": "/me [!gif] @%%NAME%% http:\/\/i.giphy.com\/%%ID%%.gif [Tags: %%TAGS%%]",
-    "invalidgiftags": "/me @%%NAME%% Pogresna oznaka, pokusaj nesto drugo. [Oznaka: %%TAGS%%]",
+    "invalidgiftags": "/me @%%NAME%% Oznaka ne postoji, pokusaj nesto drugo. [Oznaka: %%TAGS%%]",
     "validgifrandom": "/me @%%NAME%% http:\/\/i.giphy.com\/%%ID%%.gif [Nasumicno odabran GIF]",
     "invalidgifrandom": "/me @%%NAME%% Greska, pokusaj ponovo.",
     "whois": "/me [!whois] %%NAME1%% Username: %%NAME2%%, ID: %%ID%%, Rank: %%RANK%%, Joined: %%JOINED%%, Level: %%LEVEL%%, Language: %%LANGUAGE%%, Avatar: %%AVATAR%%, Profile: %%PROFILE%%",
