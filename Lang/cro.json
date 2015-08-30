@@ -196,7 +196,7 @@
 
     "caps": "/me @%%NAME%%, Caps nije dozvoljen ovdje. Kucaj !rules za vise informacija",
     "askskip": "/me @%%NAME%%, Traziti skip je protiv pravila, ukoliko ih ne znas napisi !rules",
-    "spam": "/me :warning: @%%NAME%%, [Poruka obrisana] Spamati ovdje je zabranjeno, za vise info procitaj pravila.",
+    "spam": "/me :warning: @%%NAME%%, [Warning] Spamati ovdje je zabranjeno, ukoliko nastavis mogao bi da dobijes mute na odredjeno vrijeme, ako vec nisi procitaj pravila sobe.",
     "roomadvertising": "/me :warning: @%%NAME%%, Postavljati linkove od drugih soba ovdje je strogo zabranjeno.",
     "adfly": "/me @%%NAME%%, Promjenite vas autowoot: http://www.balkan-party.cf/autowoot.html",
 
