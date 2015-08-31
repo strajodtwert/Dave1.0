@@ -290,7 +290,7 @@
     "unmuted": "/me [!unmute] :white_check_mark: @%%NAME%% je ponistio mute od @%%USERNAME%%.",
     "muterank": "/me [!mute] @%%NAME%% Ne mozes to.",
     "oplist": "/me [!op] @%%NAME%% Overplayed/Banned lista: %%LINK%%",
-    "pong": "/me Pong!",
+    "pong": "/me [@%%NAME%%] Pong!",
     "reload": "/me Ponovno pokretanje u toku...",
     "removenotinwl": "/me [!remove] @%%NAME%% Odredjeni korisnik @%%USERNAME%% nije na listi cekanja..",
     "roomrules": "/me [!rules] Pravila sobe mozete pronaci ovdje: %%LINK%%",
