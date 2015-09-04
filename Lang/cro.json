@@ -199,6 +199,7 @@
     "spam": "/me :warning: @%%NAME%%, [Warning] Spamati ovdje je zabranjeno, ukoliko nastavis mogao bi da dobijes mute na odredjeno vrijeme, ako vec nisi procitaj pravila sobe.",
     "roomadvertising": "/me :warning: @%%NAME%%, Postavljati linkove od drugih soba ovdje je strogo zabranjeno.",
     "adfly": "/me @%%NAME%%, Promjenite vas autowoot: http://www.balkan-party.cf/autowoot.html",
+    "mention": "/me @%%NAME%%, Zdravo, ja sam bot ove sobe, ako imas neka pitanja oznaci drugog admina.",
 
     "botwoot": "/me [!dance] :white_check_mark: @%%NAME%%, Autowoot aktiviran.",
     "youaredj": "\/me @%%NAME%%, Vec si Dj.",
