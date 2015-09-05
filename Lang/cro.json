@@ -229,7 +229,7 @@
     "currentbotname": "\/me Ime bota trenutno podeseno na: %%BOTNAME%%",
     "gameon": "/me @djs %%NAME%% Je pokrenuo PickTheNumber. Napisi broj od :one: do :nine:. Ukoliko te bot oznaci sa istim brojem koji si napisao pobjedio si. Ukoliko ima vise pobjednika racuna se onaj prvi kojeg je bot oznacio.",
     "trutherror": "/me [Truth] %%NAME%% Greska.. Pokusaj ponovo, vjerovatno si oznacio nekoga.",
-    "truth": "/me %%NAME%% %%FORTUNE%%",
+    "truth": "/me [!truth] %%NAME%% %%FORTUNE%%",
 
 
     "alreadyadding": "/me Korisnik je vec dodan! Premjestanje na %%POSITION%%.",
