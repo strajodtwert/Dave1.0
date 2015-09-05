@@ -14,7 +14,7 @@
              "Have you ever lied to your best friend?",
              "If you were stuck on a deserted island, which friend would you want with you?",
              "How long have you gone without showering?",
-             "What don't you want anyone in this group to ask you? (Be sure to keep it in mind for future rounds!)",
+             "What don't you want anyone in this group to askse you? (Be sure to keep it in mind for future rounds!)",
              "Have you ever told a lie during a game of Truth or Dare? What was it and why?",
              "Have you ever had a crush on anyone here?",
              "Have you ever stolen anything?",
@@ -228,6 +228,8 @@
     "botnameset": "\/me :white_check_mark: Ime Bota podeseno na:: %%BOTNAME%%",
     "currentbotname": "\/me Ime bota trenutno podeseno na: %%BOTNAME%%",
     "gameon": "/me @djs %%NAME%% Je pokrenuo PickTheNumber. Napisi broj od :one: do :nine:. Ukoliko te bot oznaci sa istim brojem koji si napisao pobjedio si. Ukoliko ima vise pobjednika racuna se onaj prvi kojeg je bot oznacio.",
+    "trutherror": "/me [Truth] %%NAME%% Greska.. Pokusaj ponovo, vjerovatno si oznacio nekoga.",
+    "truth": "/me %%NAME%% %%FORTUNE%%",
 
 
     "alreadyadding": "/me Korisnik je vec dodan! Premjestanje na %%POSITION%%.",
