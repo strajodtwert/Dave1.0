@@ -234,7 +234,7 @@
     "alreadyadding": "/me Korisnik je vec dodan! Premjestanje na %%POSITION%%.",
     "adding": "/me :white_check_mark: Dodan @%%NAME%% na wait listu. Trenutna pozicija: %%POSITION%%.",
     "thorNotClose": "\/me [!thor] @%%NAME%%, nisi dostojan da uzmes cekic, nisi ni blizu toga.",
-    "thorcd": "\/me [!thor] @%%NAME%% mozes pokusati podignuti cekic za %%TIME%% minuta.",
+    "thorcd": "\/me [!thor] @%%NAME%% mozes pokusati ponovo za %%TIME%% minuta.",
     "thorWorthy": "\/me [!thor] @%%NAME%% dostojan si :hammer:, cestitam!",
     "thorNotWorthy": "\/me [!thor] @%%NAME%% nisi dostojan, pokusaj ponovo.",
 
