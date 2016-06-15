@@ -280,7 +280,7 @@
         status: false,
         name: "Dave1.0",
         loggedInID: "23625731",
-        scriptLink: "https://www.ajdin.gq/files/theme/plugdj/dave1.0.js",
+        scriptLink: "https://rawgit.com/Ajdin1997/Dave1.0/master/Dave1.0.js",
         cmdLink: "hhttp://www.balkan19.ga/bBot.html",
         chatLink: "https://rawgit.com/Ajdin1997/Dave1.0/master/Lang/cro.json",
         chat: null,
