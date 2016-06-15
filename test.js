@@ -1471,9 +1471,6 @@
                 return 'Function.'
             };
 			//DATABASE LOGIN
-			
-				retrieveSettings();
-				retrieveFromStorage();
 				
 				if(bBot.settings.dbPassword == null)
 				{
