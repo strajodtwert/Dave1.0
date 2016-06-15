@@ -1290,6 +1290,11 @@
                   API.moderateDeleteChat(id);
                     }, 60 * 1000, chat.cid);
                       }
+                      if(msg.indexOf("Osvojio/la") !== -1){                
+                  setTimeout(function (id) {
+                  API.moderateDeleteChat(id);
+                    }, 60 * 1000, chat.cid);
+                      }
                   if(msg.indexOf("cao bote") !== -1 || msg.indexOf("bote cao") !== -1 || msg.indexOf("hai") !== -1 || msg.indexOf("pozz bote") !== -1 || msg.indexOf("doing good bot?") !== -1 || msg.indexOf("bot doing good?") !== -1 || msg.indexOf("hows it going            bot") !== -1 || msg.indexOf("bot how is it going") !== -1 || msg.indexOf("how you doing bot") !== -1 || msg.indexOf("bot how you doing") !== -1){                
                     var HRUMsg = ["Pozz","hello","cao, cao"];
                     API.sendChat("@" + chat.un + " " + HRUMsg[Math.floor(Math.random() * HRUMsg.length)]);
