@@ -1044,7 +1044,7 @@
 			var lastdjplayed = bBot.userUtilities.lookupUser(obj.lastPlay.dj.id);
 			lastdjplayed.balkanPoints += reward;
 			API.sendChat("/me @" + lastdjplayed.username + " Osvojio/la si " + reward + " BPPoena.");
-            $.post("http://www.balkan19.ga/leaderboard-edit.php",{winnerid:lastdjplayed.id,winnername:lastdjplayed.username,pointswon:reward,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){return API.sendChat("/me Problem sa upisivanjem informacija u bazu podataka!");};});
+            $.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:lastdjplayed.id,winnername:lastdjplayed.username,pointswon:reward,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){return API.sendChat("/me Problem sa upisivanjem informacija u bazu podataka!");};});
 			}
 			
 			
@@ -1473,7 +1473,7 @@
 				function checkPassword() {
 				var dbPassword1 = prompt("Unesite lozinku od baze podataka: ");
 				$.ajaxSetup({async: false});
-				$.post("http://www.balkan19.ga/leaderboard-edit.php",{dbPassword:dbPassword1},function(data,status){
+				$.post("http://leaderboard.pe.hu/leaderboard-edit.php",{dbPassword:dbPassword1},function(data,status){
 					console.log(data);
 					var str = data;
 					if(String(str).trim() === "PWD_OK")
@@ -4448,7 +4448,7 @@ API.on(API.ADVANCE, meh);
                         console.log(arguments);
                         if (arguments[0] == "!rewards" && arguments.length == 1)
                         {
-                            $.post("http://www.balkan19.ga/leaderboard-getpoints.php",{winnerid:sender.id}, function(data)
+                            $.post("http://leaderboard.pe.hu/leaderboard-getpoints.php",{winnerid:sender.id}, function(data)
                             {
                                 sender.balkanPoints = data;
                             });
@@ -4479,7 +4479,7 @@ API.on(API.ADVANCE, meh);
                                     reciever = reciever.trim().substring(1);
                                 }
                                 var recieverU = bBot.userUtilities.lookupUserName(reciever);
-                                $.post("http://www.balkan19.ga/leaderboard-getpoints.php",{winnerid:sender.id,loserid:recieverU.id}, function(data)
+                                $.post("http://leaderboard.pe.hu/leaderboard-getpoints.php",{winnerid:sender.id,loserid:recieverU.id}, function(data)
                                 {
                                     var points = data.trim().split(' ');
                                     sender.balkanPoints = points[0];
@@ -4536,7 +4536,7 @@ API.on(API.ADVANCE, meh);
                                     sender.balkanPoints += sender.offered;
                                     sender.better.balkanPoints -= sender.offered;
                                     finishBet(sender);
-                                    $.post("http://www.balkan19.ga/leaderboard-edit.php",{winnerid:sender.id,winnername:sender.username,pointswon:sender.offered,loserid:sender.better.id,losername:sender.better.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
+                                    $.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:sender.id,winnername:sender.username,pointswon:sender.offered,loserid:sender.better.id,losername:sender.better.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
                                     return API.sendChat("/me @" + chat.un + " Oklada je završena! " + sender.username + " je pobjedio i osvojio " + sender.offered + " BPPoena.");
                                 }
                                 else
@@ -4544,7 +4544,7 @@ API.on(API.ADVANCE, meh);
                                     sender.balkanPoints -= sender.offered;
                                     sender.better.balkanPoints += sender.offered;
                                     finishBet(sender);
-                                    $.post("http://www.balkan19.ga/leaderboard-edit.php",{winnerid:sender.better.id,winnername:sender.better.username,pointswon:sender.better.offered,loserid:sender.id,losername:sender.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
+                                    $.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:sender.better.id,winnername:sender.better.username,pointswon:sender.better.offered,loserid:sender.id,losername:sender.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
                                     return API.sendChat("/me @" + chat.un + " Oklada je završena! " + sender.better.username + " je pobjedio i osvojio " + sender.offered + " BPPoena");
                                 }
                                 
