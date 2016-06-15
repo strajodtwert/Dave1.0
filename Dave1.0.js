@@ -6,6 +6,7 @@
     from the respected owner(s) and developer(s).
 
     CURRENT DEVELOPERS: AJDIN (www.ajdin.gq)
+                        Warix (warixmods.ga)
 
     CONTACT: ajdin291@gmail.com
     WEBSITE: http://www.balkan19.ga/
@@ -26,6 +27,24 @@
     LAST UPDATED: 20.03.2016
 
     ======================================================
+*/
+
+/*
+    AnimeSrbijaBot BOT SCRIPT
+
+	Custom bot for a Plug.dj community, based on dave1.0 script
+	
+	This script is modified by Warix3 (Toni Pejić) warixmods.ga
+	And AnimeSrbija commands are added by Warix3.
+	
+	Copyright (c) 2016 Warix3
+        Please do not copy or modify without permission
+        from the respected owner(s) and developer(s).
+	
+	Author: Toni Pejić (Warix3)
+	Github: Warix3
+	Website: warixmods.ga
+	E-mail: toni.pejic98@gmail.com
 */
 
 (function () {
@@ -270,16 +289,16 @@
 	};
 	
     var botCreator = "Yamatsui";
-    var botMaintainer = "Ajdin"
+    var botMaintainer = "BP Team"
     var botCreatorIDs = ["4329684"];
 
     var bBot = {
-        version: "2.1.3",
+        version: "2.1.4",
         status: false,
         name: "Dave1.0",
         loggedInID: "23625731",
         scriptLink: "https://rawgit.com/Ajdin1997/Dave1.0/master/Dave1.0.js",
-        cmdLink: "hhttp://www.balkan19.ga/bBot.html",
+        cmdLink: "http://www.balkan19.ga/bBot.html",
         chatLink: "https://rawgit.com/Ajdin1997/Dave1.0/master/Lang/cro.json",
         chat: null,
 		emojimap: null,
@@ -454,7 +473,7 @@
                 songCount: 0
             };
             this.lastKnownPosition = null;
-			//anime points
+			//points
 			this.balkanPoints = 0;
 			this.better = null;
 			this.offered = 0;
@@ -997,7 +1016,7 @@
                 }
             }
 			
-			//AUTOBAN MEH
+			//mehAutoBan
 			if(bBot.settings.mehAutoBan)
 			{
 				var limit = bBot.settings.mehAutoBanLimit;
@@ -1041,8 +1060,9 @@
 			var reward = obj.lastPlay.score.positive + obj.lastPlay.score.grabs - obj.lastPlay.score.negative;
 			var lastdjplayed = bBot.userUtilities.lookupUser(obj.lastPlay.dj.id);
 			lastdjplayed.balkanPoints += reward;
-			API.sendChat("/me @" + lastdjplayed.username + " Osvojio/la si " + reward + " BPPoena.");
-            $.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:lastdjplayed.id,winnername:lastdjplayed.username,pointswon:reward,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){return API.sendChat("/me Problem sa upisivanjem informacija u bazu podataka!");};});
+			API.sendChat("/me @" + lastdjplayed.username + " Osvojio/la si " + reward + " BP Poena.");
+            $.ajaxSetup({async: true});
+			$.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:lastdjplayed.id,winnername:lastdjplayed.username,pointswon:reward,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){return API.sendChat("/me Problem sa upisivanjem informacija u bazu podataka!");};});
 			}
 			
 			
@@ -1469,10 +1489,11 @@
                 return 'Function.'
             };
 			//DATABASE LOGIN
-			if(bBot.settings.dbPassword == null)
-			{
-				checkPassword();
 				
+				if(bBot.settings.dbPassword == null)
+				{
+					checkPassword();
+				}
 				function checkPassword() {
 				var dbPassword1 = prompt("Unesite lozinku od baze podataka: ");
 				$.ajaxSetup({async: false});
@@ -1481,8 +1502,15 @@
 					var str = data;
 					if(String(str).trim() === "PWD_OK")
 					{
-						//PUT ALL OF STARTUP CODE INSIDE OF THIS IF EXECUTION CODE
 						bBot.settings.dbPassword = dbPassword1;
+					}else
+					{
+						alert("Netočna lozinka, pokušajte ponovo!");
+						checkPassword();
+					}
+				});}
+						//PUT ALL OF STARTUP CODE INSIDE OF THIS IF EXECUTION CODE
+						
 						
 						var u = API.getUser();
 						if (bBot.userUtilities.getPermission(u) < 2) return API.chatLog(bBot.chat.greyuser);
@@ -1584,15 +1612,14 @@
 						API.chatLog('Volume set to ' + bBot.settings.startupVolume);
 						loadChat(API.sendChat(subChat(bBot.chat.online, {botname: bBot.settings.botName, version: bBot.version})));
 						loadEmoji();
-					}else
-					{
-						alert("Netočna lozinka, pokušajte ponovo!");
-						checkPassword();
-					}
-				});
-				}
-			}
-			//AnimeSrbija end
+						
+							
+						
+					
+				
+				
+			
+			//BP END
             
         },
         commands: {
@@ -2236,7 +2263,8 @@
                     }
                 }
             },
-            leaderboardCommand: {
+
+           leaderboardCommand: {
                 command: 'leaderboard',
                 rank: 'user',
                 type: 'exact',
@@ -2249,7 +2277,7 @@
                     }
                 }
             },
-
+            
             englishCommand: {
                 command: 'english',
                 rank: 'bouncer',
@@ -2314,7 +2342,7 @@
                 }
             },
 
-            ffbCommand: {
+            fbCommand: {
                 command: 'fb',
                 rank: 'user',
                 type: 'exact',
@@ -3119,7 +3147,7 @@
                 }
             },
 
-            rulessCommand: {
+            rulesCommand: {
                 command: 'rules',
                 rank: 'user',
                 type: 'exact',
@@ -3241,7 +3269,7 @@
                 }
             },
 
-           sourceCommand: {
+            sourceCommand: {
                 command: 'source',
                 rank: 'user',
                 type: 'exact',
@@ -3249,7 +3277,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        API.sendChat('/me This bot was created by ' + botCreator + ', but is now maintained by ' + botMaintainer + ".");
+                        API.sendChat("/me The source of code is basic bot with custom commands. Maintaned by BP Team.");
                     }
                 }
             },
@@ -4145,7 +4173,7 @@ API.sendChat(subChat(bBot.chat.eldox, {name: chat.un}));
 }
 }
 },
-stumblrCommand: {
+/* stumblrCommand: {
 command: 'stumblr',
 rank: 'user',
 type: 'exact',
@@ -4157,7 +4185,7 @@ var link = "http://name-is-already-taken.tumblr.com/";
 API.sendChat(subChat(bBot.chat.stumblr, {name: chat.un, link: link}));
 }
 }
-}, 
+}, */
 askCommand: {
 command: 'ask',
 rank: 'user',
@@ -4402,11 +4430,11 @@ API.on(API.ADVANCE, meh);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         if (typeof bBot.settings.youtubeLink === "string")
-                            API.sendChat(subChat(bBot.chat.youtube, {name: chat.un, link: bBot.settings.youtubeLink}));
+                            API.sendChat(subChat(bBot.chat.youtube, {name: chat.un, link: "https://www.youtube.com/user/animesrbija2013"}));
                     }
                 }
             },
-			//AnimeSrbija commands
+			//CUSTOM
 			slowCommand: {
                 command: 'slow',
                 rank: 'manager',
@@ -4446,7 +4474,7 @@ API.on(API.ADVANCE, meh);
             },
 			
 			rewardsCommand: {
-                command: 'rewards',
+				command: 'rewards',
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
@@ -4454,183 +4482,192 @@ API.on(API.ADVANCE, meh);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         var msg = chat.message;
-                        var sender = bBot.userUtilities.lookupUser(chat.uid);
-                        var arguments = msg.split(' ');
-                        var reciever = "";
-                        var c = 0;
-                        var rand = Math.random();
-                        
-                        arguments = arguments.filter(checkNull);
-                        console.log(arguments);
+						var sender = bBot.userUtilities.lookupUser(chat.uid);
+						var arguments = msg.split(' ');
+						var reciever = "";
+						var c = 0;
+						var rand = Math.random();
+						
+						arguments = arguments.filter(checkNull);
+						console.log(arguments);
                         if (arguments[0] == "!rewards" && arguments.length == 1)
-                        {
-                            $.post("http://leaderboard.pe.hu/leaderboard-getpoints.php",{winnerid:sender.id}, function(data)
-                            {
-                                sender.balkanPoints = data;
-                            });
-                            return API.sendChat("/me @" + chat.un + " Stanje na racunu: " + sender.balkanPoints + " BPPoena.");
-                        }
-                        if(arguments.length > 3)
-                        {
-                            for(i = 3; i < arguments.length; i++)
-                            {
-                                if(reciever == "")
-                                {
-                                    reciever = reciever + arguments[i];
-                                }
-                                else
-                                {
-                                    reciever = reciever + " " + arguments[i];
-                                }
-                            }
-                            console.log(reciever);
-                            if(arguments[1] == "bet" && !isNaN(arguments[2]) && arguments[2] > 0)
-                            {
-                                var senderpoints;
-                                var recieverpoints;
-                                
-                                reciever = reciever.trim();
-                                if(reciever.startsWith("@"))
-                                {
-                                    reciever = reciever.trim().substring(1);
-                                }
-                                var recieverU = bBot.userUtilities.lookupUserName(reciever);
-                                $.post("http://leaderboard.pe.hu/leaderboard-getpoints.php",{winnerid:sender.id,loserid:recieverU.id}, function(data)
-                                {
-                                    var points = data.trim().split(' ');
-                                    sender.balkanPoints = points[0];
-                                    recieverU.balkanPoints = points[1]
-                                });
-                                console.log(recieverU.inRoom);
-                                if(recieverU == null || recieverU.inRoom && recieverU != sender)
-                                {
-                                    var offer = parseInt(arguments[2]);
-                                    if(sender.isBetting)
-                                    {
-                                        return API.sendChat("/me @" + chat.un + " već si započeo okladu s nekim! Upiši !ap \"stop\" da ju prekineš.");
-                                    }
-                                    if(recieverU.isBetting)
-                                    {
-                                        return API.sendChat("/me @" + chat.un + " " + recieverU.username + " se već kladi s nekim!");
-                                    }
-                                    if(sender.balkanPoints < offer)
-                                    {
-                                        return API.sendChat("/me @" + chat.un + " nemaš dovoljno BPPoena za tu okladu!");
-                                    }
-                                    if(recieverU.balkanPoints < offer)
-                                    {
-                                        return API.sendChat("/me @" + chat.un + " osoba s kojom se želiš kladiti nema dovoljno BPPoena za tu okladu! Ima samo: " + recieverU.balkanPoints);
-                                    }
-                                    
-                                    recieverU.isBetting = true;
-                                    recieverU.better = sender;
-                                    recieverU.offered = offer;
-                                    sender.isBetting = true;
-                                    sender.toWho = recieverU;
-                                    API.sendChat("/me @" + recieverU.username + " " + chat.un + " te poziva na opkladu! u " + offer + " BPpoena. Upiši \"!rewards accept\" ili \"!rewards decline\"");
-                                    API.sendChat("/me @" + chat.un + " ako želiš prekinuti okladu upiši \"!rewards stop\" ");
-                                    
-                                }else
-                                {
-                                    return API.sendChat("/me @" + chat.un + " osoba s kojom se želiš kladiti trenutno nije online! , ili si se pokušao kladiti sam s sobom!");
-                                }
-                            }
-                            {
-                                return API.sendChat("/me @" + chat.un + " Upisao si komandu koja ne postoji. Upiši !rewards help za vise informacija.");
-                            }
+						{
+							$.ajaxSetup({async: false});
+							$.post("http://leaderboard.pe.hu/leaderboard-getpoints.php",{winnerid:sender.id,dbPassword:bBot.settings.dbPassword}, function(data)
+							{
+								sender.balkanPoints = parseInt(data.trim());
+							});
+							return API.sendChat("/me @" + chat.un + " Stanje na racunu: " + sender.balkanPoints + " BP Poena");
+						}
+						if(arguments.length > 3)
+						{
+							for(i = 3; i < arguments.length; i++)
+							{
+								if(reciever == "")
+								{
+									reciever = reciever + arguments[i];
+								}
+								else
+								{
+									reciever = reciever + " " + arguments[i];
+								}
+							}
+							console.log(reciever);
+							if(arguments[1] == "bet" && !isNaN(arguments[2]) && arguments[2] > 0)
+							{
+								var senderpoints;
+								var recieverpoints;
+								
+								reciever = reciever.trim();
+								if(reciever.startsWith("@"))
+								{
+									reciever = reciever.trim().substring(1);
+								}
+								var recieverU = bBot.userUtilities.lookupUserName(reciever);
+								$.ajaxSetup({async: false});
+								$.post("http://leaderboard.pe.hu/leaderboard-getpoints.php",{winnerid:sender.id,loserid:recieverU.id}, function(data)
+								{
+									var points = data.trim().split(' ');
+									sender.balkanPoints = parseInt(points[0]);
+									recieverU.balkanPoints = parseInt(points[1]);
+								});
+								console.log(recieverU.inRoom);
+								if(recieverU == null || recieverU.inRoom && recieverU != sender)
+								{
+									var offer = parseInt(arguments[2]);
+									if(sender.isBetting)
+									{
+										return API.sendChat("/me @" + chat.un + " već si započeo okladu s nekim! Upiši !rewards \"stop\" da ju prekineš!");
+									}
+									if(recieverU.isBetting)
+									{
+										return API.sendChat("/me @" + chat.un + " " + recieverU.username + " se već kladi s nekim!");
+									}
+									if(sender.balkanPoints < offer)
+									{
+										return API.sendChat("/me @" + chat.un + " nemaš dovoljno BP Poena za tu okladu!");
+									}
+									if(recieverU.balkanPoints < offer)
+									{
+										return API.sendChat("/me @" + chat.un + " osoba s kojom se želiš kladiti nema dovoljno BP Poena za tu okladu! Ima samo: " + recieverU.balkanPoints);
+									}
+									
+									recieverU.isBetting = true;
+									recieverU.better = sender;
+									recieverU.offered = offer;
+									sender.isBetting = true;
+									sender.toWho = recieverU;
+									API.sendChat("/me @" + recieverU.username + " " + chat.un + " te poziva na opkladu! u " + offer + " BP Poena. Upiši \"!rewards accept\" ili \"!rewards decline\"");
+									API.sendChat("/me @" + chat.un + " ako želiš prekinuti okladu upiši \"!rewards stop\" ");
+									
+								}else
+								{
+									return API.sendChat("/me @" + chat.un + " osoba s kojom se želiš kladiti trenutno nije online! , ili si se pokušao kladiti sam s sobom!");
+								}
+							}else
+							{
+								return API.sendChat("/me @" + chat.un + " Unijeli ste nepostojecu komandu. Upiši !rewards help za vise informacija.");
+							}
                         }else if(arguments[1] == "accept")
-                        {
-                            if(!sender.isBetting)
-                            {
-                                return API.sendChat("/me @" + chat.un + " Nitko vas nije izazvao na okladu!");
-                            }
-                            if(sender.better.inRoom)
-                            {
-                                
-                                if(rand >= 0.5)
-                                {
-                                    sender.balkanPoints += sender.offered;
-                                    sender.better.balkanPoints -= sender.offered;
-                                    finishBet(sender);
-                                    $.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:sender.id,winnername:sender.username,pointswon:sender.offered,loserid:sender.better.id,losername:sender.better.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
-                                    return API.sendChat("/me @" + chat.un + " Oklada je završena! " + sender.username + " je pobjedio i osvojio " + sender.offered + " BPPoena.");
-                                }
-                                else
-                                {
-                                    sender.balkanPoints -= sender.offered;
-                                    sender.better.balkanPoints += sender.offered;
-                                    finishBet(sender);
-                                    $.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:sender.better.id,winnername:sender.better.username,pointswon:sender.better.offered,loserid:sender.id,losername:sender.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
-                                    return API.sendChat("/me @" + chat.un + " Oklada je završena! " + sender.better.username + " je pobjedio i osvojio " + sender.offered + " BPPoena");
-                                }
-                                
-                            }
-                            else
-                            {
-                                finishBet(sender);
-                                return API.sendChat("/me @" + chat.un + " osoba koja te izazvala na okladu je trenutno offline, oklada se prekida!");
-                            }
-                        }else if(arguments[1] == "decline" )
-                        {
-                            if(!sender.isBetting)
-                            {
-                                return API.sendChat("/me @" + chat.un + " Nitko vas nije izazvao na okladu!");
-                            }
-                            finishBet(sender);
-                            return API.sendChat("/me @" + chat.un + " oklada prekinuta!");
-                        }else if(arguments[1] == "stop")
-                        {
-                            sender.isBetting = false;
-                            sender.toWho.isBetting = false;
-                            sender.toWho = null;
-                            
-                            return API.sendChat("/me @" + chat.un + " oklada prekinuta!");
-                        }else if(arguments[1] == "leaderboard")
-                        {
-                        //  var leaders = bBot.room.users;
-                        //  var ph;
-                        //  for(i = 0; i< leaders.length; i++)
-                        //  {
-                        //      for(j = 0; j<leaders.length;i++)
-                        //      {
-                        //          if(leaders[i].AnimePoins < leaders[j].balkanPoints)
-                        //          {
-                        //              ph = leaders[i];
-                        //              leaders[j] = leaders[i];
-                        //              leaders[i] = ph;
-                        //          }
-                        //      }
-                        //  }
-                        //  API.sendChat("/me Top 10 osoba, s najviše bodova:");
-                        //  for(i = 0; i<leaders.length; i++)
-                        //  {
-                        //      API.sendChat("/me " + i + ". " + leaders[i].username + " : " + leaders[i].balkanPoints);
-                        //  }
-                            return API.sendChat("Pogledaj leaderboard na ovom linku: http://leaderboard.pe.hu/leaderboard");
-                        
-                        }else if(arguments[1] == "help")
-                        {
-                            API.sendChat("/me @" + chat.un + " Da bi vidio koliko imaš BPPoena upiši !rewards, da bi se kladio s nekim upiši !rewards [bodovi] [ime],dda prekines napiši !rewards stop, da prihvatis napiši !rewards accept, da bi odbio okladu napiši !rewards decline");
-                            return API.sendChat("/me da vidiš leaderboard upiši !rewards leaderboard");
-                        }else
-                        {
-                            return API.sendChat("/me @" + chat.un + " Upisao si nepostojecu komandu. Upiši !rewards help za vise informacija.");
-                        }
-                        function checkNull(arg)
-                        {
-                            return arg !== null;
-                        }
-                        function finishBet(sender)
-                        {
-                            sender.better.isBetting = false;
-                            sender.isBetting = false;
-                            sender.better = null;
-                            return;
-                        }
-            }       
+						{
+							if(!sender.isBetting)
+							{
+								return API.sendChat("/me @" + chat.un + " Nitko vas nije izazvao na okladu!");
+							}
+							if(sender.better.inRoom)
+							{
+								
+								if(rand >= 0.5)
+								{
+									sender.balkanPoints += sender.offered;
+									sender.better.balkanPoints -= sender.offered;
+									
+									$.ajaxSetup({async: false});
+									$.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:sender.id,winnername:sender.username,pointswon:sender.offered,loserid:sender.better.id,losername:sender.better.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
+									finishBet(sender);
+									return API.sendChat("/me @" + chat.un + " Oklada je završena! " + sender.username + " je pobjedio i osvojio " + sender.offered + " BP Poena");
+								}
+								else
+								{
+									sender.balkanPoints -= sender.offered;
+									sender.better.balkanPoints += sender.offered;
+			
+									$.ajaxSetup({async: false});
+									$.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:sender.better.id,winnername:sender.better.username,pointswon:sender.better.offered,loserid:sender.id,losername:sender.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
+									var betusr = sender.better.username;
+									finishBet(sender);
+									return API.sendChat("/me @" + chat.un + " Oklada je završena! " + betusr + " je pobjedio i osvojio " + sender.offered + " BP Poena");
+									
+								}
+								
+							}
+							else
+							{
+								finishBet(sender);
+								return API.sendChat("/me @" + chat.un + " osoba koja te izazvala na okladu je trenutno offline, oklada se prekida!");
+							}
+						}else if(arguments[1] == "decline" )
+						{
+							if(!sender.isBetting)
+							{
+								return API.sendChat("/me @" + chat.un + " Nitko vas nije izazvao na okladu!");
+							}
+							finishBet(sender);
+							return API.sendChat("/me @" + chat.un + " oklada prekinuta!");
+						}else if(arguments[1] == "stop")
+						{
+							sender.isBetting = false;
+							sender.toWho.isBetting = false;
+							sender.toWho = null;
+							
+							return API.sendChat("/me @" + chat.un + " oklada prekinuta!");
+						}else if(arguments[1] == "leaderboard")
+						{
+						//	var leaders = bBot.room.users;
+						//	var ph;
+						//	for(i = 0; i< leaders.length; i++)
+						//	{
+						//		for(j = 0; j<leaders.length;i++)
+						//		{
+						//			if(leaders[i].AnimePoins < leaders[j].balkanPoints)
+						//			{
+						//				ph = leaders[i];
+						//				leaders[j] = leaders[i];
+						//				leaders[i] = ph;
+						//			}
+						//		}
+						//	}
+						//	API.sendChat("/me Top 10 osoba, s najviše bodova:");
+						//	for(i = 0; i<leaders.length; i++)
+						//	{
+						//		API.sendChat("/me " + i + ". " + leaders[i].username + " : " + leaders[i].balkanPoints);
+						//	}
+							return API.sendChat("Leaderboard tabela: http://leaderboard.pe.hu/leaderboard");
+						
+						}else if(arguments[1] == "help")
+						{
+							API.sendChat("/me @" + chat.un + " Da bi vidio koliko imaš Poena upiši !rewards, da bi se kladio s nekim upiši !rewards [bodovi] [ime],da bi prekinio napiši !rewards stop, da prihvatis okladu napiši !rewards accept, da bi odbio okladu napiši !rewards decline");
+							return API.sendChat("/me Da vidiš leaderboard upiši !leaderboard");
+						}else
+						{
+							return API.sendChat("/me @" + chat.un + " Unijeli ste nepostojecu koamndu. Upiši !rewards help za vise informacija");
+						}
+						function checkNull(arg)
+						{
+							return arg !== null;
+						}
+						function finishBet(sender)
+						{
+							sender.better.isBetting = false;
+							sender.isBetting = false;
+							sender.better = null;
+							return;
+						}
+			}		
         } 
         },
-			/*announceCommand: {
+        
+			/* announceCommand: {
 					command: 'announce',
 					rank: 'mod',
 					type: 'startsWith',
@@ -4698,9 +4735,8 @@ API.on(API.ADVANCE, meh);
 						}
 					}
 				}, */
-
-		   autobanmehCommand: {
-                command: 'autobanmeh',
+			mehautobanCommand: {
+                command: 'mehautoban',
                 rank: 'manager',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
@@ -4718,7 +4754,7 @@ API.on(API.ADVANCE, meh);
                             limit = msg.substring(cmd.length + 1);
                             if (isNaN(limit))
 							{
-								return API.sendChat("/me @" + chat.un + "Neispravna komanda, upiši !autobanmeh [limit], gdje je limit maksimalan broj mehova zaredom");
+								return API.sendChat("/me @" + chat.un + "Neispravna komanda, upiši !mehautoban [limit], gdje je limit maksimalan broj mehova zaredom");
 							}
                         }
                         if(!bBot.settings.mehAutoBan)
