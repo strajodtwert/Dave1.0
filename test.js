@@ -474,7 +474,7 @@
             };
             this.lastKnownPosition = null;
 			//anime points
-			this.animePoints = 0;
+			this.balkanPoints = 0;
 			this.better = null;
 			this.offered = 0;
 			this.isBetting = false;
@@ -1059,7 +1059,7 @@
 			{
 			var reward = obj.lastPlay.score.positive + obj.lastPlay.score.grabs - obj.lastPlay.score.negative;
 			var lastdjplayed = bBot.userUtilities.lookupUser(obj.lastPlay.dj.id);
-			lastdjplayed.animePoints += reward;
+			lastdjplayed.balkanPoints += reward;
 			API.sendChat("/me @" + lastdjplayed.username + " Osvojio/la si " + reward + " BP Poena.");
             $.ajaxSetup({async: true});
 			$.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:lastdjplayed.id,winnername:lastdjplayed.username,pointswon:reward,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){return API.sendChat("/me Problem sa upisivanjem informacija u bazu podataka!");};});
