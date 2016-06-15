@@ -29,6 +29,24 @@
     ======================================================
 */
 
+/*
+    AnimeSrbijaBot BOT SCRIPT
+
+	Custom bot for a Plug.dj community, based on dave1.0 script
+	
+	This script is modified by Warix3 (Toni Pejić) warixmods.ga
+	And AnimeSrbija commands are added by Warix3.
+	
+	Copyright (c) 2016 Warix3
+        Please do not copy or modify without permission
+        from the respected owner(s) and developer(s).
+	
+	Author: Toni Pejić (Warix3)
+	Github: Warix3
+	Website: warixmods.ga
+	E-mail: toni.pejic98@gmail.com
+*/
+
 (function () {
 
     /*window.onerror = function() {
@@ -283,9 +301,9 @@
         cmdLink: "http://www.balkan19.ga/bBot.html",
         chatLink: "https://rawgit.com/Ajdin1997/Dave1.0/master/Lang/cro.json",
         chat: null,
-		emojimap: null,
+	emojimap: null,
         loadChat: loadChat,
-		dbPassword: null,
+	dbPassword: null,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
@@ -455,8 +473,8 @@
                 songCount: 0
             };
             this.lastKnownPosition = null;
-			//points
-			this.balkanPoints = 0;
+			//anime points
+			this.animePoints = 0;
 			this.better = null;
 			this.offered = 0;
 			this.isBetting = false;
@@ -998,7 +1016,7 @@
                 }
             }
 			
-			//mehAutoBan
+			//AnimeSrbija mehAutoBan
 			if(bBot.settings.mehAutoBan)
 			{
 				var limit = bBot.settings.mehAutoBanLimit;
@@ -1036,12 +1054,12 @@
 				API.sendChat("/me " + bBot.room.announceMessage);
 				bBot.room.announceStartTime = Date.now();
 			}
-			//POINTS
+			//AnimeSrbija Anime points
 			if(obj.lastPlay != null)
 			{
 			var reward = obj.lastPlay.score.positive + obj.lastPlay.score.grabs - obj.lastPlay.score.negative;
 			var lastdjplayed = bBot.userUtilities.lookupUser(obj.lastPlay.dj.id);
-			lastdjplayed.balkanPoints += reward;
+			lastdjplayed.animePoints += reward;
 			API.sendChat("/me @" + lastdjplayed.username + " Osvojio/la si " + reward + " BP Poena.");
             $.ajaxSetup({async: true});
 			$.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:lastdjplayed.id,winnername:lastdjplayed.username,pointswon:reward,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){return API.sendChat("/me Problem sa upisivanjem informacija u bazu podataka!");};});
@@ -1529,8 +1547,6 @@
 			
 						Check = setInterval(function(){ detect() }, 2000);
 			
-						retrieveSettings();
-						retrieveFromStorage();
 						window.bot = bBot;
 						bBot.roomUtilities.updateBlacklists();
 						setInterval(bBot.roomUtilities.updateBlacklists, 60 * 60 * 1000);
@@ -1601,7 +1617,7 @@
 				
 				
 			
-			//BP END
+			//END
             
         },
         commands: {
@@ -2246,20 +2262,6 @@
                 }
             },
 
-           leaderboardCommand: {
-                command: 'leaderboard',
-                rank: 'user',
-                type: 'exact',
-                functionality: function (chat, cmd) {
-                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
-                    else {
-                        var link = 'http://leaderboard.pe.hu/leaderboard';
-                        API.sendChat(subChat(bBot.chat.leaderboardlink, {name: chat.un, link: link}));
-                    }
-                }
-            },
-            
             englishCommand: {
                 command: 'english',
                 rank: 'bouncer',
@@ -3878,7 +3880,7 @@
                 }
             },
 
-            //Custom Commands
+            //CUSTOM
 
            TruthCommand: {
                 command: 'truth',
@@ -4155,7 +4157,7 @@ API.sendChat(subChat(bBot.chat.eldox, {name: chat.un}));
 }
 }
 },
-/* stumblrCommand: {
+stumblrCommand: {
 command: 'stumblr',
 rank: 'user',
 type: 'exact',
@@ -4167,7 +4169,7 @@ var link = "http://name-is-already-taken.tumblr.com/";
 API.sendChat(subChat(bBot.chat.stumblr, {name: chat.un, link: link}));
 }
 }
-}, */
+}, 
 askCommand: {
 command: 'ask',
 rank: 'user',
@@ -4416,7 +4418,7 @@ API.on(API.ADVANCE, meh);
                     }
                 }
             },
-			//CUSTOM
+
 			slowCommand: {
                 command: 'slow',
                 rank: 'manager',
@@ -4648,8 +4650,7 @@ API.on(API.ADVANCE, meh);
 			}		
         } 
         },
-        
-			/* announceCommand: {
+			announceCommand: {
 					command: 'announce',
 					rank: 'mod',
 					type: 'startsWith',
@@ -4716,7 +4717,7 @@ API.on(API.ADVANCE, meh);
 							}
 						}
 					}
-				}, */
+				},
 			mehautobanCommand: {
                 command: 'mehautoban',
                 rank: 'manager',
