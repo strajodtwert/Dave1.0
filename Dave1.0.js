@@ -4699,8 +4699,8 @@ API.on(API.ADVANCE, meh);
 					}
 				}, */
 
-			mehautobanCommand: {
-                command: 'mehautoban',
+		   autobanmehCommand: {
+                command: 'autobanmeh',
                 rank: 'manager',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
@@ -4718,7 +4718,7 @@ API.on(API.ADVANCE, meh);
                             limit = msg.substring(cmd.length + 1);
                             if (isNaN(limit))
 							{
-								return API.sendChat("/me @" + chat.un + "Neispravna komanda, upiši !mehautoban [limit], gdje je limit maksimalan broj mehova zaredom");
+								return API.sendChat("/me @" + chat.un + "Neispravna komanda, upiši !autobanmeh [limit], gdje je limit maksimalan broj mehova zaredom");
 							}
                         }
                         if(!bBot.settings.mehAutoBan)
