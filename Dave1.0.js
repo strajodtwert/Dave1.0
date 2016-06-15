@@ -1547,8 +1547,6 @@
 			
 						Check = setInterval(function(){ detect() }, 2000);
 			
-						retrieveSettings();
-						retrieveFromStorage();
 						window.bot = bBot;
 						bBot.roomUtilities.updateBlacklists();
 						setInterval(bBot.roomUtilities.updateBlacklists, 60 * 60 * 1000);
