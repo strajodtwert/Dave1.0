@@ -4594,7 +4594,7 @@ API.on(API.ADVANCE, meh);
                         
                         }else if(arguments[1] == "help")
                         {
-                            API.sendChat("/me @" + chat.un + " Da bi vidio koliko imaš BPPoena upiši !rewards, da bi se kladio s nekim upiši !rewards [bodovi] [ime],da bi prekinio poziv napiši !rewards stop, da bi prihvatio okladu napiši !rewards accept, da bi odbio okladu napiši !rewards decline");
+                            API.sendChat("/me @" + chat.un + " Da bi vidio koliko imaš BPPoena upiši !rewards, da bi se kladio s nekim upiši !rewards [bodovi] [ime],dda prekines napiši !rewards stop, da prihvatis napiši !rewards accept, da bi odbio okladu napiši !rewards decline");
                             return API.sendChat("/me da vidiš leaderboard upiši !rewards leaderboard");
                         }else
                         {
