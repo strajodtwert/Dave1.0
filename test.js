@@ -21,16 +21,14 @@
     ======================================================
 
     THIS IS ORGINAL BASIC BOT FOR BALKAN PARTY ROOM ONLY
-    WITH CUSTOM COMMANDS, YOU ARE NOT ALLOWED TO COPY IT
-    OR USE IT FOR YOUR ROOM.
+    WITH CUSTOM COMMANDS, THE REASON WHY THE CODE IS 
+    OBFUSCATED IS CAUSE WE DONT WANT OTHER TO COPY IT,
+    WE RESPECT THE ORGINAL CODE.
 
     LAST UPDATED: 20.03.2016
 
     ======================================================
 */
-
-
-// THIS IS EDITED VERSION OF BASIC BOT - TRANSLATION, CUSTOM COMMANDS
 
 (function () {
 
@@ -82,6 +80,12 @@
         for (var prop in obj) {
             chat = chat.replace(lit + prop.toUpperCase() + lit, obj[prop]);
         }
+        chat = chat.substring(4);
+		while(chat.startsWith('!') || chat.startsWith('/'))
+		{
+			chat = chat.substring(1);
+		}
+		chat = "/me " + chat;
         return chat;
     };
 
@@ -120,7 +124,16 @@
             }
         });
     };
-
+	//emoji map load
+	var loadEmoji = function () {
+		$.get("https://raw.githubusercontent.com/Warix3/AnimeSrbijaBot/development/Lang/emojimap.json", function (json) {
+                    if (json !== null && typeof json !== "undefined") {
+                        if (typeof json === "string") json = JSON.parse(json);
+                        bBot.emojimap = json;
+						console.log("Emoji map loaded!");
+                    }
+        });
+};
     var retrieveSettings = function () {
         var settings = JSON.parse(localStorage.getItem("bBotsettings"));
         if (settings !== null) {
@@ -219,26 +232,65 @@
         temp = null;
         return str;
     };
-
-    var botCreator = "Benzi";
-    var botMaintainer = "BP"
-    var botCreatorIDs = ["3851534", "4105209"];
+	
+	function decodeEmoji(s)
+	{
+		
+			var wemo = s;
+			var first = 0;
+			var second = 0;
+			var firstFound = false;
+			var isIs = false;
+			
+			for(var i = 0;i < s.length; i++)
+			{
+				if(wemo.charAt(i) == ':' && !firstFound)
+				{
+					first = i;
+					firstFound = true;
+				}else if (wemo.charAt(i) == ':')
+				{
+						second = i;
+					    var possemo = "";
+						possemo = bBot.emojimap[wemo.slice(first +1 ,second)];
+						if(possemo != null)
+						{
+							var possemo2 = ':'+wemo.slice(first +1,second)+':';
+							s = s.replace(possemo2,possemo);
+							firstFound = false;
+							s = decodeEmoji(s);
+						}
+						else
+						{
+							firstFound = true;
+							first = second;
+						}
+						
+				}
+			}
+			return s;
+	};
+	
+    var botCreator = "Yamatsui";
+    var botMaintainer = "Ajdin"
+    var botCreatorIDs = ["4329684"];
 
     var bBot = {
-        version: "2.1.2",
+        version: "2.1.3",
         status: false,
         name: "Dave1.0",
         loggedInID: "23625731",
         scriptLink: "https://www.ajdin.gq/files/theme/plugdj/dave1.0.js",
-        cmdLink: "http://www.balkan19.ga/bBot.html",
+        cmdLink: "hhttp://www.balkan19.ga/bBot.html",
         chatLink: "https://rawgit.com/Ajdin1997/Dave1.0/master/Lang/cro.json",
         chat: null,
+		emojimap: null,
         loadChat: loadChat,
-        dbPassword: null,
+		dbPassword: null,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
-            botName: "Dave1.0",
+            botName: "Dave",
             language: "croatian",
             chatLink: "https://rawgit.com/Ajdin1997/Dave1.0/master/Lang/cro.json",
             roomLock: false, // Requires an extension to re-load the script
@@ -299,7 +351,9 @@
             commandLiteral: "!",
             blacklists: {
                  OP: "https://rawgit.com/Ajdin1997/Dave1.0/master/blackList/OP.json"
-            }
+            },
+			mehAutoBan: true,
+			mehAutoBanLimit: 5
         },
         room: {
             name: null,
@@ -373,7 +427,12 @@
                     }, 1 * 1000, winner, pos);
                 }
             },
-            usersUsedThor: []
+            usersUsedThor: [],
+			SlowMode: false,
+			SlowModeDuration: 10,
+			announceActive: false,
+			announceMessage: null,
+			announceStartTime: null
         },
 
         User: function (id, name) {
@@ -397,13 +456,13 @@
                 songCount: 0
             };
             this.lastKnownPosition = null;
-            //points
-            this.balkanPoints = 0;
-            this.better = null;
-            this.offered = 0;
-            this.isBetting = false;
-            this.toWho = null;
-            this.contMehs = 0;
+			//anime points
+			this.balkanPoints = 0;
+			this.better = null;
+			this.offered = 0;
+			this.isBetting = false;
+			this.toWho = null;
+			this.contMehs = 0;
         },
         userUtilities: {
             getJointime: function (user) {
@@ -827,8 +886,17 @@
             chat.message = linkFixer(chat.message);
             chat.message = decodeEntities(chat.message);
             chat.message = chat.message.trim();
+			chat.message = decodeEmoji(chat.message);
             for (var i = 0; i < bBot.room.users.length; i++) {
                 if (bBot.room.users[i].id === chat.uid) {
+					if(bBot.room.slowMode)
+					{
+						if((Date.now() - bBot.room.users[i].lastActivity) < (bBot.room.slowModeDuration * 1000))
+						{
+							API.moderateDeleteChat(chat.cid);
+							return void (0);
+						}
+					}
                     bBot.userUtilities.setLastActivity(bBot.room.users[i]);
                     if (bBot.room.users[i].username !== chat.un) {
                         bBot.room.users[i].username = chat.un;
@@ -917,9 +985,10 @@
             var dj = API.getDJ();
             var timeLeft = API.getTimeRemaining();
             var timeElapsed = API.getTimeElapsed();
-
+			
+			
             if (bBot.settings.voteSkip) {
-                if ((mehs - woots) >= (bBot.settings.voteSkipLimit)) {
+                if (mehs >= (bBot.settings.voteSkipLimit)) {
                     API.sendChat(subChat(bBot.chat.voteskipexceededlimit, {name: dj.username, limit: bBot.settings.voteSkipLimit}));
                     if (bBot.settings.smartSkip && timeLeft > timeElapsed){
                         bBot.roomUtilities.smartSkip();
@@ -929,6 +998,28 @@
                     }
                 }
             }
+			
+			//AUTOBAN MEH
+			if(bBot.settings.mehAutoBan)
+			{
+				var limit = bBot.settings.mehAutoBanLimit;
+				var voter = obj.user;
+				var vote = obj.vote;
+				
+				if(vote == -1)
+				{
+					voter.contMehs++;
+				}else
+				{
+					voter.contMehs = 0;
+				}
+				
+				if(voter.contMehs >= limit)
+				{
+					API.moderateBanUser(voter.id, "Mehao si pjesme " + limit + " puta za redom, šta nije dozvoljeno!", API.BAN.DAY);
+				}
+				
+			}
 
         },
         eventCurateupdate: function (obj) {
@@ -939,18 +1030,25 @@
             }
         },
         eventDjadvance: function (obj) {
-
-            //POINTS
-            if(obj.lastPlay != null)
-            {
-            var reward = obj.lastPlay.score.positive + obj.lastPlay.score.grabs - obj.lastPlay.score.negative;
-            var lastdjplayed = bBot.userUtilities.lookupUser(obj.lastPlay.dj.id);
-            lastdjplayed.balkanPoints += reward;
-            API.sendChat("/me @" + lastdjplayed.username + " Osvojio/la si " + reward + " BPPoena.");
+			
+			//ANNOUNCE
+			if(bBot.room.announceActive && ((Date.now() - bBot.room.announceStartTime) >= bBot.room.announceTime))
+			{
+				API.sendChat("/me " + bBot.room.announceMessage);
+				bBot.room.announceStartTime = Date.now();
+			}
+			//POINTS
+			if(obj.lastPlay != null)
+			{
+			var reward = obj.lastPlay.score.positive + obj.lastPlay.score.grabs - obj.lastPlay.score.negative;
+			var lastdjplayed = bBot.userUtilities.lookupUser(obj.lastPlay.dj.id);
+			lastdjplayed.balkanPoints += reward;
+			API.sendChat("/me @" + lastdjplayed.username + " Osvojio/la si " + reward + " BPPoena.");
             $.post("http://www.balkan19.ga/leaderboard-edit.php",{winnerid:lastdjplayed.id,winnername:lastdjplayed.username,pointswon:reward,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){return API.sendChat("/me Problem sa upisivanjem informacija u bazu podataka!");};});
-            }
-
-            if (bBot.settings.autowoot) {
+			}
+			
+			
+			if (bBot.settings.autowoot) {
                 $("#woot").click(); // autowoot
             }
 
@@ -1367,131 +1465,132 @@
             Function.prototype.toString = function () {
                 return 'Function.'
             };
-
-            //DATABASELOGIN START
-            if(bBot.settings.dbPassword == null)
-            {
-                checkPassword();
-                
-                function checkPassword() {
-                var dbPassword1 = prompt("Unesite lozinku od baze podataka: ");
-                $.ajaxSetup({async: false});
-                $.post("http://balkan19.ga/leaderboard-edit.php",{dbPassword:dbPassword1},function(data,status){
-                    console.log(data);
-                    var str = data;
-                    if(String(str).trim() === "PWD_OK")
-                    {
-                        //PUT ALL OF STARTUP CODE INSIDE OF THIS IF EXECUTION CODE
-                        bBot.settings.dbPassword = dbPassword1;
-
-            var u = API.getUser();
-            if (bBot.userUtilities.getPermission(u) < 2) return API.chatLog(bBot.chat.greyuser);
-            if (bBot.userUtilities.getPermission(u) === 2) API.chatLog(bBot.chat.bouncer);
-            bBot.connectAPI();
-            API.moderateDeleteChat = function (cid) {
-                $.ajax({
-                    url: "https://plug.dj/_/chat/" + cid,
-                    type: "DELETE"
-                })
-            };
-
-            bBot.room.name = window.location.pathname;
-            var Check;
-
-            //console.log(bBot.room.name);
-
-            var detect = function(){
-                if(bBot.room.name != window.location.pathname){
-                    console.log("Killing bot after room change.");
-                    storeToStorage();
-                    bBot.disconnectAPI();
-                    setTimeout(function () {
-                        kill();
-                    }, 1000);
-                    if (bBot.settings.roomLock){
-                        window.location = 'https://plug.dj' + bBot.room.name;
-                    }
-                    else {
-                        clearInterval(Check);
-                    }
-                }
-            };
-
-            Check = setInterval(function(){ detect() }, 2000);
-
-            retrieveSettings();
-            retrieveFromStorage();
-            window.bot = bBot;
-            bBot.roomUtilities.updateBlacklists();
-            setInterval(bBot.roomUtilities.updateBlacklists, 60 * 60 * 1000);
-            bBot.getNewBlacklistedSongs = bBot.roomUtilities.exportNewBlacklistedSongs;
-            bBot.logNewBlacklistedSongs = bBot.roomUtilities.logNewBlacklistedSongs;
-            if (bBot.room.roomstats.launchTime === null) {
-                bBot.room.roomstats.launchTime = Date.now();
-            }
-
-            for (var j = 0; j < bBot.room.users.length; j++) {
-                bBot.room.users[j].inRoom = false;
-            }
-            var userlist = API.getUsers();
-            for (var i = 0; i < userlist.length; i++) {
-                var known = false;
-                var ind = null;
-                for (var j = 0; j < bBot.room.users.length; j++) {
-                    if (bBot.room.users[j].id === userlist[i].id) {
-                        known = true;
-                        ind = j;
-                    }
-                }
-                if (known) {
-                    bBot.room.users[ind].inRoom = true;
-                }
-                else {
-                    bBot.room.users.push(new bBot.User(userlist[i].id, userlist[i].username));
-                    ind = bBot.room.users.length - 1;
-                }
-                var wlIndex = API.getWaitListPosition(bBot.room.users[ind].id) + 1;
-                bBot.userUtilities.updatePosition(bBot.room.users[ind], wlIndex);
-            }
-            bBot.room.afkInterval = setInterval(function () {
-                bBot.roomUtilities.afkCheck()
-            }, 10 * 1000);
-            bBot.room.autorouletteInterval = setInterval(function () {
-                bBot.room.autorouletteFunc();
-            }, 120 * 60 * 1000);
-            bBot.loggedInID = API.getUser().id;
-            bBot.status = true;
-            API.sendChat('/cap ' + bBot.settings.startupCap);
-            API.setVolume(bBot.settings.startupVolume);
-            if (bBot.settings.autowoot) {
-                $("#woot").click();
-            }
-            if (bBot.settings.startupEmoji) {
-                var emojibuttonoff = $(".icon-emoji-off");
-                if (emojibuttonoff.length > 0) {
-                    emojibuttonoff[0].click();
-                }
-                API.chatLog(':smile: Emojis enabled.');
-            }
-            else {
-                var emojibuttonon = $(".icon-emoji-on");
-                if (emojibuttonon.length > 0) {
-                    emojibuttonon[0].click();
-                }
-                API.chatLog('Emojis disabled.');
-            }
-            API.chatLog('Avatars capped at ' + bBot.settings.startupCap);
-            API.chatLog('Volume set to ' + bBot.settings.startupVolume);
-            loadChat(API.sendChat(subChat(bBot.chat.online, {botname: bBot.settings.botName, version: bBot.version})));
-            }else
-            {
-                lert("Netočna lozinka, pokušajte ponovo!");
-                checkPassword();
-                }
-                });
-                }
-            }
-            //END
+			//DATABASE LOGIN
+			if(bBot.settings.dbPassword == null)
+			{
+				checkPassword();
+				
+				function checkPassword() {
+				var dbPassword1 = prompt("Unesite lozinku od baze podataka: ");
+				$.ajaxSetup({async: false});
+				$.post("http://www.balkan19.ga/leaderboard-edit.php",{dbPassword:dbPassword1},function(data,status){
+					console.log(data);
+					var str = data;
+					if(String(str).trim() === "PWD_OK")
+					{
+						//PUT ALL OF STARTUP CODE INSIDE OF THIS IF EXECUTION CODE
+						bBot.settings.dbPassword = dbPassword1;
+						
+						var u = API.getUser();
+						if (bBot.userUtilities.getPermission(u) < 2) return API.chatLog(bBot.chat.greyuser);
+						if (bBot.userUtilities.getPermission(u) === 2) API.chatLog(bBot.chat.bouncer);
+						bBot.connectAPI();
+						API.moderateDeleteChat = function (cid) {
+							$.ajax({
+								url: "https://plug.dj/_/chat/" + cid,
+								type: "DELETE"
+							})
+						};
+			
+						bBot.room.name = window.location.pathname;
+						var Check;
+			
+						//console.log(bBot.room.name);
+			
+						var detect = function(){
+							if(bBot.room.name != window.location.pathname){
+								console.log("Killing bot after room change.");
+								storeToStorage();
+								bBot.disconnectAPI();
+								setTimeout(function () {
+									kill();
+								}, 1000);
+								if (bBot.settings.roomLock){
+									window.location = 'https://plug.dj' + bBot.room.name;
+								}
+								else {
+									clearInterval(Check);
+								}
+							}
+						};
+			
+						Check = setInterval(function(){ detect() }, 2000);
+			
+						retrieveSettings();
+						retrieveFromStorage();
+						window.bot = bBot;
+						bBot.roomUtilities.updateBlacklists();
+						setInterval(bBot.roomUtilities.updateBlacklists, 60 * 60 * 1000);
+						bBot.getNewBlacklistedSongs = bBot.roomUtilities.exportNewBlacklistedSongs;
+						bBot.logNewBlacklistedSongs = bBot.roomUtilities.logNewBlacklistedSongs;
+						if (bBot.room.roomstats.launchTime === null) {
+							bBot.room.roomstats.launchTime = Date.now();
+						}
+			
+						for (var j = 0; j < bBot.room.users.length; j++) {
+							bBot.room.users[j].inRoom = false;
+						}
+						var userlist = API.getUsers();
+						for (var i = 0; i < userlist.length; i++) {
+							var known = false;
+							var ind = null;
+							for (var j = 0; j < bBot.room.users.length; j++) {
+								if (bBot.room.users[j].id === userlist[i].id) {
+									known = true;
+									ind = j;
+								}
+							}
+							if (known) {
+								bBot.room.users[ind].inRoom = true;
+							}
+							else {
+								bBot.room.users.push(new bBot.User(userlist[i].id, userlist[i].username));
+								ind = bBot.room.users.length - 1;
+							}
+							var wlIndex = API.getWaitListPosition(bBot.room.users[ind].id) + 1;
+							bBot.userUtilities.updatePosition(bBot.room.users[ind], wlIndex);
+						}
+						bBot.room.afkInterval = setInterval(function () {
+							bBot.roomUtilities.afkCheck()
+						}, 10 * 1000);
+						bBot.room.autorouletteInterval = setInterval(function () {
+							bBot.room.autorouletteFunc();
+						}, 120 * 60 * 1000);
+						bBot.loggedInID = API.getUser().id;
+						bBot.status = true;
+						API.sendChat('/cap ' + bBot.settings.startupCap);
+						API.setVolume(bBot.settings.startupVolume);
+						if (bBot.settings.autowoot) {
+							$("#woot").click();
+						}
+						if (bBot.settings.startupEmoji) {
+							var emojibuttonoff = $(".icon-emoji-off");
+							if (emojibuttonoff.length > 0) {
+								emojibuttonoff[0].click();
+							}
+							API.chatLog(':smile: Emojis enabled.');
+						}
+						else {
+							var emojibuttonon = $(".icon-emoji-on");
+							if (emojibuttonon.length > 0) {
+								emojibuttonon[0].click();
+							}
+							API.chatLog('Emojis disabled.');
+						}
+						API.chatLog('Avatars capped at ' + bBot.settings.startupCap);
+						API.chatLog('Volume set to ' + bBot.settings.startupVolume);
+						loadChat(API.sendChat(subChat(bBot.chat.online, {botname: bBot.settings.botName, version: bBot.version})));
+						loadEmoji();
+					}else
+					{
+						alert("Netočna lozinka, pokušajte ponovo!");
+						checkPassword();
+					}
+				});
+				}
+			}
+			//AnimeSrbija end
+            
         },
         commands: {
             executable: function (minRank, chat) {
@@ -2153,13 +2252,13 @@
                             case 'en': break;
                             case 'da': ch += 'Var venlig at tale engelsk.'; break;
                             case 'de': ch += 'Bitte sprechen Sie Englisch.'; break;
-                            case 'es': ch += 'Por favor, hable InglÃƒÂ©s.'; break;
-                            case 'fr': ch += 'Parlez anglais, s\'il vous plaÃƒÂ®t.'; break;
+                            case 'es': ch += 'Por favor, hable InglÃ©s.'; break;
+                            case 'fr': ch += 'Parlez anglais, s\'il vous plaÃ®t.'; break;
                             case 'nl': ch += 'Spreek Engels, alstublieft.'; break;
-                            case 'pl': ch += 'ProszÃ„Â™ mÃƒÂ³wiÃ„Â‡ po angielsku.'; break;
+                            case 'pl': ch += 'ProszÄ mÃ³wiÄ po angielsku.'; break;
                             case 'pt': ch += 'Por favor, fale Ingles.'; break;
-                            case 'sk': ch += 'Hovorte po anglicky, prosÃƒÂ­m.'; break;
-                            case 'cs': ch += 'Mluvte prosÃƒÂ­m anglicky.'; break;
+                            case 'sk': ch += 'Hovorte po anglicky, prosÃ­m.'; break;
+                            case 'cs': ch += 'Mluvte prosÃ­m anglicky.'; break;
                             case 'sr': ch += '????? ???, ???????? ????????.'; break;
                         }
                         ch += ' English please.';
@@ -2199,7 +2298,7 @@
                 }
             },
 
-            fbCommand: {
+            ffbCommand: {
                 command: 'fb',
                 rank: 'user',
                 type: 'exact',
@@ -2462,7 +2561,7 @@
 
             killCommand: {
                 command: 'stop',
-                rank: 'bouncer',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -2921,7 +3020,7 @@
 
             reloadCommand: {
                 command: 'reload',
-                rank: 'bouncer',
+                rank: 'manager',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -3004,7 +3103,7 @@
                 }
             },
 
-            rulesCommand: {
+            rulessCommand: {
                 command: 'rules',
                 rank: 'user',
                 type: 'exact',
@@ -3126,7 +3225,7 @@
                 }
             },
 
-            sourceCommand: {
+           sourceCommand: {
                 command: 'source',
                 rank: 'user',
                 type: 'exact',
@@ -3805,7 +3904,7 @@
             },
 
             // HiddenComand For someone special...
-             adnaCommand: {
+            /* adnaCommand: {
                 command: 'adna',
                 rank: 'user',
                 type: 'startsWith',
@@ -3839,7 +3938,7 @@
                         }
                     }
                 }
-            },
+            }, */
 
             fortunecookieCommand: {
                 command: 'fortunecookie',
@@ -4017,7 +4116,7 @@
                     }
                 }
             },
-             
+             //Balkan Party commands
             eldoxCommand: {
 command: 'eldox',
 rank: 'user',
@@ -4042,7 +4141,7 @@ var link = "http://name-is-already-taken.tumblr.com/";
 API.sendChat(subChat(bBot.chat.stumblr, {name: chat.un, link: link}));
 }
 }
-},
+}, 
 askCommand: {
 command: 'ask',
 rank: 'user',
@@ -4051,7 +4150,7 @@ functionality: function (chat, cmd) {
 if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
 if (!bBot.commands.executable(this.rank, chat)) return void (0);
 else {
-var link = "http://ask.fm/BalkanParty12";
+var link = "nema aska xD";
 API.sendChat(subChat(bBot.chat.ask, {name: chat.un, link: link}));
 }
 }
@@ -4278,7 +4377,59 @@ API.on(API.ADVANCE, meh);
 }
 },
 
-rewardsCommand: {
+            youtubeCommand: {
+                command: 'youtube',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        if (typeof bBot.settings.youtubeLink === "string")
+                            API.sendChat(subChat(bBot.chat.youtube, {name: chat.un, link: bBot.settings.youtubeLink}));
+                    }
+                }
+            },
+			//AnimeSrbija commands
+			slowCommand: {
+                command: 'slow',
+                rank: 'manager',
+                type: 'startsWith',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var msg = chat.message;
+                        var slow;
+
+                        if (msg.length === cmd.length)
+						{
+							slow = 30;
+						}
+                        else {
+                            slow = msg.substring(cmd.length + 1);
+                            if (isNaN(slow))
+							{
+								return API.sendChat(subChat(basicBot.chat.invalidtime, {name: chat.un}));
+							}
+                        }
+                        if(!bBot.room.slowMode)
+						{
+							bBot.room.slowMode = true;
+							bBot.room.slowModeDuration = slow;
+							API.sendChat("/me Spori način uključen, razmak između poruka: "+ slow + " sekundi!");
+						}else
+						{
+							bBot.room.slowMode = false;
+							bBot.room.slowModeDuration = 0;
+							API.sendChat("/me Spori način isključen!");
+						}
+                        
+                    }
+                }
+            },
+			
+			rewardsCommand: {
                 command: 'rewards',
                 rank: 'user',
                 type: 'startsWith',
@@ -4297,7 +4448,7 @@ rewardsCommand: {
                         console.log(arguments);
                         if (arguments[0] == "!rewards" && arguments.length == 1)
                         {
-                            $.post("http://balkan19.ga/leaderboard-getpoints.php",{winnerid:sender.id}, function(data)
+                            $.post("http://www.balkan19.ga/leaderboard-getpoints.php",{winnerid:sender.id}, function(data)
                             {
                                 sender.balkanPoints = data;
                             });
@@ -4328,7 +4479,7 @@ rewardsCommand: {
                                     reciever = reciever.trim().substring(1);
                                 }
                                 var recieverU = bBot.userUtilities.lookupUserName(reciever);
-                                $.post("http://balkan19.ga/leaderboard-getpoints.php",{winnerid:sender.id,loserid:recieverU.id}, function(data)
+                                $.post("http://www.balkan19.ga/leaderboard-getpoints.php",{winnerid:sender.id,loserid:recieverU.id}, function(data)
                                 {
                                     var points = data.trim().split(' ');
                                     sender.balkanPoints = points[0];
@@ -4340,7 +4491,7 @@ rewardsCommand: {
                                     var offer = parseInt(arguments[2]);
                                     if(sender.isBetting)
                                     {
-                                        return API.sendChat("/me @" + chat.un + " već si započeo okladu s nekim! Upiši !ap \"stop\" da ju prekineš!");
+                                        return API.sendChat("/me @" + chat.un + " već si započeo okladu s nekim! Upiši !ap \"stop\" da ju prekineš.");
                                     }
                                     if(recieverU.isBetting)
                                     {
@@ -4360,7 +4511,7 @@ rewardsCommand: {
                                     recieverU.offered = offer;
                                     sender.isBetting = true;
                                     sender.toWho = recieverU;
-                                    API.sendChat("/me @" + recieverU.username + " " + chat.un + " te poziva na opkladu! u " + offer + " BPPoena! Upišisi \"!rewards accept\" ili \"!rewards decline\"");
+                                    API.sendChat("/me @" + recieverU.username + " " + chat.un + " te poziva na opkladu! u " + offer + " BPpoena. Upiši \"!rewards accept\" ili \"!rewards decline\"");
                                     API.sendChat("/me @" + chat.un + " ako želiš prekinuti okladu upiši \"!rewards stop\" ");
                                     
                                 }else
@@ -4369,7 +4520,7 @@ rewardsCommand: {
                                 }
                             }
                             {
-                                return API.sendChat("/me @" + chat.un + " Upisao si neispravnu komandu. Upiši !rewards help da vidiš listu komandi!");
+                                return API.sendChat("/me @" + chat.un + " Upisao si komandu koja ne postoji. Upiši !rewards help za vise informacija.");
                             }
                         }else if(arguments[1] == "accept")
                         {
@@ -4385,15 +4536,15 @@ rewardsCommand: {
                                     sender.balkanPoints += sender.offered;
                                     sender.better.balkanPoints -= sender.offered;
                                     finishBet(sender);
-                                    $.post("http://balkan19.ga/leaderboard-edit.php",{winnerid:sender.id,winnername:sender.username,pointswon:sender.offered,loserid:sender.better.id,losername:sender.better.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
-                                    return API.sendChat("/me @" + chat.un + " Oklada je završena! " + sender.username + " je pobjedio i osvojio " + sender.offered + " BPPoena!");
+                                    $.post("http://www.balkan19.ga/leaderboard-edit.php",{winnerid:sender.id,winnername:sender.username,pointswon:sender.offered,loserid:sender.better.id,losername:sender.better.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
+                                    return API.sendChat("/me @" + chat.un + " Oklada je završena! " + sender.username + " je pobjedio i osvojio " + sender.offered + " BPPoena.");
                                 }
                                 else
                                 {
                                     sender.balkanPoints -= sender.offered;
                                     sender.better.balkanPoints += sender.offered;
                                     finishBet(sender);
-                                    $.post("http://balkan19.ga/leaderboard-edit.php",{winnerid:sender.better.id,winnername:sender.better.username,pointswon:sender.better.offered,loserid:sender.id,losername:sender.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
+                                    $.post("http://www.balkan19.ga/leaderboard-edit.php",{winnerid:sender.better.id,winnername:sender.better.username,pointswon:sender.better.offered,loserid:sender.id,losername:sender.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
                                     return API.sendChat("/me @" + chat.un + " Oklada je završena! " + sender.better.username + " je pobjedio i osvojio " + sender.offered + " BPPoena");
                                 }
                                 
@@ -4439,15 +4590,15 @@ rewardsCommand: {
                         //  {
                         //      API.sendChat("/me " + i + ". " + leaders[i].username + " : " + leaders[i].balkanPoints);
                         //  }
-                            return API.sendChat("Pogledaj leaderboard na ovom linku: http://balkan19.ga/leaderboard");
+                            return API.sendChat("Pogledaj leaderboard na ovom linku: http://www.balkan19.ga/leaderboard");
                         
                         }else if(arguments[1] == "help")
                         {
-                            API.sendChat("/me @" + chat.un + " Da bi vidio koliko imaš BPPoena upiši !rewards, da bi se kladio s nekim upiši !rewards [bodovi] [ime], da bi prekinuo poziv napiši !rewards stop, da bi prihvatio okladu napiši !rewards accept, da bi odbio okladu napiši !rewards decline");
+                            API.sendChat("/me @" + chat.un + " Da bi vidio koliko imaš BPPoena upiši !rewards, da bi se kladio s nekim upiši !rewards [bodovi] [ime],da bi prekinio poziv napiši !rewards stop, da bi prihvatio okladu napiši !rewards accept, da bi odbio okladu napiši !rewards decline");
                             return API.sendChat("/me da vidiš leaderboard upiši !rewards leaderboard");
                         }else
                         {
-                            return API.sendChat("/me @" + chat.un + " Unijelis te nepostojecu komandu. Upiši !rewards help za vise informacije.");
+                            return API.sendChat("/me @" + chat.un + " Upisao si nepostojecu komandu. Upiši !rewards help za vise informacija.");
                         }
                         function checkNull(arg)
                         {
@@ -4463,21 +4614,113 @@ rewardsCommand: {
             }       
         } 
         },
+			/*announceCommand: {
+					command: 'announce',
+					rank: 'mod',
+					type: 'startsWith',
+					functionality: function (chat, cmd) {
+						if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+						if (!bBot.commands.executable(this.rank, chat)) return void (0);
+						else {
+							var arguments = chat.message.split(' ');
+							var amsg = getMessage(arguments);
+							if(arguments.length == 1 && arguments[0] == "!announce")
+							{
+								API.sendChat("/me @" + chat.un + " upiši !ap [nakon koliko minuta da se objavi poruka] [poruka] ili !announce stop da zaustaviš objavljivanje");
+							}else if(arguments[0] == "!announce" && !isNaN(arguments[1]) && arguments[2] != null )
+							{
+								if(!bBot.room.announceActive)
+								{
+									announceActivate(arguments,amsg);
+								}else
+								{
+									announceStop(arguments,amsg);
+									announceActivate(arguments,amsg);
+								}
+								
+							}else if(arguments[0] == "!announce" && arguments[1] == "stop")
+							{
+								announceStop(arguments,amsg);
+							}else
+							{
+								API.sendChat("/me @" + chat.un + " neispravna komanda! upiši !ap [nakon koliko minuta da se objavi poruka] [poruka] ili !announce stop da zaustaviš objavljivanje");
+							}
+							function getMessage(arguments)
+							{
+								var stream = "";
+								for(i = 2; i < arguments.length; i++)
+								{
+									stream += (' ' + arguments[i]);
+								}
+								return stream;
+							}
+							function announceStop(arguments,amsg)
+							{
+								if(!bBot.room.announceActive)
+								{
+								API.sendChat("/me @" + chat.un + " objavljivanje je već ugašeno!");
+								return;
+								}else
+								{
+								bBot.room.announceActive = false;
+								bBot.room.announceMessage = null;
+								bBot.room.announceStartTime = null;
+								bBot.room.announceTime = null;
+								API.sendChat("/me @" + chat.un + " Uspešno ugašeno objavljivanje!");
+								return;
+								}
+							}
+							function announceActivate(arguments,amsg)
+							{
+								bBot.room.announceActive = true;
+								bBot.room.announceMessage = amsg;
+								bBot.room.announceStartTime = Date.now();
+								bBot.room.announceTime = arguments[1] * 60 * 1000;
+								API.sendChat("/me @" + chat.un + " Uspešno postavljeno objavljivanje.Približno svakih: " + arguments[1] + " minuta će se objaviti: " + amsg);
+								return;
+							}
+						}
+					}
+				}, */
 
-            youtubeCommand: {
-                command: 'youtube',
-                rank: 'user',
-                type: 'exact',
+			mehautobanCommand: {
+                command: 'mehautoban',
+                rank: 'manager',
+                type: 'startsWith',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        if (typeof bBot.settings.youtubeLink === "string")
-                            API.sendChat(subChat(bBot.chat.youtube, {name: chat.un, link: bBot.settings.youtubeLink}));
+                        var msg = chat.message;
+                        var limit;
+
+                        if (msg.length === cmd.length)
+						{
+							limit = 5;
+						}
+                        else {
+                            limit = msg.substring(cmd.length + 1);
+                            if (isNaN(limit))
+							{
+								return API.sendChat("/me @" + chat.un + "Neispravna komanda, upiši !mehautoban [limit], gdje je limit maksimalan broj mehova zaredom");
+							}
+                        }
+                        if(!bBot.settings.mehAutoBan)
+						{
+							bBot.settings.mehAutoBan = true;
+							bBot.settings.mehAutoBanLimit = limit;
+							API.sendChat("/me Auto banovanje za uzastopno mehovanje uključeno! Limit uzastopnih mehova: "+ limit);
+						}else
+						{
+							bBot.settings.mehAutoBan = false;
+							API.sendChat("/me Auto banovanje za uzastopno mehovanje isključeno!");
+						}
+                        
                     }
                 }
             }
-        }
+			
+			}
     };
 
     loadChat(bBot.startup);
