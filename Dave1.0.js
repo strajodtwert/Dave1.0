@@ -21,9 +21,7 @@
     ======================================================
 
     THIS IS ORGINAL BASIC BOT FOR BALKAN PARTY ROOM ONLY
-    WITH CUSTOM COMMANDS, THE REASON WHY THE CODE IS 
-    OBFUSCATED IS CAUSE WE DONT WANT OTHER TO COPY IT,
-    WE RESPECT THE ORGINAL CODE.
+    WITH CUSTOM COMMANDS.
 
     LAST UPDATED: 20.03.2016
 
@@ -4590,7 +4588,7 @@ API.on(API.ADVANCE, meh);
                         //  {
                         //      API.sendChat("/me " + i + ". " + leaders[i].username + " : " + leaders[i].balkanPoints);
                         //  }
-                            return API.sendChat("Pogledaj leaderboard na ovom linku: http://www.balkan19.ga/leaderboard");
+                            return API.sendChat("Pogledaj leaderboard na ovom linku: http://leaderboard.pe.hu/leaderboard");
                         
                         }else if(arguments[1] == "help")
                         {
