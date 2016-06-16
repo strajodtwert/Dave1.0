@@ -2270,7 +2270,7 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        var link = 'http://leaderboard.pe.hu/leaderboard';
+                        var link = 'http://www.balkan19.ga/leaderboard';
                         API.sendChat(subChat(bBot.chat.leaderboardlink, {name: chat.un, link: link}));
                     }
                 }
@@ -4640,7 +4640,7 @@ API.on(API.ADVANCE, meh);
                         //  {
                         //      API.sendChat("/me " + i + ". " + leaders[i].username + " : " + leaders[i].balkanPoints);
                         //  }
-                            return API.sendChat("Leaderboard tabela: http://leaderboard.pe.hu/leaderboard");
+                            return API.sendChat("Leaderboard tabela: http://www.balkan19.ga/leaderboard");
                         
                         }else if(arguments[1] == "help")
                         {
