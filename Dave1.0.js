@@ -24,7 +24,7 @@
     THIS IS ORGINAL BASIC BOT FOR BALKAN PARTY ROOM ONLY
     WITH CUSTOM COMMANDS.
 
-    LAST UPDATED: 20.03.2016
+    LAST UPDATED: 17.06.2016
 
     ======================================================
 */
