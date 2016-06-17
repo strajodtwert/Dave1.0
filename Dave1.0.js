@@ -4730,7 +4730,7 @@ API.on(API.ADVANCE, meh);
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        var link = 'http://leaderboard.pe.hu/leaderboard';
+                        var link = 'http://www.balkan19.ga/leaderboard';
                         API.sendChat(subChat(bBot.chat.leaderboardlink, {name: chat.un, link: link}));
                     }
                 }
