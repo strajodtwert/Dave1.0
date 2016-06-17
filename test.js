@@ -32,19 +32,19 @@
 /*
     AnimeSrbijaBot BOT SCRIPT
 
-	Custom bot for a Plug.dj community, based on dave1.0 script
-	
-	This script is modified by Warix3 (Toni Pejić) warixmods.ga
-	And AnimeSrbija commands are added by Warix3.
-	
-	Copyright (c) 2016 Warix3
+    Custom bot for a Plug.dj community, based on dave1.0 script
+    
+    This script is modified by Warix3 (Toni Pejić) warixmods.ga
+    And AnimeSrbija commands are added by Warix3.
+    
+    Copyright (c) 2016 Warix3
         Please do not copy or modify without permission
         from the respected owner(s) and developer(s).
-	
-	Author: Toni Pejić (Warix3)
-	Github: Warix3
-	Website: warixmods.ga
-	E-mail: toni.pejic98@gmail.com
+    
+    Author: Toni Pejić (Warix3)
+    Github: Warix3
+    Website: warixmods.ga
+    E-mail: toni.pejic98@gmail.com
 */
 
 (function () {
@@ -98,11 +98,11 @@
             chat = chat.replace(lit + prop.toUpperCase() + lit, obj[prop]);
         }
         chat = chat.substring(4);
-		while(chat.startsWith('!') || chat.startsWith('/'))
-		{
-			chat = chat.substring(1);
-		}
-		chat = "/me " + chat;
+        while(chat.startsWith('!') || chat.startsWith('/'))
+        {
+            chat = chat.substring(1);
+        }
+        chat = "/me " + chat;
         return chat;
     };
 
@@ -141,13 +141,13 @@
             }
         });
     };
-	//emoji map load
-	var loadEmoji = function () {
-		$.get("https://raw.githubusercontent.com/Warix3/AnimeSrbijaBot/development/Lang/emojimap.json", function (json) {
+    //emoji map load
+    var loadEmoji = function () {
+        $.get("https://raw.githubusercontent.com/Warix3/AnimeSrbijaBot/development/Lang/emojimap.json", function (json) {
                     if (json !== null && typeof json !== "undefined") {
                         if (typeof json === "string") json = JSON.parse(json);
                         bBot.emojimap = json;
-						console.log("Emoji map loaded!");
+                        console.log("Emoji map loaded!");
                     }
         });
 };
@@ -249,45 +249,45 @@
         temp = null;
         return str;
     };
-	
-	function decodeEmoji(s)
-	{
-		
-			var wemo = s;
-			var first = 0;
-			var second = 0;
-			var firstFound = false;
-			var isIs = false;
-			
-			for(var i = 0;i < s.length; i++)
-			{
-				if(wemo.charAt(i) == ':' && !firstFound)
-				{
-					first = i;
-					firstFound = true;
-				}else if (wemo.charAt(i) == ':')
-				{
-						second = i;
-					    var possemo = "";
-						possemo = bBot.emojimap[wemo.slice(first +1 ,second)];
-						if(possemo != null)
-						{
-							var possemo2 = ':'+wemo.slice(first +1,second)+':';
-							s = s.replace(possemo2,possemo);
-							firstFound = false;
-							s = decodeEmoji(s);
-						}
-						else
-						{
-							firstFound = true;
-							first = second;
-						}
-						
-				}
-			}
-			return s;
-	};
-	
+    
+    function decodeEmoji(s)
+    {
+        
+            var wemo = s;
+            var first = 0;
+            var second = 0;
+            var firstFound = false;
+            var isIs = false;
+            
+            for(var i = 0;i < s.length; i++)
+            {
+                if(wemo.charAt(i) == ':' && !firstFound)
+                {
+                    first = i;
+                    firstFound = true;
+                }else if (wemo.charAt(i) == ':')
+                {
+                        second = i;
+                        var possemo = "";
+                        possemo = bBot.emojimap[wemo.slice(first +1 ,second)];
+                        if(possemo != null)
+                        {
+                            var possemo2 = ':'+wemo.slice(first +1,second)+':';
+                            s = s.replace(possemo2,possemo);
+                            firstFound = false;
+                            s = decodeEmoji(s);
+                        }
+                        else
+                        {
+                            firstFound = true;
+                            first = second;
+                        }
+                        
+                }
+            }
+            return s;
+    };
+    
     var botCreator = "Yamatsui";
     var botMaintainer = "BP Team"
     var botCreatorIDs = ["4329684"];
@@ -301,9 +301,9 @@
         cmdLink: "http://www.balkan19.ga/bBot.html",
         chatLink: "https://rawgit.com/Ajdin1997/Dave1.0/master/Lang/cro.json",
         chat: null,
-	emojimap: null,
+        emojimap: null,
         loadChat: loadChat,
-	dbPassword: null,
+        dbPassword: null,
         retrieveSettings: retrieveSettings,
         retrieveFromStorage: retrieveFromStorage,
         settings: {
@@ -369,8 +369,8 @@
             blacklists: {
                  OP: "https://rawgit.com/Ajdin1997/Dave1.0/master/blackList/OP.json"
             },
-			mehAutoBan: true,
-			mehAutoBanLimit: 5
+            mehAutoBan: true,
+            mehAutoBanLimit: 5
         },
         room: {
             name: null,
@@ -445,11 +445,11 @@
                 }
             },
             usersUsedThor: [],
-			SlowMode: false,
-			SlowModeDuration: 10,
-			announceActive: false,
-			announceMessage: null,
-			announceStartTime: null
+            SlowMode: false,
+            SlowModeDuration: 10,
+            announceActive: false,
+            announceMessage: null,
+            announceStartTime: null
         },
 
         User: function (id, name) {
@@ -473,13 +473,13 @@
                 songCount: 0
             };
             this.lastKnownPosition = null;
-			//anime points
-			this.balkanPoints = 0;
-			this.better = null;
-			this.offered = 0;
-			this.isBetting = false;
-			this.toWho = null;
-			this.contMehs = 0;
+            //points
+            this.balkanPoints = 0;
+            this.better = null;
+            this.offered = 0;
+            this.isBetting = false;
+            this.toWho = null;
+            this.contMehs = 0;
         },
         userUtilities: {
             getJointime: function (user) {
@@ -903,17 +903,17 @@
             chat.message = linkFixer(chat.message);
             chat.message = decodeEntities(chat.message);
             chat.message = chat.message.trim();
-			chat.message = decodeEmoji(chat.message);
+            chat.message = decodeEmoji(chat.message);
             for (var i = 0; i < bBot.room.users.length; i++) {
                 if (bBot.room.users[i].id === chat.uid) {
-					if(bBot.room.slowMode)
-					{
-						if((Date.now() - bBot.room.users[i].lastActivity) < (bBot.room.slowModeDuration * 1000))
-						{
-							API.moderateDeleteChat(chat.cid);
-							return void (0);
-						}
-					}
+                    if(bBot.room.slowMode)
+                    {
+                        if((Date.now() - bBot.room.users[i].lastActivity) < (bBot.room.slowModeDuration * 1000))
+                        {
+                            API.moderateDeleteChat(chat.cid);
+                            return void (0);
+                        }
+                    }
                     bBot.userUtilities.setLastActivity(bBot.room.users[i]);
                     if (bBot.room.users[i].username !== chat.un) {
                         bBot.room.users[i].username = chat.un;
@@ -1002,8 +1002,8 @@
             var dj = API.getDJ();
             var timeLeft = API.getTimeRemaining();
             var timeElapsed = API.getTimeElapsed();
-			
-			
+            
+            
             if (bBot.settings.voteSkip) {
                 if (mehs >= (bBot.settings.voteSkipLimit)) {
                     API.sendChat(subChat(bBot.chat.voteskipexceededlimit, {name: dj.username, limit: bBot.settings.voteSkipLimit}));
@@ -1015,28 +1015,28 @@
                     }
                 }
             }
-			
-			//AnimeSrbija mehAutoBan
-			if(bBot.settings.mehAutoBan)
-			{
-				var limit = bBot.settings.mehAutoBanLimit;
-				var voter = obj.user;
-				var vote = obj.vote;
-				
-				if(vote == -1)
-				{
-					voter.contMehs++;
-				}else
-				{
-					voter.contMehs = 0;
-				}
-				
-				if(voter.contMehs >= limit)
-				{
-					API.moderateBanUser(voter.id, "Mehao si pjesme " + limit + " puta za redom, šta nije dozvoljeno!", API.BAN.DAY);
-				}
-				
-			}
+            
+            //mehAutoBan
+            if(bBot.settings.mehAutoBan)
+            {
+                var limit = bBot.settings.mehAutoBanLimit;
+                var voter = obj.user;
+                var vote = obj.vote;
+                
+                if(vote == -1)
+                {
+                    voter.contMehs++;
+                }else
+                {
+                    voter.contMehs = 0;
+                }
+                
+                if(voter.contMehs >= limit)
+                {
+                    API.moderateBanUser(voter.id, "Mehao si pjesme " + limit + " puta za redom, šta nije dozvoljeno!", API.BAN.DAY);
+                }
+                
+            }
 
         },
         eventCurateupdate: function (obj) {
@@ -1047,26 +1047,26 @@
             }
         },
         eventDjadvance: function (obj) {
-			
-			//ANNOUNCE
-			if(bBot.room.announceActive && ((Date.now() - bBot.room.announceStartTime) >= bBot.room.announceTime))
-			{
-				API.sendChat("/me " + bBot.room.announceMessage);
-				bBot.room.announceStartTime = Date.now();
-			}
-			//AnimeSrbija Anime points
-			if(obj.lastPlay != null)
-			{
-			var reward = obj.lastPlay.score.positive + obj.lastPlay.score.grabs - obj.lastPlay.score.negative;
-			var lastdjplayed = bBot.userUtilities.lookupUser(obj.lastPlay.dj.id);
-			lastdjplayed.balkanPoints += reward;
-			API.sendChat("/me @" + lastdjplayed.username + " Osvojio/la si " + reward + " BP Poena.");
+            
+            //ANNOUNCE
+            if(bBot.room.announceActive && ((Date.now() - bBot.room.announceStartTime) >= bBot.room.announceTime))
+            {
+                API.sendChat("/me " + bBot.room.announceMessage);
+                bBot.room.announceStartTime = Date.now();
+            }
+            //POINTS
+            if(obj.lastPlay != null)
+            {
+            var reward = obj.lastPlay.score.positive + obj.lastPlay.score.grabs - obj.lastPlay.score.negative;
+            var lastdjplayed = bBot.userUtilities.lookupUser(obj.lastPlay.dj.id);
+            lastdjplayed.balkanPoints += reward;
+            API.sendChat("/me @" + lastdjplayed.username + " Osvojio/la si " + reward + " BP Poena.");
             $.ajaxSetup({async: true});
-			$.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:lastdjplayed.id,winnername:lastdjplayed.username,pointswon:reward,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){return API.sendChat("/me Problem sa upisivanjem informacija u bazu podataka!");};});
-			}
-			
-			
-			if (bBot.settings.autowoot) {
+            $.post("http://leaderboard.pe.hu/room/data-edit.php",{winnerid:lastdjplayed.id,winnername:lastdjplayed.username,pointswon:reward,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){return API.sendChat("/me Problem sa upisivanjem informacija u bazu podataka!");};});
+            }
+            
+            
+            if (bBot.settings.autowoot) {
                 $("#woot").click(); // autowoot
             }
 
@@ -1488,136 +1488,136 @@
             Function.prototype.toString = function () {
                 return 'Function.'
             };
-			//DATABASE LOGIN
-				
-				if(bBot.settings.dbPassword == null)
-				{
-					checkPassword();
-				}
-				function checkPassword() {
-				var dbPassword1 = prompt("Unesite lozinku od baze podataka: ");
-				$.ajaxSetup({async: false});
-				$.post("http://leaderboard.pe.hu/leaderboard-edit.php",{dbPassword:dbPassword1},function(data,status){
-					console.log(data);
-					var str = data;
-					if(String(str).trim() === "PWD_OK")
-					{
-						bBot.settings.dbPassword = dbPassword1;
-					}else
-					{
-						alert("Netočna lozinka, pokušajte ponovo!");
-						checkPassword();
-					}
-				});}
-						//PUT ALL OF STARTUP CODE INSIDE OF THIS IF EXECUTION CODE
-						
-						
-						var u = API.getUser();
-						if (bBot.userUtilities.getPermission(u) < 2) return API.chatLog(bBot.chat.greyuser);
-						if (bBot.userUtilities.getPermission(u) === 2) API.chatLog(bBot.chat.bouncer);
-						bBot.connectAPI();
-						API.moderateDeleteChat = function (cid) {
-							$.ajax({
-								url: "https://plug.dj/_/chat/" + cid,
-								type: "DELETE"
-							})
-						};
-			
-						bBot.room.name = window.location.pathname;
-						var Check;
-			
-						//console.log(bBot.room.name);
-			
-						var detect = function(){
-							if(bBot.room.name != window.location.pathname){
-								console.log("Killing bot after room change.");
-								storeToStorage();
-								bBot.disconnectAPI();
-								setTimeout(function () {
-									kill();
-								}, 1000);
-								if (bBot.settings.roomLock){
-									window.location = 'https://plug.dj' + bBot.room.name;
-								}
-								else {
-									clearInterval(Check);
-								}
-							}
-						};
-			
-						Check = setInterval(function(){ detect() }, 2000);
-			
-						window.bot = bBot;
-						bBot.roomUtilities.updateBlacklists();
-						setInterval(bBot.roomUtilities.updateBlacklists, 60 * 60 * 1000);
-						bBot.getNewBlacklistedSongs = bBot.roomUtilities.exportNewBlacklistedSongs;
-						bBot.logNewBlacklistedSongs = bBot.roomUtilities.logNewBlacklistedSongs;
-						if (bBot.room.roomstats.launchTime === null) {
-							bBot.room.roomstats.launchTime = Date.now();
-						}
-			
-						for (var j = 0; j < bBot.room.users.length; j++) {
-							bBot.room.users[j].inRoom = false;
-						}
-						var userlist = API.getUsers();
-						for (var i = 0; i < userlist.length; i++) {
-							var known = false;
-							var ind = null;
-							for (var j = 0; j < bBot.room.users.length; j++) {
-								if (bBot.room.users[j].id === userlist[i].id) {
-									known = true;
-									ind = j;
-								}
-							}
-							if (known) {
-								bBot.room.users[ind].inRoom = true;
-							}
-							else {
-								bBot.room.users.push(new bBot.User(userlist[i].id, userlist[i].username));
-								ind = bBot.room.users.length - 1;
-							}
-							var wlIndex = API.getWaitListPosition(bBot.room.users[ind].id) + 1;
-							bBot.userUtilities.updatePosition(bBot.room.users[ind], wlIndex);
-						}
-						bBot.room.afkInterval = setInterval(function () {
-							bBot.roomUtilities.afkCheck()
-						}, 10 * 1000);
-						bBot.room.autorouletteInterval = setInterval(function () {
-							bBot.room.autorouletteFunc();
-						}, 120 * 60 * 1000);
-						bBot.loggedInID = API.getUser().id;
-						bBot.status = true;
-						API.sendChat('/cap ' + bBot.settings.startupCap);
-						API.setVolume(bBot.settings.startupVolume);
-						if (bBot.settings.autowoot) {
-							$("#woot").click();
-						}
-						if (bBot.settings.startupEmoji) {
-							var emojibuttonoff = $(".icon-emoji-off");
-							if (emojibuttonoff.length > 0) {
-								emojibuttonoff[0].click();
-							}
-							API.chatLog(':smile: Emojis enabled.');
-						}
-						else {
-							var emojibuttonon = $(".icon-emoji-on");
-							if (emojibuttonon.length > 0) {
-								emojibuttonon[0].click();
-							}
-							API.chatLog('Emojis disabled.');
-						}
-						API.chatLog('Avatars capped at ' + bBot.settings.startupCap);
-						API.chatLog('Volume set to ' + bBot.settings.startupVolume);
-						loadChat(API.sendChat(subChat(bBot.chat.online, {botname: bBot.settings.botName, version: bBot.version})));
-						loadEmoji();
-						
-							
-						
-					
-				
-				
-			
-			//END
+            //DATABASE LOGIN
+                
+                if(bBot.settings.dbPassword == null)
+                {
+                    checkPassword();
+                }
+                function checkPassword() {
+                var dbPassword1 = prompt("Unesite lozinku od baze podataka: ");
+                $.ajaxSetup({async: false});
+                $.post("http://leaderboard.pe.hu/room/data-edit.php",{dbPassword:dbPassword1},function(data,status){
+                    console.log(data);
+                    var str = data;
+                    if(String(str).trim() === "PWD_OK")
+                    {
+                        bBot.settings.dbPassword = dbPassword1;
+                    }else
+                    {
+                        alert("Netočna lozinka, pokušajte ponovo!");
+                        checkPassword();
+                    }
+                });}
+                        //PUT ALL OF STARTUP CODE INSIDE OF THIS IF EXECUTION CODE
+                        
+                        
+                        var u = API.getUser();
+                        if (bBot.userUtilities.getPermission(u) < 2) return API.chatLog(bBot.chat.greyuser);
+                        if (bBot.userUtilities.getPermission(u) === 2) API.chatLog(bBot.chat.bouncer);
+                        bBot.connectAPI();
+                        API.moderateDeleteChat = function (cid) {
+                            $.ajax({
+                                url: "https://plug.dj/_/chat/" + cid,
+                                type: "DELETE"
+                            })
+                        };
+            
+                        bBot.room.name = window.location.pathname;
+                        var Check;
+            
+                        //console.log(bBot.room.name);
+            
+                        var detect = function(){
+                            if(bBot.room.name != window.location.pathname){
+                                console.log("Killing bot after room change.");
+                                storeToStorage();
+                                bBot.disconnectAPI();
+                                setTimeout(function () {
+                                    kill();
+                                }, 1000);
+                                if (bBot.settings.roomLock){
+                                    window.location = 'https://plug.dj' + bBot.room.name;
+                                }
+                                else {
+                                    clearInterval(Check);
+                                }
+                            }
+                        };
+            
+                        Check = setInterval(function(){ detect() }, 2000);
+            
+                        window.bot = bBot;
+                        bBot.roomUtilities.updateBlacklists();
+                        setInterval(bBot.roomUtilities.updateBlacklists, 60 * 60 * 1000);
+                        bBot.getNewBlacklistedSongs = bBot.roomUtilities.exportNewBlacklistedSongs;
+                        bBot.logNewBlacklistedSongs = bBot.roomUtilities.logNewBlacklistedSongs;
+                        if (bBot.room.roomstats.launchTime === null) {
+                            bBot.room.roomstats.launchTime = Date.now();
+                        }
+            
+                        for (var j = 0; j < bBot.room.users.length; j++) {
+                            bBot.room.users[j].inRoom = false;
+                        }
+                        var userlist = API.getUsers();
+                        for (var i = 0; i < userlist.length; i++) {
+                            var known = false;
+                            var ind = null;
+                            for (var j = 0; j < bBot.room.users.length; j++) {
+                                if (bBot.room.users[j].id === userlist[i].id) {
+                                    known = true;
+                                    ind = j;
+                                }
+                            }
+                            if (known) {
+                                bBot.room.users[ind].inRoom = true;
+                            }
+                            else {
+                                bBot.room.users.push(new bBot.User(userlist[i].id, userlist[i].username));
+                                ind = bBot.room.users.length - 1;
+                            }
+                            var wlIndex = API.getWaitListPosition(bBot.room.users[ind].id) + 1;
+                            bBot.userUtilities.updatePosition(bBot.room.users[ind], wlIndex);
+                        }
+                        bBot.room.afkInterval = setInterval(function () {
+                            bBot.roomUtilities.afkCheck()
+                        }, 10 * 1000);
+                        bBot.room.autorouletteInterval = setInterval(function () {
+                            bBot.room.autorouletteFunc();
+                        }, 120 * 60 * 1000);
+                        bBot.loggedInID = API.getUser().id;
+                        bBot.status = true;
+                        API.sendChat('/cap ' + bBot.settings.startupCap);
+                        API.setVolume(bBot.settings.startupVolume);
+                        if (bBot.settings.autowoot) {
+                            $("#woot").click();
+                        }
+                        if (bBot.settings.startupEmoji) {
+                            var emojibuttonoff = $(".icon-emoji-off");
+                            if (emojibuttonoff.length > 0) {
+                                emojibuttonoff[0].click();
+                            }
+                            API.chatLog(':smile: Emojis enabled.');
+                        }
+                        else {
+                            var emojibuttonon = $(".icon-emoji-on");
+                            if (emojibuttonon.length > 0) {
+                                emojibuttonon[0].click();
+                            }
+                            API.chatLog('Emojis disabled.');
+                        }
+                        API.chatLog('Avatars capped at ' + bBot.settings.startupCap);
+                        API.chatLog('Volume set to ' + bBot.settings.startupVolume);
+                        loadChat(API.sendChat(subChat(bBot.chat.online, {botname: bBot.settings.botName, version: bBot.version})));
+                        loadEmoji();
+                        
+                            
+                        
+                    
+                
+                
+            
+            //BP END
             
         },
         commands: {
@@ -2262,6 +2262,20 @@
                 }
             },
 
+           leaderboardCommand: {
+                command: 'leaderboard',
+                rank: 'user',
+                type: 'exact',
+                functionality: function (chat, cmd) {
+                    if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                    if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                    else {
+                        var link = 'http://www.balkan19.ga/leaderboard';
+                        API.sendChat(subChat(bBot.chat.leaderboardlink, {name: chat.un, link: link}));
+                    }
+                }
+            },
+            
             englishCommand: {
                 command: 'english',
                 rank: 'bouncer',
@@ -3880,7 +3894,7 @@
                 }
             },
 
-            //CUSTOM
+            //Custom Commands
 
            TruthCommand: {
                 command: 'truth',
@@ -4157,7 +4171,7 @@ API.sendChat(subChat(bBot.chat.eldox, {name: chat.un}));
 }
 }
 },
-stumblrCommand: {
+/* stumblrCommand: {
 command: 'stumblr',
 rank: 'user',
 type: 'exact',
@@ -4169,7 +4183,7 @@ var link = "http://name-is-already-taken.tumblr.com/";
 API.sendChat(subChat(bBot.chat.stumblr, {name: chat.un, link: link}));
 }
 }
-}, 
+}, */
 askCommand: {
 command: 'ask',
 rank: 'user',
@@ -4418,8 +4432,8 @@ API.on(API.ADVANCE, meh);
                     }
                 }
             },
-
-			slowCommand: {
+            //CUSTOM
+            slowCommand: {
                 command: 'slow',
                 rank: 'manager',
                 type: 'startsWith',
@@ -4431,34 +4445,34 @@ API.on(API.ADVANCE, meh);
                         var slow;
 
                         if (msg.length === cmd.length)
-						{
-							slow = 30;
-						}
+                        {
+                            slow = 30;
+                        }
                         else {
                             slow = msg.substring(cmd.length + 1);
                             if (isNaN(slow))
-							{
-								return API.sendChat(subChat(basicBot.chat.invalidtime, {name: chat.un}));
-							}
+                            {
+                                return API.sendChat(subChat(basicBot.chat.invalidtime, {name: chat.un}));
+                            }
                         }
                         if(!bBot.room.slowMode)
-						{
-							bBot.room.slowMode = true;
-							bBot.room.slowModeDuration = slow;
-							API.sendChat("/me Spori način uključen, razmak između poruka: "+ slow + " sekundi!");
-						}else
-						{
-							bBot.room.slowMode = false;
-							bBot.room.slowModeDuration = 0;
-							API.sendChat("/me Spori način isključen!");
-						}
+                        {
+                            bBot.room.slowMode = true;
+                            bBot.room.slowModeDuration = slow;
+                            API.sendChat("/me Spori način uključen, razmak između poruka: "+ slow + " sekundi!");
+                        }else
+                        {
+                            bBot.room.slowMode = false;
+                            bBot.room.slowModeDuration = 0;
+                            API.sendChat("/me Spori način isključen!");
+                        }
                         
                     }
                 }
             },
-			
-			rewardsCommand: {
-				command: 'rewards',
+            
+            rewardsCommand: {
+                command: 'rewards',
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
@@ -4466,259 +4480,260 @@ API.on(API.ADVANCE, meh);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
                         var msg = chat.message;
-						var sender = bBot.userUtilities.lookupUser(chat.uid);
-						var arguments = msg.split(' ');
-						var reciever = "";
-						var c = 0;
-						var rand = Math.random();
-						
-						arguments = arguments.filter(checkNull);
-						console.log(arguments);
+                        var sender = bBot.userUtilities.lookupUser(chat.uid);
+                        var arguments = msg.split(' ');
+                        var reciever = "";
+                        var c = 0;
+                        var rand = Math.random();
+                        
+                        arguments = arguments.filter(checkNull);
+                        console.log(arguments);
                         if (arguments[0] == "!rewards" && arguments.length == 1)
-						{
-							$.ajaxSetup({async: false});
-							$.post("http://leaderboard.pe.hu/leaderboard-getpoints.php",{winnerid:sender.id,dbPassword:bBot.settings.dbPassword}, function(data)
-							{
-								sender.balkanPoints = parseInt(data.trim());
-							});
-							return API.sendChat("/me @" + chat.un + " Stanje na racunu: " + sender.balkanPoints + " BP Poena");
-						}
-						if(arguments.length > 3)
-						{
-							for(i = 3; i < arguments.length; i++)
-							{
-								if(reciever == "")
-								{
-									reciever = reciever + arguments[i];
-								}
-								else
-								{
-									reciever = reciever + " " + arguments[i];
-								}
-							}
-							console.log(reciever);
-							if(arguments[1] == "bet" && !isNaN(arguments[2]) && arguments[2] > 0)
-							{
-								var senderpoints;
-								var recieverpoints;
-								
-								reciever = reciever.trim();
-								if(reciever.startsWith("@"))
-								{
-									reciever = reciever.trim().substring(1);
-								}
-								var recieverU = bBot.userUtilities.lookupUserName(reciever);
-								$.ajaxSetup({async: false});
-								$.post("http://leaderboard.pe.hu/leaderboard-getpoints.php",{winnerid:sender.id,loserid:recieverU.id}, function(data)
-								{
-									var points = data.trim().split(' ');
-									sender.balkanPoints = parseInt(points[0]);
-									recieverU.balkanPoints = parseInt(points[1]);
-								});
-								console.log(recieverU.inRoom);
-								if(recieverU == null || recieverU.inRoom && recieverU != sender)
-								{
-									var offer = parseInt(arguments[2]);
-									if(sender.isBetting)
-									{
-										return API.sendChat("/me @" + chat.un + " već si započeo okladu s nekim! Upiši !rewards \"stop\" da ju prekineš!");
-									}
-									if(recieverU.isBetting)
-									{
-										return API.sendChat("/me @" + chat.un + " " + recieverU.username + " se već kladi s nekim!");
-									}
-									if(sender.balkanPoints < offer)
-									{
-										return API.sendChat("/me @" + chat.un + " nemaš dovoljno BP Poena za tu okladu!");
-									}
-									if(recieverU.balkanPoints < offer)
-									{
-										return API.sendChat("/me @" + chat.un + " osoba s kojom se želiš kladiti nema dovoljno BP Poena za tu okladu! Ima samo: " + recieverU.balkanPoints);
-									}
-									
-									recieverU.isBetting = true;
-									recieverU.better = sender;
-									recieverU.offered = offer;
-									sender.isBetting = true;
-									sender.toWho = recieverU;
-									API.sendChat("/me @" + recieverU.username + " " + chat.un + " te poziva na opkladu! u " + offer + " BP Poena. Upiši \"!rewards accept\" ili \"!rewards decline\"");
-									API.sendChat("/me @" + chat.un + " ako želiš prekinuti okladu upiši \"!rewards stop\" ");
-									
-								}else
-								{
-									return API.sendChat("/me @" + chat.un + " osoba s kojom se želiš kladiti trenutno nije online! , ili si se pokušao kladiti sam s sobom!");
-								}
-							}else
-							{
-								return API.sendChat("/me @" + chat.un + " Unijeli ste nepostojecu komandu. Upiši !rewards help za vise informacija.");
-							}
+                        {
+                            $.ajaxSetup({async: false});
+                            $.post("http://leaderboard.pe.hu/room/data-get.php",{winnerid:sender.id,dbPassword:bBot.settings.dbPassword}, function(data)
+                            {
+                                sender.balkanPoints = parseInt(data.trim());
+                            });
+                            return API.sendChat("/me @" + chat.un + " Stanje na racunu: " + sender.balkanPoints + " BP Poena");
+                        }
+                        if(arguments.length > 3)
+                        {
+                            for(i = 3; i < arguments.length; i++)
+                            {
+                                if(reciever == "")
+                                {
+                                    reciever = reciever + arguments[i];
+                                }
+                                else
+                                {
+                                    reciever = reciever + " " + arguments[i];
+                                }
+                            }
+                            console.log(reciever);
+                            if(arguments[1] == "bet" && !isNaN(arguments[2]) && arguments[2] > 0)
+                            {
+                                var senderpoints;
+                                var recieverpoints;
+                                
+                                reciever = reciever.trim();
+                                if(reciever.startsWith("@"))
+                                {
+                                    reciever = reciever.trim().substring(1);
+                                }
+                                var recieverU = bBot.userUtilities.lookupUserName(reciever);
+                                $.ajaxSetup({async: false});
+                                $.post("http://leaderboard.pe.hu/room/data-get.php",{winnerid:sender.id,loserid:recieverU.id}, function(data)
+                                {
+                                    var points = data.trim().split(' ');
+                                    sender.balkanPoints = parseInt(points[0]);
+                                    recieverU.balkanPoints = parseInt(points[1]);
+                                });
+                                console.log(recieverU.inRoom);
+                                if(recieverU == null || recieverU.inRoom && recieverU != sender)
+                                {
+                                    var offer = parseInt(arguments[2]);
+                                    if(sender.isBetting)
+                                    {
+                                        return API.sendChat("/me @" + chat.un + " već si započeo okladu s nekim! Upiši !rewards \"stop\" da ju prekineš!");
+                                    }
+                                    if(recieverU.isBetting)
+                                    {
+                                        return API.sendChat("/me @" + chat.un + " " + recieverU.username + " se već kladi s nekim!");
+                                    }
+                                    if(sender.balkanPoints < offer)
+                                    {
+                                        return API.sendChat("/me @" + chat.un + " nemaš dovoljno BP Poena za tu okladu!");
+                                    }
+                                    if(recieverU.balkanPoints < offer)
+                                    {
+                                        return API.sendChat("/me @" + chat.un + " osoba s kojom se želiš kladiti nema dovoljno BP Poena za tu okladu! Ima samo: " + recieverU.balkanPoints);
+                                    }
+                                    
+                                    recieverU.isBetting = true;
+                                    recieverU.better = sender;
+                                    recieverU.offered = offer;
+                                    sender.isBetting = true;
+                                    sender.toWho = recieverU;
+                                    API.sendChat("/me @" + recieverU.username + " " + chat.un + " te poziva na opkladu! u " + offer + " BP Poena. Upiši \"!rewards accept\" ili \"!rewards decline\"");
+                                    API.sendChat("/me @" + chat.un + " ako želiš prekinuti okladu upiši \"!rewards stop\" ");
+                                    
+                                }else
+                                {
+                                    return API.sendChat("/me @" + chat.un + " osoba s kojom se želiš kladiti trenutno nije online! , ili si se pokušao kladiti sam s sobom!");
+                                }
+                            }else
+                            {
+                                return API.sendChat("/me @" + chat.un + " Unijeli ste nepostojecu komandu. Upiši !rewards help za vise informacija.");
+                            }
                         }else if(arguments[1] == "accept")
-						{
-							if(!sender.isBetting)
-							{
-								return API.sendChat("/me @" + chat.un + " Nitko vas nije izazvao na okladu!");
-							}
-							if(sender.better.inRoom)
-							{
-								
-								if(rand >= 0.5)
-								{
-									sender.balkanPoints += sender.offered;
-									sender.better.balkanPoints -= sender.offered;
-									
-									$.ajaxSetup({async: false});
-									$.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:sender.id,winnername:sender.username,pointswon:sender.offered,loserid:sender.better.id,losername:sender.better.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
-									finishBet(sender);
-									return API.sendChat("/me @" + chat.un + " Oklada je završena! " + sender.username + " je pobjedio i osvojio " + sender.offered + " BP Poena");
-								}
-								else
-								{
-									sender.balkanPoints -= sender.offered;
-									sender.better.balkanPoints += sender.offered;
-			
-									$.ajaxSetup({async: false});
-									$.post("http://leaderboard.pe.hu/leaderboard-edit.php",{winnerid:sender.better.id,winnername:sender.better.username,pointswon:sender.better.offered,loserid:sender.id,losername:sender.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
-									var betusr = sender.better.username;
-									finishBet(sender);
-									return API.sendChat("/me @" + chat.un + " Oklada je završena! " + betusr + " je pobjedio i osvojio " + sender.offered + " BP Poena");
-									
-								}
-								
-							}
-							else
-							{
-								finishBet(sender);
-								return API.sendChat("/me @" + chat.un + " osoba koja te izazvala na okladu je trenutno offline, oklada se prekida!");
-							}
-						}else if(arguments[1] == "decline" )
-						{
-							if(!sender.isBetting)
-							{
-								return API.sendChat("/me @" + chat.un + " Nitko vas nije izazvao na okladu!");
-							}
-							finishBet(sender);
-							return API.sendChat("/me @" + chat.un + " oklada prekinuta!");
-						}else if(arguments[1] == "stop")
-						{
-							sender.isBetting = false;
-							sender.toWho.isBetting = false;
-							sender.toWho = null;
-							
-							return API.sendChat("/me @" + chat.un + " oklada prekinuta!");
-						}else if(arguments[1] == "leaderboard")
-						{
-						//	var leaders = bBot.room.users;
-						//	var ph;
-						//	for(i = 0; i< leaders.length; i++)
-						//	{
-						//		for(j = 0; j<leaders.length;i++)
-						//		{
-						//			if(leaders[i].AnimePoins < leaders[j].balkanPoints)
-						//			{
-						//				ph = leaders[i];
-						//				leaders[j] = leaders[i];
-						//				leaders[i] = ph;
-						//			}
-						//		}
-						//	}
-						//	API.sendChat("/me Top 10 osoba, s najviše bodova:");
-						//	for(i = 0; i<leaders.length; i++)
-						//	{
-						//		API.sendChat("/me " + i + ". " + leaders[i].username + " : " + leaders[i].balkanPoints);
-						//	}
-							return API.sendChat("Leaderboard tabela: http://leaderboard.pe.hu/leaderboard");
-						
-						}else if(arguments[1] == "help")
-						{
-							API.sendChat("/me @" + chat.un + " Da bi vidio koliko imaš Poena upiši !rewards, da bi se kladio s nekim upiši !rewards [bodovi] [ime],da bi prekinio napiši !rewards stop, da prihvatis okladu napiši !rewards accept, da bi odbio okladu napiši !rewards decline");
-							return API.sendChat("/me Da vidiš leaderboard upiši !leaderboard");
-						}else
-						{
-							return API.sendChat("/me @" + chat.un + " Unijeli ste nepostojecu koamndu. Upiši !rewards help za vise informacija");
-						}
-						function checkNull(arg)
-						{
-							return arg !== null;
-						}
-						function finishBet(sender)
-						{
-							sender.better.isBetting = false;
-							sender.isBetting = false;
-							sender.better = null;
-							return;
-						}
-			}		
+                        {
+                            if(!sender.isBetting)
+                            {
+                                return API.sendChat("/me @" + chat.un + " Nitko vas nije izazvao na okladu!");
+                            }
+                            if(sender.better.inRoom)
+                            {
+                                
+                                if(rand >= 0.5)
+                                {
+                                    sender.balkanPoints += sender.offered;
+                                    sender.better.balkanPoints -= sender.offered;
+                                    
+                                    $.ajaxSetup({async: false});
+                                    $.post("http://leaderboard.pe.hu/room/data-edit.php",{winnerid:sender.id,winnername:sender.username,pointswon:sender.offered,loserid:sender.better.id,losername:sender.better.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
+                                    finishBet(sender);
+                                    return API.sendChat("/me @" + chat.un + " Oklada je završena! " + sender.username + " je pobjedio i osvojio " + sender.offered + " BP Poena");
+                                }
+                                else
+                                {
+                                    sender.balkanPoints -= sender.offered;
+                                    sender.better.balkanPoints += sender.offered;
+            
+                                    $.ajaxSetup({async: false});
+                                    $.post("http://leaderboard.pe.hu/room/data-edit.php",{winnerid:sender.better.id,winnername:sender.better.username,pointswon:sender.better.offered,loserid:sender.id,losername:sender.username,dbPassword:bBot.settings.dbPassword}, function(data){if(data.trim() != "PWD_OK"){API.sendChat("/me Problem sa upisivanjem podataka u bazu podataka!")};});
+                                    var betusr = sender.better.username;
+                                    finishBet(sender);
+                                    return API.sendChat("/me @" + chat.un + " Oklada je završena! " + betusr + " je pobjedio i osvojio " + sender.offered + " BP Poena");
+                                    
+                                }
+                                
+                            }
+                            else
+                            {
+                                finishBet(sender);
+                                return API.sendChat("/me @" + chat.un + " osoba koja te izazvala na okladu je trenutno offline, oklada se prekida!");
+                            }
+                        }else if(arguments[1] == "decline" )
+                        {
+                            if(!sender.isBetting)
+                            {
+                                return API.sendChat("/me @" + chat.un + " Nitko vas nije izazvao na okladu!");
+                            }
+                            finishBet(sender);
+                            return API.sendChat("/me @" + chat.un + " oklada prekinuta!");
+                        }else if(arguments[1] == "stop")
+                        {
+                            sender.isBetting = false;
+                            sender.toWho.isBetting = false;
+                            sender.toWho = null;
+                            
+                            return API.sendChat("/me @" + chat.un + " oklada prekinuta!");
+                        }else if(arguments[1] == "leaderboard")
+                        {
+                        //  var leaders = bBot.room.users;
+                        //  var ph;
+                        //  for(i = 0; i< leaders.length; i++)
+                        //  {
+                        //      for(j = 0; j<leaders.length;i++)
+                        //      {
+                        //          if(leaders[i].AnimePoins < leaders[j].balkanPoints)
+                        //          {
+                        //              ph = leaders[i];
+                        //              leaders[j] = leaders[i];
+                        //              leaders[i] = ph;
+                        //          }
+                        //      }
+                        //  }
+                        //  API.sendChat("/me Top 10 osoba, s najviše bodova:");
+                        //  for(i = 0; i<leaders.length; i++)
+                        //  {
+                        //      API.sendChat("/me " + i + ". " + leaders[i].username + " : " + leaders[i].balkanPoints);
+                        //  }
+                            return API.sendChat("Leaderboard tabela: http://www.balkan19.ga/leaderboard");
+                        
+                        }else if(arguments[1] == "help")
+                        {
+                            API.sendChat("/me @" + chat.un + " Da bi vidio koliko imaš Poena upiši !rewards, da bi se kladio s nekim upiši !rewards [bodovi] [ime],da bi prekinio napiši !rewards stop, da prihvatis okladu napiši !rewards accept, da bi odbio okladu napiši !rewards decline");
+                            return API.sendChat("/me Da vidiš leaderboard upiši !leaderboard");
+                        }else
+                        {
+                            return API.sendChat("/me @" + chat.un + " Unijeli ste nepostojecu koamndu. Upiši !rewards help za vise informacija");
+                        }
+                        function checkNull(arg)
+                        {
+                            return arg !== null;
+                        }
+                        function finishBet(sender)
+                        {
+                            sender.better.isBetting = false;
+                            sender.isBetting = false;
+                            sender.better = null;
+                            return;
+                        }
+            }       
         } 
         },
-			announceCommand: {
-					command: 'announce',
-					rank: 'mod',
-					type: 'startsWith',
-					functionality: function (chat, cmd) {
-						if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
-						if (!bBot.commands.executable(this.rank, chat)) return void (0);
-						else {
-							var arguments = chat.message.split(' ');
-							var amsg = getMessage(arguments);
-							if(arguments.length == 1 && arguments[0] == "!announce")
-							{
-								API.sendChat("/me @" + chat.un + " upiši !ap [nakon koliko minuta da se objavi poruka] [poruka] ili !announce stop da zaustaviš objavljivanje");
-							}else if(arguments[0] == "!announce" && !isNaN(arguments[1]) && arguments[2] != null )
-							{
-								if(!bBot.room.announceActive)
-								{
-									announceActivate(arguments,amsg);
-								}else
-								{
-									announceStop(arguments,amsg);
-									announceActivate(arguments,amsg);
-								}
-								
-							}else if(arguments[0] == "!announce" && arguments[1] == "stop")
-							{
-								announceStop(arguments,amsg);
-							}else
-							{
-								API.sendChat("/me @" + chat.un + " neispravna komanda! upiši !ap [nakon koliko minuta da se objavi poruka] [poruka] ili !announce stop da zaustaviš objavljivanje");
-							}
-							function getMessage(arguments)
-							{
-								var stream = "";
-								for(i = 2; i < arguments.length; i++)
-								{
-									stream += (' ' + arguments[i]);
-								}
-								return stream;
-							}
-							function announceStop(arguments,amsg)
-							{
-								if(!bBot.room.announceActive)
-								{
-								API.sendChat("/me @" + chat.un + " objavljivanje je već ugašeno!");
-								return;
-								}else
-								{
-								bBot.room.announceActive = false;
-								bBot.room.announceMessage = null;
-								bBot.room.announceStartTime = null;
-								bBot.room.announceTime = null;
-								API.sendChat("/me @" + chat.un + " Uspešno ugašeno objavljivanje!");
-								return;
-								}
-							}
-							function announceActivate(arguments,amsg)
-							{
-								bBot.room.announceActive = true;
-								bBot.room.announceMessage = amsg;
-								bBot.room.announceStartTime = Date.now();
-								bBot.room.announceTime = arguments[1] * 60 * 1000;
-								API.sendChat("/me @" + chat.un + " Uspešno postavljeno objavljivanje.Približno svakih: " + arguments[1] + " minuta će se objaviti: " + amsg);
-								return;
-							}
-						}
-					}
-				},
-			mehautobanCommand: {
+        
+            /* announceCommand: {
+                    command: 'announce',
+                    rank: 'mod',
+                    type: 'startsWith',
+                    functionality: function (chat, cmd) {
+                        if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
+                        if (!bBot.commands.executable(this.rank, chat)) return void (0);
+                        else {
+                            var arguments = chat.message.split(' ');
+                            var amsg = getMessage(arguments);
+                            if(arguments.length == 1 && arguments[0] == "!announce")
+                            {
+                                API.sendChat("/me @" + chat.un + " upiši !ap [nakon koliko minuta da se objavi poruka] [poruka] ili !announce stop da zaustaviš objavljivanje");
+                            }else if(arguments[0] == "!announce" && !isNaN(arguments[1]) && arguments[2] != null )
+                            {
+                                if(!bBot.room.announceActive)
+                                {
+                                    announceActivate(arguments,amsg);
+                                }else
+                                {
+                                    announceStop(arguments,amsg);
+                                    announceActivate(arguments,amsg);
+                                }
+                                
+                            }else if(arguments[0] == "!announce" && arguments[1] == "stop")
+                            {
+                                announceStop(arguments,amsg);
+                            }else
+                            {
+                                API.sendChat("/me @" + chat.un + " neispravna komanda! upiši !ap [nakon koliko minuta da se objavi poruka] [poruka] ili !announce stop da zaustaviš objavljivanje");
+                            }
+                            function getMessage(arguments)
+                            {
+                                var stream = "";
+                                for(i = 2; i < arguments.length; i++)
+                                {
+                                    stream += (' ' + arguments[i]);
+                                }
+                                return stream;
+                            }
+                            function announceStop(arguments,amsg)
+                            {
+                                if(!bBot.room.announceActive)
+                                {
+                                API.sendChat("/me @" + chat.un + " objavljivanje je već ugašeno!");
+                                return;
+                                }else
+                                {
+                                bBot.room.announceActive = false;
+                                bBot.room.announceMessage = null;
+                                bBot.room.announceStartTime = null;
+                                bBot.room.announceTime = null;
+                                API.sendChat("/me @" + chat.un + " Uspešno ugašeno objavljivanje!");
+                                return;
+                                }
+                            }
+                            function announceActivate(arguments,amsg)
+                            {
+                                bBot.room.announceActive = true;
+                                bBot.room.announceMessage = amsg;
+                                bBot.room.announceStartTime = Date.now();
+                                bBot.room.announceTime = arguments[1] * 60 * 1000;
+                                API.sendChat("/me @" + chat.un + " Uspešno postavljeno objavljivanje.Približno svakih: " + arguments[1] + " minuta će se objaviti: " + amsg);
+                                return;
+                            }
+                        }
+                    }
+                }, */
+            mehautobanCommand: {
                 command: 'mehautoban',
                 rank: 'manager',
                 type: 'startsWith',
@@ -4730,32 +4745,32 @@ API.on(API.ADVANCE, meh);
                         var limit;
 
                         if (msg.length === cmd.length)
-						{
-							limit = 5;
-						}
+                        {
+                            limit = 5;
+                        }
                         else {
                             limit = msg.substring(cmd.length + 1);
                             if (isNaN(limit))
-							{
-								return API.sendChat("/me @" + chat.un + "Neispravna komanda, upiši !mehautoban [limit], gdje je limit maksimalan broj mehova zaredom");
-							}
+                            {
+                                return API.sendChat("/me @" + chat.un + "Neispravna komanda, upiši !mehautoban [limit], gdje je limit maksimalan broj mehova zaredom");
+                            }
                         }
                         if(!bBot.settings.mehAutoBan)
-						{
-							bBot.settings.mehAutoBan = true;
-							bBot.settings.mehAutoBanLimit = limit;
-							API.sendChat("/me Auto banovanje za uzastopno mehovanje uključeno! Limit uzastopnih mehova: "+ limit);
-						}else
-						{
-							bBot.settings.mehAutoBan = false;
-							API.sendChat("/me Auto banovanje za uzastopno mehovanje isključeno!");
-						}
+                        {
+                            bBot.settings.mehAutoBan = true;
+                            bBot.settings.mehAutoBanLimit = limit;
+                            API.sendChat("/me Auto banovanje za uzastopno mehovanje uključeno! Limit uzastopnih mehova: "+ limit);
+                        }else
+                        {
+                            bBot.settings.mehAutoBan = false;
+                            API.sendChat("/me Auto banovanje za uzastopno mehovanje isključeno!");
+                        }
                         
                     }
                 }
             }
-			
-			}
+            
+            }
     };
 
     loadChat(bBot.startup);
