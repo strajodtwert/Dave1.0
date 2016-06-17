@@ -6,7 +6,7 @@
     from the respected owner(s) and developer(s).
 
     CURRENT DEVELOPERS: AJDIN (www.ajdin.gq)
-                        Warix (warixmods.ga)
+                        TONI (warixmods.ga)
 
     CONTACT: ajdin291@gmail.com
     WEBSITE: http://www.balkan19.ga/
@@ -38,8 +38,8 @@
     And AnimeSrbija commands are added by Warix3.
     
     Copyright (c) 2016 Warix3
-        Please do not copy or modify without permission
-        from the respected owner(s) and developer(s).
+    Please do not copy or modify without permission
+    from the respected owner(s) and developer(s).
     
     Author: Toni Pejić (Warix3)
     Github: Warix3
