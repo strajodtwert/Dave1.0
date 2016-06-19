@@ -4629,7 +4629,7 @@ API.on(API.ADVANCE, meh);
                         //  {
                         //      API.sendChat("/me " + i + ". " + leaders[i].username + " : " + leaders[i].balkanPoints);
                         //  }
-                            return API.sendChat("Pogledaj leaderboard na ovom linku: http://leaderboard.pe.hu/leaderboard");
+                            return API.sendChat("Pogledaj leaderboard na ovom linku: http://balkan19.ga/leaderboard");
                         
                         }else if(arguments[1] == "help")
                         {
