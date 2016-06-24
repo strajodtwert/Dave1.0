@@ -4470,7 +4470,7 @@ API.on(API.ADVANCE, meh);
                         
                         arguments = arguments.filter(checkNull);
                         console.log(arguments);
-                        if (arguments[0] == "!ap" && arguments.length == 1)
+                        if (arguments[0] == "!points" && arguments.length == 1)
                         {
                             $.ajaxSetup({async: false});
                             $.post("http://leaderboard.pe.hu/room/data-get.php",{winnerid:sender.id,dbPassword:bBot.settings.dbPassword}, function(data)
