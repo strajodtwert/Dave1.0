@@ -4633,7 +4633,7 @@ API.on(API.ADVANCE, meh);
                         
                         }else if(arguments[1] == "help")
                         {
-                            API.sendChat("/me @" + chat.un + " Da bi vidio koliko imaš BP Poena upiši !points, da bi se kladio s nekim upiši !points [bodovi] [ime], da bi prekinio poziv napiši !points stop, da prihvatis !points accept, da bi odbio napiši !points decline");
+                            API.sendChat("/me @" + chat.un + " Da bi vidio koliko imaš BP Poena upiši !points, da bi se kladio s nekim upiši !points bet [bodovi] [ime], da bi prekinio poziv napiši !points stop, da prihvatis !points accept, da bi odbio napiši !points decline");
                             return API.sendChat("/me da vidiš leaderboard upiši !ap leaderboard");
                         }else
                         {
