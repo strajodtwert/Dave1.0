@@ -293,7 +293,7 @@
     var botCreatorIDs = ["4329684"];
 
     var bBot = {
-        version: "2.1.5",
+        version: "2.1.6",
         status: false,
         name: "Dave1.0",
         loggedInID: "23625731",
@@ -3598,13 +3598,11 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        $(".icon-population").click();
-                        $(".icon-ban").click();
-                        setTimeout(function (chat) {
+                        $.getJSON('/_/bans', function (json){
                             var msg = chat.message;
-                            if (msg.length === cmd.length) return API.sendChat();
+                            if (msg.length === cmd.length) return;
                             var name = msg.substring(cmd.length + 2);
-                            var bannedUsers = API.getBannedUsers();
+                            var bannedUsers = json.data;
                             var found = false;
                             var bannedUser = null;
                             for (var i = 0; i < bannedUsers.length; i++) {
@@ -3614,16 +3612,10 @@
                                     found = true;
                                 }
                             }
-                            if (!found) {
-                                $(".icon-chat").click();
-                                return API.sendChat(subChat(bBot.chat.notbanned, {name: chat.un}));
-                            }
+                            if (!found) return API.sendChat(subChat(bBot.chat.notbanned, {name: chat.un}));
                             API.moderateUnbanUser(bannedUser.id);
-                            API.sendChat("Unbanned " + name);
-                            setTimeout(function () {
-                                $(".icon-chat").click();
-                            }, 1000);
-                        }, 1000, chat);
+                            console.log('Unbanned:', name);
+                        });
                     }
                 }
             },
@@ -3649,50 +3641,35 @@
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
                     if (!bBot.commands.executable(this.rank, chat)) return void (0);
                     else {
-                        var msg = chat.message;
-                        var permFrom = bBot.userUtilities.getPermission(chat.uid);
-                        /**
-                         if (msg.indexOf('@') === -1 && msg.indexOf('all') !== -1) {
-                            if (permFrom > 2) {
-                                bBot.room.mutedUsers = [];
-                                return API.sendChat(subChat(bBot.chat.unmutedeveryone, {name: chat.un}));
+                        $.getJSON('/_/mutes', function (json){
+                            var msg = chat.message;
+                            if (msg.length === cmd.length) return;
+                            var name = msg.substring(cmd.length+2);
+                            var arg = msg.substring(cmd.length+1);
+                            var mutedUsers = json.data;
+                            var found = false;
+                            var mutedUser = null;
+                            var permFrom = bBot.userUtilities.getPermission(chat.uid);
+                            if (msg.indexOf('@') === -1 && arg === 'all'){
+                                if (permFrom > 2){
+                                    for (var i = 0; i < mutedUsers.length; i++){
+                                        API.moderateUnmuteUser(mutedUsers[i].id);
+                                    }
+                                    API.sendChat(subChat(bBot.chat.unmutedeveryone, {name: chat.un}));
+                                } else API.sendChat(subChat(bBot.chat.unmuteeveryonerank, {name: chat.un}));
+                            } else {
+                                for (var i = 0; i < mutedUsers.length; i++){
+                                    var user = mutedUsers[i];
+                                    if (user.username === name){
+                                        mutedUser = user;
+                                        found = true;
+                                    }
+                                }
+                                if (!found) return API.sendChat(subChat(bBot.chat.notbanned, {name: chat.un}));
+                                API.moderateUnmuteUser(mutedUser.id);
+                                console.log('Unmuted:', name);
                             }
-                            else return API.sendChat(subChat(bBot.chat.unmuteeveryonerank, {name: chat.un}));
-                        }
-                         **/
-                        var from = chat.un;
-                        var name = msg.substr(cmd.length + 2);
-
-                        var user = bBot.userUtilities.lookupUserName(name);
-
-                        if (typeof user === 'boolean') return API.sendChat(subChat(bBot.chat.invaliduserspecified, {name: chat.un}));
-
-                        var permUser = bBot.userUtilities.getPermission(user.id);
-                        if (permFrom > permUser) {
-                            /*
-                             var muted = bBot.room.mutedUsers;
-                             var wasMuted = false;
-                             var indexMuted = -1;
-                             for (var i = 0; i < muted.length; i++) {
-                             if (muted[i] === user.id) {
-                             indexMuted = i;
-                             wasMuted = true;
-                             }
-
-                             }
-                             if (!wasMuted) return API.sendChat(subChat(bBot.chat.notmuted, {name: chat.un}));
-                             bBot.room.mutedUsers.splice(indexMuted);
-                             API.sendChat(subChat(bBot.chat.unmuted, {name: chat.un, username: name}));
-                             */
-                            try {
-                                API.moderateUnmuteUser(user.id);
-                                API.sendChat(subChat(bBot.chat.unmuted, {name: chat.un, username: name}));
-                            }
-                            catch (e) {
-                                API.sendChat(subChat(bBot.chat.notmuted, {name: chat.un}));
-                            }
-                        }
-                        else API.sendChat(subChat(bBot.chat.unmuterank, {name: chat.un}));
+                        });
                     }
                 }
             },
