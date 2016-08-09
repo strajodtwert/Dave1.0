@@ -4546,7 +4546,6 @@ API.on(API.ADVANCE, meh);
                                     sender.isBetting = true;
                                     sender.toWho = recieverU;
                                     API.sendChat("/me @" + recieverU.username + " " + chat.un + " te poziva na opkladu! u " + offer + " BP Poena. Upišisi \"!points accept\" ili \"!points decline\"");
-                                    API.sendChat("/me @" + chat.un + " ako želiš prekinuti okladu upiši \"!points stop\" ");
                                     return;
                                 }else
                                 {
