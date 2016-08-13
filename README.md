@@ -1,11 +1,10 @@
 >Dave1.0
 =========
+PRIVATE BOT
 
-Bot name changed to Dave1.0
-This is edited version of basic bot,
+ORGINAL NAME: basic bot
+CURRENT NAME: Dave1.0
 
-I am not the full owner of this bot , i only used it to edit links, and necessary files, 
-if you have any questions feel free to ask me and i will try to answer you, If you want to contact me 
-you can use this email ajdin291@gmail.com
+This is orginal basic bot which includes custom commands, thats why the code is obfuscated, we do not want steal orginal code, we just want to protect ours. We respect orginal code and the owner or basic bot.
 
 Owner of this bot: https://github.com/Yemasthui/basicBot
