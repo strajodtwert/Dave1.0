@@ -325,6 +325,7 @@
     "cycleguardtime": "/me [!cycletimer] :white_check_mark: [@%%NAME%%] Cycleguard je postavljen na %%TIME%% minuta.",
     "dclookuprank": "/me [!dclookup] [@%%NAME%%] Samo bounceri i visi rank mogu !dclookup za ostale",
     "emojilist": "/me [!emoji] :link: Listu svih Emoji mozete pronaci ovdje: %%LINK%%",
+    "latestversion": "/me [!version] :link: Zadnja verzija bota: %%LINK%%",
     "notinwaitlist": "/me @%%NAME%%, nisi na listi cekanja",
     "eta": "/me @%%NAME%% Nalazis se na poziciji %%POSITION%% i doci ces na red za otprilike %%TIME%%.",
     "facebook": "/me [!fb] @%%NAME%% Nasa fb grupa: %%LINK%%",
