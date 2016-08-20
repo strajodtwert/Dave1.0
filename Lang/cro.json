@@ -213,6 +213,12 @@
     "permissionownsong": "/me :up: @%%NAME%% ima dozvolu.",
     "isblacklisted": "/me @%%NAME%% Ova pjesma se nalazi na %%BLACKLIST%% blacklisti, i zbog toga je zabranjena, za vise info kucaj !op.",
     "blacklist": " :white_check_mark: Blacklist",
+    
+    "rpslsempty": "\/me [!rps] Da bi igrao Rock Paper Scissors, koristi !rps {Choice}",
+    "rpslserror": "\/me Pogresan odabir, pokusaj ponovo!",
+    "rpslswin": "Pobjedio si %%NAME%%!",
+    "rpslslose": "Izgubio si %%NAME%%!",
+    "rpslsdraw": "Nerjeseno je %%NAME%%!",
 
 
     "isopen": "/me [!roulette] @djs :white_check_mark: Rulet je uspijesno pokrenut. Kucaj !join da bi ucestvovao. !leave da bi napustio.",
