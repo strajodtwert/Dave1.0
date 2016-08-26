@@ -219,6 +219,7 @@
     "rpslswin": "Pobjedio si %%NAME%%!",
     "rpslslose": "Izgubio si %%NAME%%!",
     "rpslsdraw": "Nerjeseno je %%NAME%%!",
+    "dave": "@%%NAME%% Ja sam bot ove sobe, ako imas neka pitanja oznaci nekog drugog admina, ako zelis vidjeti moje komande ukucaj !commands",
 
 
     "isopen": "/me [!roulette] @djs :white_check_mark: Rulet je uspijesno pokrenut. Kucaj !join da bi ucestvovao. !leave da bi napustio.",
