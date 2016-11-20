@@ -295,6 +295,7 @@
     "blinfo": "/me @%%NAME%% [!blinfo] Blacklista Info - author: %%AUTHOR%%, title: %%TITLE%%, mid: %%SONGID%%",
     "cycleguard": ":white_check_mark: cycleguard",
     "timeguard": ":white_check_mark: timeguard",
+    "historyskip": "historyskip",
     "chatfilter": "chatfilter",
     "lockdown": ":white_check_mark: lockdown",
     "lockguard": ":white_check_mark: lockguard",
